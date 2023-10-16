@@ -1,0 +1,22 @@
+<div class="featured">
+{% for f in featured %}
+  {% if f.template == "gallery" %}
+  {% assign images = f.images %}
+  {% include gallery %}
+
+  {% elsif f.template == "youtube" %}
+  {% include youtube, video_id: f.video_id %}
+
+  {% elsif f.template == "audio" %}
+  {% include audio, audio: f.audio %}
+
+  {% elsif f.template == "quote" %}
+  {% include quote, quote: f.content %}
+
+  {% else %}
+
+  {% endif %}
+
+{% endfor %}
+
+</div>

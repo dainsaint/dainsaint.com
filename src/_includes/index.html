@@ -1,0 +1,18 @@
+---
+layout: base
+eleventyExcludeFromCollections: true
+---
+
+<main>
+
+  {% for post in posts %}
+  {% if post.data.layout == "blog" %}
+  {% include blog-content %}
+  {% else %}
+  {% include post-content %}
+  {% endif %}
+  {% endfor %}
+
+  {% include footer %}
+
+</main>

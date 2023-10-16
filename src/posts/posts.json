@@ -1,6 +1,9 @@
 {
-    "layout": "posts",
-    "tags": [
-        "post"
-    ]
+  "layout": "post",
+  "permalink": "{{ page.fileSlug }}/index.html",
+  "deco": "elevation",
+  "tags": [
+    "posts",
+    "content"
+  ]
 }
