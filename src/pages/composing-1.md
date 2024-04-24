@@ -1,9 +1,9 @@
 ---
 title: composing
-description: what in tarnation?
+description: music and sound design for fun and profit
 color: "#d5c7de"
 ---
-i write tunes
+
 
 
 ## game soundtracks/sound design
