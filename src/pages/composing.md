@@ -1,4 +1,5 @@
 ---
 title: composing
-color: "#ff0000"
+description: what in tarnation
+color: "#d5bef1"
 ---
