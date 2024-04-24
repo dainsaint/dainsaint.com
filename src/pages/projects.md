@@ -3,10 +3,8 @@ title: projects
 color: "#DFE0DF"
 eleventyExcludeFromCollections: false
 featured: []
-
+description: poetry, thoughts, songs, videos, and the rest.
 ---
-poetry, thoughts, songs, videos, and the rest.
-
 {% assign use-featured = true %}
 {% include category-list, types: 'featured' %}
 
