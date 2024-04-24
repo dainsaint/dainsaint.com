@@ -69,7 +69,7 @@ collections:
       - label: "Featured"
         name: "featured"
         widget: "object"
-
+      - { label: "Body", name: "body", widget: "markdown" }
   - label: "Pages"
     label_singular: "Page"
     name: "pages"
