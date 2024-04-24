@@ -66,7 +66,26 @@ collections:
       - { label: "Social", name: "social", widget: "image" }
       - { label: "Status", name: "status", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
+      - label: "Featured"
+        name: "featured"
+        widget: "object"
 
+  - label: "Pages"
+    label_singular: "Page"
+    name: "pages"
+    folder: "src/pages"
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: true
+    publish: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Color", name: "color", widget: "color" }
+      - { label: "Social", name: "social", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
 
   - label: "Settings"
     name: "settings"

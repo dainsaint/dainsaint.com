@@ -9,10 +9,13 @@
             <link
                 href="https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital,wght@0,300;0,800;1,300;1,800&family=Spectral:ital,wght@0,300;0,700;1,200;1,300;1,700&display=swap"
                 rel="stylesheet">
+                
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hithismani/responsive-decap@main/dist/responsive.min.css">
     </head>
     <body>
         <!-- Include the script that builds the page and powers Netlify CMS -->
-        <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+        <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+        <!-- <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script> -->
         <script>
             function lightOrDark(color) {
                 // Variables for red, green, blue values
@@ -50,22 +53,48 @@
 
 
             var PostPreview = createClass({
-                render: function(){
+                render:  function() {
+                    var { widgetFor, entry } = this.props;
+                    const color = entry.getIn(["data", "color"]);
+                    const deco = entry.getIn(["data", "deco"]);
+                    const title = entry.getIn(["data", "title"]);
                     
-                    var entry = this.props.entry;
-                    var color = entry.getIn(["data", "color"]);
                     return h('article', {className: `post full ${lightOrDark(color)}`, style:{ backgroundColor: color}},
                         h("div", {className: "post-main"}, 
+                            h("div", { className: "post-body" }, 
+                                h("div", { className: "post-meta" }, 
+                                    h("div", { className: "post-meta-deco", style:{backgroundImage: `url('/assets/img/deco/${ deco }.png`} })),
                             h("div", {className:"post-content"}, 
-                                h("h2", {className:"post-header"}, entry.getIn(["data", "title"])),
-                                h("div", {className:"post-content-text"}, this.props.widgetFor("body"))
-                            )
+                                h("h2", {className:"post-header"}, title),
+                                h("div", {className:"post-content-text"}, widgetFor("body"))
+                            ))
                         )
                     )
                 }
             })
 
+            var PagePreview = createClass({
+                render: function() {
+                    var { widgetFor, entry } = this.props;
+                    const color = entry.getIn(["data", "color"]);
+                    const title = entry.getIn(["data", "title"]);
+                    const description = entry.getIn(["data", "description"]);
+                    return h('article', { className: `post full ${lightOrDark(color)}`, style: { backgroundColor: color } },
+                        h("div", { className: "post-main" },
+                            h("div", { className: "project-body" },
+                                h("div", { className: "project-info" },
+                                    h("h1", { className: "project-title" }, title ),
+                                    h("div", { className: "project-description" }, description )
+                                ),
+                                h("div", { className: "post-content" }, widgetFor("body"))
+                            )
+                        )
+                    )
+                }
+            });
+
             CMS.registerPreviewTemplate("posts", PostPreview)
+            CMS.registerPreviewTemplate("pages", PagePreview)
             CMS.registerPreviewStyle("/assets/css/main.css")
         </script>
 
