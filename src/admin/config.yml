@@ -20,10 +20,10 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Color", name: "color", widget: "color" }
-      - { label: "Social", name: "social", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
 
   - label: "Posts"
     label_singular: "Post"
@@ -36,8 +36,8 @@ collections:
     publish: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Color", name: "color", widget: "color" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
+      - { label: "Color", name: "color", widget: "color", required: false }
       - label: "Deco"
         name: "deco"
         widget: select
@@ -45,6 +45,7 @@ collections:
       - label: Project
         name: project
         widget: relation
+        required: false
         collection: projects
         value_field: "{{slug}}"
         search_fields: ["{{slug}}", "title"]
@@ -61,11 +62,11 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Color", name: "color", widget: "color" }
-      - { label: "Social", name: "social", widget: "image" }
-      - { label: "Status", name: "status", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
+      - { label: "Status", name: "status", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
       - label: "Featured"
         name: "featured"
         widget: "object"
@@ -82,7 +83,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Color", name: "color", widget: "color" }
+      - { label: "Color", name: "color", widget: "color", required: false }
       - { label: "Social", name: "social", widget: "image", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
