@@ -87,7 +87,6 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Color", name: "color", widget: "color", required: false }
-      - { label: "Social", name: "social", widget: "image", required: false }
       - label: "Featured"
         name: "featured"
         widget: "list"
@@ -114,6 +113,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Status", name: "status", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
+
+
   - label: "Pages"
     label_singular: "Page"
     name: "pages"
