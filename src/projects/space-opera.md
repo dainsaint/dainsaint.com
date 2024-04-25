@@ -2,11 +2,11 @@
 title: space opera
 description: theatrical ttrpg for democratic decision making
 color: "#000000"
-social: /assets/uploads/jeremy-thomas-e0ahdsenmdg-unsplash.jpg
+social: /assets/uploads/space-opera-cover.webp
 featured:
   - type: gallery
     images:
-      - /assets/uploads/jeremy-thomas-e0ahdsenmdg-unsplash.jpg
+      - /assets/uploads/space-opera-cover.webp
 status: In active development!
 tags:
   - play
