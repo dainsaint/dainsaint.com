@@ -7,4 +7,7 @@ featured:
   - type: audio
     audio: /assets/uploads/starstuff.mp3
 ---
-inspired by star trek
+*“The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”*
+-- Carl Sagan
+
+inspired by star trek, i wrote this "heroic" theme for space opera.
