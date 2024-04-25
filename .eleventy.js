@@ -61,7 +61,7 @@ module.exports = function (eleventyConfig) {
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
-  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension("yml, yaml", (contents) => yaml.load(contents));
 
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
@@ -87,6 +87,11 @@ module.exports = function (eleventyConfig) {
     "md",
     "html",
   ]);
+
+  eleventyConfig.addFilter("debugger", (...args) => {
+    console.log(...args);
+    debugger;
+  });
 
   eleventyConfig.addFilter("contrast", function (color) {
     return lightOrDark(color || "#FFFFFF");

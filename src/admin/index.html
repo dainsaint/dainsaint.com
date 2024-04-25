@@ -94,8 +94,29 @@
                 }
             });
 
+            var ProjectPreview = createClass({
+                render: function () {
+                    var { widgetFor, entry } = this.props;
+                    const color = entry.getIn(["data", "color"]);
+                    const title = entry.getIn(["data", "title"]);
+                    const description = entry.getIn(["data", "description"]);
+                    return h('article', { className: `post full ${lightOrDark(color)}`, style: { backgroundColor: color } },
+                        h("div", { className: "post-main" },
+                            h("div", { className: "project-body" },
+                                h("div", { className: "project-info" },
+                                    h("h1", { className: "project-title" }, title),
+                                    h("div", { className: "project-description" }, description)
+                                ),
+                                h("div", { className: "post-content" }, widgetFor("body"))
+                            )
+                        )
+                    )
+                }
+            });
+
             CMS.registerPreviewTemplate("posts", PostPreview)
             CMS.registerPreviewTemplate("pages", PagePreview)
+            CMS.registerPreviewTemplate("projects", ProjectPreview)
             CMS.registerPreviewStyle("/assets/css/main.css")
         </script>
 

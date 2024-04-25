@@ -50,6 +50,29 @@ collections:
         value_field: "{{slug}}"
         search_fields: ["{{slug}}", "title"]
         display_fields: ["title"]
+      - label: "Featured"
+        name: "featured"
+        widget: "list"
+        types:
+          - label: Audio
+            name: audio
+            widget: object
+            field: { label: "Audio", name: "audio", widget: file }
+          - label: Gallery
+            name: gallery
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: Quote
+            name: quote
+            widget: markdown
+          - label: Youtube
+            name: youtube
+            widget: object
+            field: { label: "Video ID", name: "video_id", widget: string }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Projects"
@@ -59,7 +82,7 @@ collections:
     slug: "{{slug}}"
     create: true
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
