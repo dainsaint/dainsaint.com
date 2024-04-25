@@ -3,9 +3,6 @@ title: composing
 description: music and sound design for fun and profit
 color: "#d5c7de"
 ---
-
-
-
 ## game soundtracks/sound design
 most of this is through my company [cipher prime studios](https://cipherprime.com)
 
