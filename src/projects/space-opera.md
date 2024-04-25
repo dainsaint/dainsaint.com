@@ -6,7 +6,7 @@ featured:
   - type: gallery
     images:
       - /assets/uploads/space-opera-cover.webp
-status: In active development!
+status: ""
 tags:
   - featured
   - play
