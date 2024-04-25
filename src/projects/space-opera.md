@@ -7,7 +7,7 @@ featured:
   - type: gallery
     images:
       - /assets/uploads/jeremy-thomas-e0ahdsenmdg-unsplash.jpg
-status: ""
+status: In active development!
 tags:
   - play
 ---
