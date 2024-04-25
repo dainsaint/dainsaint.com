@@ -120,3 +120,18 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Social", name: "social", widget: "image" }
           - { label: "Promo", name: "promo", widget: "text" }
+      - label: "Navigation"
+        name : "navigation"
+        file: "src/_data/navigation.yml"
+        fields:
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: Page
+                name: page
+                widget: relation
+                collection: pages
+                value_field: "{{slug}}"
+                search_fields: ["{{slug}}", "title"]
+                display_fields: ["title"]
