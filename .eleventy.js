@@ -1,6 +1,8 @@
 const markdownIt = require("markdown-it");
+const markdownItFA = require("markdown-it-fontawesome");
 const markdownItContainer = require("markdown-it-container");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownDoMarkdown = require("@digitalocean/do-markdownit");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -64,35 +66,21 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./src/admin/preview.css": "./admin/preview.css",
-    // "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
-    // "./node_modules/prismjs/themes/prism-tomorrow.css":
-    //   "./static/css/prism-tomorrow.css",
+    "./src/admin/preview.css": "./admin/preview.css"
   });
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/assets");
 
-  // Minify HTML
-  // eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-  //   // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-  //   if (outputPath.endsWith(".html")) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true,
-  //     });
-  //     return minified;
-  //   }
-
-  //   return content;
-  // });
-
+  // Set up markdown
   let markdownLibrary = markdownIt({
     html: true,
+    typographer: true,
   })
     .use(markdownItAttrs)
-    .use(markdownItContainer, "group");
+    .use(markdownItContainer, "group")
+    .use(markdownDoMarkdown)
+    .use(markdownItFA);
 
   eleventyConfig.setLibrary("md", markdownLibrary);
   eleventyConfig.setTemplateFormats([
@@ -171,22 +159,6 @@ module.exports = function (eleventyConfig) {
       selected = items[Math.floor(Math.random() * items.length)];
 
     return selected;
-  });
-
-  eleventyConfig.addShortcode("youtube", function (video_id) {
-    return `<section class="youtube">
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-
-<div class='embed-container'>
-<iframe src='https://www.youtube.com/embed/${video_id}?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&color=white' frameborder='0' allowfullscreen></iframe>
-</div>
-
-  </section>
-  `;
-  });
-
-  eleventyConfig.addShortcode("i", function (icon) {
-    return `<i class="fa fa-${icon}"></i>`;
   });
 
   eleventyConfig.setLiquidOptions({

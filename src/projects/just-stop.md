@@ -2,16 +2,14 @@
 title: just stop
 description: a book designed to help you change your relationship with time.
 date: 2020-02-12T04:00:00.000+00:00
-status:   |-
-
-  * [read free online](https://readjuststop.com)
-
+status: |
+  * [:fa-book: read free online](https://readjuststop.com)
     {.buttons}
 tags:
 - read
 color: "#354148"
 featured:
-- template: gallery
+- type: gallery
   images:
   - "/assets/uploads/just-stop-banner.jpg"
 
@@ -25,7 +23,7 @@ we wrote this book as both a philosophical exploration of time in the 21st centu
 **and in the spirt of abundance, we're sharing the book in its entirety online—free.**
 if it resonates with you, and you'd like to support us, we also offer a downloadable version in pdf and ebook format.
 
-
+### collaborators
 *co-written with [mike tannenbaum](https://miketannenbaum.com)*
 
 ---

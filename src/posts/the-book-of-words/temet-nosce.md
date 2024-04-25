@@ -7,11 +7,11 @@ eleventyExcludeFromCollections: false
 title: temet nosce
 color: "#F26852"
 featured:
-- template: quote
+- type: quote
   content: "**arrogance**  \nis thinking you  \n**can’t lose**"
-- template: quote
+- type: quote
   content: "**confidence**  \nis knowing you  \n**can win**"
-- template: quote
+- type: quote
   content: "**self-esteem**  \nis knowing your value even if you  \n**don’t play**"
 
 ---

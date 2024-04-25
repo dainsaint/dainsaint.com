@@ -10,9 +10,9 @@ title: i dont know why
 color: "#03B5AA"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "**love**  \nis  \n**love**"
-- template: prompt
+- type: prompt
   header: today's question
   content: "what if you didn't have to explain  \n**who you are?**"
 

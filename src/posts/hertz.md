@@ -9,7 +9,7 @@ title: rhythm
 color: "#EF2D56"
 social: ''
 featured:
-- template: prompt
+- type: prompt
   header: today in the comments
   content: "what's the best thing that happened to you this  \n**summer?**"
 

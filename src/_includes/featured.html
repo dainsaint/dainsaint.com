@@ -1,16 +1,16 @@
 <div class="featured">
 {% for f in featured %}
-  {% if f.template == "gallery" %}
+  {% if f.type == "gallery" %}
   {% assign images = f.images %}
   {% include gallery %}
 
-  {% elsif f.template == "youtube" %}
+  {% elsif f.type == "youtube" %}
   {% include youtube, video_id: f.video_id %}
 
-  {% elsif f.template == "audio" %}
+  {% elsif f.type == "audio" %}
   {% include audio, audio: f.audio %}
 
-  {% elsif f.template == "quote" %}
+  {% elsif f.type == "quote" %}
   {% include quote, quote: f.content %}
 
   {% else %}

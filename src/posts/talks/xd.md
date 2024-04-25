@@ -9,7 +9,7 @@ tags:
 - talks
 - second-age-of-magic
 featured:
-- template: youtube
+- type: youtube
   video_id: zNcbzCnP7T0
 
 ---

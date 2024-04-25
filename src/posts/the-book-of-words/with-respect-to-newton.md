@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 title: with respect to newton
 color: "#204752"
 featured:
-- template: quote
+- type: quote
   content: "**consequences**  \nare not  \n**persecution**"
 
 ---

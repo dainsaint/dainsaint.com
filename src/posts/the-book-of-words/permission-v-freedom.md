@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 title: permission v freedom
 color: "#F26852"
 featured:
-- template: quote
+- type: quote
   content: "**permission**  \nis not  \n**freedom**"
 
 ---

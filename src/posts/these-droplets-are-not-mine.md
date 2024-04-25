@@ -10,7 +10,7 @@ title: these droplets are not mine
 color: "#243A5A"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "you don't have  \n**insecurities**  \nyou have  \n**fears**"
 
 ---

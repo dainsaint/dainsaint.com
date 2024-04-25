@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: false
 title: black and blue
 color: "#020D2D"
 featured:
-- template: gallery
+- type: gallery
   images:
   - /assets/uploads/image-2.png
 hidden: false

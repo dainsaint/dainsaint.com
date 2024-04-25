@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 title: repression vs oppression
 color: "#ECC168"
 featured:
-- template: quote
+- type: quote
   content: "**repression**  \nis the other half of  \n**oppression**"
 
 ---

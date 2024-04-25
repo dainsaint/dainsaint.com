@@ -9,7 +9,7 @@ description: an interactive exhibition that chronicles the effort of two men wor
 status: Complete. [View the full collection](https://wevetraveledsofar.com)
 color: "#333333"
 featured:
-- template: gallery
+- type: gallery
   images:
   - /assets/uploads/synaesthetic_symphony.jpg
 eleventyExcludeFromCollections: true

@@ -10,7 +10,7 @@ title: outsourcing
 color: "#7FB069"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "we aren't  \n**meant**  \nto heal  \n**alone**"
 
 ---

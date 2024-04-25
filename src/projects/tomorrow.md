@@ -9,7 +9,7 @@ status: seven songs written; waiting to record. [Are you a musician interested i
   recording?](mailto:thismotherfucker@dainsaint.com)
 color: "#F29550"
 featured:
-- template: gallery
+- type: gallery
   images:
   - /assets/uploads/will-van-wingerden-czvthlrnlnq-unsplash.jpg
 

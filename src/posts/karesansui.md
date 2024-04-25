@@ -9,7 +9,7 @@ title: karesansui
 color: "#B2AA8E"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "**perfect**  \nisn't  \n**present**"
 
 ---

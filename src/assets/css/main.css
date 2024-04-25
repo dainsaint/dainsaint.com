@@ -693,6 +693,8 @@ button:hover, input[type=submit]:hover
 .youtube
 {
   margin: 15px 0px;
+  width: 100%;
+  height: 56.25%;
 }
 
 

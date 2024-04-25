@@ -10,9 +10,9 @@ title: rations
 color: "#7A306C"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "**appreciation**  \nis not  \n**satisfaction**"
-- template: prompt
+- type: prompt
   content: "do not let this world weaponize your  \n**gratitude**  \nto make you accept
     less than your  \n**worth**"
   header: today's message

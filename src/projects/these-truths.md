@@ -6,7 +6,7 @@ status: Complete, seeking publication. [Interested in publishing this collection
 tags:
 - read
 featured:
-- template: gallery
+- type: gallery
   images:
   - "/assets/uploads/these-truths-banner.jpg"
 

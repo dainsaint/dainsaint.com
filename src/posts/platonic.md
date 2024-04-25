@@ -9,7 +9,7 @@ title: platonic
 color: "#922D50"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: |-
     you aren't supposed to
 
@@ -18,7 +18,7 @@ featured:
     everything you
 
     **feel**
-- template: quote
+- type: quote
   content: |-
     you just have to
 

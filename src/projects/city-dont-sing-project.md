@@ -13,7 +13,7 @@ tags:
 color: "#161616"
 eleventyExcludeFromCollections: false
 featured:
-- template: gallery
+- type: gallery
   images:
   - "/assets/uploads/city-dont-sing-project.png"
 

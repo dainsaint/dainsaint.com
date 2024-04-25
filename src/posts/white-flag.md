@@ -10,7 +10,7 @@ title: white flag
 color: "#EE964B"
 social: ''
 featured:
-- template: quote
+- type: quote
   content: "there is  \n**power**  \nin  \n**surrender**"
 
 ---

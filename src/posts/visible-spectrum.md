@@ -9,7 +9,7 @@ title: visible spectrum
 color: "#221834"
 social: ''
 featured:
-- template: gallery
+- type: gallery
   images:
   - /assets/uploads/adam-kring-awqlmzv9yxk-unsplash.jpg
 

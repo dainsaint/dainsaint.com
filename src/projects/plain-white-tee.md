@@ -8,7 +8,7 @@ text: light
 tags:
 - listen
 featured:
-- template: youtube
+- type: youtube
   video_id: MfF-4QAFMBU
 
 

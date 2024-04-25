@@ -9,7 +9,7 @@ tags:
 - talks
 - sexuality
 featured:
-- template: youtube
+- type: youtube
   video_id: 2O6b8INGNTw
 
 ---

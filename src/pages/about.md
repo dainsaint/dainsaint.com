@@ -3,7 +3,7 @@ title: about
 color: "#161616"
 text: light
 featured:
-- template: gallery
+- type: gallery
   images:
   - "/assets/uploads/main-hero.jpg"
 eleventyExcludeFromCollections: false

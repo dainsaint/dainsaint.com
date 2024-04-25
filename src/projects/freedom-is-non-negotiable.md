@@ -12,7 +12,7 @@ tags:
 - featured
 - read
 featured:
-- template: gallery
+- type: gallery
   images:
   - "/assets/uploads/freedom-cover.png"
 arrange: grid

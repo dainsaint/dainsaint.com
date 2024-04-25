@@ -4,7 +4,7 @@ date: 2020-05-14T23:16:21.000+00:00
 project:  city-dont-sing-project
 color: "#072230"
 featured:
-- template: audio
+- type: audio
   audio: "/assets/uploads/landr-city-don-t-sing-medium-balanced-2.mp3"
 eleventyExcludeFromCollections: false
 

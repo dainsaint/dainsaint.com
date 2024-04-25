@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: false
 title: all of the lights
 color: "#224751"
 featured:
-- template: quote
+- type: quote
   content: "**depression**  \nis the opposite of  \n**expression**"
 
 ---
