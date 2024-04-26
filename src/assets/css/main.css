@@ -47,6 +47,7 @@ a
   text-decoration: underline;
 }
 
+
 img {
   display: block;
   width: 100%;
@@ -734,6 +735,7 @@ ul.grid li img
 {
   text-decoration: none;
   background: var(--dark);
+  border: 1px solid var(--dark);
   color: var(--background);
 
   font-family: 'Raleway', sans-serif;
@@ -751,10 +753,21 @@ ul.grid li img
   white-space: nowrap;
 }
 
+.buttons li a:hover {
+  background: var(--background);
+  color: var(--dark);
+}
+
 .light .buttons li a
 {
   background: var(--light);
+  border: 1px solid var(--light);
   color: var(--background);
+}
+
+.light .buttons li a:hover {
+  background: var(--background);
+  color: var(--light);
 }
 
 

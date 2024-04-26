@@ -16,8 +16,9 @@ paywall: false
 social: ''
 
 ---
-* [<i class="far fa-newspaper"></i> read the full story](//inquirer.com/blackandblue)
+* [:far-newspaper: read the full story](//inquirer.com/blackandblue)
 {.buttons}
+
 
 i had one too many conversations with well-meaning white friends asking, "but why are they protesting in _philly_ when this happened in _minneapolis_?"
 

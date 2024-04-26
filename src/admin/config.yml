@@ -22,8 +22,10 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", required: false}
       - { label: "Color", name: "color", widget: "color", required: false }
-      - { label: "Social", name: "social", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
+      
 
   - label: "Posts"
     label_singular: "Post"
@@ -74,6 +76,8 @@ collections:
             widget: object
             field: { label: "Video ID", name: "video_id", widget: string }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
 
   - label: "Projects"
     label_singular: "Project"
@@ -129,9 +133,9 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Color", name: "color", widget: "color", required: false }
-      - { label: "Social", name: "social", widget: "image", required: false }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Social", name: "social", widget: "image", required: false }
 
   - label: "Settings"
     name: "settings"

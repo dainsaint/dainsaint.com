@@ -6,7 +6,7 @@ const markdownDoMarkdown = require("@digitalocean/do-markdownit");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const htmlmin = require("html-minifier");
+
 
 function lightOrDark(color) {
   // Variables for red, green, blue values
@@ -79,7 +79,7 @@ module.exports = function (eleventyConfig) {
   })
     .use(markdownItAttrs)
     .use(markdownItContainer, "group")
-    .use(markdownDoMarkdown)
+    .use(markdownDoMarkdown, { heading_id: false })
     .use(markdownItFA);
 
   eleventyConfig.setLibrary("md", markdownLibrary);

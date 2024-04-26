@@ -3,9 +3,8 @@ title: freedom is non-negotiable
 description: uplifting blackness under police jurisdiction.
 date: 2020-04-01
 status: |-
-  * [<i class="fa fa-book"></i> buy the book](https://store.dainsaint.com/products/freedom-is-non-negotiable)
-  * [<i class="fa fa-scroll"></i> buy the poster](https://store.dainsaint.com/products/freedom-is-non-negotiable-poster)
-
+  * [:fa-book: buy the book](https://store.dainsaint.com/products/freedom-is-non-negotiable)
+  * [:fa-scroll: buy the poster](https://store.dainsaint.com/products/freedom-is-non-negotiable-poster)
     {.buttons}
 color: "#F7EDE3"
 tags:
