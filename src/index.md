@@ -1,7 +1,8 @@
 ---
 layout: index
 title: home
-description: an artistic stream of consciousness disguised as a website
+description: stories, sounds, and systems
+social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 promo: |
   ::: group
   ### read my book
@@ -12,8 +13,6 @@ promo: |
   ### hear my single
   [city don’t sing](/city-dont-sing)
   :::
-social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
-
 pagination:
   data: collections.posts
   size: 10
