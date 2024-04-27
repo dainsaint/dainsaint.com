@@ -1,14 +1,17 @@
 ---
 title: home
+description: ""
 color: "#000000"
 ---
-i'm dain. i do systems sounds and stories.
+# Hi, I'm Dain. I turn _stories_ into _experiences_.
+
+I'm a game designer, composer, poet, and performer.
 
 doin the journalism.
 
 made some games.
 
-[lineweight]
+\[lineweight]
 
 made some tunes.
 
