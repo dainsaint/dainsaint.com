@@ -147,8 +147,9 @@ collections:
         file: "src/index.md"
         fields:
           - { label: "Description", name: "description", widget: "string" }
-          - { label: "Social", name: "social", widget: "image" }
           - { label: "Promo", name: "promo", widget: "text" }
+          - { label: "Social", name: "social", widget: "image" }
+          
       - label: "Navigation"
         name : "navigation"
         file: "src/_data/navigation.yml"
