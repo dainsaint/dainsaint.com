@@ -836,6 +836,24 @@ ul.grid li img
   border-color: var(--light-alpha);
 }
 
+.aside {
+  float: left;
+  margin-right: 10px;
+  height: 50vh;
+}
+
+.aside .quote {
+  text-align: left;
+  margin-bottom: 20px;  
+}
+
+.aside .quote::after {
+  display: none;
+}
+
+.header-main:has(.promo) + .full {
+  min-height: unset;
+}
 
 
 @media (max-width: 450px)

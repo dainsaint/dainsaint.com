@@ -21,7 +21,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", required: false}
-      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
       - label: "Featured"
         name: "featured"
         widget: "list"
@@ -40,7 +40,8 @@ collections:
                 field: { label: Image, name: image, widget: image }
           - label: Quote
             name: quote
-            widget: markdown
+            widget: object
+            field: { label: "Quote", name: "Quote", widget: markdown }
           - label: Youtube
             name: youtube
             widget: object
@@ -62,7 +63,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", required: false }
-      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
       - label: "Deco"
         name: "deco"
         widget: select
@@ -93,7 +94,8 @@ collections:
                 field: { label: Image, name: image, widget: image }
           - label: Quote
             name: quote
-            widget: markdown
+            widget: object
+            field: { label: "Quote", name: "Quote", widget: markdown }
           - label: Youtube
             name: youtube
             widget: object
@@ -113,7 +115,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
       - label: "Featured"
         name: "featured"
         widget: "list"
@@ -132,7 +134,8 @@ collections:
                 field: { label: Image, name: image, widget: image }
           - label: Quote
             name: quote
-            widget: markdown
+            widget: object
+            field: { label: "Quote", name: "Quote", widget: markdown }
           - label: Youtube
             name: youtube
             widget: object
@@ -155,7 +158,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
-      - { label: "Color", name: "color", widget: "color", required: false }
+      - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
       - label: "Featured"
         name: "featured"
         widget: "list"
@@ -174,7 +177,8 @@ collections:
                 field: { label: Image, name: image, widget: image }
           - label: Quote
             name: quote
-            widget: markdown
+            widget: object
+            field: { label: "Quote", name: "Quote", widget: markdown }
           - label: Youtube
             name: youtube
             widget: object
