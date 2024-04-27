@@ -22,6 +22,29 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime", required: false}
       - { label: "Color", name: "color", widget: "color", required: false }
+      - label: "Featured"
+        name: "featured"
+        widget: "list"
+        types:
+          - label: Audio
+            name: audio
+            widget: object
+            field: { label: "Audio", name: "audio", widget: file }
+          - label: Gallery
+            name: gallery
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: Quote
+            name: quote
+            widget: markdown
+          - label: Youtube
+            name: youtube
+            widget: object
+            field: { label: "Video ID", name: "video_id", widget: string }
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Social", name: "social", widget: "image", required: false }
@@ -133,6 +156,29 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Color", name: "color", widget: "color", required: false }
+      - label: "Featured"
+        name: "featured"
+        widget: "list"
+        types:
+          - label: Audio
+            name: audio
+            widget: object
+            field: { label: "Audio", name: "audio", widget: file }
+          - label: Gallery
+            name: gallery
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: Quote
+            name: quote
+            widget: markdown
+          - label: Youtube
+            name: youtube
+            widget: object
+            field: { label: "Video ID", name: "video_id", widget: string }
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list", required: false }
       - { label: "Social", name: "social", widget: "image", required: false }
