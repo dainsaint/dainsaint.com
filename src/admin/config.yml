@@ -199,6 +199,32 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Promo", name: "promo", widget: "text" }
           - { label: "Social", name: "social", widget: "image" }
+          - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
+          - label: "Featured"
+            name: "featured"
+            widget: "list"
+            types:
+              - label: Audio
+                name: audio
+                widget: object
+                field: { label: "Audio", name: "audio", widget: file }
+              - label: Gallery
+                name: gallery
+                widget: object
+                fields:
+                  - label: Images
+                    name: images
+                    widget: list
+                    field: { label: Image, name: image, widget: image }
+              - label: Quote
+                name: quote
+                widget: object
+                field: { label: "Quote", name: "Quote", widget: markdown }
+              - label: Youtube
+                name: youtube
+                widget: object
+                field: { label: "Video ID", name: "video_id", widget: string }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
           
       - label: "Navigation"
         name : "navigation"
