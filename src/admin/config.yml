@@ -196,7 +196,7 @@ collections:
         name : "homepage"
         file: "src/index.md"
         fields:
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
           - { label: "Promo", name: "promo", widget: "text" }
           - { label: "Social", name: "social", widget: "image" }
           - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
