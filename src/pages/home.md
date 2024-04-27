@@ -3,20 +3,23 @@ title: home
 description: ""
 color: "#000000"
 ---
-# Hi, I'm Dain. I turn _stories_ into _experiences_.
+::: intro
 
-I'm a game designer, composer, poet, and performer.
+Hi, I'm\
+**Dain Saint**\
+I turn\
+**stories** into\
+**experiences**
 
-doin the journalism.
+* [:fas-wand-magic-sparkles: let's make something magical]
+{.buttons}
 
-made some games.
+:::
 
-\[lineweight]
+Dain Saint is a storyteller who creates with sounds and systems. He has produced over a dozen commercially-released games with Cipher Prime Studios, written soundtracks for the same, and directed Emmy-award winning series for the Philadelphia Inquirer. 
 
-made some tunes.
+He has created art exhibitions and museum installations, and is always looking for beautiful ways to connect people.
 
-making more games.
+As a writer, he has released a book of poetry called “Freedom Is Non-Negotiable”, and performed and released music as a solo artist.
 
-i'm so good at stuff.
-
-give me money.
+He is a massive nerd. 
