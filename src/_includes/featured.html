@@ -1,5 +1,6 @@
-<div class="featured">
 {% for f in featured %}
+<div class="featured">
+
   {% if f.type == "gallery" %}
   {% assign images = f.images %}
   {% include gallery %}
@@ -17,6 +18,5 @@
 
   {% endif %}
 
-{% endfor %}
-
 </div>
+{% endfor %}

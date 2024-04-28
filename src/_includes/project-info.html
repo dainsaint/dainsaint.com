@@ -1,0 +1,11 @@
+{%- if title != "" -%}
+{%- if description != "" -%}
+<div class="project-info">
+  <h1 class="project-title">{{ title }}</h1>
+  <div class="project-description">{{ description }}</div>
+  {%- if url != nil -%}
+  <div class="post-permalink"><a href="#">dainsaint.com{{ url | url }}</a></div>
+  {%- endif -%}
+</div>
+{%- endif -%}
+{%- endif -%}

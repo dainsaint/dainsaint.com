@@ -4,25 +4,28 @@ eleventyExcludeFromCollections: true
 ---
 
 <main>
-  
-  <article class="post {{ color | contrast }}" style="background-color: {{ color }}; --background: {{ color }}">
+  {%- if pagination.pageNumber == 0 -%}
+  <article class="post {{ color | contrast }}" style="--background: {{ color }}">
   
     <div class="post-main">
       {% include featured %}
   
       <div class="project-body">
-        <div class="project-info">
-          <h1 class="project-title">{{ title }}</h1>
-          <div class="project-description">{{ description }}</div>
-        </div>
+        {% include project-info %}
   
-        <div class="post-content">
+        {%- if content != '' -%}
+        <div class="post-content">        
           {{ content | safe }}
         </div>
+        {%- endif %}
   
       </div>
     </div>
   </article>
+
+  {%- else -%}
+
+  {%- endif -%}
 
   {% for post in posts %}
   {% if post.data.layout == "blog" %}

@@ -80,6 +80,7 @@ module.exports = function (eleventyConfig) {
     .use(markdownItAttrs)
     .use(markdownItContainer, "group")
     .use(markdownItContainer, "aside")
+    .use(markdownItContainer, "columns")
     .use(markdownDoMarkdown, { heading_id: false })
     .use(markdownItFA);
 

@@ -18,6 +18,3 @@ featured:
   - "/assets/uploads/city-dont-sing-project.png"
 
 ---
-
-
-![cover](/assets/uploads/city-dont-sing-album-cover.jpg)

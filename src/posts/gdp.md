@@ -1,6 +1,5 @@
 ---
 date: 2022-09-07T17:16:33Z
-project:  people-of-sol
 deco: elevation
 tags: []
 eleventyExcludeFromCollections: false

@@ -3,24 +3,21 @@ layout: base
 title: Dain Saint
 permalink: "{{ page.fileSlug }}/index.html"
 ---
+<main>
+  <article class="post {{ color | contrast }}" style="--background: {{ color }}">
 
-<article class="post full {{ color | contrast }}" style="background-color: {{ color }}; --background: {{ color }}">
+    <div class="post-main">
+      {% include featured %}
 
-  <div class="post-main">
-    {% include featured %}
+      <div class="project-body">
+        {% include project-info %}
 
-    <div class="project-body">
-      <div class="project-info">
-        <h1 class="project-title">{{ title }}</h1>
-        <div class="project-description">{{ description }}</div>
+        <div class="post-content">
+          {{ content | safe }}
+        </div>
+
       </div>
-
-      <div class="post-content">
-        {{ content | safe }}
-      </div>
-
     </div>
-  </div>
-</article>
-
+  </article>
+</main>
 {% include footer %}

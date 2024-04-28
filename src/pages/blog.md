@@ -1,7 +1,8 @@
 ---
 layout: index
 title: blog
-color: "#DFE0DF"
+color: "#222222"
+description: "updated infrequently, but hopefully useful and/or interesting."
 eleventyExcludeFromCollections: false
 featured: []
 permalink: "blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"

@@ -1,6 +1,6 @@
 {% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
-<article class="post full {{ color | contrast }}" style="background-color: {{ color }}; --background: {{ color }}">
+<article class="post lede {{ color | contrast }}" style="--background: {{ color }}">
 
   <div class="post-main">
 
@@ -10,14 +10,9 @@
 
       <div class="project-intro">
 
-      <div class="project-info">
-        <h1 class="project-title">{{ title }}</h1>
-        <div class="project-description">{{ description }}</div>
-        <div class="post-permalink"><a href="#">dainsaint.com{{ page.url | url }}</a></div>
-      </div>
+      {% include project-info, url: page.url %}
 
       <div class="project-status">
-        <!-- <h3 class="project-header">Project Status</h3> -->
         <p>
           {{ status | markdown }}
         </p>
