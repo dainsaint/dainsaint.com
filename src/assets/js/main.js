@@ -6,8 +6,6 @@ emails.forEach( email => {
     email.innerText = atob(encEmail);
 })
 
-console.log( emails );
-
 const links = document.querySelectorAll(".copy-link");
 
 links.forEach( link => {
