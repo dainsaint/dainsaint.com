@@ -1,11 +1,9 @@
-{%- if title != "" -%}
-{%- if description != "" -%}
+{%- if title != "" or description != "" -%}
 <div class="project-info">
   <h1 class="project-title">{{ title }}</h1>
-  <div class="project-description">{{ description }}</div>
+  <div class="project-description">{{ description | markdown }}</div>
   {%- if url != nil -%}
   <div class="post-permalink"><a href="#">dainsaint.com{{ url | url }}</a></div>
   {%- endif -%}
 </div>
-{%- endif -%}
 {%- endif -%}
