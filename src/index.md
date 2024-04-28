@@ -18,13 +18,10 @@ promo: |
   [city don’t sing](/city-dont-sing)
   :::
 
-
+hero: /assets/uploads/_ber3845.jpg
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 color: "#6A4C93"
-featured:
-  - type: gallery
-    images:
-      - /assets/uploads/_ber3845.jpg
+
 ---
 <style>
   .project-info {
