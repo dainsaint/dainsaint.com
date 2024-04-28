@@ -1,3 +1,13 @@
+const encEmail = "aGVsbG9AZGFpbnNhaW50LmNvbQ==";
+const emails = document.querySelectorAll("a[href='/email']");
+emails.forEach( email => {
+  email.setAttribute("href", `mailto:${atob(encEmail)}`);
+  if( email.innerText == "" )
+    email.innerText = atob(encEmail);
+})
+
+console.log( emails );
+
 const links = document.querySelectorAll(".copy-link");
 
 links.forEach( link => {

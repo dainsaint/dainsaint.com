@@ -27,6 +27,7 @@ eleventyExcludeFromCollections: true
 
   {%- endif -%}
 
+  <div class="posts">
   {% for post in posts %}
   {% if post.data.layout == "blog" %}
   {% include blog-content %}
@@ -34,7 +35,8 @@ eleventyExcludeFromCollections: true
   {% include post-content %}
   {% endif %}
   {% endfor %}
-
+  </div>
+  
   {% include footer %}
 
 </main>

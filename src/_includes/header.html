@@ -8,13 +8,28 @@
   </div>
   <nav class="header-nav">
     {% for link in navigation.links %}
-    <a class="{% if link.page == page.fileSlug %}active{% endif %}" href="/{{ link.page }}">{{ link.page }}</a>
+      {% assign active = false %}
+
+      {% if link.page == page.fileSlug %}
+      {% assign active = true %}
+      {% endif %}
+
+      {% for tag in link.tags %}
+        {% for t in tags %}
+          {%- if tag == t -%}
+            {% assign active = true %}
+            {% break %}
+          {%- endif -%}
+        {% endfor %}
+      {% endfor %}
+
+
+    <a class="{% if active %}active{% endif %}" href="/{{ link.page }}">{{ link.page }}</a>
     {% endfor %}
     <a href="https://dainsaint.square.site">store</a>
   </nav>
 
-  {{ data.tags | debugger }}
-
+  
   {% if promo %}
   <hr/>
 

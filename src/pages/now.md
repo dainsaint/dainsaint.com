@@ -10,20 +10,20 @@ hero: /assets/uploads/will-van-wingerden-czvthlrnlnq-unsplash.jpg
 ---
 
 ### upcoming events
-* i'll be at [gencon]() this year, [let me know]() if you'll be there and want to chat
+* <span class="date">aug 1-4, 2024</span> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
-* april 18th, 2024: live storytelling performance at [camp cookie]() 
-* april 27, 2024: talk on making music for games at [famcon]() 
+* <span class="date">apr 18, 2024</span> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
+* <span class="date">apr 27, 2024</span> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 
 ### long-term projects
-* working on a dope theatrical ttrpg called [space opera](/space-opera)
-* actively looking to work on an actual play series — [hit me up!](/collab)
+* working with [obvious agency](https://obvious-agency.com) on a dope theatrical ttrpg called [space opera](/space-opera)
+* actively looking to dm or play in actual play — [hit me up!](/email)
 
 ### recent inquirer adventures
-* I made a [game about the I-95 horse](/space-opera), and later [got to ride him]().
+* I made a [game about the I-95 horse](https://www.inquirer.com/news/philadelphia/inq2/horse-i-95-highway-game-20240222.html), and later [got to ride him](https://www.inquirer.com/life/inq2/i-95-horse-freeway-fletcher-st-urban-riding-club-20240412.html).
 
 ### media i'm in love with
-* [x-men 97]() is killing it
-* [worlds beyond number]() is well worth the $5 a month for everything
-* finally opened up the [broken earth trilogy](). devoured it in a week. nk jemisin, y'all.
+* [x-men '97](https://gizmodo.com/x-men-97-cyclops-scott-summers-marvel-disney-plus-1851364191) is killing it
+* [worlds beyond number](https://worldsbeyondnumber.com) is well worth the $5 a month for everything
+* finally opened up the [broken earth trilogy](https://nkjemisin.com/series/the-broken-earth/). devoured it in a week. nk jemisin, y'all.

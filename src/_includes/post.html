@@ -3,5 +3,7 @@ layout: base
 title: Dain Saint
 ---
 {% assign post = collections.posts | where: "fileSlug", page.fileSlug | first %}
+<main class="single">
 {% include post-content, post: post %}
+</main>
 {% include footer %}

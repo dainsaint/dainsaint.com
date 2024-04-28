@@ -96,7 +96,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("contrast", function (color) {
-    return lightOrDark(color || "#FFFFFF");
+    return lightOrDark(color || "#121212");
   });
 
   eleventyConfig.addFilter("where", function (array, key, value) {

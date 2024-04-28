@@ -33,8 +33,8 @@ color: "#6A4C93"
 
 ::: aside
 {% include quote, quote: "Hi, I'm<br/>**dain saint**<br/><br/>I turn<br/>**stories** into<br/>**experiences**" %}
-* [:fa-wand-magic-sparkles: let's make something magical](/collab)
-{.buttons}
+***
+
 :::
 
 
@@ -46,6 +46,10 @@ He has created [art exhibitions](https://wevetraveledsofar.com) and [museum inst
 As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing).
 
 He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
+
+
+* [:fa-wand-magic-sparkles: let's make something magical](/collab)
+{.buttons}
 :::
 
 </div>
