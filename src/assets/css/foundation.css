@@ -34,7 +34,7 @@ strong {
 a,
 button {
   color: inherit;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 a {
   text-decoration: none;

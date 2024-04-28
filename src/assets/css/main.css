@@ -46,6 +46,14 @@ a
 {
   color: var(--dark);
   text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 4px;
 }
 
 
@@ -144,6 +152,17 @@ img.actual, picture img
   font-weight: bold;
   text-decoration: none;
 }
+
+.header-main .title.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.header-main .title:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
 
 .header-main .tagline
 {
