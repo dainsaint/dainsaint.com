@@ -39,7 +39,7 @@ color: "#6A4C93"
 
 
 ::: group
-Dain Saint creates experiences with stories, sounds, and systems. He has produced over a dozen commercially-released games with [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](https://cipherprime.bandcamp.com) for the same, and directed [Emmy-award winning series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
+Dain Saint makes experiences out of stories, sounds, and systems. He has produced over a dozen commercially-released games with [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](https://cipherprime.bandcamp.com) for the same, and directed [Emmy-award winning series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
 He has created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and is always looking for beautiful ways to connect people.
 

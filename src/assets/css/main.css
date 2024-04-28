@@ -168,7 +168,7 @@ img.actual, picture img
 
 .post.full
 {
-  min-height: 105vh;
+  min-height: calc(100dvh - 108px);
 }
 
 .post.lede .post-main{
@@ -749,6 +749,11 @@ ul.grid li img
 }
 
 
+ul.buttons {
+  margin: 0px;
+  padding: 0px;
+}
+
 .buttons
 {
   display: flex;
@@ -757,6 +762,7 @@ ul.grid li img
 
 .buttons li
 {
+  display: block;
   margin-right: 10px;
   margin-bottom: 10px;
 }
