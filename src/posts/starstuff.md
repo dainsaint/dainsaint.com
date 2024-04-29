@@ -6,6 +6,8 @@ deco: nightsky
 featured:
   - type: audio
     audio: /assets/uploads/starstuff.mp3
+tags:
+  - listen
 ---
 *“The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”*
 -- Carl Sagan
