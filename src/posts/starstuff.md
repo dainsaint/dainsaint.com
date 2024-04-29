@@ -3,6 +3,7 @@ title: starstuff
 date: 2023-12-09T15:50:00.000Z
 color: "#020921"
 deco: nightsky
+project: space-opera
 featured:
   - type: audio
     audio: /assets/uploads/starstuff.mp3
