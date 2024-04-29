@@ -1,7 +1,7 @@
 ---
 title: starstuff
 date: 2023-12-09T15:50:00.000Z
-color: "#000000"
+color: "#22172e"
 deco: elevation
 featured:
   - type: audio
