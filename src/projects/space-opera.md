@@ -1,7 +1,7 @@
 ---
 title: space opera
 description: theatrical ttrpg for democratic decision making
-color: "#000000"
+color: "#020921"
 featured:
   - type: gallery
     images:
