@@ -14,6 +14,8 @@ tags:
 *“The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”*
 -- Carl Sagan
 
-inspired by star trek, i wrote this "heroic" theme for [space opera](/space-opera).
+inspired by jerry goldsmith's TNG theme, with a bit of bruce broughton's theme for The Orville, i wrote this main theme for [space opera](/space-opera), to be played at the start and/or end of sessions.
 
-it's written and exported straight from [musescore studio](https://musescore.org), using the honestly impressive orchestral soundfont they released in version 4.
+it's written and exported straight from [musescore studio](https://musescore.org), using the honestly impressive orchestral soundfont they released in version 4. 
+
+since part of what we're hoping to do with the experience is have live music, it's my biggest hope to have musicians take/quote/chop/remix the central motif throughout the session as our players navigate decision-making on a generational scale.
