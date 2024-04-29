@@ -1,12 +1,16 @@
 ---
+description: what am i doing with my life?
 color: "#F5BC67"
+featured:
+  - type: gallery
+    images:
+      - /assets/uploads/will-van-wingerden-czvthlrnlnq-unsplash.jpg
 date: ""
 status: ""
 eleventyExcludeFromCollections: false
 title: now
+hero: ""
 tags: []
-hero: /assets/uploads/will-van-wingerden-czvthlrnlnq-unsplash.jpg
-description: what am i doing with my life?
 ---
 
 ### upcoming events
