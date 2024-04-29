@@ -160,7 +160,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
-      - { label: Hero, name: hero, widget: image }
+      - { label: Hero, name: hero, widget: image, required: false }
       - label: "Featured"
         name: "featured"
         widget: "list"
