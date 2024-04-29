@@ -5,9 +5,7 @@ eleventyExcludeFromCollections: false
 featured: []
 description: games, writing, songs, videos, and the rest.
 ---
-{% assign use-featured = true %}
-{% include category-list, types: 'featured' %}
+{% include category-list, types: 'featured', use-featured: true %}
 
-{% assign use-featured = false %}
 {% assign types = 'read,listen,watch,play' | split: ',' %}
-{% include category-list %}
+{% include category-list, types: types %}
