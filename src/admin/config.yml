@@ -62,6 +62,7 @@ collections:
     publish: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime", required: false }
       - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
       - label: "Deco"
@@ -159,6 +160,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string", required: false }
       - { label: "Color", name: "color", widget: "color", default: "#FFFFFF", required: false }
+      - { label: Hero, name: hero, widget: image }
       - label: "Featured"
         name: "featured"
         widget: "list"

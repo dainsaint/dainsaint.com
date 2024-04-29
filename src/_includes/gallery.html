@@ -2,7 +2,13 @@
 
   {% for img in images %}
   <div class="gallery-image">
+    {% if url %}
+    <a class="gallery-image-link" href="{{ url }}">
+      <img src="{{ img }}" />
+    </a>
+    {% else %}
     <img src="{{ img }}"/>
+    {% endif %}
   </div>
   {% endfor %}
 
