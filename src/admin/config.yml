@@ -67,7 +67,7 @@ collections:
       - label: "Deco"
         name: "deco"
         widget: select
-        options: ["almond","birds","camellia","cannabis","cotton","elevation","fountain","gerbera","lighthouse","oleander","prunus-sinensis","thistle","tree-of-life"]
+        options: ["almond","birds","camellia","cannabis","cotton","elevation","fountain","gerbera","lighthouse","nightsky","oleander","prunus-sinensis","thistle","tree-of-life"]
       - label: Project
         name: project
         widget: relation

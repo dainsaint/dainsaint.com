@@ -5,7 +5,8 @@ const markdownItAttrs = require("markdown-it-attrs");
 const markdownDoMarkdown = require("@digitalocean/do-markdownit");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const imageTransformPlugin = require("@11ty/eleventy-img");
 
 
 function lightOrDark(color) {
@@ -57,7 +58,13 @@ module.exports = function (eleventyConfig) {
   });
 
   // Syntax Highlighting for Code blocks
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlightPlugin);
+
+  //Image transformation
+  // eleventyConfig.addPlugin(imageTransformPlugin, {
+  //   extensions: "html",
+  //   formats: ["webp"]
+  // });
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
