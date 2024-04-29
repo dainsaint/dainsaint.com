@@ -1,7 +1,7 @@
 ---
 title: starstuff
 date: 2023-12-09T15:50:00.000Z
-color: "#22172e"
+color: "#020921"
 deco: nightsky
 featured:
   - type: audio
