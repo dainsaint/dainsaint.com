@@ -10,4 +10,4 @@ featured:
 *“The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”*
 -- Carl Sagan
 
-inspired by star trek, i wrote this "heroic" theme for space opera.
+inspired by star trek, i wrote this "heroic" theme for [/space opera].
