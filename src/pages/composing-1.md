@@ -2,6 +2,7 @@
 title: composing
 description: music and sound design for fun and profit
 color: "#d5c7de"
+hero: /assets/uploads/synaesthetic_symphony.jpg
 ---
 ## game soundtracks/sound design
 most of this is through my company [cipher prime studios](https://cipherprime.com)
@@ -21,6 +22,7 @@ all these soundtracks and more are available on our [bandcamp](https://cipherpri
 
 
 ## live theatre/ttrpg
+{% include audio, audio: "/assets/uploads/starstuff.mp3" %}
 * 2024: space opera theme [starstuff](/starstuff) (audio should be here)
 ***
 
