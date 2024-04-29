@@ -35,7 +35,7 @@ title: Dain Saint
 
     {% include header, color: color, promo: promo %}
 
-    {% if hero %}
+    {% if hero and hero != "" %}
     <div class="hero-image" style="background-image: url('{{ hero | url }}')">
     </div>
 
