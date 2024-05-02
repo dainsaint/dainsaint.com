@@ -14,6 +14,7 @@ promo: |
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::
+permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
 pagination:
   data: collections.posts
   size: 10

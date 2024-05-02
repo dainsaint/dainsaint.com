@@ -31,6 +31,10 @@ title: Dain Saint
     <meta name="twitter:description" content="{{ description }}">
   </head>
 
+  {%- if pagination.pageNumber > 0 -%}
+  {% assign color = paginationColor %}
+  {%- endif %}
+
   <body style="--background: {{ color }};">
 
     {% include header, color: color, promo: promo %}

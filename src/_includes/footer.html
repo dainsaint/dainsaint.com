@@ -8,14 +8,13 @@
 <div class="pagination-block">
 <h3 class="project-header">explore more, <span style="white-space: nowrap;">or take a break</span></h3>
 <nav>
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">previous page</a>
-  {% endif %}
-
   {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">next page</a>
+  <a href="{{ pagination.href.next }}">older pieces</a>
   {% endif %}
-
+  
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">newer pieces</a>
+  {% endif %}
 </nav>
 </div>
 {%- endif -%}
