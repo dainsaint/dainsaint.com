@@ -2,54 +2,61 @@
 layout: page
 title: "Dain Saint"
 description: "I turn stories into experiences."
+social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
+color: "#6A4C93"
 promo: |
+  ::: group
+  ### playtest space opera
+  [sign up for june 2nd!](/)
+  :::
+
   ::: group
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::
-
-  ::: group
-  ### read my book
-  [freedom is non-negotiable](/freedom-is-non-negotiable)
-  :::
-
-  ::: group
-  ### hear my single
-  [city don’t sing](/city-dont-sing)
-  :::
-
-hero: /assets/uploads/_ber3845.jpg
-social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
-color: "#6A4C93"
-
 ---
+
+
 <style>
   .project-info {
     display: none;
   }
+
+  .aside a{
+    text-decoration-thickness: 0px;
+  }
+
+  .index-top {
+    display: grid;
+    grid-gap: 20px;
+    /* grid-template-columns: 3fr 5fr; */
+  }
+
+  .buttons {
+    float: right;
+  }
 </style>
 
-<div class="columns">
+<div class="index-top">
+
+
+<div>
 
 ::: aside
-{% include quote, quote: "Hi, I'm<br/>**dain saint**<br/><br/>I turn<br/>**stories** into<br/>**experiences**" %}
-***
-
+{% include quote, quote: "[Hi, I'm Dain Saint](/about)<br/>**I turn stories into experiences.**" %}
 :::
 
 
-::: group
-Dain Saint makes experiences out of stories, sounds, and systems. He has produced over a dozen commercially-released games with [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](https://cipherprime.bandcamp.com) for the same, and directed [Emmy-award winning series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
+I create stories you can touch, and stories that touch you. Whether it's [composing](/composing), [writing](), [games](), [interactives](), or [performance](), I make artistic experiences about better futures and the roads we take to get there.
+{.lede}
 
-He has created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and is always looking for beautiful ways to connect people.
-
-As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing).
-
-He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
-
-
-* [:fa-wand-magic-sparkles: let's make something magical](/collab)
+* [learn more :fa-arrow-right:](/about)
 {.buttons}
-:::
+</div>
 
 </div>
+
+***
+
+{% include category-list, types: 'featured', use-featured: true %}
+

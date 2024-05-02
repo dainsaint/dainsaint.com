@@ -3,7 +3,10 @@
   <h1 class="project-title">{{ title }}</h1>
   <div class="project-description">{{ description | markdown }}</div>
   {%- if url != nil -%}
-  <div class="post-permalink"><a href="#">dainsaint.com{{ url | url }}</a></div>
+  <div class="post-permalink">
+    <a class="copy-link" href="https://dainsaint.com{{ url | url }}">dainsaint.com{{ url | url }}</a>
+    <span class="message">Link copied to clipboard!</span>
+  </div>
   {%- endif -%}
 </div>
 {%- endif -%}

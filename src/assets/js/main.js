@@ -20,8 +20,10 @@ links.forEach( link => {
 
     try{
       await navigator.clipboard.writeText(text);
-      event.target.parentNode.classList.add( "message-visible" );
-      // console.log('Copied to clipboard', event);
+      const parent = event.target.parentNode;
+      parent.classList.add( "message-visible" );
+    
+      setTimeout(() => parent.classList.remove("message-visible"), 2000);
     } catch(err) {
       console.error('Failed to copy!', err);
     }
@@ -31,11 +33,11 @@ links.forEach( link => {
 
 })
 
-const imgs = document.querySelectorAll("img.blur")
+// const imgs = document.querySelectorAll("img.blur")
 
-imgs.forEach( img => {
-  img.addEventListener("load", event => {
-    img.classList.remove("blur");
-    img.removeAttribute("style");
-  })
-})
+// imgs.forEach( img => {
+//   img.addEventListener("load", event => {
+//     img.classList.remove("blur");
+//     img.removeAttribute("style");
+//   })
+// })

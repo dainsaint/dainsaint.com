@@ -1,5 +1,4 @@
 links:
-  - page: now
   - page: projects
     tags: projects
   - page: garden
@@ -7,3 +6,4 @@ links:
       - blogs
       - posts
   - page: collab
+  - page: about

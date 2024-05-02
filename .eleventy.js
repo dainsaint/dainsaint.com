@@ -8,6 +8,7 @@ const { DateTime } = require("luxon");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 // const imageTransformPlugin = require("@11ty/eleventy-img");
 
+const waveforms = require("./scripts/waveforms");
 
 function lightOrDark(color) {
   // Variables for red, green, blue values
@@ -180,6 +181,11 @@ module.exports = function (eleventyConfig) {
     strictFilters: false, // renamed from `strict_filters` in Eleventy 1.0
     extname: ".html",
   });
+
+
+  eleventyConfig.on("eleventy.before", async() => {
+    waveforms();
+  })
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk

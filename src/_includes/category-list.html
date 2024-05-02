@@ -4,7 +4,7 @@
   <h3>{{ t }}</h3>
   {% assign collection = collections[t] | reverse %}
 
-  <div class="category-list-projects">
+  <div class="category-list-projects grid grid-2">
   {%- for p in collection -%}
     <div class="category-list-project">
       {%- if use-featured -%}
