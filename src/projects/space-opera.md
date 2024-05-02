@@ -7,10 +7,11 @@ featured:
     images:
       - /assets/uploads/space-opera-cover.webp
 status: |
-  * [:fa-dice: Sign up to playtest 6/2/24!]()
+  * [:fa-dice: Sign up to playtest june 2!]()
   {.buttons}
 tags:
   - featured
+  - frontpage
   - play
 social: /assets/uploads/space-opera-cover.webp
 ---

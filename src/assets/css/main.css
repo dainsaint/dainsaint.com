@@ -486,7 +486,7 @@ h3
 
 .category-list .category-list-projects
 {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .category-list .category-list-projects .category-list-project
@@ -1023,4 +1023,17 @@ ul.buttons {
     width:0px;
   }
 
+}
+
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
 }

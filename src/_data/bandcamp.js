@@ -1,5 +1,6 @@
-const fetch = require('node-fetch-commonjs');
+const fetch = require('@11ty/eleventy-fetch');
 const parser = require("node-html-parser");
+
 
 const subdomains = [
   "cipherprime",
@@ -12,8 +13,11 @@ module.exports = async () => {
 
   try {
     for( const subdomain of subdomains ) {
-      const response = await fetch(`https://${subdomain}.bandcamp.com`);
-      const page = await response.text();
+      const page = await fetch(`https://${subdomain}.bandcamp.com`, {
+        duration: "1d",
+        type: "text"
+      });
+      
       const html = parser.parse(page);
       const albumEls = html.querySelectorAll(".music-grid-item");
       const albums = albumEls.map( el => {

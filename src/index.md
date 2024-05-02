@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: index
 title: "Dain Saint"
 description: "I turn stories into experiences."
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
@@ -14,6 +14,11 @@ promo: |
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::
+pagination:
+  data: collections.posts
+  size: 10
+  reverse: true
+  alias: posts
 ---
 
 
@@ -33,7 +38,13 @@ promo: |
   }
 
   .buttons {
-    float: right;
+    text-align: right;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .buttons li {
+    margin: 0px;
   }
 </style>
 
@@ -58,5 +69,11 @@ I create stories you can touch, and stories that touch you. Whether it's [compos
 
 ***
 
-{% include category-list, types: 'featured', use-featured: true %}
+{% include category-list, types: 'frontpage', use-featured: true %}
+* [more projects :fa-arrow-right:](/projects)
+{.buttons}
+</div>
 
+***
+
+### :fa-arrow-down: keep scrolling, there's cool stuff down here :fa-arrow-down:{.align-center}

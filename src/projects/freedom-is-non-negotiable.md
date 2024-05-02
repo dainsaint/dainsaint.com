@@ -9,6 +9,7 @@ status: |-
 color: "#F7EDE3"
 tags:
 - featured
+- frontpage
 - read
 featured:
 - type: gallery
