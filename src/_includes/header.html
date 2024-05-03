@@ -3,10 +3,18 @@
   <div class="header-content">
   {% assign home = '/' %}
   <div class="header-lede">
-    <a class="title{% if page.fileSlug == '' %} active{% endif %}" href="{{ home | url }}">dain saint</a>
-    <span class="tagline">stories, sounds, and systems</span>
+    <div class="header-text">
+      <a class="title" href="{{ home | url }}">dain saint</a>
+      <span class="tagline">stories, sounds, and systems</span>
+    </div>
+
+    <button class="header-menu-button"><i class="fa fa-bars"></i></button>
   </div>
   <nav class="header-nav">
+    <div class="header-nav-close">
+      <button class="header-menu-button"><i class="fa fa-x"></i></button>
+    </div>
+
     {% for link in navigation.links %}
       {% assign active = false %}
 
@@ -40,3 +48,9 @@
   {% endif %}
 </div>
 </header>
+
+<script type="text/javascript">
+  document.querySelectorAll(".header-menu-button").forEach(button => {
+    button.addEventListener("click", () => document.querySelector('.header-main').classList.toggle('is-open'));
+  })
+</script>

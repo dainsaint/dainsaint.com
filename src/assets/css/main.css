@@ -102,6 +102,22 @@ p.lede {
   background: center center no-repeat;
   background-size: cover;
 }
+
+.header-menu-button {
+  background-color: transparent;
+  color: var(--color);
+
+  width: min-content;
+  font-size: 20px;
+  display: none;
+  box-sizing: border-box;
+  float: right;
+}
+
+.header-menu-button:hover {
+  background-color: transparent;
+}
+
 .header-main
 {
 
@@ -121,10 +137,12 @@ p.lede {
 
 }
 
-.header-main a
-{
-
+.header-lede {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .header-main hr
 {
@@ -141,56 +159,58 @@ p.lede {
   flex-direction: column;
 }
 
-.header-nav
-{
+.header-nav {
+
+  a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+
+    text-decoration: underline;
+    text-decoration-thickness: 0px;
+
+    &.active {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 4px;
+    }
+  }
 
 }
 
-.header-nav a
-{
-  font-family: 'Raleway', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  margin-right: 20px;
-}
+.header-main {
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
 
-.header-nav a.active
-{
-  border-bottom: 2px solid var(--color);
-}
+    &.active {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
 
+    &:hover {
+      text-decoration: underline;
+        text-decoration-thickness: 4px;
+    }
+  }
 
-.header-main .title
-{
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
+  .tagline {
+    font-size: 16px;
+    font-style: italic;
+    white-space: nowrap;
+  }
 
-.header-main .title.active {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
-.header-main .title:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
 }
 
 
-.header-main .tagline
-{
-  font-size: 16px;
-  font-style: italic;
-  white-space: nowrap;
-}
-
-.header-nav a:hover
-{
-  border-bottom: 4px solid var(--color);
-}
 
 .block
 {
@@ -416,19 +436,12 @@ hr
 
 .project-info
 {
-  /* max-width: 50%; */
   display: grid;
   grid-auto-rows: min-content;
   grid-gap: 8px;
   flex: 2 1 300px;
   margin-bottom: 20px;
 }
-
-.project-intro > *
-{
-  /* border: 1px solid blue; */
-}
-
 
 .project-title
 {
@@ -458,7 +471,6 @@ hr
 
 .project-status
 {
-  /* width: 40%; */
   flex: 0 1 300px;
 }
 
@@ -484,10 +496,6 @@ h3
   line-height: 24px;
 }
 
-.category-list .category-list-projects
-{
-  /* margin-bottom: 100px; */
-}
 
 .category-list .category-list-projects .category-list-project
 {
@@ -501,8 +509,6 @@ h3
 
 .pagination-block
 {
-  /* max-width: 609px; */
-  /* width: 800px; */
   margin-bottom: 60px;
 }
 
@@ -519,11 +525,6 @@ h3
   text-decoration: none;
   text-transform: uppercase;
 
-}
-
-.random-block
-{
-  /* text-align: center; */
 }
 
 
@@ -583,7 +584,7 @@ input
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  /* border-radius: 4px; */
+  border-radius: none;
 }
 
 ::placeholder
@@ -1007,6 +1008,60 @@ ul.buttons {
 
   .aside .quote {
     line-height: 24px;
+  }
+
+
+  .header-menu-button {
+    display: block;
+  }
+
+  .header-nav {
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    text-align: right;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height .2s;
+  }
+
+  .is-open .header-nav{
+    max-height: 100%;
+  }
+
+  .header-nav::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0px;
+    top: 43px;
+    background-color: var(--color);
+    transition: max-height .2s, background-color .2s, opacity .2s, top .2s;
+    z-index: -1;
+  }
+
+  .is-open .header-nav::before {
+    background-color: var(--background);
+    opacity: .95;
+    top: 0px;
+  }
+
+  .header-nav .header-nav-close {
+    padding: 20px;
+    text-align: right;
+  }
+
+  .header-nav a {
+    margin: 0px;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 1.1em;
+  }
+
+  .header-nav a:first-child {
+    padding-top: 20px;
   }
 
 }
