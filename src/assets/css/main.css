@@ -106,7 +106,7 @@ p.lede {
 .header-menu-button {
   background-color: transparent;
   color: var(--color);
-
+  padding: 0px;
   width: min-content;
   font-size: 20px;
   display: none;
@@ -919,20 +919,6 @@ ul.buttons {
   background: transparent;
 }
 
-/* .album::after,
-.gallery-image-link::after {
-  content: '';
-  display: block;
-  position: absolute;
-  inset: 0px;
-  border: 0px solid var(--color);
-  transition: border-width 0.3s;
-}
-
-.album:hover::after,
-.gallery-image-link:hover::after {
-  border-width: 9px;
-} */
 
 .grid {
   --grid-gap: 20px;
