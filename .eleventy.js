@@ -5,8 +5,8 @@ const markdownItAttrs = require("markdown-it-attrs");
 const markdownDoMarkdown = require("@digitalocean/do-markdownit");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
-// const imageTransformPlugin = require("@11ty/eleventy-img");
+const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight")
+// const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 const waveforms = require("./scripts/waveforms");
 
@@ -61,8 +61,10 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlightPlugin);
 
+  
+
   //Image transformation
-  // eleventyConfig.addPlugin(imageTransformPlugin, {
+  // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
   //   extensions: "html",
   //   formats: ["webp"]
   // });

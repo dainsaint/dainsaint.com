@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">20.0.0"
+  },
   "scripts": {
     "start": "npx eleventy --serve",
     "eleventy": "eleventy --watch",
@@ -22,7 +25,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
-    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-img": "^3.1.8",
     "get-audio-duration": "^4.0.1",
     "glob": "^10.3.12",
     "node-audio-peaks": "^4.0.2",

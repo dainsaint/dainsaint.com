@@ -1,9 +1,9 @@
 <div class="category-list">
 {% for t in types %}
 <div>
-  {%- if label -%}
+  {%- unless label == false -%}
   <h3>{{ t }}</h3>
-  {%- endif -%}
+  {%- endunless -%}
   {% assign collection = collections[t] | reverse %}
 
   <div class="category-list-projects grid grid-2">

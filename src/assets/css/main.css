@@ -431,9 +431,6 @@ main>.block:first-child .post-main {
 
 .project-description details p {
   font-style: normal;
-  font-size: .6em;
-  /* font-size: 21px; */
-  /* line-height: 28px; */
   margin-bottom: 16px;
 }
 
