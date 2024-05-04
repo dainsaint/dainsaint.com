@@ -26,6 +26,9 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^3.1.8",
+    "color": "^4.2.3",
+    "colorjs.io": "^0.5.0",
+    "culori": "^4.0.1",
     "get-audio-duration": "^4.0.1",
     "glob": "^10.3.12",
     "node-audio-peaks": "^4.0.2",

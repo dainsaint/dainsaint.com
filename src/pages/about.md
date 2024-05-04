@@ -2,7 +2,7 @@
 title: about
 hero: /assets/uploads/_ber3845.jpg
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
-color: "#6A4C93"
+color: "#3E638A"
 eleventyExcludeFromCollections: false
 date: ''
 tags: []
@@ -22,8 +22,9 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 {.buttons}
 
 
-***
+{% section %}
 
+# now
 
 ### upcoming events
 * <span class="date">aug 1-4, 2024</span> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
@@ -45,3 +46,4 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 * finally opened up the [broken earth trilogy](https://nkjemisin.com/series/the-broken-earth/). devoured it in a week. [nk jemisin](), y'all. if i start talking about how _good_ this is i'll never ever stop.
 * currently reading [children of virtue and vengance](https://tomiadeyemi.com/the-writer/) — can't _wait_ for "anguish and anarchy" to drop this summer.
 
+{% endsection %}

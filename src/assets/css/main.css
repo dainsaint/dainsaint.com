@@ -1,11 +1,11 @@
 :root {
+  --background: #DFE0DF;
   --color: red;
   --color-alpha: #FF000020;
   --dark: #062535;
   --dark-alpha: #06253520;
   --light: #f7ede2;
   --light-alpha: #f7ede220;
-  --background: #DFE0DF;
 }
 
 h1,
@@ -40,14 +40,16 @@ html {
 
 body {
   --color: var(--dark);
-  --color-alpha: var(--dark-alpha);
+  --color-alpha: var(--dark-alpha);;
+
   background: var(--background);
+  color: var(--color);
   font-family: "Spectral", serif;
   padding: 0px;
   margin: 0px;
   font-size: 21px;
   line-height: 1.4em;
-  color: var(--color);
+  
 }
 
 .noscroll {
@@ -411,7 +413,7 @@ main>.block:first-child .post-main {
   margin-bottom: 20px;
 }
 
-.project-title {
+h1, .project-title {
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -493,11 +495,55 @@ main>.block:first-child .post-main {
   gap: 0px;
 }
 
+
+
+
+
+
+.paletted:nth-of-type(5n + 0) {
+  --palette-color: var(--palette-1);
+  --contrast-color: var(--contrast-1);
+  --contrast-alpha-color: var(--contrast-alpha-1);
+}
+
+.paletted:nth-of-type(5n + 1) {
+  --palette-color: var(--palette-2);
+  --contrast-color: var(--contrast-2);
+  --contrast-alpha-color: var(--contrast-alpha-2);
+}
+
+.paletted:nth-of-type(5n + 2) {
+  --palette-color: var(--palette-3);
+  --contrast-color: var(--contrast-3);
+  --contrast-alpha-color: var(--contrast-alpha-3);
+}
+
+.paletted:nth-of-type(5n + 3) {
+  --palette-color: var(--palette-4);
+  --contrast-color: var(--contrast-4);
+  --contrast-alpha-color: var(--contrast-alpha-4);
+}
+
+.paletted:nth-of-type(5n + 4) {
+  --palette-color: var(--palette-5);
+  --contrast-color: var(--contrast-5);
+  --contrast-alpha-color: var(--contrast-alpha-5);
+}
+
+
 .page-section {
   padding: 200px max(20px, calc((100vw - 800px) / 2));
   margin: 0px min(-20px, calc( (100vw - 800px) / -2 ));
   background: var(--background);
+  color: var(--color);
+
+  &.paletted {
+    --background: var(--palette-color);
+    --color: var(--contrast-color);
+    --color-alpha: var(--contrast-alpha-color);
+  }
 }
+
 
 .post-content .page-section {
   position: relative;

@@ -5,16 +5,19 @@ color: "#0F2434"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
-I write the music that fits the story. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
+TKTK I write the music that fits the story. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 {.lede} 
+
+
+
 
 ### jump to
 [orchestration](#orchestration) • [video games](#video-games) 
 
-{% section "#CDCED2" %}
+{% section %}
   
   ## orchestration
-  More words about orchestration here, including the gamut etc. IDK.
+  TK More words about orchestration here, including the gamut etc. IDK.
 
   <div class="grid grid-2">
 
@@ -43,7 +46,7 @@ I write the music that fits the story. Orchestration, piano, jazz, electronic be
 {% endsection %}
 
 
-{% section "#2A2A2A" %}
+{% section %}
   
   ## video game soundtracks
   most of this is through my company [cipher prime studios](https://cipherprime.com)
@@ -54,7 +57,7 @@ I write the music that fits the story. Orchestration, piano, jazz, electronic be
 
 {% endsection %}
 
-{% section "#CDCED2" %}
+{% section %}
   
   ## solo
   i write way more than i release because i’m bad at things sometimes
@@ -72,7 +75,7 @@ I write the music that fits the story. Orchestration, piano, jazz, electronic be
 {% endsection %}
 
 
-{% section "#2A2A2A" %}
+{% section %}
 
   ## press and interviews
 
@@ -82,8 +85,12 @@ I write the music that fits the story. Orchestration, piano, jazz, electronic be
 
 {% endsection %}
 
-{% section "#CDCED2" %}
-  
-  Hey lets make some cool shit
+{% section %}
+
+# collab
+basic copy TK.
+
+* [:fa-music: let's make something musical](/collab)
+{.buttons}
 
 {% endsection %}
