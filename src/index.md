@@ -6,11 +6,6 @@ social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 color: "#6A4C93"
 promo: |
   ::: group
-  ### playtest space opera
-  [sign up for june 2nd!](/)
-  :::
-
-  ::: group
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::
@@ -28,8 +23,10 @@ pagination:
     display: none;
   }
 
-  .aside a{
+  .aside .quote a{
+    text-decoration: underline;
     text-decoration-thickness: 0px;
+    text-decoration-color: transparent;
   }
 
   .index-top {
@@ -59,7 +56,7 @@ pagination:
 :::
 
 
-I create stories you can touch, and stories that touch you. Whether it's [composing](/composing), [writing](), [games](), [interactives](), or [performance](), I make artistic experiences about better futures and the roads we take to get there.
+I make stories you can touch, and stories that touch you. Whether it's [composing](/composing), [writing](), [games](), [interactives](), or [performance](), I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
 * [learn more :fa-arrow-right:](/about)
@@ -70,7 +67,7 @@ I create stories you can touch, and stories that touch you. Whether it's [compos
 
 ***
 
-{% include category-list, types: 'frontpage', use-featured: true %}
+{% include category-list, types: 'frontpage', use-featured: true, label: false %}
 * [more projects :fa-arrow-right:](/projects)
 {.buttons}
 </div>

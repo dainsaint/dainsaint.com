@@ -4,39 +4,17 @@ eleventyExcludeFromCollections: true
 ---
 
 <main>
-  {%- if pagination.pageNumber == 0 -%}
-  <article class="block {{ color | contrast }}" style="--background: {{ color }}">
-  
-    <div class="post-main">
-      {% include featured %}
-  
-      <div class="project-body">
-        {% include project-info %}
-  
-        {%- if content != '' -%}
-        <div class="post-content">        
-          {{ content | safe }}
-        </div>
-        {%- endif %}
-  
-      </div>
-    </div>
-  </article>
+  {%- unless pagination.pageNumber > 0 -%}
+    {% include page-content %}
+  {%- endunless -%}
 
-  {%- else -%}
-
-  {%- endif -%}
-
+  {% if posts | size %}
   <div class="posts">
-  {% for post in posts %}
-  {% if post.data.layout == "blog" %}
-  {% include blog-content %}
-  {% else %}
-  {% include post-content %}
-  {% endif %}
-  {% endfor %}
+    {% for post in posts %}
+    {% include content %}
+    {% endfor %}
   </div>
-  
-  {% include footer %}
-
+  {% endif %}
 </main>
+
+{% include footer %}

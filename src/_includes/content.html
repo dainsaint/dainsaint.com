@@ -1,0 +1,7 @@
+{% if post.data.style == "blog" %}
+{% include blog-content %}
+{% elsif post.data.style == "page" %}
+{% include page-content %}
+{% else %}
+{% include post-content %}
+{% endif %}

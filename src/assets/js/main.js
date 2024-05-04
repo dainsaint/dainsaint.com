@@ -1,3 +1,4 @@
+// EMAILS
 const encEmail = "aGVsbG9AZGFpbnNhaW50LmNvbQ==";
 const emails = document.querySelectorAll("a[href='/email']");
 emails.forEach( email => {
@@ -6,6 +7,8 @@ emails.forEach( email => {
     email.innerText = atob(encEmail);
 })
 
+
+// OPY LINKS
 const links = document.querySelectorAll(".copy-link");
 
 links.forEach( link => {
@@ -32,12 +35,3 @@ links.forEach( link => {
   })
 
 })
-
-// const imgs = document.querySelectorAll("img.blur")
-
-// imgs.forEach( img => {
-//   img.addEventListener("load", event => {
-//     img.classList.remove("blur");
-//     img.removeAttribute("style");
-//   })
-// })

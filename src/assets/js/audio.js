@@ -48,13 +48,15 @@ const loadAudio = (audio) => {
     updateState();
   });
 
+  
+
   let button = audio.querySelector(".audio-button");
 
   const updateState = () => { 
     const isPlaying = wavesurfer.isPlaying();
     const icon = button?.querySelector(".audio-icon");
     const player = button?.closest(".audio");
-    const isLoading = media.readyState < 4;
+    const isLoading = media.readyState < 3;
 
     icon?.classList.toggle("fa-pause", isPlaying && !isLoading);
     icon?.classList.toggle("fa-play", !isPlaying && !isLoading);
@@ -69,6 +71,9 @@ const loadAudio = (audio) => {
   });
 
   wavesurfer.on("finish", updateState);
+  media?.addEventListener("play", updateState);
+  media?.addEventListener("pause", updateState);
+  media?.addEventListener("ended", updateState);
 }
 
 

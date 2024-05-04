@@ -5,10 +5,8 @@
 
   <div class="">
     {% for post in posts %}
-
-    <a href="#{{ post.title | slug }}">{{ post.title }}</a><br/>
+      <a href="#{{ post.title | slug }}">{{ post.title }}</a><br/>
     {% endfor %}
   </div>
-
 </div>
 {% endif %}

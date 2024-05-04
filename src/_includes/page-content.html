@@ -1,0 +1,15 @@
+<article id="{{ title | slug }}" class="block {{ color | contrast }}" style="--background: {{ color }}">
+
+  <div class="post-main">
+    {% include featured %}
+
+    <div class="project-body">
+      {% include project-info %}
+
+      <div class="post-content">
+        {{ content | safe }}
+      </div>
+
+    </div>
+  </div>
+</article>

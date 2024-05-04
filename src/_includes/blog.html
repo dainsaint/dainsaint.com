@@ -1,8 +1,0 @@
----
-layout: base
-title: Dain Saint
----
-{% assign post = collections.blogs | where: "fileSlug", page.fileSlug | first %}
-
-{% include blog-content, post: post %}
-{% include footer %}

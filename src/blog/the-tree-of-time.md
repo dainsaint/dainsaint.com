@@ -12,7 +12,7 @@ social: ''
 ---
 consider a tree. it begins as a sapling, young and green. pliable, but unsupported; delicate and unprotected. over time, it brings together sunlight, air, and water to form wood; to grow. the green sapling expands from within, leaving behind layers of wood. the elements put stress on the green flesh of the tree, prompting it to grow a thick bark, to protect itself. as the tree grows, the wood in the core grows thicker, and the bark becomes more durable — and the green remains sandwiched between the two.
 
-![tree diagram](/assets/uploads/tree-core-2.png){.actual}
+![tree diagram](/assets/uploads/tree-core-2.png)
 
 the **green** is the part of the tree that is most alive. it brings nutrients to every branch and leaf, it grows in new directions, it is rich with water and minerals. the **wood** within provides structure — and also, a memory of how the tree used to take up space. the **bark** anticipates challenges and protects the green.
 

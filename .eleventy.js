@@ -182,6 +182,9 @@ module.exports = function (eleventyConfig) {
     extname: ".html",
   });
 
+  eleventyConfig.addPairedShortcode("section", (content, color ) => {
+    return `<section class="page-section ${ color && lightOrDark(color) }" style="--background: ${color || 'transparent'}">${content}</section>`;
+  })
 
   eleventyConfig.on("eleventy.before", async() => {
     waveforms();

@@ -51,6 +51,9 @@
 
 <script type="text/javascript">
   document.querySelectorAll(".header-menu-button").forEach(button => {
-    button.addEventListener("click", () => document.querySelector('.header-main').classList.toggle('is-open'));
+    button.addEventListener("click", () => {
+      document.querySelector('.header-main').classList.toggle('is-open');
+      document.body.classList.toggle("noscroll");
+    })
   })
 </script>

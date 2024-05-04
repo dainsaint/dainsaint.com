@@ -20,8 +20,11 @@ social: https://dainsaint.netlify.app/assets/uploads/freedom-social.png
 
 ---
 
-### 100% of proceeds from the sale of this book in 2024 are being donated to [pcrf](https://pcrf.net).
+
+### 🍉 100% of this book's proceeds are being donated to [pcrf](https://pcrf.net) in 2024.
+
 <br/>
+
 within the protests that erupted in the wake of the state-sanctioned murders of george floyd, breonna taylor, and tony mcdade, i felt the need to process my grief. these poems were written during the second half of 2020.
 
 ![cover](/assets/uploads/freedom-cover.jpg)

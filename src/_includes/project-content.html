@@ -33,9 +33,10 @@
 
 
 </article>
+
 <section class="project-posts {{ arrange }}">
 {% for p in posts %}
 {% assign post = collections.all | where: "fileSlug", p.page.fileSlug | first %}
-{% include post-content, post: post %}
+{% include content %}
 {% endfor %}
 </section>
