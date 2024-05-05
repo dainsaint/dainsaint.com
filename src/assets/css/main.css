@@ -966,6 +966,14 @@ input[type=submit]:hover {
 
 @media (max-width: 450px) {
 
+  .header-main {
+    padding-bottom: calc(1.25rem - .45rem);
+
+    &:has(.promo) {
+      padding-bottom: 1.25rem;
+    }
+  }
+
   .header-menu-button {
     display: block;
   }
