@@ -9,7 +9,7 @@ TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of g
 
 ***
 
-{% include category-list, types: 'games', use-featured: true %}
+{% include category-list, types: 'game', use-featured: true, label: false %}
 
 {% section %}
 
@@ -21,13 +21,14 @@ TKTK articles from the Inquirer, like
 * Horse 95 thing
 
 {% endsection %}
-
 {% section %}
 
-# collab
-basic copy TK.
+{% include quote, quote: "let's make something<br/>**magical :fa-wand-sparkles:**<br/>together" %}
 
-* [:fa-wand-sparkles: let's make something magical](/collab)
-{.buttons}
+basic collab copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
 
 {% endsection %}

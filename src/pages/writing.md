@@ -25,10 +25,12 @@ TKTK articles from the Inquirer, like
 
 {% section %}
 
-# collab
-basic copy TK.
+{% include quote, quote: "let's make something<br/>**mythical :fa-book-open:**<br/>together" %}
 
-* [:fa-fire: let's make something mythical](/collab)
-{.buttons}
+basic copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
 
 {% endsection %}

@@ -1,12 +1,11 @@
 {% if posts.size > 0 %}
-<p>&nbsp;</p>
-<div class="post-content">
+
   <h3 class="project-header">contents</h3>
 
-  <div class="">
+  <nav class="project-table-of-contents">
     {% for post in posts %}
       <a href="#{{ post.title | slug }}">{{ post.title }}</a><br/>
     {% endfor %}
-  </div>
-</div>
+  </nav>
+
 {% endif %}

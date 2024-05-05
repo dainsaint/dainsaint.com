@@ -1,7 +1,7 @@
 <article id="{{ post.data.title | slug }}" class="block full {{ post.data.color | contrast }}"
   style="--background: {{ post.data.color }}">
 
-  <div class="post-main">
+  <div class="post-main stack">
     {% assign featured = post.data.featured %}
     {% include featured %}
 
@@ -13,14 +13,14 @@
 
       {% assign query = collections.projects | fromFile: post.data.project %}
 
-      <div class="post-content">
+      <div class="post-content stack">
         <h2 class="post-header"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
 
         {% if query %}
         <div class="post-project">part of <a href="{{ query.url | url}}">{{ query.data.title }}</a></div>
         {% endif %}
 
-        <div class="post-content-text">
+        <div class="post-content-text stack">
           {{ post.templateContent | safe }}
         </div>
       </div>

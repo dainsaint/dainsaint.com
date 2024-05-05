@@ -157,9 +157,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("section", (content, color) => {
     if( color )
-      return `<section class="page-section ${ color && lightOrDark(color) }" style="--background: ${color || 'transparent'}">${content}</section>`;
+      return `<section class="page-section stack ${ color && lightOrDark(color) }" style="--background: ${color || 'transparent'}">${content}</section>`;
     else
-      return `<section class="page-section paletted">${content}</section>`;
+      return `<section class="page-section stack paletted">${content}</section>`;
   })
 
   eleventyConfig.on("eleventy.before", async() => {

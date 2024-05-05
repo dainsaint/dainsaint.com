@@ -13,10 +13,13 @@ TKTK Storyteller, musician, talks
 
 {% section %}
 
-# collab
-basic copy TK.
+{% include quote, quote: "let's make something<br/>**meaningful :fa-hands-clapping:**<br/>together" %}
 
-* [:fa-message: let's make something meaningful](/collab)
-{.buttons}
+basic collab copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
+
 
 {% endsection %}

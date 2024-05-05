@@ -1,7 +1,7 @@
 ---
 layout: index
 title: ""
-description: "I turn stories into experiences."
+description: ""
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 color: "#6A4C93"
 promo: |
@@ -17,53 +17,21 @@ pagination:
   alias: posts
 ---
 
-
-<style>
-  .project-info {
-    display: none;
-  }
-
-  .aside .quote a{
-    text-decoration: underline;
-    text-decoration-thickness: 0px;
-    text-decoration-color: transparent;
-  }
-
-  .buttons {
-    text-align: right;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .buttons li {
-    margin: 0px;
-  }
-</style>
-
-<div>
-
 ::: aside
 {% include quote, quote: "[Hi, I'm Dain Saint](/about)<br/>**I turn stories into experiences.**" %}
 :::
 
-
-I'm a creator* making stories you can touch, and stories that touch you. Whether it's [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I make artistic experiences about better futures and the roads we take to get there.
+I'm a creator making stories you can touch, and stories that touch you. Whether it's [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I make artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
-*...musician, author, designer, director, journalist, storyteller, and speaker.\
-Specialization is for insects.
-
 * [learn more :fa-arrow-right:](/about)
-{.buttons}
-</div>
-
+{.buttons .align-right}
 
 ***
 
 {% include category-list, types: 'frontpage', use-featured: true, label: false %}
 * [more projects :fa-arrow-right:](/projects)
-{.buttons}
-</div>
+{.buttons .align-right}
 
 ***
 

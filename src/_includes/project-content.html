@@ -2,14 +2,10 @@
 
 <article class="block lede {{ color | contrast }}" style="--background: {{ color }}">
 
-  <div class="post-main">
-
+  <div class="post-main stack">
     {% include featured %}
 
-    <div class="project-body">
-
-      <div class="project-intro">
-
+    <div class="project-intro">
       {% include project-info, url: page.url %}
 
       <div class="project-status">
@@ -17,20 +13,11 @@
           {{ status | markdown }}
         </p>
       </div>
-
     </div>
 
-    <div class="post-content">
-
-      {{ content | safe }}
-
-    </div>
-
+    {{ content | safe }}
     {% include toc, posts: posts %}
-
   </div>
-
-
 
 </article>
 

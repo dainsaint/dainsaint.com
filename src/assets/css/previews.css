@@ -1,236 +1,207 @@
-.preview-frames
-{
+.preview-frames {
   background: #FFF;
   padding: 20px;
 
   border-bottom: 1px solid #DCDCDC;
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .scale {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 256px;
+    height: 256px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    .frame {
+      position: absolute;
+      transform-origin: top left;
+      transform: scale(.25);
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .frame {
+    width: 1024px;
+    height: 1024px;
+    display: block;
+
+    .block.full {
+      min-height: inherit;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+
+    .post-header {
+      font-size: 36px;
+    }
+
+    .post-body {
+      font-size: 36px;
+      line-height: 38px;
+      position: relative;
+    }
+
+
+    .post-handle {
+      font-size: 24px;
+    }
+
+    .poem .post-handle {
+      position: absolute;
+      top: 120%;
+    }
+
+    .post-quote .post-handle {
+      position: relative;
+      top: 50px;
+    }
+
+    .post-quote {
+      text-align: center;
+    }
+
+    .post-quote .buttons {
+      margin: 0px auto;
+    }
+
+    .post-meta {
+      width: 90px;
+    }
+  }
+
+  .buttons {
+    width: auto;
+  }
+
+  button,
+  .buttons li a {
+    width: max-content;
+    white-space: nowrap;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: normal;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: inline;
+  }
+
+
+
+
+  .quote {
+    font-size: 48px;
+    max-width: 90%;
+    margin: 0px auto;
+    line-height: 1.2em;
+
+    strong {
+      font-size: 100px;
+      line-height: 200px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .post-quote .post-handle {
+      position: static;
+    }
+  }
 }
 
-.preview-frames .row
-{
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.preview-frames .frame
-{
-  width: 1024px;
-  height: 1024px;
-  display: block;
-}
 
-.preview-frames .scale .frame
-{
-    position: absolute;
-    transform-origin: top left;
-  transform: scale(.25);
-  top: 0px;
-  left: 0px;
-}
 
-.preview-frames .scale
-{
-  /* border: 1px solid red; */
-  position: relative;
-  width: 256px;
-  height: 256px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
 
-.download
-{
+
+.download {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .5);
   cursor: pointer;
   opacity: 0;
   transition: opacity .2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  i {
+    font-size: 48px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+  }
 }
 
-.download:hover
-{
-  opacity: 1;
-}
-
-.download i
-{
-  font-size: 48px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFF;
-}
-
-.loadingIndicator
-{
+.loadingIndicator {
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,.9);
-  display: none;
-  /* cursor: pointer; */
-}
-
-.loading .loadingIndicator
-{
-  display: block;
-}
-
-.loadingIndicator i
-{
-  font-size: 48px;
-  position: absolute;
-  left: calc(50% - 24px);
-  top: calc(50% - 24px);
-  color: #FFF;
-}
-
-
-/*
-
-.preview-frames .frame
-{
-  width: 1024px;
-  height: 1024px;
-
-  margin: -256px;
-  flex: 0 0 auto;
-  margin-right: -236px;
-  margin-bottom: -236px;
-} */
-
-
-.preview-frames .frame .post.full
-{
-  min-height: inherit;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-
-.preview-frames .frame .post-header
-{
-  font-size: 36px;
-}
-
-.preview-frames .frame .post-body
-{
-  font-size: 36px;
-  line-height: 38px;
-  position: relative;
-}
-
-
-.preview-frames .frame .post-handle
-{
-  font-size: 24px;
-}
-.preview-frames .frame .poem .post-handle
-{
-  position: absolute;
-  top: 120%;
-}
-
-.preview-frames .frame .post-quote .post-handle
-{
-  position: relative;
-  top: 50px;
-}
-
-.preview-frames button, .preview-frames .buttons li a
-{
-  width: max-content;
-  white-space: nowrap;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: normal;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  display: inline;
-}
-
-.preview-frames .frame .post-quote
-{
-  text-align: center;
-}
-
-.preview-frames .frame .post-quote .buttons
-{
-  margin: 0px auto;
-}
-
-.preview-frames .frame .post-meta
-{
-  width: 90px;
-}
-
-.preview-frames .quote::after
-{
+  background: rgba(0, 0, 0, .9);
   display: none;
 }
 
-.post-quote .post-handle
-{
-  position: static;
+.loading {
+
+  .loadingIndicator {
+    display: block;
+  }
+
+  i {
+    font-size: 48px;
+    position: absolute;
+    left: calc(50% - 24px);
+    top: calc(50% - 24px);
+    color: #FFF;
+  }
+
 }
 
-
-.preview-frames .quote
-{
-  font-size: 48px;
-  max-width: 90%;
-  margin: 0px auto;
-}
-
-.preview-frames .quote strong
-{
-  font-size: 100px;
-  line-height: 200px;
-}
-
-.post-meta
-{
+.post-meta {
   border-top-width: 10px;
 }
 
 
-.continued .post-meta
-{
+.continued .post-meta {
   position: relative;
   left: 105px;
 }
 
-.continued
-{
+.continued {
   position: relative;
   left: -50px;
 }
 
 
-.post-more
-{
+.post-more {
   position: absolute;
   bottom: 80px;
   right: 80px;
 }
 
-.scale:last-child .post-more, .last-child .post-more
-{
+.scale:last-child .post-more,
+.last-child .post-more {
   display: none;
 }
 
 
-.prompt-header
-{
+.prompt-header {
   font-family: "Raleway";
   font-weight: 900;
   letter-spacing: 8px;
@@ -242,27 +213,23 @@
 }
 
 
-.light .prompt-header
-{
+.light .prompt-header {
   border-color: var(--light);
 }
 
-.post-prompt
-{
+.post-prompt {
   font-size: 48px;
   line-height: 48px;
 }
 
-.post-prompt strong
-{
+.post-prompt strong {
   font-family: "Elgraine Black Italic";
   font-size: 100px;
   font-weight: normal;
   line-height: 120px;
 }
 
-.post-prompt .post-handle
-{
+.post-prompt .post-handle {
   position: absolute;
   bottom: 112px;
   left: 112px;

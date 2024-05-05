@@ -13,10 +13,13 @@ TKTK tik tak tik tak
 
 {% section %}
 
-# collab
-basic copy TK.
+{% include quote, quote: "let's make something<br/>**memorable :fa-bookmark:**<br/>together" %}
 
-* [:fa-computer: let's make something masterful](/collab)
-{.buttons}
+basic collab copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
+
 
 {% endsection %}

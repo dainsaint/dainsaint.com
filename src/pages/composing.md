@@ -8,12 +8,6 @@ color: "#0F2434"
 TKTK I write the music that fits the story. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 {.lede} 
 
-
-
-
-### jump to
-[orchestration](#orchestration) • [video games](#video-games) 
-
 {% section %}
   
   ## orchestration
@@ -22,23 +16,23 @@ TKTK I write the music that fits the story. Orchestration, piano, jazz, electron
   <div class="grid grid-2">
 
   ::: group
-  {% include audio, audio: "/assets/uploads/onward.mp3" %}
   ### Onward
+  {% include audio, audio: "/assets/uploads/onward.mp3" %}
   :::
 
   ::: group
-  {% include audio, audio: "/assets/uploads/exploration-1.mp3" %}
   ### Exploration 1
+  {% include audio, audio: "/assets/uploads/exploration-1.mp3" %}
   :::
 
   ::: group
-  {% include audio, audio: "/assets/uploads/starstuff.mp3" %}
   ### starstuff
+  {% include audio, audio: "/assets/uploads/starstuff.mp3" %}
   :::
 
   ::: group
-  {% include audio, audio: "/assets/uploads/keravnos.mp3" %}
   ### keravnós
+  {% include audio, audio: "/assets/uploads/keravnos.mp3" %}
   :::
 
   </div>
@@ -87,10 +81,13 @@ TKTK I write the music that fits the story. Orchestration, piano, jazz, electron
 
 {% section %}
 
-# collab
-basic copy TK.
+{% include quote, quote: "let's make something<br/>**musical :fa-music:**<br/>together" %}
 
-* [:fa-music: let's make something musical](/collab)
-{.buttons}
+basic collab copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
+
 
 {% endsection %}
