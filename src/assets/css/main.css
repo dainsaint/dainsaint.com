@@ -655,6 +655,10 @@ footer {
 
 
 input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0px;
+
   background: none;
   border: 1px solid var(--color);
   font-size: 14px;
@@ -666,7 +670,7 @@ input {
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  border-radius: none;
+  
 }
 
 ::placeholder {
