@@ -1,6 +1,7 @@
 ---
 date: 2024-02-22T21:58:37.000+00:00
 tags:
+- game
 - play
 - interactive
 - featured

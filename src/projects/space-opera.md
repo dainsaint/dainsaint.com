@@ -10,6 +10,7 @@ status: |
   * [:fa-dice: Sign up to playtest june 2!]()
   {.buttons}
 tags:
+  - game
   - featured
   - frontpage
   - play

@@ -1,23 +1,26 @@
 ---
-date: 2020-12-28T21:02:45.000+00:00
-project:  city-dont-sing-project
-deco: elevation
-eleventyExcludeFromCollections: false
 title: city don’t sing
-description: a song about life in quarantine
-tags:
-  - listen
-color: "#191919"
+description: processing the pandemic through song
+date: 2021-01-01T04:00:00.000+00:00
+status: |
+  * [:fab-youtube: youtube]()
+  * [:fab-bandcamp: bandcamp](https://dainsaint.bandcamp.com/track/city-dont-sing)
+  * [:fab-spotify: spotify](https://open.spotify.com/album/7ri2txbcbunowtf6s2bwsj?highlight=spotify:track:4hpxbixxdx9zmmlyvokxlj)
+  * [:fa-play-circle: apple music](https://music.apple.com/us/album/city-dont-sing-single/1544686673)
+  {.buttons}
+tags: 
+- song
+- featured
+color: "#161616"
+eleventyExcludeFromCollections: false
 featured:
-- type: youtube
-  video_id: GjZa6hSSotM
+- type: gallery
+  images:
+  - "/assets/uploads/city-dont-sing-project.png"
 
 ---
 
-* [:fab-bandcamp: bandcamp](https://dainsaint.bandcamp.com/track/city-dont-sing)
-* [:fab-spotify: spotify](https://open.spotify.com/album/7ri2txbcbunowtf6s2bwsj?highlight=spotify:track:4hpxbixxdx9zmmlyvokxlj)
-* [:fa-play-circle: apple music](https://music.apple.com/us/album/city-dont-sing-single/1544686673)
-{.buttons}
+[youtube GjZa6hSSotM]
 
 2020 has been a _year_. between the pandemic, the blow to the arts, and the continued fight for freedom, we've been put through the ringer—both in philly, and the rest of the country. i hope this song brings you some catharsis as we say goodbye to this year and move into the next one.
 

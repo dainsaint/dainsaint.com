@@ -8,6 +8,7 @@ status: |-
     {.buttons}
 color: "#F7EDE3"
 tags:
+- book
 - featured
 - frontpage
 - read
@@ -15,7 +16,7 @@ featured:
 - type: gallery
   images:
   - "/assets/uploads/freedom-cover.png"
-arrange: grid
+arrange: grid grid-2
 social: https://dainsaint.netlify.app/assets/uploads/freedom-social.png
 
 ---

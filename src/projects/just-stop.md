@@ -1,11 +1,12 @@
 ---
 title: just stop
-description: a book designed to help you change your relationship with time.
+description: change your relationship with time.
 date: 2020-02-12T04:00:00.000+00:00
 status: |
   * [:fa-book: read free online](https://readjuststop.com)
     {.buttons}
 tags:
+- book
 - read
 color: "#354148"
 featured:

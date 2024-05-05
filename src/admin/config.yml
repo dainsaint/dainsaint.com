@@ -243,3 +243,4 @@ collections:
                 value_field: "{{slug}}"
                 search_fields: ["{{slug}}", "title"]
                 display_fields: ["title"]
+              - { label: URL, name: "url", widget: "string", required: false }

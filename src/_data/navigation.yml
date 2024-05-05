@@ -1,4 +1,9 @@
 links:
+  # - page: projects
+  # - page: roles
+  # - page: work with me
+  # - page: about
+
   - page: projects
     tags: projects
   - page: garden
@@ -7,3 +12,5 @@ links:
       - posts
   - page: collab
   - page: about
+  - page: store
+    url: https://dainsaint.square.site

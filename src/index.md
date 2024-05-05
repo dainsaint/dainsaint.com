@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Dain Saint"
+title: ""
 description: "I turn stories into experiences."
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 color: "#6A4C93"
@@ -29,12 +29,6 @@ pagination:
     text-decoration-color: transparent;
   }
 
-  .index-top {
-    display: grid;
-    grid-gap: 20px;
-    /* grid-template-columns: 3fr 5fr; */
-  }
-
   .buttons {
     text-align: right;
     width: 100%;
@@ -46,9 +40,6 @@ pagination:
   }
 </style>
 
-<div class="index-top">
-
-
 <div>
 
 ::: aside
@@ -56,14 +47,16 @@ pagination:
 :::
 
 
-I make stories you can touch, and stories that touch you. Whether it's [composing](/composing), [writing](), [games](), [interactives](), or [performance](), I create artistic experiences about better futures and the roads we take to get there.
+I'm a creator* making stories you can touch, and stories that touch you. Whether it's [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I make artistic experiences about better futures and the roads we take to get there.
 {.lede}
+
+*...musician, author, designer, director, journalist, storyteller, and speaker.\
+Specialization is for insects.
 
 * [learn more :fa-arrow-right:](/about)
 {.buttons}
 </div>
 
-</div>
 
 ***
 

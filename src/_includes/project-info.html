@@ -1,6 +1,9 @@
 {%- if title != "" or description != "" -%}
 <div class="project-info">
-  <h1 class="project-title">{{ title }}</h1>
+  <h1 class="project-title">
+    <span class="project-tag">{{ tags[1] }}</span>
+    {{ title }}
+  </h1>
   <div class="project-description">{{ description | markdown }}</div>
   {%- if url != nil -%}
   <div class="post-permalink">

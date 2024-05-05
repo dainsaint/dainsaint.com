@@ -6,6 +6,7 @@ status: Complete. [Buy the single](https://saintanytime.bandcamp.com/track/plain
 color: "#9E0D2C"
 text: light
 tags:
+- song
 - listen
 featured:
 - type: youtube

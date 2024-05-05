@@ -31,10 +31,10 @@
         {% endfor %}
       {% endfor %}
 
+      {% assign pg = link.page | prepend: "/" %}
+      <a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a>
 
-    <a class="{% if active %}active{% endif %}" href="/{{ link.page }}">{{ link.page }}</a>
     {% endfor %}
-    <a href="https://dainsaint.square.site">store</a>
   </nav>
 
   

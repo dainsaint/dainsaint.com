@@ -371,6 +371,7 @@ main>.block:first-child .post-main {
 
 
 .post-permalink {
+  display: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -413,6 +414,15 @@ main>.block:first-child .post-main {
   margin-bottom: 20px;
 }
 
+.project-tag {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  display: block;
+}
+
 h1, .project-title {
   font-size: 36px;
   line-height: 40px;
@@ -450,8 +460,9 @@ h1, .project-title {
 
 
 .category-list .project-title {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-bottom: 3px;
 }
 
 
@@ -486,17 +497,6 @@ h1, .project-title {
   padding: 200px 0px;
   position: relative;
 }
-
-
-
-.project-posts.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px;
-}
-
-
-
 
 
 
@@ -551,23 +551,12 @@ h1, .project-title {
 }
 
 @media (min-width: 800px) {
-  .project-posts.grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .project-posts.grid>* {
-    flex: 1 1 10px;
-  }
-
   .post-subscribe-form {
     display: grid;
     grid-template-columns: auto 200px;
     grid-gap: 8px;
     margin: 8px 0px;
   }
-
-
 }
 
 
@@ -919,7 +908,6 @@ ul.buttons {
   }
 }
 
-
 .grid-2 {
   --grid-column-count: 2;
 }
@@ -933,6 +921,11 @@ ul.buttons {
   --grid-min-width: 18%;
 }
 
+
+.project-posts.grid {
+  --grid-gap: 0px;
+  --grid-min-width: 800px;
+}
 
 
 @media (max-width: 675px) {

@@ -7,6 +7,7 @@ status: |
   Complete, seeking publication.
   [Interested in publishing this collection?](/email)
 tags:
+- book
 - read
 featured:
 - type: gallery
