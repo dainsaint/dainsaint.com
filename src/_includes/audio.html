@@ -1,6 +1,6 @@
 {% assign slug = audio | split: '/' | last | split: '.' | first | slugify %}
 
-<section class="audio" data-slug="{{ slug }}">
+<figure class="audio" data-slug="{{ slug }}">
   <div class="audio-controls">
     <button class="audio-button" id="{{ slug }}-audio-button">
       <i class="audio-icon fa-solid fa-play"></i>
@@ -10,9 +10,10 @@
   <div class="audio-content">
     <div id="{{ slug }}-audio">
     </div>
-    <audio src="{{ audio | url }}" preload="none"/>
+    <audio src="{{ audio | url }}" preload="none">
+    </audio>
   </div>
-</section> 
+</figure> 
 
 {% hoist "scripts" "audio" %}
   <script src="https://unpkg.com/wavesurfer.js@7"></script>

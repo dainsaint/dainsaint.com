@@ -1,8 +1,7 @@
 <div class="albums grid grid-5">
   {% for album in albums %}
   <a class="album" href="{{ album.url }}">
-    <img class="album__art" src="{{ album.art }}" />
-    <span class="album__title">{{ album.title }}</span>
+    <img class="album__art" src="{{ album.art }}" alt="{{ album.title }}" />
   </a>
   {% endfor %}
 </div>

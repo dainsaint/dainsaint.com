@@ -821,6 +821,11 @@ input[type=submit]:hover {
   display: inline-block;
 }
 
+/*
+*
+* Quote
+*/
+
 .quote {
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -861,31 +866,16 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.promo>* {
-  flex-grow: 0;
-  flex-shrink: 0;
+  > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
 }
 
 .youtube {
   width: 100%;
   height: 56.25%;
 }
-
-
-ul.grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: minmax(50%,auto) minmax(50%,auto); */
-  grid-auto-flow: row dense;
-
-  li.full {
-    grid-column: 1 / span 2;
-  }
-}
-
 
 
 .buttons {
@@ -938,16 +928,6 @@ ul.grid {
       display: none;
     }
   }
-}
-
-
-.album__title {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 5px;
-  display: none;
 }
 
 .album,

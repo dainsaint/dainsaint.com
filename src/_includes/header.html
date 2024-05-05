@@ -50,7 +50,7 @@
 </header>
 
 {% hoist "scripts" "header" %}
-<script type="text/javascript">
+<script id="header-menu">
   document.querySelectorAll(".header-menu-button").forEach(button => {
     button.addEventListener("click", () => {
       document.querySelector('.header-main').classList.toggle('is-open');

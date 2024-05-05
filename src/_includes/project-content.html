@@ -21,9 +21,9 @@
 
 </article>
 
-<section class="project-posts {{ arrange }}">
+<div class="project-posts {{ arrange }}">
 {% for p in posts %}
 {% assign post = collections.all | where: "fileSlug", p.page.fileSlug | first %}
 {% include content %}
 {% endfor %}
-</section>
+</div>

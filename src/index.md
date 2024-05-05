@@ -24,15 +24,15 @@ pagination:
 I make stories you can touch, and stories that touch you. Whether&nbsp;it's through [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
-* [learn more :fa-arrow-right:](/about)
+* [learn more :fa-angle-right:](/about)
 {.buttons .align-right}
 
 ***
 
 {% include category-list, types: 'frontpage', use-featured: true, label: false %}
-* [more projects :fa-arrow-right:](/projects)
+* [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}
 
 ***
 
-### :fa-arrow-down: keep scrolling, there's cool stuff down here :fa-arrow-down:{.align-center}
+### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center}
