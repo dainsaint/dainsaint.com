@@ -636,11 +636,11 @@ footer {
   gap: .5em;
 
   *:nth-child(1) {
-    flex: 100 0 400px;
+    flex: 100 0 min(100%, 400px);
   }
 
   *:nth-child(2) {
-    flex: 1 0 200px;
+    flex: 1 0 min(100%, 200px);
   }
 }
 

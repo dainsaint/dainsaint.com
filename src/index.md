@@ -18,7 +18,7 @@ pagination:
 ---
 
 ::: aside
-{% include quote, quote: "[Hi, I'm Dain Saint](/about)<br/>**I turn stories into experiences.**" %}
+{% include quote, quote: "[Hi, I'm Dain Saint](/about)<br>**I turn stories into experiences.**" %}
 :::
 
 I make stories you can touch, and stories that touch you. Whether&nbsp;it's through [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I create artistic experiences about better futures and the roads we take to get there.
