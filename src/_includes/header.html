@@ -49,6 +49,7 @@
   </div>
 </header>
 
+{% hoist "scripts" "header" %}
 <script type="text/javascript">
   document.querySelectorAll(".header-menu-button").forEach(button => {
     button.addEventListener("click", () => {
@@ -57,3 +58,4 @@
     })
   })
 </script>
+{% endhoist %}

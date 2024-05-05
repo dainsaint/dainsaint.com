@@ -1,3 +1,4 @@
+const util = require("util");
 const markdownIt = require("markdown-it");
 const markdownItFA = require("markdown-it-fontawesome");
 const markdownItContainer = require("markdown-it-container");
@@ -162,9 +163,26 @@ module.exports = function (eleventyConfig) {
       return `<section class="page-section unconstrain stack background palette">${content}</section>`;
   })
 
+  let hoisted;
+
   eleventyConfig.on("eleventy.before", async() => {
     waveforms();
+    hoisted = {};
   })
+
+  eleventyConfig.addPairedShortcode("hoist", function (content, slot, source) {
+    if (!hoisted[this.page.outputPath]) hoisted[this.page.outputPath] = {};
+    if (!hoisted[this.page.outputPath][slot])
+      hoisted[this.page.outputPath][slot] = {};
+    hoisted[this.page.outputPath][slot][source] = content;
+    return "";
+  });
+
+  eleventyConfig.addShortcode("inject", function (slot) {
+    if (hoisted[this.page.outputPath] && hoisted[this.page.outputPath][slot])
+      return Object.values( hoisted[this.page.outputPath][slot] );
+    return "";
+  });
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
