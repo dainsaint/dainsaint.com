@@ -2,7 +2,7 @@
 title: about
 hero: /assets/uploads/_ber3845.jpg
 social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
-color: "#3E638A"
+color: "#FEDB8A"
 eleventyExcludeFromCollections: false
 date: ''
 tags: []
@@ -17,18 +17,13 @@ As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiab
 
 He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 
-<small>*musician, author, designer, director, journalist, storyteller, and speaker. specialization is for insects.</small>
-
-* [:fa-wand-magic-sparkles: let's make something magical](/collab)
-{.buttons .align-center}
-
-
+<small>_*storyteller, musician, author, designer, director, programmer, journalist, and speaker. specialization is for insects._</small>
 
 
 
 {% section %}
 
-# now
+# updates
 
 ### upcoming events
 * <span class="date">aug 1-4, 2024</span> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
@@ -49,5 +44,17 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 * [worlds beyond number](https://worldsbeyondnumber.com) is one of the most beautiful pieces of media i've experienced this decade. well worth the $5 a month for everything.
 * finally opened up the [broken earth trilogy](https://nkjemisin.com/series/the-broken-earth/). devoured it in a week. [nk jemisin](), y'all. if i start talking about how _good_ this is i'll never ever stop.
 * currently reading [children of virtue and vengance](https://tomiadeyemi.com/the-writer/) — can't _wait_ for "anguish and anarchy" to drop this summer.
+
+{% endsection %}
+
+{% section %}
+
+{% include quote, quote: "let's make something<br/>**magical :fa-wand-sparkles:**<br/>together" %}
+
+basic collab copy TK.
+{.align-center}
+
+* [:fa-paper-plane: contact me](/collab)
+{.buttons .align-center}
 
 {% endsection %}
