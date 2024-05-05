@@ -1,34 +1,43 @@
 {% assign color = "#161616" %}
 <footer class="block loose background {{ color | contrast }}" style="--background: {{ color }}">
 
-<div class="stack constrain">
+  <div class="stack loose constrain">
 
-{%- if pagination -%}
-{%- if pagination.pages.size > 1 -%}
-<div class="pagination-block">
-<h3 class="project-header">explore more, <span style="white-space: nowrap;">or take a break</span></h3>
-<nav>
-  {% if pagination.href.next %}
-  <a href="{{ pagination.href.next }}">older pieces</a>
-  {% endif %}
-  
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">newer pieces</a>
-  {% endif %}
-</nav>
-</div>
-{%- endif -%}
-{%- endif -%}
+  {%- if pagination -%}
+  {%- if pagination.pages.size > 1 -%}
+  <div class="pagination-block">
+  <h3>explore more, <span style="white-space: nowrap;">or take a break</span></h3>
+  <nav>
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}"><i class="fa fa-angle-left"></i> older pieces</a>
+    {% endif %}
+    
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}">newer pieces <i class="fa fa-angle-right"></i></a>
+    {% endif %}
+  </nav>
+  </div>
+  {%- endif -%}
+  {%- endif -%}
 
-<div class="random-block">
-<h3 class="project-header">enjoy a random piece</h3>
-<nav>
-  {% assign random = collections.posts | getRandom: page %}
-<a href="{{ random.url }}">{{ random.data.title }}</a>
-</nav>
-</div>
+  <div class="random-block">
+  <h3>enjoy a random piece</h3>
+  <nav>
+    {% assign random = collections.posts | getRandom: page %}
+  <a href="{{ random.url }}">{{ random.data.title }}</a>
+  </nav>
+  </div>
 
-{% include subscribe %}
-</div>
+  <div>
+    <h3>portfolios</h3>
+    <a href="/games">games</a>&nbsp;• 
+    <a href="/composing">composing</a>&nbsp;•
+    <a href="/writing">writing</a>&nbsp;•
+    <a href="/interactives">interactives</a>&nbsp;•
+    <a href="/performance">performance</a>
+  </div>
+
+  {% include subscribe %}
+  </div>
 
 </footer>
