@@ -13,7 +13,7 @@ TKTK Storyteller, musician, talks
 
 {% section %}
 
-{% include quote, quote: "let's make something<br/>**meaningful :fa-hands-clapping:**<br/>together" %}
+{% include quote, quote: "let's make something<br>**meaningful :fa-hands-clapping:**<br>together" %}
 
 basic collab copy TK.
 {.align-center}

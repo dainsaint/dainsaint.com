@@ -81,7 +81,7 @@ TKTK I write the music that fits the story. Orchestration, piano, jazz, electron
 
 {% section %}
 
-{% include quote, quote: "let's make something<br/>**musical :fa-music:**<br/>together" %}
+{% include quote, quote: "let's make something<br>**musical :fa-music:**<br>together" %}
 
 basic collab copy TK.
 {.align-center}

@@ -47,7 +47,7 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 
 {% section %}
 
-{% include quote, quote: "let's make something<br/>**magical :fa-wand-sparkles:**<br/>together" %}
+{% include quote, quote: "let's make something<br>**magical :fa-wand-sparkles:**<br>together" %}
 
 basic collab copy TK.
 {.align-center}

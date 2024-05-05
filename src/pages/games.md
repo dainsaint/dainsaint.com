@@ -23,7 +23,7 @@ TKTK articles from the Inquirer, like
 {% endsection %}
 {% section %}
 
-{% include quote, quote: "let's make something<br/>**magical :fa-wand-sparkles:**<br/>together" %}
+{% include quote, quote: "let's make something<br>**magical :fa-wand-sparkles:**<br>together" %}
 
 basic collab copy TK.
 {.align-center}

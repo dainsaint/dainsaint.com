@@ -17,7 +17,7 @@ Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind
 | ------------------------------------------------------------------------------------------------------------- |
 
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" ></a>
 
 ## Getting Started
 

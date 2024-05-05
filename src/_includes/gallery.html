@@ -4,10 +4,10 @@
   <div class="gallery-image">
     {% if url %}
     <a class="gallery-image-link" href="{{ url }}">
-      <img src="{{ img }}" />
+      <img src="{{ img }}" alt="">
     </a>
     {% else %}
-    <img src="{{ img }}"/>
+    <img src="{{ img }}" alt="">
     {% endif %}
   </div>
   {% endfor %}

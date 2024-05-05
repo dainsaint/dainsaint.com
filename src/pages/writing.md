@@ -25,7 +25,7 @@ TKTK articles from the Inquirer, like
 
 {% section %}
 
-{% include quote, quote: "let's make something<br/>**mythical :fa-book-open:**<br/>together" %}
+{% include quote, quote: "let's make something<br>**mythical :fa-book-open:**<br>together" %}
 
 basic copy TK.
 {.align-center}
