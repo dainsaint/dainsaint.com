@@ -20,7 +20,7 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 <small>*musician, author, designer, director, journalist, storyteller, and speaker. specialization is for insects.</small>
 
 * [:fa-wand-magic-sparkles: let's make something magical](/collab)
-{.buttons}
+{.buttons .align-center}
 
 
 

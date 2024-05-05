@@ -1,52 +1,52 @@
-<header class="header-main {{ color | contrast }} {% if promo %}promo{% endif %}">
+<header class="header-main block {{ color | contrast }}">
 
-  <div class="header-content ">
-  {% assign home = '/' %}
-  <div class="header-lede">
-    <div class="header-text">
-      <a class="title" href="{{ home | url }}">dain saint</a>
-      <span class="tagline">stories, sounds, and systems</span>
+  <div class="constrain">
+    {% assign home = '/' %}
+    <div class="header-lede">
+      <div class="header-text">
+        <a class="title" href="{{ home | url }}">dain saint</a>
+        <span class="tagline">stories, sounds, and systems</span>
+      </div>
+
+      <button class="header-menu-button"><i class="fa fa-bars"></i></button>
     </div>
+    <nav class="header-nav">
+      <div class="header-nav-close">
+        <button class="header-menu-button"><i class="fa fa-xmark"></i></button>
+      </div>
 
-    <button class="header-menu-button"><i class="fa fa-bars"></i></button>
-  </div>
-  <nav class="header-nav">
-    <div class="header-nav-close">
-      <button class="header-menu-button"><i class="fa fa-x"></i></button>
-    </div>
+      {% for link in navigation.links %}
+        {% assign active = false %}
 
-    {% for link in navigation.links %}
-      {% assign active = false %}
+        {% if link.page == page.fileSlug %}
+        {% assign active = true %}
+        {% endif %}
 
-      {% if link.page == page.fileSlug %}
-      {% assign active = true %}
-      {% endif %}
-
-      {% for tag in link.tags %}
-        {% for t in tags %}
-          {%- if tag == t -%}
-            {% assign active = true %}
-            {% break %}
-          {%- endif -%}
+        {% for tag in link.tags %}
+          {% for t in tags %}
+            {%- if tag == t -%}
+              {% assign active = true %}
+              {% break %}
+            {%- endif -%}
+          {% endfor %}
         {% endfor %}
+
+        {% assign pg = link.page | prepend: "/" %}
+        <a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a>
+
       {% endfor %}
+    </nav>
 
-      {% assign pg = link.page | prepend: "/" %}
-      <a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a>
+    
+    {% if promo %}
+    <hr/>
 
-    {% endfor %}
-  </nav>
+    <div class="promo">
+      {{ promo | markdown }}
+    </div>
 
-  
-  {% if promo %}
-  <hr/>
-
-  <div class="promo">
-    {{ promo | markdown }}
+    {% endif %}
   </div>
-
-  {% endif %}
-</div>
 </header>
 
 <script type="text/javascript">

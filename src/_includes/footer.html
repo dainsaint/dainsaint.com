@@ -1,7 +1,7 @@
 {% assign color = "#161616" %}
-<footer class="block {{ color | contrast }}" style="--background: {{ color }}">
+<footer class="block loose background {{ color | contrast }}" style="--background: {{ color }}">
 
-<div class="post-main">
+<div class="stack constrain">
 
 {%- if pagination -%}
 {%- if pagination.pages.size > 1 -%}

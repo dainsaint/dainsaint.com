@@ -1,5 +1,5 @@
 <article id="{{ title | slug }}" class="block {{ color | contrast }}" style="--background: {{ color }}">
-  <div class="post-main stack">
+  <div class="stack constrain">
     {% include featured %}
     {% include project-info %}
     {{ content | safe }}
