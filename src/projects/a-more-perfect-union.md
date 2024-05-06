@@ -24,20 +24,28 @@ featured:
 ### team
 * [Pentagram](https://www.pentagram.com/work/a-more-perfect-union): Brand Identity, Editorial Design
 
+{% hoist "sections" %}
 {% section %}
-
+<!-- "#F7A728" -->
 # iconic
-"#F7A728"
-![](/assets/uploads/iconic-1.jpg)
+* [:fa-newspaper: read this](https://inquirer.com/iconic)
+{.buttons}
+
+![modeling the jacket](/assets/uploads/iconic-1.jpg){.tall-2}
+![](https://picsum.photos/id/1/600/800){.wide-2}
+![](https://picsum.photos/id/54/600/800)
+![](https://picsum.photos/id/25/600/800){.wide-2}
+![](https://picsum.photos/id/75/600/800){.tall-2}
+![](https://picsum.photos/id/43/600/800){.tall-2 .wide-3}
+{.masonry .grid .grid-3}
 
 {% endsection %}
 
 {% section %}
-"#499634"
-
+<!-- "#499634" -->
 # the blueprint
 ![](/assets/uploads/the-blueprint.png)
 
-
-
 {% endsection %}
+
+{% endhoist %}
