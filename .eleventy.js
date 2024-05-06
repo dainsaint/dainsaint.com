@@ -157,10 +157,12 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPairedShortcode("section", (content, color) => {
-    if( color )
-      return `<section class="page-section unconstrain stack background ${ color && lightOrDark(color) }" style="--background: ${color || 'transparent'}">${content}</section>`;
-    else
-      return `<section class="page-section unconstrain stack background palette">${content}</section>`;
+    const overrides = {
+      contrast: color ? ` ${lightOrDark(color)}` : '',
+      style: color ? ` style="--background: ${color || 'transparent'}"` : ''
+    }    
+
+    return `<section class="block loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
   })
 
   let hoisted;
@@ -171,6 +173,9 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addPairedShortcode("hoist", function (content, slot, source) {
+    if (!source)
+      source = this.page.title;
+    
     if (!hoisted[this.page.outputPath]) hoisted[this.page.outputPath] = {};
     if (!hoisted[this.page.outputPath][slot])
       hoisted[this.page.outputPath][slot] = {};

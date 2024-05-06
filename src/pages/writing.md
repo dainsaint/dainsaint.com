@@ -12,6 +12,8 @@ TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 
 {% include category-list, types: 'book', use-featured: true %}
 
+
+{% hoist "sections" %}
 {% section %}
 
 # journalism
@@ -34,3 +36,5 @@ basic copy TK.
 {.buttons .align-center}
 
 {% endsection %}
+
+{% endhoist %}

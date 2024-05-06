@@ -11,6 +11,8 @@ TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of g
 
 {% include category-list, types: 'game', use-featured: true, label: false %}
 
+{% hoist "sections" %}
+
 {% section %}
 
 # journalism
@@ -32,3 +34,5 @@ basic collab copy TK.
 {.buttons .align-center}
 
 {% endsection %}
+
+{% endhoist %}

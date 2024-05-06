@@ -35,4 +35,12 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 ***
 
-### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center}
+### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center .push}
+
+<style type="text/css">
+  .push {
+    position: relative;
+    top: 5rem;
+    translate: 0% -50%;
+  }
+</style>

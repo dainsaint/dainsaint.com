@@ -5,7 +5,7 @@ tags: []
 eleventyExcludeFromCollections: false
 paywall: false
 title: gdp
-color: "#724E91"
+color: "#76818E"
 social: ''
 featured: []
 

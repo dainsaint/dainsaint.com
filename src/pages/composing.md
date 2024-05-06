@@ -8,6 +8,10 @@ color: "#0F2434"
 TKTK I write the music that fits the story. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 {.lede} 
 
+tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
+
+{% hoist "sections" %}
+
 {% section %}
   
   ## orchestration
@@ -91,3 +95,5 @@ basic collab copy TK.
 
 
 {% endsection %}
+
+{% endhoist %}

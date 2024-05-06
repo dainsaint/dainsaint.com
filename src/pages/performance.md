@@ -8,6 +8,8 @@ color: "#FD7D1E"
 TKTK Storyteller, musician, talks
 {.lede} 
 
+{% hoist "sections" %}
+
 {% section %}
 {% endsection %}
 
@@ -23,3 +25,4 @@ basic collab copy TK.
 
 
 {% endsection %}
+{% endhoist %}

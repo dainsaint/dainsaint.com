@@ -1,7 +1,9 @@
-<article id="{{ title | slug }}" class="block {{ color | contrast }}" style="--background: {{ color }}">
+<article id="{{ title | slug }}" class="block lede {{ color | contrast }}" style="--background: {{ color }}">
   <div class="stack constrain">
     {% include featured %}
     {% include project-info %}
     {{ content | safe }}
   </div>
 </article>
+
+{% inject "sections" %}

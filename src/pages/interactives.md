@@ -11,6 +11,8 @@ TKTK tik tak tik tak
 {% include category-list, types: 'journalism', use-featured: true %}
 
 
+{% hoist "sections" %}
+
 {% section %}
 
 {% include quote, quote: "let's make something<br>**memorable :fa-bookmark:**<br>together" %}
@@ -23,3 +25,5 @@ basic collab copy TK.
 
 
 {% endsection %}
+
+{% endhoist %}
