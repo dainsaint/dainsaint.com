@@ -1,6 +1,6 @@
 {% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
-<article class="block lede {{ color | contrast }}" style="--background: {{ color }}">
+<article class="block block-lede {{ color | contrast }}" style="--background: {{ color }}">
 
   <div class="stack constrain">
     {% include featured %}

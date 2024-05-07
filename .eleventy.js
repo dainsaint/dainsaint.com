@@ -92,6 +92,19 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("hasTags", (collection, tags = "") => {
+    const tagArray = tags.split(",");
+    
+    return collection.filter((item) => {
+      const commonTags = tagArray.filter((tag) =>
+        item.data.tags?.includes(tag)
+      );
+      return tagArray.length === commonTags.length;
+    });
+  });
+
+  eleventyConfig.addCollection("dynamic", (collectionApi) => collectionApi);
+
   eleventyConfig.addFilter("inFolder", function (array, inputPath) {
     let path = inputPath.split("/");
     let search = path.splice(0, path.length - 1).join("/");
@@ -162,7 +175,7 @@ module.exports = function (eleventyConfig) {
       style: color ? ` style="--background: ${color || 'transparent'}"` : ''
     }    
 
-    return `<section class="block loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
+    return `<section class="block block-loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
   })
 
   let hoisted;

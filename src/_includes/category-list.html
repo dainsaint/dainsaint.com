@@ -1,27 +1,22 @@
+{%- unless label == false -%}
+<h3>{{ tags }}</h3>
+{%- endunless -%}
 
-{% for t in types %}
+{% assign collection = collections.all | hasTags: tags %}
+<div class="category-list-projects grid grid-2">
+{%- for project in collection -%}
 
-  {%- unless label == false -%}
-  <h3>{{ t }}</h3>
-  {%- endunless -%}
-  {% assign collection = collections[t] | reverse %}
-
-  <div class="category-list-projects grid grid-2">
-  {%- for p in collection -%}
-    <div class="category-list-project">
-      <div class="stack compact">
-        {%- if use-featured -%}
-        {%- assign featured = p.data.featured -%}
-        {%- include featured, url: p.url -%}
-        {%- endif -%}
-        <div class="stack tight">
-          <h4 class="project-title"><a href="{{ p.url | url }}">{{ p.data.title }}</a></h4>
-          <p class="project-description">{{ p.data.description }}</p>
-        </div>
-     </div>
+  <div class="category-list-project">
+    <div class="stack-compact">
+      {%- if use-featured -%}
+      {%- assign featured = project.data.featured -%}
+      {%- include featured, url: project.url -%}
+      {%- endif -%}
+      <div class="stack-tight">
+        <h4 class="project-title"><a href="{{ project.url | url }}">{{ project.data.title }}</a></h4>
+        <p class="project-description">{{ project.data.description }}</p>
+      </div>
     </div>
-  {%- endfor -%}
   </div>
-
-{% endfor %}
-
+{%- endfor -%}
+</div>

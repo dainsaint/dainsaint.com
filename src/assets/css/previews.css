@@ -31,7 +31,7 @@
     height: 1024px;
     display: block;
 
-    .block.full {
+    .block-full {
       min-height: inherit;
       height: 100%;
       overflow: hidden;

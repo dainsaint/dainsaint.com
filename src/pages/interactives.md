@@ -8,7 +8,7 @@ color: "#eeeeee"
 TKTK tik tak tik tak
 {.lede} 
 
-{% include category-list, types: 'journalism', use-featured: true %}
+{% include category-list, tags: 'journalism', use-featured: true, label: false %}
 
 
 {% hoist "sections" %}

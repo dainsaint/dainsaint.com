@@ -9,7 +9,7 @@ TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of g
 
 ***
 
-{% include category-list, types: 'game', use-featured: true, label: false %}
+{% include category-list, tags: 'featured,game', use-featured: true, label: false %}
 
 {% hoist "sections" %}
 

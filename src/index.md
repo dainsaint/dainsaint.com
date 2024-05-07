@@ -29,7 +29,7 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 ***
 
-{% include category-list, types: 'frontpage', use-featured: true, label: false %}
+{% include category-list, tags: 'frontpage', use-featured: true, label: false %}
 * [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}
 
