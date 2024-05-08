@@ -1,8 +1,11 @@
 {% for f in featured %}
-<div class="featured">
+
   {% if f.type == "gallery" %}
   {% assign images = f.images %}
   {% include gallery, url: url %}
+
+  {% elsif f.type == "hero" %}
+  {% include hero, url: f.url %}
 
   {% elsif f.type == "youtube" %}
   {% include youtube, video_id: f.video_id %}
@@ -17,5 +20,5 @@
 
   {% endif %}
 
-</div>
+
 {% endfor %}

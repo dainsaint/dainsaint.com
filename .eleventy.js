@@ -81,6 +81,18 @@ module.exports = function (eleventyConfig) {
     return lightOrDark(color || "#121212");
   });
 
+  eleventyConfig.addFilter("prose", function(pages) {
+    const result = pages.reduce( (text, page, i, arr) => {
+      if (i == arr.length - 1) text += "or ";
+      text += `[${page.page}](${page.url || `/` + page.page})`
+      if (i < arr.length - 1) text += ", ";
+      
+      return text;
+    }, "")
+
+    return result;
+  })
+
   eleventyConfig.addFilter("where", function (array, key, value) {
     return array.filter((item) => {
       const keys = key.split(".");
@@ -175,7 +187,7 @@ module.exports = function (eleventyConfig) {
       style: color ? ` style="--background: ${color || 'transparent'}"` : ''
     }    
 
-    return `<section class="block block-loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
+    return `<section class="block-loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
   })
 
   let hoisted;

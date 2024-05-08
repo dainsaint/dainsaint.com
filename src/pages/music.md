@@ -1,11 +1,11 @@
 ---
-title: composing
+title: music
 description: music and sound design for fun and profit
 color: "#0F2434"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
-TKTK I write the music that fits the story. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
+I'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/games/splice). Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 {.lede} 
 
 tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
@@ -63,7 +63,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
   I also had a thing of St. Anytime i guess.
 
   ### city don't sing
-  [youtube GjZa6hSSotM]
+  {% include youtube, video_id: "GjZa6hSSotM" %}
 
   ### albums/singles
   {% assign personal = bandcamp.dainsaint | concat: bandcamp.saintanytime %}

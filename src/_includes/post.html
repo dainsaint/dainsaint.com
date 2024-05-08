@@ -3,9 +3,8 @@ layout: base
 title: Dain Saint
 ---
 {% assign post = collections.all | where: "fileSlug", page.fileSlug | first %}
-<main class="single">
-  <div class="spacer-top"></div>
+<main>
   {% include content %}
-  <div class="spacer-bottom"></div>
 </main>
+
 {% include footer %}

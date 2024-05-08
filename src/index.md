@@ -21,7 +21,9 @@ pagination:
 {% include quote, quote: "[Hi, I'm Dain Saint](/about)<br>**I turn stories into experiences.**" %}
 :::
 
-I make stories you can touch, and stories that touch you. Whether&nbsp;it's through [games](/games), [composing](/composing), [writing](/writing), [interactives](/interactives), or [performance](/performance), I create artistic experiences about better futures and the roads we take to get there.
+
+
+I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
 * [learn more :fa-angle-right:](/about)
@@ -37,6 +39,8 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 ### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center .push}
 
+{% hoist "head" "index" %}
+
 <style type="text/css">
   .push {
     position: relative;
@@ -44,3 +48,5 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
     translate: 0% -50%;
   }
 </style>
+
+{% endhoist %}

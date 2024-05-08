@@ -9,11 +9,9 @@ eleventyExcludeFromCollections: true
   {%- endunless -%}
 
   {% if posts | size %}
-  <div class="posts">
     {% for post in posts %}
     {% include content %}
     {% endfor %}
-  </div>
   {% endif %}
 </main>
 

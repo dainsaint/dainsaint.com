@@ -24,7 +24,7 @@ featured:
  
 2020 has been a _year_. between the pandemic, the blow to the arts, and the continued fight for freedom, we've been put through the ringer—both in philly, and the rest of the country. i hope this song brings you some catharsis as we say goodbye to this year and move into the next one.
 
-[youtube GjZa6hSSotM]
+{% include youtube, video_id: "GjZa6hSSotM" %}
 
 ---
 

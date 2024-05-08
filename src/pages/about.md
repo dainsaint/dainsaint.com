@@ -1,13 +1,14 @@
 ---
-title: about
-hero: /assets/uploads/_ber3845.jpg
-social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
+title: 'about'
 color: "#FEDB8A"
 eleventyExcludeFromCollections: false
 date: ''
 tags: []
 status: ''
 ---
+
+
+![dain saint](/assets/uploads/wisteria-pic.jpg)
 
 **dain saint** is a storyteller, musician, and designer who makes story-driven experiences. He has produced over a dozen commercially-released games with [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
@@ -20,20 +21,6 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 
 {% hoist "sections" %}
 
-{% section %}
-# about this site
-
-TK shorter copy...
-
-i've never been a huge fan of social media. it is powerful, and an incredible force for good, but _man_ things with infinite scroll aren't great for my brain.
-
-and my art follows my stream of consciousness. sometimes that takes the form of poetry. or song. or spoken word, or rhetoric, the odd book or video.
-
-the way we're taught to market runs against the way i create. i often have no idea where particular pieces are leading me until i've arrived; and if i wait until i know where i've gotten to start giving you directions, i'll never release anything (which has been my curse for years).
-
-so instead, this website is my garden. as i create new pieces, they'll be published here immediately. once i figure out where it's going, i create a [project](/projects) to start harvesting the work. once it's ready to release, it's released — no muss, no fuss.
-
-{% endsection %}
 
 
 {% section %}
@@ -59,6 +46,22 @@ so instead, this website is my garden. as i create new pieces, they'll be publis
 * [worlds beyond number](https://worldsbeyondnumber.com) is one of the most beautiful pieces of media i've experienced this decade. well worth the $5 a month for everything.
 * finally opened up the [broken earth trilogy](https://nkjemisin.com/series/the-broken-earth/). devoured it in a week. [nk jemisin](), y'all. if i start talking about how _good_ this is i'll never ever stop.
 * currently reading [children of virtue and vengance](https://tomiadeyemi.com/the-writer/) — can't _wait_ for "anguish and anarchy" to drop this summer.
+
+{% endsection %}
+
+
+{% section %}
+# about this site
+
+TK shorter copy...
+
+i've never been a huge fan of social media. it is powerful, and an incredible force for good, but _man_ things with infinite scroll aren't great for my brain.
+
+and my art follows my stream of consciousness. sometimes that takes the form of poetry. or song. or spoken word, or rhetoric, the odd book or video.
+
+the way we're taught to market runs against the way i create. i often have no idea where particular pieces are leading me until i've arrived; and if i wait until i know where i've gotten to start giving you directions, i'll never release anything (which has been my curse for years).
+
+so instead, this website is my garden. as i create new pieces, they'll be published here immediately. once i figure out where it's going, i create a [project](/projects) to start harvesting the work. once it's ready to release, it's released — no muss, no fuss.
 
 {% endsection %}
 

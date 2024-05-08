@@ -1,6 +1,4 @@
-{% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
-
-<article class="block block-lede {{ color | contrast }}" style="--background: {{ color }}">
+<article class="block-full block-lede {{ color | contrast }}" style="--background: {{ color }}">
 
   <div class="stack constrain">
     {% include featured %}
@@ -22,6 +20,8 @@
 </article>
 
 {% inject "sections" %}
+
+{% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
 <div class="project-posts {{ arrange }}">
 {% for p in posts %}
