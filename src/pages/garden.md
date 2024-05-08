@@ -13,7 +13,7 @@ description: |
 
   so instead, this website is my garden. as i create new pieces, they'll be published here immediately. once i figure out where it's going, i create a [project](/projects) to start harvesting the work. once it's ready to release, it's released — no muss, no fuss.
   ]
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 featured: []
 permalink: "garden/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}index.html"
 pagination:

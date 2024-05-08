@@ -6,7 +6,7 @@ tags: []
 eleventyExcludeFromCollections: false
 paywall: false
 title: you are going to live forever
-color: "#CC7E85"
+color: "#274B5C"
 social: ''
 featured: []
 

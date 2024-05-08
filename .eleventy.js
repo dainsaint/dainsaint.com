@@ -131,6 +131,17 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("inProject", function (collection, projectPath) {
+    if (!collection || !projectPath) return {};
+
+    let list = collection.filter(
+      (post) =>
+        post.data.project != "" && projectPath.indexOf(post.data.project) >= 0
+    );
+
+    return list;
+  });
+
   eleventyConfig.addFilter("fromFile", function (collection, file) {
     if (!collection || !file || file == "") return null;
 
@@ -142,16 +153,6 @@ module.exports = function (eleventyConfig) {
     else return {};
   });
 
-  eleventyConfig.addFilter("inProject", function (collection, projectPath) {
-    if (!collection || !projectPath) return {};
-
-    let list = collection.filter(
-      (post) =>
-        post.data.project != "" && projectPath.indexOf(post.data.project) >= 0
-    );
-
-    return list;
-  });
 
   eleventyConfig.addFilter("fromFiles", function (collection, files) {
     if (!collection || !files) return [];
@@ -208,6 +209,7 @@ module.exports = function (eleventyConfig) {
     if (!hoisted[this.page.outputPath][slot])
       hoisted[this.page.outputPath][slot] = {};
     hoisted[this.page.outputPath][slot][source] = content;
+
     return "";
   });
 
@@ -217,15 +219,19 @@ module.exports = function (eleventyConfig) {
     return "";
   });
 
-  if( process.env.ELEVENTY_RUN_MODE === "build" ) {
-    eleventyConfig.addTransform("images", function(content) {
-      if ((this.page.outputPath || "").endsWith(".html")) {
-        return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2")
-      }
-
+  
+  eleventyConfig.addTransform("images", function(content) {
+    if ( !(this.page.outputPath || "").endsWith(".html") )
       return content;
-    })
-  }
+
+    // check for dev vs prod
+    if( process.env.ELEVENTY_RUN_MODE !== "build" )
+      return content;
+
+    // resize images
+    return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2");
+  })
+  
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk

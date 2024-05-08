@@ -25,7 +25,7 @@ nowhere
 >
 ***
 
-[youtube u1GIRi2c5ik]
+{% include youtube, video_id: "u1GIRi2c5ik" %}
 
 [_they cannot imagine if they do not see it in a book  
 even when they see it its they book that tell them how to look_](https://www.youtube.com/watch?v=u1GIRi2c5ik)

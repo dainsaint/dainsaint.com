@@ -1,5 +1,5 @@
-<div class="category-list-project">
-  {%- if use-featured -%}
+<div class="showcase-list-project">
+  {%- if feature -%}
   {%- assign featured = p.data.featured -%}
   {%- include featured, url: p.url -%}
   {%- endif -%}

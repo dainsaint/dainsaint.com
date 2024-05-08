@@ -2,6 +2,7 @@
   "layout": "index",
   "style" : "page",
   "permalink": "{{ page.fileSlug }}/",
+  "eleventyExcludeFromCollections": false,
   "tags": [
     "pages"
   ]

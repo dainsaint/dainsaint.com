@@ -1,7 +1,7 @@
 ---
 title: follow
 color: "#161616"
-eleventyExcludeFromCollections: false
+eleventyExcludeFromCollections: true
 featured: []
 
 ---

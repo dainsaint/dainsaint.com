@@ -1,3 +1,6 @@
-<figure class="youtube">
-  <iframe src='https://www.youtube.com/embed/{{ video_id }}?modestbranding=1&showinfo=0&rel=0&iv_load_policy=3&color=white' frameborder="0" allowfullscreen></iframe>
+<figure class="youtube js-youtube" data-video="{{ video_id }}" style="background-image: url(https://img.youtube.com/vi/{{ video_id }}/sddefault.jpg)">
+  <div class="youtube-play"></div>
 </figure>
+
+
+<script src="/assets/js/youtube.js"></script>

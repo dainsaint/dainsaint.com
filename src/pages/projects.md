@@ -6,14 +6,14 @@ featured: []
 description: games, writing, songs, videos, and the rest.
 ---
 <div class="stack-airy">
-{% include category-list, tags: "featured", use-featured: true %}
+{% include showcase-list, tags: "featured", feature: true %}
 
-{% include category-list, tags: "play" %}
+{% include showcase-list, tags: "play" %}
 
-{% include category-list, tags: "read" %}
+{% include showcase-list, tags: "read" %}
 
-{% include category-list, tags: "listen" %}
+{% include showcase-list, tags: "listen" %}
 
-{% include category-list, tags: "watch" %}
+{% include showcase-list, tags: "watch" %}
 
 </div>

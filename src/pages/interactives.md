@@ -1,6 +1,7 @@
 ---
 title: interactives
 description: stuff you can touch
+tags: portfolio
 color: "#eeeeee"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
@@ -8,7 +9,7 @@ color: "#eeeeee"
 TKTK tik tak tik tak
 {.lede} 
 
-{% include category-list, tags: 'journalism', use-featured: true, label: false %}
+{% include showcase-list, tags: 'journalism', feature: true, label: false %}
 
 
 {% hoist "sections" %}

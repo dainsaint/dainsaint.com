@@ -1,0 +1,10 @@
+{%- unless label == false -%}
+<h3>{{ tags }}</h3>
+{%- endunless -%}
+
+{% assign collection = collections.all | hasTags: tags | reverse %}
+<div class="grid grid-2">
+{%- for project in collection -%}
+  {% include showcase, post: project, feature: feature %}
+{%- endfor -%}
+</div>

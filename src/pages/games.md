@@ -1,6 +1,7 @@
 ---
 title: games
 description: beep boop
+tags: portfolio
 color: "#292B53"
 ---
 
@@ -9,7 +10,7 @@ TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of g
 
 ***
 
-{% include category-list, tags: 'featured,game', use-featured: true, label: false %}
+{% include showcase-list, tags: 'featured,game', feature: true, label: false %}
 
 {% hoist "sections" %}
 

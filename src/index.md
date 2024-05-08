@@ -17,21 +17,23 @@ pagination:
   alias: posts
 ---
 
+
 ::: aside
 {% include quote, quote: "[Hi, I'm Dain Saint](/about)<br>**I turn stories into experiences.**" %}
 :::
 
-
-
 I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
+
 
 * [learn more :fa-angle-right:](/about)
 {.buttons .align-right}
 
+
+
 ***
 
-{% include category-list, tags: 'frontpage', use-featured: true, label: false %}
+{% include showcase-list, tags: 'frontpage', feature: true, label: false %}
 * [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}
 

@@ -1,6 +1,7 @@
 ---
 title: music
 description: music and sound design for fun and profit
+tags: portfolio
 color: "#0F2434"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---

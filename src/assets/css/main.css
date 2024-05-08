@@ -94,7 +94,6 @@ a {
 
 img {
   display: block;
-  margin: 0px auto;
   max-width: 100%;
   height: auto;
   content-visibility: auto;
@@ -643,10 +642,6 @@ main > .block-full:first-of-type {
 
 /** YOUTUBE **/
 
-.youtube iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
 
 
 
@@ -665,7 +660,7 @@ main > .block-full:first-of-type {
 
 
 
-.category-list-project:has(.gallery-image-link:hover) .project-title a {
+.showcase:has(.gallery-image-link:hover) .project-title a {
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 4px;
@@ -971,7 +966,35 @@ input[type=submit]:hover {
 
 .youtube {
   width: 100%;
-  height: 56.25%;
+  aspect-ratio: 16 / 9;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  
+  &:has(iframe) {
+    cursor: auto;
+    border: none;
+  }
+
+  iframe {
+    background-color: black;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+  
+
+  .youtube-play {
+    width: 68px;
+    height: 48px;
+    background: url("/assets/img/youtube-play.svg") center center no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    pointer-events: none;
+  }
 }
 
 
