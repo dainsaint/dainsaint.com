@@ -12,6 +12,6 @@
   # Requests to URLs matching this pattern...
   from = "/assets/uploads/resized/:file"
   # ...will resolve to this URL pattern
-  to = "/.netlify/images?url=/assets/uploads/:file&width=800"
+  to = "/.netlify/images?url=/assets/uploads/:file&width=800&fm=webp&q=100"
   # ... and the status code of 200 will make this behave as a rewrite
   status = 200
