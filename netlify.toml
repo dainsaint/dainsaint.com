@@ -1,3 +1,12 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+
+[[redirects]]
+  # Requests to URLs matching this pattern...
+  from = "/assets/uploads/:file"
+  # ...will resolve to this URL pattern
+  to = "/.netlify/images?url=/assets/uploads/:file"
+  # ... and the status code of 200 will make this behave as a rewrite
+  status = 200
