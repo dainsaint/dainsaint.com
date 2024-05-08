@@ -7,9 +7,11 @@ tags: []
 status: ''
 ---
 
+<div class="grid grid-2">
 
 ![dain saint](/assets/uploads/wisteria-pic.jpg)
 
+::: group
 **dain saint** is a storyteller, musician, and designer who makes story-driven experiences. He has produced over a dozen commercially-released games with [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
 He has created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and is always looking for beautiful ways to connect people.
@@ -17,6 +19,9 @@ He has created [art exhibitions](https://wevetraveledsofar.com) and [museum inst
 As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing).
 
 He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
+:::
+
+</div>
 
 
 {% hoist "sections" %}

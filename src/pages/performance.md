@@ -1,7 +1,7 @@
 ---
 title: performance
 description: hop skip and a jump
-color: "#FD7D1E"
+color: "#272838"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
@@ -11,6 +11,8 @@ TKTK Storyteller, musician, talks
 {% hoist "sections" %}
 
 {% section %}
+## talks
+
 {% endsection %}
 
 {% section %}

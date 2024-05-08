@@ -1134,3 +1134,14 @@ input[type=submit]:hover {
   }
 }
 
+
+
+#flags a {
+  text-decoration-thickness: 0px;
+  text-decoration-color: transparent;
+
+  &:hover {
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--color);
+  }
+}
