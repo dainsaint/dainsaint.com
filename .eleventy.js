@@ -7,6 +7,8 @@ const markdownDoMarkdown = require("@digitalocean/do-markdownit");
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight")
+const rssPlugin = require("@11ty/eleventy-plugin-rss");
+
 // const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const Color = require("color");
 
@@ -33,7 +35,8 @@ module.exports = function (eleventyConfig) {
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlightPlugin);
 
-  
+  // rss plugin
+  eleventyConfig.addPlugin(rssPlugin);
 
   //Image transformation
   // eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
@@ -213,6 +216,15 @@ module.exports = function (eleventyConfig) {
       return Object.values( hoisted[this.page.outputPath][slot] );
     return "";
   });
+
+
+  eleventyConfig.addTransform("images", function(content) {
+    if ((this.page.outputPath || "").endsWith(".html")) {
+      return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2")
+    }
+
+    return content;
+  })
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
