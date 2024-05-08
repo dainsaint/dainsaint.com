@@ -2,11 +2,16 @@
   publish = "_site"
   command = "npm run build"
 
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+  # Optional (but highly recommended). Defaults to [".cache"].
+  paths = [".cache"]
 
 [[redirects]]
   # Requests to URLs matching this pattern...
-  from = "/assets/uploads/:file"
+  from = "/assets/uploads/resized/:file"
   # ...will resolve to this URL pattern
-  to = "/.netlify/images?url=/assets/uploads/:file"
+  to = "/.netlify/images?url=/assets/uploads/:file&width=800"
   # ... and the status code of 200 will make this behave as a rewrite
   status = 200
