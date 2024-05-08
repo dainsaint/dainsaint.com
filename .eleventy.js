@@ -217,14 +217,15 @@ module.exports = function (eleventyConfig) {
     return "";
   });
 
+  if( process.env.ELEVENTY_RUN_MODE === "build" ) {
+    eleventyConfig.addTransform("images", function(content) {
+      if ((this.page.outputPath || "").endsWith(".html")) {
+        return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2")
+      }
 
-  eleventyConfig.addTransform("images", function(content) {
-    if ((this.page.outputPath || "").endsWith(".html")) {
-      return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2")
-    }
-
-    return content;
-  })
+      return content;
+    })
+  }
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
