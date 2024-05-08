@@ -108,13 +108,17 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("hasTags", (collection, tags = "") => {
-    const tagArray = tags.split(",");
-    
-    return collection.filter((item) => {
-      const commonTags = tagArray.filter((tag) =>
-        item.data.tags?.includes(tag)
-      );
-      return tagArray.length === commonTags.length;
+    const tagArray = tags.split(" ");
+    const include = tagArray.filter((tag) => tag[0] !== "-");
+    const exclude = tagArray.filter((tag) => tag[0] === "-").map( x => x.substring(1) );
+    const positiveTags = tagArray.filter((tag) => tag[0] !== "-")
+
+    return collection.filter((item) => {      
+      const excluded = exclude.some((tag) => item.data.tags?.includes(tag));
+      if (excluded) return false;
+
+      const included = include.filter((tag) => item.data.tags?.includes(tag));
+      return positiveTags.length === included.length;
     });
   });
 

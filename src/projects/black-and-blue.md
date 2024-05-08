@@ -2,10 +2,12 @@
 date: 2020-07-10T11:27:47.000+00:00
 project: []
 tags:
+- timeline
 - inquirer
 - journalism
 eleventyExcludeFromCollections: false
 title: black and blue
+description: a timeline of police brutality against black philadelphians
 color: "#020D2D"
 featured:
 - type: gallery

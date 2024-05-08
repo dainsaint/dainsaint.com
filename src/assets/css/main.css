@@ -212,9 +212,13 @@ h3 + * {
 }
 
 .constrain > * {
-  width: 100%;
+  /* width: 100%; */
   max-width: calc( min(100%, 800px) - 2.5rem );
   margin-inline: auto;
+}
+
+.align-wide {
+  max-width: calc(min(100%, 1200px) - 2.5rem);
 }
 
 .align-full {
@@ -334,17 +338,14 @@ main > .block-full:first-of-type {
 
 .grid-3 {
   --grid-column-count: 3;
-  --grid-min-width: 100px;
 }
 
 .grid-4 {
   --grid-column-count: 4;
-  --grid-min-width: 100px;
 }
 
 .grid-5 {
   --grid-column-count: 5;
-  --grid-min-width: 17%;
 }
 
 
@@ -747,10 +748,12 @@ main > .block-full:first-of-type {
 
 
 .project-info {
-  display: grid;
-  grid-auto-rows: min-content;
+  flex: 2 1 50%;
   gap: .25rem;
-  /* flex: 2 1 300px; */
+}
+
+.project-status {
+  flex: 1 1 300px;
 }
 
 .project-tag {
@@ -779,9 +782,7 @@ main > .block-full:first-of-type {
   margin-bottom: 16px;
 }
 
-.project-status {
-  flex: 0 1 300px;
-}
+
 
 .project-status p>a {
   display: block;

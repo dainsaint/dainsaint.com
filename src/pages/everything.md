@@ -1,7 +1,7 @@
 ---
 title: everything
-description: every post on the site
-color: "#313130"
+description: every dang post on the site
+color: "#343a40"
 ---
 
 ### Pages
@@ -20,7 +20,7 @@ color: "#313130"
   
 ### {{ year }}
 {% endif %}
-* [{{ post.data.title }}](/{{ post.url }})
+* [{{ post.data.title }}]({{ post.url }})
 {% endfor %}
 
 ---
@@ -36,5 +36,5 @@ color: "#313130"
   
 ### {{ year }}
 {% endif %}
-* [{{ post.data.title }}](/{{ post.url }})
+* [{{ post.data.title }}]({{ post.url }})
 {% endfor %}

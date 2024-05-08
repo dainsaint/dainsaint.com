@@ -1,9 +1,8 @@
 ---
 title: interactives
 description: stuff you can touch
-tags: portfolio
+tags: showcase
 color: "#eeeeee"
-# hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
 TKTK tik tak tik tak

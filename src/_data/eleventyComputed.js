@@ -2,7 +2,7 @@ const { formatHex, lch, interpolate } = require("culori");
 const Color = require("color");
 
 const lightGradientDestination = lch("#F9F871");
-const darkGradientDestination = lch("#2F4858");
+const darkGradientDestination = lch("#361339");
 
 module.exports = {
   design: {

@@ -1,7 +1,7 @@
 ---
 title: performance
 description: hop skip and a jump
-tags: portfolio
+tags: showcase
 color: "#272838"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---

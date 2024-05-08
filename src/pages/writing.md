@@ -1,7 +1,7 @@
 ---
 title: writing
 description: assorted thoughts
-tags: portfolio
+tags: showcase
 color: "#3A3C48"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
@@ -11,7 +11,7 @@ TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 
 ***
 
-{% include showcase-list, tags: 'book,featured', feature: true, label: false %}
+{% include showcase-list, tags: 'book featured', feature: true, label: false %}
 
 
 {% hoist "sections" %}
