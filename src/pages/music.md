@@ -7,7 +7,7 @@ color: "#0F2434"
 # hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
-I'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/games/splice). Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
+TKTK i'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/games/splice). Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 {.lede} 
 
 tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
@@ -17,7 +17,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
 {% section %}
   
   ## orchestration
-  TK More words about orchestration here, including the gamut etc. IDK.
+  TK a few words about orchestration
 
   <div class="grid grid-2">
 

@@ -6,6 +6,11 @@ social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
 color: "#6A4C93"
 promo: |
   ::: group
+  ### space opera
+  [playtest june 2nd!](/)
+  :::
+
+  ::: group
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::

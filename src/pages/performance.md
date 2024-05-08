@@ -17,10 +17,10 @@ TKTK Storyteller, musician, talks
 
 TKTK sometimes people ask me to blather about things. i can blather for you too.
 
-
 {% include showcase, slug: "the-universe", feature: true %}
-{% include showcase, slug: "xd", feature: true %}
-{% include showcase, slug: "i-am-not-a-fetish", feature: true %}
+
+* [more talks :fa-arrow-right:](/)
+{.buttons .align-right}
 
 
 {% endsection %}

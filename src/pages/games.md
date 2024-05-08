@@ -16,12 +16,9 @@ TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of g
 
 {% section %}
 
-# journalism
-TKTK articles from the Inquirer, like
+# cipher prime studios
+tk tk a few things about cp here, link out to [cipherprime.com]()
 
-* Black and Blue
-* Wildest Dreams essay
-* Horse 95 thing
 
 {% endsection %}
 {% section %}
