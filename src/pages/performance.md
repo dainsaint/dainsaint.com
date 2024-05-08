@@ -13,6 +13,10 @@ TKTK Storyteller, musician, talks
 {% section %}
 ## talks
 
+TKTK sometimes people ask me to blather about things. i can blather for you too.
+
+{% include category-list, tags: "talks", use-featured: true, label: false %}
+
 {% endsection %}
 
 {% section %}

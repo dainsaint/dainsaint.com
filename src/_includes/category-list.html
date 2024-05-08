@@ -2,7 +2,7 @@
 <h3>{{ tags }}</h3>
 {%- endunless -%}
 
-{% assign collection = collections.all | hasTags: tags %}
+{% assign collection = collections.all | hasTags: tags | reverse %}
 <div class="category-list-projects grid grid-2">
 {%- for project in collection -%}
 
