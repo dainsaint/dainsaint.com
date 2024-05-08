@@ -16,7 +16,7 @@ He has created [art exhibitions](https://wevetraveledsofar.com) and [museum inst
 
 As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing).
 
-He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
+He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
 
 
 {% hoist "sections" %}
@@ -36,10 +36,10 @@ He is a [massive nerd](https://dainsaint.bandcamp.com/album/pieces-of-8).
 
 ### long-term projects
 * working with [obvious agency](https://obvious-agency.com) on a dope theatrical ttrpg called [space opera](/space-opera)
-* actively looking to dm or play in actual play — [hit me up!](/email)
+* actively looking for opportunities in actual play on either side of the dm screen — [hit me up!](/email)
 
-### recent inquirer adventures
-* I made a [game about the I-95 horse](https://www.inquirer.com/news/philadelphia/inq2/horse-i-95-highway-game-20240222.html), and later [got to ride him](https://www.inquirer.com/life/inq2/i-95-horse-freeway-fletcher-st-urban-riding-club-20240412.html).
+### recent adventures
+* i made a [game about the I-95 horse](https://www.inquirer.com/news/philadelphia/inq2/horse-i-95-highway-game-20240222.html), and then i [got to ride him](https://www.inquirer.com/life/inq2/i-95-horse-freeway-fletcher-st-urban-riding-club-20240412.html).
 
 ### media i'm in love with
 * [x-men '97](https://gizmodo.com/x-men-97-cyclops-scott-summers-marvel-disney-plus-1851364191) is killing it.

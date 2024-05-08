@@ -69,10 +69,12 @@ hr {
 }
 
 ul {
-  margin: 0px;
+  margin: 0;
+  box-sizing: border-box;
 
   li {
-    margin-top: .25em;
+    margin-inline-start: -.5rem;
+    margin-block-start: .5em;
   }
 }
 
@@ -172,7 +174,6 @@ p.lede {
  */
 
 .stack > * + * {
-  margin-block: 0;
   margin-block-start: 1.25rem;
 }
 
