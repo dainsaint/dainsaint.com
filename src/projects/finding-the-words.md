@@ -20,7 +20,7 @@ featured:
 tktk description
 
 ### awards
-* any?
+* SND45 Award of Excellence (Elements: Video Design)
 
 ### featured
 * gabriel ramirez

@@ -1,15 +1,13 @@
-<figure class="gallery">
-
-  {% for img in images %}
+<figure class="gallery">  
+  {%- for img in images -%}
   <div class="gallery-image">
-    {% if url %}
+    {%- if url -%}
     <a class="gallery-image-link" href="{{ url }}">
       <img src="{{ img }}" alt="">
     </a>
-    {% else %}
+    {%- else -%}
     <img src="{{ img }}" alt="">
-    {% endif %}
+    {%- endif -%}
   </div>
-  {% endfor %}
-
+  {%- endfor -%}
 </figure>

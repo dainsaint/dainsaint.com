@@ -8,7 +8,7 @@ title: all of the lights
 color: "#224751"
 featured:
 - type: quote
-  content: "**depression**  \nis the opposite of  \n**expression**"
+  content: "**depression** is the opposite of **expression**"
 
 ---
 i was never meant  

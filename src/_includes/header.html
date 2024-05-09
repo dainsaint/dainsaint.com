@@ -14,6 +14,7 @@
       <div class="header-nav-close">
         <button class="header-menu-button"><i class="fa fa-xmark"></i></button>
       </div>
+      <ul>
 
       {% for link in navigation.links %}
         {% assign active = false %}
@@ -23,18 +24,17 @@
         {% endif %}
 
         {% for tag in link.tags %}
-          {% for t in tags %}
-            {%- if tag == t -%}
-              {% assign active = true %}
-              {% break %}
-            {%- endif -%}
-          {% endfor %}
+          {% if tags contains tag %}
+            {% assign active = true %}
+            {% break %}
+          {% endif %}
         {% endfor %}
 
         {% assign pg = link.page | prepend: "/" %}
-        <a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a>
-
+        <li><a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
       {% endfor %}
+
+      </ul>
     </nav>
 
     

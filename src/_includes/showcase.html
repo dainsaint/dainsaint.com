@@ -1,12 +1,11 @@
-{% if slug %}
+{%- if slug -%}
 {% assign post = collections.all | fromFile: slug %}
-{% endif %}
+{%- endif -%}
 
 <div class="showcase">
   <div class="stack-compact">
     {%- if feature -%}
-    {%- assign featured = post.data.featured -%}
-    {%- include featured, url: post.url -%}
+    {%- include featured, featured: post.data.featured, url: post.url -%}
     {%- endif -%}
     <div class="stack-tight">
       <h4 class="project-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h4>

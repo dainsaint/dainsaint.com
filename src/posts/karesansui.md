@@ -10,7 +10,7 @@ color: "#B2AA8E"
 social: ''
 featured:
 - type: quote
-  content: "**perfect**  \nisn't  \n**present**"
+  content: "**perfect** isn't **present**"
 
 ---
 i built an elaborate sand castle  

@@ -1,9 +1,9 @@
-<article id="{{ post.data.title | slug }}" class="block-full background {{ post.data.color | contrast }}"
+<article id="{{ post.data.title | slug }}" class="post block-full background {{ post.data.color | contrast }}"
   style="--background: {{ post.data.color }}">
 
   <div class="stack constrain">
-    {% assign featured = post.data.featured %}
-    {% include featured %}
+    
+    {% include featured, featured: post.data.featured %}
 
     <div class="post-body">
       <div class="post-meta">
@@ -14,18 +14,27 @@
       {% assign query = collections.projects | fromFile: post.data.project %}
 
       <div class="post-content stack">
-        <div>
-          <h2 class="post-header"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+        <header>
+          <h1 class="post-title">
+            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+          </h1>
 
           {% if query %}
-          <div class="post-project">part of <a href="{{ query.url | url}}">{{ query.data.title }}</a></div>
+          <p class="post-project">part of <a href="{{ query.url | url}}">{{ query.data.title }}</a></p>
           {% endif %}
-        </div>
+        </header>
 
         <div class="post-content-text stack">
           {{ post.templateContent | safe }}
         </div>
+
+        <div class="post-social-block">
+          {% include social %}
+        </div>
       </div>
+
+
+
     </div>
   </div>
 

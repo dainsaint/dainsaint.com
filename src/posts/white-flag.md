@@ -11,7 +11,7 @@ color: "#EE964B"
 social: ''
 featured:
 - type: quote
-  content: "there is  \n**power**  \nin  \n**surrender**"
+  content: "there is **power** in **surrender**"
 
 ---
 have you ever fought a tide  

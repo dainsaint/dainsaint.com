@@ -1,15 +1,22 @@
-<article id="{{ post.data.title | slug }}" class="block-full background {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
+<article id="{{ post.data.title | slug }}" class="post block-full background {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
 
   <div class="stack constrain">
-    {% assign featured = post.data.featured %}
-    {% include featured %}
+    
+    {% include featured, featured: post.data.featured %}
 
     <div class="post-body">
       <div class="post-content">
-        <h2 class="post-header"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
-        <div class="post-project">{{ post.data.date | date: "%B %e, %Y" }} </div>
+        <header>
+          <h1 class="post-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+          <p class="post-project">{{ post.data.date | date: "%B %e, %Y" }} </p>
+        </header>
+
         <div class="post-content-text stack">
           {{ post.templateContent | safe }}
+        </div>
+
+        <div class="post-social-block">
+          {% include social %}
         </div>
       </div>
     </div>

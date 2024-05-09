@@ -8,7 +8,7 @@ title: repression vs oppression
 color: "#ECC168"
 featured:
 - type: quote
-  content: "**repression**  \nis the other half of  \n**oppression**"
+  content: "**repression** is the other half of **oppression**"
 
 ---
 

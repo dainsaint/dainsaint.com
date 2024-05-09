@@ -2,47 +2,47 @@
 <footer class="block-loose background {{ color | contrast }}" style="--background: {{ color }}">
 
   <div class="stack-loose constrain">
+      
+    {%- unless not pagination.pages.size -%}
+    <div class="pagination-block">
+      <h3>explore more, <span style="white-space: nowrap;">or take a break</span></h3>
+      <nav>
+        {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}"><i class="fa fa-angle-left"></i> older pieces</a>
+        {% endif %}
+        
+        {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">newer pieces <i class="fa fa-angle-right"></i></a>
+        {% endif %}
+      </nav>
+    </div>
+    {%- endunless -%}
+
+
+    <div>
+      <h3>enjoy a random piece</h3>
+      {% assign random = collections.posts | getRandom: page %}
+      <a href="{{ random.url }}">{{ random.data.title }}</a>
+    </div>
+
     
+    <nav class="project-nav">
+      <h3>projects</h3>
+      <ul>
+        <li><a href="/games">games</a></li>
+        <li><a href="/music">music</a></li>
+        <li><a href="/writing">writing</a></li>
+        <li><a href="/interactives">interactives</a></li>
+        <li><a href="/performance">performance</a></li>
+      </ul>
+    </nav>
 
-  {%- if pagination -%}
-  {%- if pagination.pages.size > 1 -%}
-  <div class="pagination-block">
-  <h3>explore more, <span style="white-space: nowrap;">or take a break</span></h3>
-  <nav>
-    {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}"><i class="fa fa-angle-left"></i> older pieces</a>
-    {% endif %}
-    
-    {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}">newer pieces <i class="fa fa-angle-right"></i></a>
-    {% endif %}
-  </nav>
-  </div>
-  {%- endif -%}
-  {%- endif -%}
+    {% include subscribe %}
 
-  <div class="random-block">
-  <h3>enjoy a random piece</h3>
-  <nav>
-    {% assign random = collections.posts | getRandom: page %}
-  <a href="{{ random.url }}">{{ random.data.title }}</a>
-  </nav>
-  </div>
+    <div id="flags">
+      &copy;{{ "now" | date: "%Y" }} dain saint • <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a href="https://pcrf.net">🇵🇸</a>
+    </div>
 
-  <div>
-    <h3>projects</h3>
-    <a href="/games">games</a>&nbsp;• 
-    <a href="/music">music</a>&nbsp;•
-    <a href="/writing">writing</a>&nbsp;•
-    <a href="/interactives">interactives</a>&nbsp;•
-    <a href="/performance">performance</a>
-  </div>
-
-  {% include subscribe %}
-
-  <div id="flags">
-    <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a href="https://pcrf.net">🇵🇸</a>
-  </div>
   </div>
 
 </footer>

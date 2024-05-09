@@ -11,7 +11,7 @@ social: ''
 featured:
 - type: prompt
   header: today in the comments
-  content: "what's the best thing that happened to you this  \n**summer?**"
+  content: "what's the best thing that happened to you this **summer?**"
 
 ---
 and in the silence  

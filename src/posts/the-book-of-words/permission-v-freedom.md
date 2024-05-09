@@ -8,7 +8,7 @@ title: permission v freedom
 color: "#F26852"
 featured:
 - type: quote
-  content: "**permission**  \nis not  \n**freedom**"
+  content: "**permission** is not **freedom**"
 
 ---
 

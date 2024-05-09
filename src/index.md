@@ -22,10 +22,7 @@ pagination:
   alias: posts
 ---
 
-
-::: aside
-{% include quote, quote: "[Hi, I'm Dain Saint](/about)<br>**I turn stories into experiences.**" %}
-:::
+# [Hi, I'm Dain Saint](/about) **I turn stories into experiences.** {.title}
 
 I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}

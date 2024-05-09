@@ -18,8 +18,9 @@ featured:
 ---
 
 ### awards
-* a bunch of design things
-* the rest
+* SND44 - Bronze (Line of Coverage Features/Social Issues)
+* SND44 - Bronze (Design Social Issues) (The Blueprint)
+* [TDC 2023 – Winner](https://www.oneclub.org/awards/tdcawards/-award/46363/a-more-perfect-union) (Publication - series)
 
 ### team
 * [Pentagram](https://www.pentagram.com/work/a-more-perfect-union): Brand Identity, Editorial Design

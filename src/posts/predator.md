@@ -12,7 +12,7 @@ social: ''
 featured:
 - type: prompt
   header: today in the comments
-  content: "what’s the last thing you did that expressed your  \n**desire?**"
+  content: "what’s the last thing you did that expressed your **desire?**"
 
 ---
 when i said  

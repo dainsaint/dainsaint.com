@@ -11,7 +11,7 @@ color: "#243A5A"
 social: ''
 featured:
 - type: quote
-  content: "you don't have  \n**insecurities**  \nyou have  \n**fears**"
+  content: "you don't have **insecurities** you have **fears**"
 
 ---
 i stared at the storm  

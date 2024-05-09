@@ -11,7 +11,7 @@ color: "#7FB069"
 social: ''
 featured:
 - type: quote
-  content: "we aren't  \n**meant**  \nto heal  \n**alone**"
+  content: "we aren't **meant** to heal **alone**"
 
 ---
 sometimes i think  

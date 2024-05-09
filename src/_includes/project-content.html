@@ -1,7 +1,7 @@
-<article class="block-full block-lede {{ color | contrast }}" style="--background: {{ color }}">
+<article class="project block-full block-lede {{ color | contrast }}" style="--background: {{ color }}">
 
   <div class="stack constrain">
-    {% include featured %}
+    {% include featured, featured: featured %}
 
     <div class="project-intro">
       {% include project-info, url: page.url %}
@@ -24,8 +24,11 @@
 {% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
 <div class="project-posts {{ arrange }}">
+
+
 {% for p in posts %}
 {% assign post = collections.all | where: "fileSlug", p.page.fileSlug | first %}
 {% include content %}
 {% endfor %}
+
 </div>

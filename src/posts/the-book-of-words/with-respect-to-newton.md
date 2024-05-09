@@ -8,7 +8,7 @@ title: with respect to newton
 color: "#204752"
 featured:
 - type: quote
-  content: "**consequences**  \nare not  \n**persecution**"
+  content: "**consequences** are not **persecution**"
 
 ---
 you can't **leap**  

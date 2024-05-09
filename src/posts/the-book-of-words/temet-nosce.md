@@ -8,11 +8,11 @@ title: temet nosce
 color: "#F26852"
 featured:
 - type: quote
-  content: "**arrogance**  \nis thinking you  \n**can’t lose**"
+  content: "**arrogance** is thinking you **can’t lose**"
 - type: quote
-  content: "**confidence**  \nis knowing you  \n**can win**"
+  content: "**confidence** is knowing you **can win**"
 - type: quote
-  content: "**self-esteem**  \nis knowing your value even if you  \n**don’t play**"
+  content: "**self-esteem** is knowing your value even if you **don’t play**"
 
 ---
 well of _course_  

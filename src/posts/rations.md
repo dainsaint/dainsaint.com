@@ -11,10 +11,10 @@ color: "#7A306C"
 social: ''
 featured:
 - type: quote
-  content: "**appreciation**  \nis not  \n**satisfaction**"
+  content: "**appreciation** is not **satisfaction**"
 - type: prompt
-  content: "do not let this world weaponize your  \n**gratitude**  \nto make you accept
-    less than your  \n**worth**"
+  content: "do not let this world weaponize your **gratitude** to make you accept
+    less than your **worth**"
   header: today's message
 
 ---

@@ -11,10 +11,10 @@ color: "#03B5AA"
 social: ''
 featured:
 - type: quote
-  content: "**love**  \nis  \n**love**"
+  content: "**love** is **love**"
 - type: prompt
   header: today's question
-  content: "what if you didn't have to explain  \n**who you are?**"
+  content: "what if you didn't have to explain **who you are?**"
 
 ---
 i don’t know why  

@@ -28,6 +28,7 @@
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^3.1.8",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@photogabble/eleventy-plugin-interlinker": "^1.0.6",
     "color": "^4.2.3",
     "colorjs.io": "^0.5.0",
     "culori": "^4.0.1",

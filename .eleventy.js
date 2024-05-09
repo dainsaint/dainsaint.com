@@ -1,4 +1,3 @@
-const util = require("util");
 const markdownIt = require("markdown-it");
 const markdownItFA = require("markdown-it-fontawesome");
 const markdownItContainer = require("markdown-it-container");
@@ -8,6 +7,7 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight")
 const rssPlugin = require("@11ty/eleventy-plugin-rss");
+
 
 // const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const Color = require("color");
@@ -64,9 +64,7 @@ module.exports = function (eleventyConfig) {
   })
     .use(markdownItAttrs)
     .use(markdownItContainer, "group")
-    .use(markdownItContainer, "aside")
-    .use(markdownItContainer, "columns")
-    .use(markdownDoMarkdown, { heading_id: false })
+    // .use(markdownDoMarkdown, { heading_id: false })
     .use(markdownItFA);
 
   eleventyConfig.setLibrary("md", markdownLibrary);

@@ -8,11 +8,9 @@ eleventyExcludeFromCollections: true
     {% include page-content %}
   {%- endunless -%}
 
-  {% if posts | size %}
-    {% for post in posts %}
-    {% include content %}
-    {% endfor %}
-  {% endif %}
+  {% for post in posts %}
+  {% include content %}
+  {% endfor %}
 </main>
 
 {% include footer %}
