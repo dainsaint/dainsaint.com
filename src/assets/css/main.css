@@ -959,7 +959,7 @@ input[type=submit]:hover {
     font: var(--fa-font-solid);
   }
 
-  &.did_select {
+  &:disabled {
     font-weight: bold;
     color: var(--color);
 
