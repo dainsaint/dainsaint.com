@@ -959,6 +959,16 @@ input[type=submit]:hover {
     font: var(--fa-font-solid);
   }
 
+  &.did_select {
+    font-weight: bold;
+    color: var(--color);
+
+    &::before {
+      font: var(--fa-font-solid);
+    }
+
+  }
+
 }
 
 .post-social-block {
