@@ -890,13 +890,12 @@ input {
 
   background: none;
   border: 1px solid var(--color);
-  font-size: 14px;
+  font-size: .67rem;
   height: 42px;
 
   box-sizing: border-box;
   width: 100%;
   padding: 0px 16px;
-  font-size: 14px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: var(--color);
@@ -916,7 +915,6 @@ input[type=submit],
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
   height: 42px;
   width: 100%;
   box-sizing: border-box;
@@ -1219,5 +1217,49 @@ input[type=submit]:hover {
   &:hover {
     text-decoration-thickness: 4px;
     text-decoration-color: var(--color);
+  }
+}
+
+
+
+
+/*
+ *
+ * links
+ */
+
+.minimal {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1.25rem;
+
+  .profile {
+    width: 125px;
+    display: inline-block;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .buttons {
+    /* max-width: 500px; */
+    text-align: center;
+
+    li {
+      width: 100%;
+    } 
+    
+    a {
+      padding: 1rem;
+      white-space: normal;
+
+    }
   }
 }
