@@ -9,7 +9,7 @@ color: "#3A3C48"
 TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 {.lede} 
 
-***n
+***
 
 {% include showcase-list, projects: "freedom-is-non-negotiable, just-stop", feature: true, label: false %}
 
