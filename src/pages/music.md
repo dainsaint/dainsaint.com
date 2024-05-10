@@ -12,6 +12,8 @@ TKTK i'm probably best known for [Auditorium]() and [Splice](https://cipherprime
 
 tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent. Always down to try new things and expand my musical palette. Also, sound design.
 
+{% hoist "sections" %}
+
 {% section %}
   
   ## orchestration
@@ -95,3 +97,5 @@ basic collab copy TK.
 
 
 {% endsection %}
+
+{% endhoist %}
