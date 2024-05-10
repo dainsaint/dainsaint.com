@@ -92,7 +92,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
 basic collab copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
 
 

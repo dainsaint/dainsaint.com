@@ -32,7 +32,7 @@ TKTK sometimes people ask me to blather about things. i can blather for you too.
 basic collab copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
 
 

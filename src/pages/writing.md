@@ -33,7 +33,7 @@ TKTK articles from the Inquirer, like
 basic copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
 
 {% endsection %}

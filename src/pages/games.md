@@ -28,9 +28,8 @@ tk tk a few things about cp here, link out to [cipherprime.com]()
 basic collab copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
-
 {% endsection %}
 
 {% endhoist %}

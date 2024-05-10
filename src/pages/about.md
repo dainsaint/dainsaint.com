@@ -68,12 +68,14 @@ so instead, this website is my garden. as i create new pieces, they'll be publis
 
 {% section %}
 
-{% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
+<h1 class="quote js-quote" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
+{{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
+</h1>
 
 basic collab copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
 
 {% endsection %}

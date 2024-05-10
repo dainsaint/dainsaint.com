@@ -220,7 +220,9 @@ function addShortcodes( eleventy ) {
 
   eleventy.addShortcode("inject", function (slot) {
     if (hoisted[this.page.outputPath] && hoisted[this.page.outputPath][slot])
-      return Object.values(hoisted[this.page.outputPath][slot]);
+      return markdownLibrary.render(
+        Object.values(hoisted[this.page.outputPath][slot]).join("\r\n")
+      );
     return "";
   });
 

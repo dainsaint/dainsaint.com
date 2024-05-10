@@ -37,6 +37,51 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 * [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}
 
+
+
+{% hoist "sections" %}
+
+<section id="cta" class="block stack constrain colorize light" style="--primary: #362154;">
+
+
+<div class="align-center stack-compact">
+
+<h1 class="title js-quote" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
+{{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
+</h1>
+
+I bring diverse creative skills and deep perspective to meaningful projects.
+
+[{% include fist-bump.svg %} let's collab](/collab){.button}
+
+</div>
+
 ***
 
-### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.isolate .align-center}
+### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center}
+
+</section>
+
+{% endhoist %}
+
+<style>
+  .page .block:first-child {
+    padding-block-end: 1.25rem;
+  }
+
+  #cta {
+    padding-block: 3rem;
+  }
+
+@media( min-width: 650px ) {
+  h1.title strong {
+    display: inline-block;
+    padding-inline-end: .25rem;
+  }
+}
+
+  h3.align-center {
+    color: var(--color-alpha)
+  }
+
+</style>

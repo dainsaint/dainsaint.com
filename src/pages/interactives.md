@@ -20,7 +20,7 @@ TKTK tik tak tik tak
 basic collab copy TK.
 {.align-center}
 
-* [:fa-paper-plane: contact me](/collab)
+* [{% include fist-bump.svg %} let's collab](/collab)
 {.buttons .align-center}
 
 
