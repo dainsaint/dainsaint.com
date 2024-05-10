@@ -156,12 +156,12 @@ module.exports = function (eleventyConfig) {
 
 
   eleventyConfig.addFilter("fromFiles", function (collection, files) {
+    if( typeof(files) === "string")
+      files = files.split(", ");
+    
     if (!collection || !files) return [];
-
-    return collection.filter(
-      (post) =>
-        files.filter((file) => post.template.inputPath.indexOf(file) >= 0)
-          .length
+    return files.map((file) =>
+      collection.find((post) => post.template.parsed.name === file)
     );
   });
 

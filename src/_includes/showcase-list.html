@@ -2,7 +2,12 @@
 <h3>{{ tags }}</h3>
 {%- endunless -%}
 
+{% if projects %}
+{% assign collection = collections.all | fromFiles: projects %}
+{% else %}
 {% assign collection = collections.all | hasTags: tags | reverse %}
+{% endif %}
+
 <div class="grid-2">
 {%- for project in collection -%}
   {% include showcase, post: project, feature: feature %}

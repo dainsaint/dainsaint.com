@@ -198,9 +198,7 @@ nav ul {
   margin-block-start: 1.25rem;
 }
 
-h3 + * {
-  margin-block-start: .25rem;
-}
+
 
 .stack-tight > * + * {
   margin-block-start: .2rem;
@@ -218,6 +216,9 @@ h3 + * {
   margin-block-start: 8rem;
 }
 
+[class^=stack] h3+* {
+  margin-block-start: .25rem;
+}
 
 .group {
   & > * + * {

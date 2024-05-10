@@ -11,7 +11,7 @@ TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 
 ***
 
-{% include showcase-list, tags: 'book featured', feature: true, label: false %}
+{% include showcase-list, projects: "freedom-is-non-negotiable, just-stop", feature: true, label: false %}
 
 
 {% hoist "sections" %}
