@@ -1,36 +1,40 @@
 ---
 title: Dain Saint
 ---
-
+{% capture pageTitle %}{% unless title == "" %}{{ title }} - {% endunless %}{% endcapture %}
+{% capture pageSocialImg %}{% if social and social != '' %}{{ social }}{% else %}https://dainsaint.com/previews/{{ title | slug }}.png{% endif %}{% endcapture %}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>{% unless title == "" %}{{ title }} - {% endunless %}dain saint</title>
+    <title>{{ pageTitle }}</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,800;1,300;1,800&family=Spectral:ital,wght@0,300;0,700;1,200;1,300;1,700&display=swap">
     <link rel="stylesheet" href="{{ "/assets/css/fonts/elgraine/elgraine.css" | url }}">
     <link rel="stylesheet" href="{{ "/assets/css/foundation.css" | url }}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | url }}">
+    
     <link rel="me" href="https://github.com/dainsaint">
+    <link rel="me" href="https://instagram.com/dainsaint">
+    <link rel="me" href="https://twitter.com/dainsaint">
+    <link rel="me" href="https://youtube.com/@dainsaint">
     <link rel="webmention" href="https://webmention.io/dainsaint.com/webmention" />
-    <script src="https://kit.fontawesome.com/4b1f0829c1.js" crossorigin="anonymous" async></script>
 
-    {% capture pageSocialImg %}{% if social and social != '' %}{{ social }}{% else %}https://dainsaint.com/previews/{{ title | slug }}.png{% endif %}{% endcapture %}
+    <script src="https://kit.fontawesome.com/4b1f0829c1.js" crossorigin="anonymous" async></script>
 
     {% inject "head" %}
 
     <meta name="description" content="{{ description }}" >
 
     <meta property="og:image" content="{{pageSocialImg}}" >
-    <meta property="og:title" content="dain saint - {{ title }}" >
+    <meta property="og:title" content="{{ pageTitle }}" >
     <meta property="og:description" content="{{ description }}" >
 
     <meta name="twitter:image" content="{{pageSocialImg}}" >
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@dainsaint">
     <meta name="twitter:creator" content="@dainsaint">
-    <meta name="twitter:title" content="dain saint - {{ title }}">
+    <meta name="twitter:title" content="{{ pageTitle }}">
     <meta name="twitter:description" content="{{ description }}">
 
     <meta name="generator" content="Eleventy">
