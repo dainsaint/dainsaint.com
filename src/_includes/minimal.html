@@ -31,10 +31,10 @@
     <meta name="generator" content="Eleventy">
   </head>
 
-  <body style="--background: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
+  <body style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
     
     <main>
-      <article class="minimal background constrain {{ color | contrast }}">
+      <article class="minimal colorize constrain {{ color | contrast }}">
       {{ content | safe }}
       </article>
     </main>

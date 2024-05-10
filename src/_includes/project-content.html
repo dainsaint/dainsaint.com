@@ -1,6 +1,8 @@
-<article class="project block block-full block-lede {{ color | contrast }}" style="--background: {{ color }}">
+{% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
-  <div class="stack constrain">
+<article class="project block block-lede {{ color | contrast }}" style="--primary: {{ color }}">
+
+  <section class="stack constrain">
     {% include featured, featured: featured %}
 
     <div class="project-intro">
@@ -14,17 +16,18 @@
     </div>
 
     {{ content | safe }}
+
     {% include toc, posts: posts %}
-  </div>
+
+  </section>
 
 </article>
 
 {% inject "sections" %}
 
-{% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
+
 
 <div class="project-posts {{ arrange }}">
-
 
 {% for p in posts %}
 {% assign post = collections.all | where: "fileSlug", p.page.fileSlug | first %}

@@ -39,7 +39,7 @@ title: Dain Saint
   {% assign color = design.paginationColor %}
   {%- endif %}
 
-  <body style="--background: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
+  <body style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
 
     {% include header, color: color, promo: promo %}
 

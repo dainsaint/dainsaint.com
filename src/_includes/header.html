@@ -41,7 +41,7 @@
         {% endfor %}
 
         {% assign pg = link.page | prepend: "/" %}
-        <li><a class="{% if active %}active{% endif %}" href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
+        <li><a {% if active %}class="active" {% endif %}href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
       {% endfor %}
 
       </ul>

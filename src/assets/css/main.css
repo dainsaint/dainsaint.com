@@ -1,5 +1,5 @@
 :root {
-  --background: #DFE0DF;
+  --primary: #DFE0DF;
   --color: red;
   --color-alpha: #FF000020;
   --dark: #062535;
@@ -11,17 +11,13 @@
 html {
   background: #222;
   font-size: clamp(16px, 4vw, 21px);
-
-  /* @media (min-width: 400px) {
-    font-size: 21px;
-  } */
 }
 
 body {
   --color: var(--dark);
   --color-alpha: var(--dark-alpha);
 
-  background: var(--background);
+  background: var(--primary);
   color: var(--color);
   font-family: "Spectral", serif;
   padding: 0px;
@@ -149,8 +145,8 @@ nav ul {
   filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(133%) hue-rotate(343deg) brightness(104%) contrast(94%);
 }
 
-.background {
-  background: var(--background);
+.colorize {
+  background: var(--primary);
   color: var(--color);
 }
 
@@ -185,7 +181,7 @@ nav ul {
 }
 
 .palette {
-  --background: var(--palette-color);
+  --primary: var(--palette-color);
   --color: var(--contrast-color);
   --color-alpha: var(--contrast-alpha-color);
 }
@@ -197,8 +193,6 @@ nav ul {
 .stack > * + * {
   margin-block-start: 1.25rem;
 }
-
-
 
 .stack-tight > * + * {
   margin-block-start: .2rem;
@@ -231,7 +225,7 @@ nav ul {
 }
 
 .constrain > * {
-  max-width: calc( min(100%, 800px) - 2.5rem );
+  max-width: calc( min(100% - 2.5rem, 800px)  );
   margin-inline: auto;
 }
 
@@ -248,20 +242,25 @@ nav ul {
   justify-content: center;
   flex-direction: column;
   padding: 1.25rem 0;
+
+  & > * {
+    width: 100%;
+  }
+
 }
 
 .block-loose {
   padding: 10rem 0;
 }
 
-.block-full:not(:has(.hero)) {
+.block-smart:not(:has(.hero)) {
   justify-content: space-between;  
   min-height: calc(100vh);
+  padding: 0;
 
   & > * {
     min-height: auto;
     flex-basis: 999;
-    padding: 0;
   }
 
   &::before, &::after {
@@ -273,7 +272,7 @@ nav ul {
 
 }
 
-main > .block-full:first-of-type {
+main > .block-smart:first-of-type {
   min-height: calc(100vh - 108px);
     
   &::before {
@@ -283,15 +282,51 @@ main > .block-full:first-of-type {
   }
 }
 
-.block-full:has(.hero) {
+.block-smart:has(.hero) {
   padding-bottom: 10rem;
 }
 
 
 .block-lede {
-  min-height: unset !important;
+  padding-block-start: 1.25rem;
+  padding-block-end: 10rem;
 }
 
+.block-smart, .block-lede{
+  .isolate:last-child{
+    margin-block-end: -5rem;
+  }
+}
+
+.pull {
+  margin-block-end: -1.25rem;
+}
+
+.pull-tight {
+  margin-block-end: -.2rem;
+}
+
+.pull-compact {
+  margin-block-end: -.75rem;
+}
+
+.pull-loose {
+  margin-block-end: -2.5rem;
+}
+
+.pull-airy {
+  margin-block-end: -8rem;
+}
+
+.isolate {
+  & + * {
+    margin-block-start: 5rem;
+  }
+
+  * + & {
+    margin-block-start: 5rem;
+  }
+}
 
 .masonry {
   grid-auto-flow: dense;
@@ -402,7 +437,7 @@ main > .block-full:first-of-type {
 
 time {
   background: var(--color);
-  color: var(--background);
+  color: var(--primary);
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -580,7 +615,7 @@ time {
 .audio-button {
   background: var(--color);
   border: 1px solid var(--color);
-  color: var(--background);
+  color: var(--primary);
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -614,7 +649,7 @@ time {
   border-radius: 4px;
   background-color: var(--color);
   width: 2px;
-  border: 2px solid var(--background);
+  border: 2px solid var(--primary);
   top: 50%;
   translate: 0% -50%
 }
@@ -907,7 +942,7 @@ button,
 input[type=submit],
 .shopify-buy__btn {
   background: var(--color);
-  color: var(--background);
+  color: var(--primary);
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -921,7 +956,7 @@ input[type=submit],
 
 button:hover,
 input[type=submit]:hover {
-  background: var(--background);
+  background: var(--primary);
   color: var(--color)
 }
 
@@ -996,7 +1031,7 @@ input[type=submit]:hover {
   text-transform: uppercase;
   font-weight: bold;
   background: var(--color);
-  color: var(--background);
+  color: var(--primary);
   padding: 5px;
   line-height: 10px;
   width: max-content;
@@ -1071,7 +1106,7 @@ input[type=submit]:hover {
       text-decoration: none;
       background: var(--color);
       border: 1px solid var(--color);
-      color: var(--background);
+      color: var(--primary);
 
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
@@ -1088,7 +1123,7 @@ input[type=submit]:hover {
       white-space: nowrap;
 
       &:hover {
-        background: var(--background);
+        background: var(--primary);
         color: var(--color);
       }
     }
@@ -1188,7 +1223,7 @@ input[type=submit]:hover {
     max-height: 100%;
 
     &::before {
-      background-color: var(--background);
+      background-color: var(--primary);
       opacity: .95;
       top: 0px;
     }
@@ -1208,16 +1243,25 @@ input[type=submit]:hover {
 
 
 
-#flags a {
-  text-decoration-thickness: 0px;
-  text-decoration-color: transparent;
+#copyright {
+  font-size: .8rem;
+  line-height: 1rem;
+  display: flex;
+  gap: .5rem;
 
-  &:hover {
-    text-decoration-thickness: 4px;
-    text-decoration-color: var(--color);
+  align-items: center;
+
+  a {
+    font-size: 1rem;
+    text-decoration-thickness: 0px;
+    text-decoration-color: transparent;
+
+    &:hover {
+      text-decoration-thickness: 4px;
+      text-decoration-color: var(--color);
+    }
   }
 }
-
 
 
 
@@ -1271,5 +1315,16 @@ input[type=submit]:hover {
 
   ul {
     margin-inline-start: .5em;
+  }
+}
+
+
+
+.project-table-of-contents ul:has( > :nth-child(10) ) {
+  columns: 2;
+
+  li {
+    text-indent: -1rem;
+    padding-inline-start: 1rem;
   }
 }

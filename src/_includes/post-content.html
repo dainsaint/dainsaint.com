@@ -1,7 +1,7 @@
-<article id="{{ post.data.title | slug }}" class="post block block-full background {{ post.data.color | contrast }}"
-  style="--background: {{ post.data.color }}">
+<article id="{{ post.data.title | slug }}" class="post block block-smart colorize {{ post.data.color | contrast }}"
+  style="--primary: {{ post.data.color }}">
 
-  <div class="stack constrain">
+  <section class="stack constrain">
     
     {% include featured, featured: post.data.featured %}
 
@@ -36,6 +36,6 @@
 
 
     </div>
-  </div>
+  </section>
 
 </article>

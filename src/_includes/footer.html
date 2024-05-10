@@ -1,5 +1,5 @@
 {% assign color = "#161616" %}
-<footer class="block-loose background {{ color | contrast }}" style="--background: {{ color }}">
+<footer class="block-loose colorize {{ color | contrast }}" style="--primary: {{ color }}">
 
   <div class="stack-loose constrain">
       
@@ -39,8 +39,8 @@
 
     {% include subscribe %}
 
-    <div id="flags">
-      &copy;{{ "now" | date: "%Y" }} dain saint • <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a href="https://pcrf.net">🇵🇸</a>
+    <div id="copyright">
+      &copy;{{ "now" | date: "%Y" }} dain saint  <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a href="https://pcrf.net">🇵🇸</a>
     </div>
 
   </div>

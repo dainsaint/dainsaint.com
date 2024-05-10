@@ -1,9 +1,13 @@
-<article id="{{ title | slug }}" class="page block block-full block-lede {{ color | contrast }}" style="--background: {{ color }}">
-  <div class="stack constrain">
+<article id="{{ title | slug }}" class="page {{ color | contrast }}" style="--primary: {{ color }}">
+  <section class="block block-lede stack constrain">
+
     {% include featured %}
     {% include project-info %}
     {{ content | safe }}
-  </div>
+
+  </section>
+
+  {% inject "sections" %}
+
 </article>
 
-{% inject "sections" %}

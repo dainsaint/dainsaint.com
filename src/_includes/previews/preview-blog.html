@@ -1,7 +1,7 @@
-<article id="{{ post.data.title | slug }}" class="background block block-full {{ post.data.color | contrast }}"
-  style="--background: {{ post.data.color }}">
+<article id="{{ post.data.title | slug }}" class="colorize block block-smart {{ post.data.color | contrast }}"
+  style="--primary: {{ post.data.color }}">
 
-  <div class="post-main blog poem constrain">
+  <section class="post-main blog poem constrain">
     <div class="post-body">
       <div class="post-content">
         <h2 class="post-title">{{ post.data.title }}</h2>
@@ -11,7 +11,7 @@
         <div class="post-handle">@dainsaint</div>
       </div>
     </div>
-  </div>
+  </section>
 
   {% if more %}
     <div class="buttons post-more">

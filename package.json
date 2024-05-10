@@ -34,8 +34,12 @@
     "culori": "^4.0.1",
     "get-audio-duration": "^4.0.1",
     "glob": "^10.3.12",
+    "html-prettify": "^1.0.7",
+    "htmlfy": "^0.2.1",
     "node-audio-peaks": "^4.0.2",
     "node-fetch-commonjs": "^3.3.2",
-    "node-html-parser": "^6.1.13"
+    "node-html-parser": "^6.1.13",
+    "pretty": "^2.0.0",
+    "simply-beautiful": "^0.2.14"
   }
 }

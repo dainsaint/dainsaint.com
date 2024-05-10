@@ -3,14 +3,18 @@ const mdFA = require("markdown-it-fontawesome");
 const mdContainer = require("markdown-it-container");
 const mdAttrs = require("markdown-it-attrs");
 
-const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight")
-const rssPlugin = require("@11ty/eleventy-plugin-rss");
-
-
-// const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const Color = require("color");
+
+const rssPlugin = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");const Color = require("color");
+
+const yaml = require("js-yaml");
+// const prettify = require("html-prettify");
+// const { prettify } = require('htmlfy');
+// const beautify = require("simply-beautiful");
+const pretty = require("pretty");
 
 const waveforms = require("./scripts/waveforms");
 
@@ -165,6 +169,10 @@ module.exports = function (eleventyConfig) {
     return string ? markdownLibrary.render(string) : string;
   });
 
+  eleventyConfig.addFilter("inline", function (string) {
+    return string ? markdownLibrary.renderInline(string) : string;
+  });
+
   eleventyConfig.addFilter("getRandom", function (items = [], avoid) {
     let selected = items[Math.floor(Math.random() * items.length)];
     if( !selected )
@@ -185,10 +193,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("section", (content, color) => {
     const overrides = {
       contrast: color ? ` ${lightOrDark(color)}` : '',
-      style: color ? ` style="--background: ${color || 'transparent'}"` : ''
+      style: color ? ` style="--primary: ${color || 'transparent'}"` : ''
     }    
 
-    return `<section class="block-loose background palette${ overrides.contrast }"${ overrides.style }><div class="stack constrain">${ markdownLibrary.render(content) }</div></section>`;
+    return `<section class="block block-loose stack constrain colorize palette${ overrides.contrast }"${ overrides.style }>${ markdownLibrary.render(content) }</section>`;
   })
 
   let hoisted;
@@ -228,6 +236,16 @@ module.exports = function (eleventyConfig) {
     // resize images
     return content.replace(/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi, "assets/uploads/resized/$1.$2");
   })
+
+    eleventyConfig.addTransform("prettify", function (content) {
+      if (!(this.page.outputPath || "").endsWith(".html")) return content;
+
+      // check for dev vs prod
+      if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+      
+      return pretty(content, { ocd: true });
+    });
+
   
 
   // Let Eleventy transform HTML files as nunjucks

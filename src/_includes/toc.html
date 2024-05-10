@@ -3,9 +3,11 @@
   <h3 class="project-header">contents</h3>
 
   <nav class="project-table-of-contents">
+    <ul>
     {% for post in posts %}
-      <a href="#{{ post.title | slug }}">{{ post.title }}</a><br>
+      <li><a href="#{{ post.title | slug }}">{{ post.title }}</a></li>
     {% endfor %}
+    </ul>
   </nav>
 
 {% endif %}

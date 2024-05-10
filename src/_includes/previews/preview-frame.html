@@ -1,6 +1,7 @@
 <div class="preview-frames">
   {% assign splitContent = post.templateContent | split: "<blockquote></blockquote>" %}
-  {{ post.data.title }}
+  <h3>{{ post.data.title }}</h3>
+  
   <div class="row">
 
     {% assign query = collections.projects | fromFile: post.data.project %}

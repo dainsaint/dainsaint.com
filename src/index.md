@@ -27,30 +27,16 @@ pagination:
 I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
-
 * [learn more :fa-angle-right:](/about)
 {.buttons .align-right}
-
-
 
 ***
 
 {% include showcase-list, tags: 'frontpage', feature: true, label: false %}
+
 * [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}
 
 ***
 
-### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center .push}
-
-{% hoist "head" "index" %}
-
-<style type="text/css">
-  .push {
-    position: relative;
-    top: 5rem;
-    translate: 0% -50%;
-  }
-</style>
-
-{% endhoist %}
+### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.isolate .align-center}

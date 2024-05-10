@@ -5,14 +5,17 @@
   {% endunless %}
   <h1>
     {{ title }}
-    {% if tags contains "projects" %}
-    {% include kudos, url: post.url %}
-    {% endif %}
   </h1>
   
   {% if description %}
-  <div class="project-description">{{ description | markdown }}</div>
+  <p class="project-description">{{ description | inline }}</p>
   {% endif %}
+
+  {% if tags contains "projects" %}
+  {% include kudos, url: post.url %}
+  {% endif %}
+
+
   {%- if url != nil -%}
   <div class="post-permalink">
     <a class="copy-link" href="https://dainsaint.com{{ url | url }}">dainsaint.com{{ url | url }}</a>
