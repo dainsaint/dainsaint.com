@@ -15,7 +15,7 @@ TKTK tik tak tik tak
 
 {% section %}
 
-{% include quote, quote: "let's make something<br>**memorable :fa-bookmark:**<br>together" %}
+{% include quote, quote: "let's make something **memorable :fa-bookmark:** together" %}
 
 basic collab copy TK.
 {.align-center}

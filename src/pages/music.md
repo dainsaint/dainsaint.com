@@ -19,7 +19,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
   ## orchestration
   TK a few words about orchestration
 
-  <div class="grid grid-2">
+  <div class="grid-2">
 
   ::: group
   ### Onward
@@ -87,7 +87,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
 
 {% section %}
 
-{% include quote, quote: "let's make something<br>**musical :fa-music:**<br>together" %}
+{% include quote, quote: "let's make something **musical :fa-music:** together" %}
 
 basic collab copy TK.
 {.align-center}

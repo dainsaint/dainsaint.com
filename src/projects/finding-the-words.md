@@ -22,12 +22,23 @@ tktk description
 ### awards
 * SND45 Award of Excellence (Elements: Video Design)
 
+<div class="grid-2">
+
+::: group
 ### featured
 * gabriel ramirez
 * jaylene clark owens
 * mary mance
 * jovan mckoy
+:::
 
+::: group
 ### team
 * lauren schneiderman
 * jen miller
+
+### roles
+* production design
+:::
+
+</div>

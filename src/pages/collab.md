@@ -5,6 +5,11 @@ eleventyExcludeFromCollections: true
 featured: []
 ---
 
+i've given up on having a career. i want nothing more in live than to make dope shit with dope people aligned with liberation and abundance.
+
+so let's get into it.
+
+{% comment %}
 ### Interactive Journalism
 I'm an interactive journalist at the Philadelphia Inquirer. I won an Emmy for Wildest Dreams.
 
@@ -22,3 +27,4 @@ I give talks on experience design, philosophy, and the human perspective.
 
 ### Peformance
 I do live storytelling.
+{% endcomment %}

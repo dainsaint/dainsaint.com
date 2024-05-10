@@ -20,8 +20,20 @@ social: /assets/uploads/space-opera-cover.webp
 
 i've been having a blast working with the crew at [obvious agency](https://www.obvious-agency.com/) on this wild experience. stay tuned for playtest dates!
 
-### team
-[obvious agency](https://www.obvious-agency.com/)
+<div class="grid-2">
 
-### my Roles
-game master, game designer, production designer
+::: group
+### team
+* :fa-comments: [obvious agency](https://www.obvious-agency.com/)
+{.icons}
+:::
+
+::: group
+### roles
+* :fa-dice: game designer
+* :fa-object-group: production designer
+* :fa-dice-d20: game master 
+{.icons}
+:::
+
+</div>

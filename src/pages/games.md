@@ -23,7 +23,7 @@ tk tk a few things about cp here, link out to [cipherprime.com]()
 {% endsection %}
 {% section %}
 
-{% include quote, quote: "let's make something<br>**magical :fa-wand-sparkles:**<br>together" %}
+{% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
 
 basic collab copy TK.
 {.align-center}

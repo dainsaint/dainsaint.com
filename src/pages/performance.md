@@ -27,7 +27,7 @@ TKTK sometimes people ask me to blather about things. i can blather for you too.
 
 {% section %}
 
-{% include quote, quote: "let's make something<br>**meaningful :fa-hands-clapping:**<br>together" %}
+{% include quote, quote: "let's make something **meaningful :fa-hands-clapping:** together" %}
 
 basic collab copy TK.
 {.align-center}

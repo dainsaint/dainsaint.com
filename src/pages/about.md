@@ -10,11 +10,13 @@ status: ''
 
 ![dain saint](/assets/uploads/wisteria-pic.jpg)
 
-**dain saint** is a storyteller, musician, and designer who makes beautiful immersive experiences. He's produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
+**dain saint** is a philly-based storyteller, musician, and designer who makes beautiful immersive experiences. He's produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
 He has created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and is always looking for meaningful ways to connect people with the world around them.
 
-As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing).
+As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing). 
+
+[[city dont sing]]
 
 He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
 
@@ -29,11 +31,11 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 # updates
 
 ### upcoming events
-* <span class="date">aug 1-4, 2024</span> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
+* <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
-* <span class="date">apr 18, 2024</span> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
-* <span class="date">apr 27, 2024</span> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
+* <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
+* <time>apr 27, 2024</time> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 
 ### long-term projects
 * working with [obvious agency](https://obvious-agency.com) on a dope theatrical ttrpg called [space opera](/space-opera)
@@ -68,7 +70,7 @@ so instead, this website is my garden. as i create new pieces, they'll be publis
 
 {% section %}
 
-{% include quote, quote: "let's make something<br>**magical :fa-wand-sparkles:**<br>together" %}
+{% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
 
 basic collab copy TK.
 {.align-center}

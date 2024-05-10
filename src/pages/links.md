@@ -20,7 +20,7 @@ color: "#6A4C93"
 * [Merch](https://dainsaint.square.site)
 * [Iconic: Collaborative Art Project](https://www.inquirer.com/news/inq2/more-perfect-union-americana-icons-philadelphia-racism-20220406.html)
 * [City Don't Sing: Music Video](https://www.youtube.com/watch?v=GjZa6hSSotM)
-{.buttons}
+{.buttons .align-center}
 
 
 

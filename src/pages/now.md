@@ -10,11 +10,11 @@ tags: []
 ---
 
 ### upcoming events
-* <span class="date">aug 1-4, 2024</span> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
+* <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
-* <span class="date">apr 18, 2024</span> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
-* <span class="date">apr 27, 2024</span> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
+* <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
+* <time>apr 27, 2024</time> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 
 ### long-term projects
 * working with [obvious agency](https://obvious-agency.com) on a dope theatrical ttrpg called [space opera](/space-opera)

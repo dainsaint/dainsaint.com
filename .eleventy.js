@@ -1,8 +1,8 @@
 const markdownIt = require("markdown-it");
-const markdownItFA = require("markdown-it-fontawesome");
-const markdownItContainer = require("markdown-it-container");
-const markdownItAttrs = require("markdown-it-attrs");
-const markdownDoMarkdown = require("@digitalocean/do-markdownit");
+const mdFA = require("markdown-it-fontawesome");
+const mdContainer = require("markdown-it-container");
+const mdAttrs = require("markdown-it-attrs");
+
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight")
@@ -62,10 +62,9 @@ module.exports = function (eleventyConfig) {
     html: true,
     typographer: true,
   })
-    .use(markdownItAttrs)
-    .use(markdownItContainer, "group")
-    // .use(markdownDoMarkdown, { heading_id: false })
-    .use(markdownItFA);
+    .use(mdAttrs)
+    .use(mdContainer, "group")
+    .use(mdFA);
 
   eleventyConfig.setLibrary("md", markdownLibrary);
   eleventyConfig.setTemplateFormats([
