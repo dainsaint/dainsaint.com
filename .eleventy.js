@@ -45,6 +45,7 @@ function addOptions( eleventy ) {
 
   // Copy Image Folder to /_site
   eleventy.addPassthroughCopy("./src/assets");
+  eleventy.addPassthroughCopy("./src/robots.txt");
 
   // Set up markdown
   eleventy.setLibrary("md", markdownLibrary);
