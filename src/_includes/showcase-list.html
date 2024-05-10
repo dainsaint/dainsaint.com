@@ -8,7 +8,7 @@
 {% assign collection = collections.all | hasTags: tags | reverse %}
 {% endif %}
 
-<div class="grid-2">
+<div class="grid grid-2">
 {%- for project in collection -%}
   {% include showcase, post: project, feature: feature %}
 {%- endfor -%}

@@ -19,7 +19,7 @@ tktk a bit more text has to go here. Orchestration, piano, jazz, electronic bent
   ## orchestration
   TK a few words about orchestration
 
-  <div class="grid-2">
+  <div class="grid grid-2">
 
   ::: group
   ### Onward

@@ -1,6 +1,8 @@
 {%- if title != "" or description != "" -%}
 <div class="project-info">
+  {% unless layout == "index" %}
   <span class="project-tag">{{ tags[1] }}</span>
+  {% endunless %}
   <h1>
     {{ title }}
     {% if tags contains "projects" %}

@@ -20,7 +20,7 @@ social: /assets/uploads/space-opera-cover.webp
 
 i've been having a blast working with the crew at [obvious agency](https://www.obvious-agency.com/) on this wild experience. stay tuned for playtest dates!
 
-<div class="grid-2">
+<div class="grid grid-2">
 
 ::: group
 ### team

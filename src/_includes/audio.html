@@ -1,6 +1,6 @@
 {% assign slug = audio | split: '/' | last | split: '.' | first | slugify %}
 
-<figure class="audio" data-slug="{{ slug }}">
+<aside class="audio" data-slug="{{ slug }}">
   <div class="audio-controls">
     <button class="audio-button" id="{{ slug }}-audio-button">
       <i class="audio-icon fa-solid fa-play"></i>
@@ -13,7 +13,7 @@
     <audio src="{{ audio | url }}" preload="none">
     </audio>
   </div>
-</figure> 
+</aside> 
 
 
 {% hoist "scripts" "audio" %}

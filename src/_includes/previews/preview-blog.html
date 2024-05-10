@@ -1,37 +1,22 @@
+<article id="{{ post.data.title | slug }}" class="background block block-full {{ post.data.color | contrast }}"
+  style="--background: {{ post.data.color }}">
 
-<article id="{{ post.data.title | slug }}" class="block-full {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
-
-  <div class="post-main blog poem">
-
+  <div class="post-main blog poem constrain">
     <div class="post-body">
-
-
-
-
-    <div class="post-content">
-
-      <h2 class="post-title">{{ post.data.title }}</h2>
-
-      <div class="post-content-text">
-      {{ body }}
+      <div class="post-content">
+        <h2 class="post-title">{{ post.data.title }}</h2>
+        <div class="post-content-text">
+          {{ body }}
+        </div>
+        <div class="post-handle">@dainsaint</div>
       </div>
-
-      <div class="post-handle">@dainsaint</div>
-
-
     </div>
-
-
-
-  </div>
-
-
   </div>
 
   {% if more %}
-    <button class="post-more">
-      MORE >
-    </button>
+    <div class="buttons post-more">
+      <li><a>MORE ></a></li>
+    </div>
   {% endif %}
 
 </article>

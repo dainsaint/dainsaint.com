@@ -32,7 +32,8 @@
     display: block;
 
     .block-full {
-      min-height: inherit;
+      padding: 0;
+      min-height: inherit;;
       height: 100%;
       overflow: hidden;
       position: relative;
@@ -218,11 +219,12 @@
 }
 
 .post-prompt {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 45px;
+  line-height: 1;
 }
 
 .post-prompt strong {
+  display: block;
   font-family: "Elgraine Black Italic";
   font-size: 100px;
   font-weight: normal;

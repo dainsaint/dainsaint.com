@@ -1,39 +1,24 @@
+<article id="{{ post.data.title | slug }}" class="post background block block-full {{ post.data.color | contrast }}"
+  style="--background: {{ post.data.color }}">
 
-<article id="{{ post.data.title | slug }}" class="block-full {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
-
-  <div class="post-main continued poem">
-
+  <div class="post-main continued poem constrain">
     <div class="post-body">
-
-    <div class="post-meta">
-
-    </div>
-
-
-    <div class="post-content">
-
-      <h2 class="post-title">&nbsp;</h2>
-
-      <div class="post-content-text">
-      {{ body }}
+      <div class="post-meta">
       </div>
+      <div class="post-content">
+        <h2 class="post-title">&nbsp;</h2>
 
-      <div class="post-handle">@dainsaint</div>
+        <div class="post-content-text">
+          {{ body }}
+        </div>
 
-
+        <div class="post-handle">@dainsaint</div>
+      </div>
     </div>
-
-
-
   </div>
 
-
+  <div class="buttons post-more">
+    <li><a>MORE ></a></li>
   </div>
-
-
-    <div class="buttons post-more">
-      <li><a>MORE ></a></li>
-    </div>
-
 
 </article>

@@ -3,7 +3,7 @@
     "node": ">20.0.0"
   },
   "scripts": {
-    "start": "npx eleventy --serve",
+    "start": "npx eleventy --serve --quiet",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy",
     "build": "cross-env NODE_ENV=production eleventy",

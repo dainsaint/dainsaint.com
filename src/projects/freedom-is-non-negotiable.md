@@ -16,7 +16,7 @@ featured:
 - type: gallery
   images:
   - "/assets/uploads/freedom-cover.png"
-arrange: grid-2
+arrange: grid grid-2
 social: https://dainsaint.netlify.app/assets/uploads/freedom-social.png
 ---
 

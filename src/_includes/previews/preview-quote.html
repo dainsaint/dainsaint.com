@@ -1,12 +1,11 @@
+<article id="{{ post.data.title | slug }}" class="background block block-full {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
 
-<article id="{{ post.data.title | slug }}" class="block-full {{ post.data.color | contrast }}" style="--background: {{ post.data.color }}">
-
-  <div class="post-main post-quote">
+  <div class="post-main post-quote constrain">
 
     {% include quote %}
 
     {% if project  %}
-    <div class="buttons">
+    <div class="buttons align-center">
       <li><a>{{ project }}</a></li>
     </div>
     {% endif %}

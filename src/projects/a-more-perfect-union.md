@@ -17,6 +17,8 @@ featured:
 
 ---
 
+{% include video, src: "/assets/uploads/iconic-bkg.mp4" %}
+
 ### awards
 * SND44 - Bronze (Line of Coverage Features/Social Issues)
 * SND44 - Bronze (Design Social Issues) (The Blueprint)
@@ -31,6 +33,8 @@ featured:
 # iconic
 * [:fa-newspaper: read this](https://inquirer.com/iconic)
 {.buttons}
+
+
 
 ![modeling the jacket](/assets/uploads/iconic-1.jpg){.tall-2}
 ![](https://picsum.photos/id/1/600/800){.wide-2}

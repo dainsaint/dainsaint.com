@@ -230,10 +230,6 @@ nav ul {
   }
 }
 
-.constrain {
-  width: 100%;
-}
-
 .constrain > * {
   max-width: calc( min(100%, 800px) - 2.5rem );
   margin-inline: auto;
@@ -249,7 +245,6 @@ nav ul {
 
 .block {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 1.25rem 0;
@@ -260,9 +255,6 @@ nav ul {
 }
 
 .block-full:not(:has(.hero)) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;  
   min-height: calc(100vh);
 
@@ -341,13 +333,13 @@ main > .block-full:first-of-type {
 }
 
 
-[class^=grid] {
+.grid {
   --grid-gap: 1.25rem;
   --grid-column-count: 1;
   --grid-gap-count: calc(var(--grid-column-count) - 1);
   --grid-total-gap-width: calc(var(--grid-gap-count) * var(--grid-gap));
   --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
-  --grid-min-width: 320px;
+  --grid-min-width: 300px;
   display: grid;
   gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
@@ -444,14 +436,6 @@ time {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-content {
-  width: calc(100% - 2.5rem);
-  max-width: 800px;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .header-nav {
@@ -679,7 +663,11 @@ h1.title, .quote {
   }
 }
 
-
+.video {
+  video {
+    width: 100%;
+  }
+}
 
 
 
