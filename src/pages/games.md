@@ -4,8 +4,7 @@ description: beep boop
 tags: showcase
 color: "#292B53"
 ---
-
-TKTK Co-founder [Cipher Prime Studios](https://www.cipherprime.com), makers of games like Auditorium and Splice. Digital, game mechanics, also TTRPG design.
+i founded [Cipher Prime Studios](https://www.cipherprime.com) with will stallwood. We made a bunch of games, including Auditorium and Splice.
 {.lede} 
 
 ***
