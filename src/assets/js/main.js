@@ -1,8 +1,10 @@
 // EMAILS
 const encEmail = "aGVsbG9AZGFpbnNhaW50LmNvbQ==";
-const emails = document.querySelectorAll("a[href='/email']");
+const emails = document.querySelectorAll("a[href^='/email']");
 emails.forEach( email => {
-  email.setAttribute("href", `mailto:${atob(encEmail)}`);
+  const replacement = `mailto:${atob(encEmail)}`
+  const old = email.getAttribute("href");
+  email.setAttribute("href", old.replace("/email", replacement));
   if( email.innerText == "" )
     email.innerText = atob(encEmail);
 })

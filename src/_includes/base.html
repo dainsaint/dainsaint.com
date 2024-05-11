@@ -47,14 +47,9 @@ title: Dain Saint
   <body style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
 
     {% include header, color: color, promo: promo %}
-
-    {% if hero and hero != "" %}
-    <div class="hero-image" style="background-image: url('{{ hero | url }}')">
-    </div>
-
-    {% endif %}
-
+    
     {{ content | safe }}
+
     <script src="{{ "/assets/js/main.js" | url }}"></script>
     <script src="https://tinylytics.app/embed/kj4idcyfrmGqzxr8-9oP.js?kudos=custom" defer></script>
     
