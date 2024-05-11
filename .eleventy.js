@@ -247,7 +247,7 @@ function addTransforms( eleventy ) {
     // point images to netlify resizer
     return content.replace(
       /"(\/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp))"/gi,
-      `"assets/uploads/resized/$2.$3" style="background-color: ${$1} "`
+      `"assets/uploads/resized/$2.$3"`
     );
 
     // SVG IMAGES, NOT READY
