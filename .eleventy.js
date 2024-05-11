@@ -58,7 +58,7 @@ function addOptions( eleventy ) {
 
   // Set up markdown
   eleventy.setLibrary("md", markdownLibrary);
-  eleventy.setTemplateFormats(["md", "html"]);
+  eleventy.setTemplateFormats(["md", "html", "njk"]);
 
   eleventy.setLiquidOptions({
     dynamicPartials: false,

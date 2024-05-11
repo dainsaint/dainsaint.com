@@ -210,7 +210,7 @@ nav ul {
   margin-block-start: 8rem;
 }
 
-[class^=stack] h3+* {
+[class~=stack] h3 + * {
   margin-block-start: .25rem;
 }
 
