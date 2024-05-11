@@ -4,7 +4,9 @@ backend:
   branch: master
   ### enable below lines for github integration ###
   # name: github
-  # repo: surjithctly/neat-starter
+  # repo: dainsaint/dainsaint.com
+  # branch: master
+
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
 

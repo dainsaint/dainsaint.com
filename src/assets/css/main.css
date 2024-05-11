@@ -707,8 +707,10 @@ h1.title, .quote {
 .video {
   video {
     width: 100%;
+    border-radius: .5rem;
   }
 }
+
 
 
 
@@ -971,7 +973,7 @@ input[type=submit],
   -webkit-appearance: none;
 }
 
-button[type="submit"],
+button[type=submit],
 input[type=submit] {
   border: 1px solid var(--color);
 }
@@ -980,6 +982,17 @@ button:hover,
 input[type=submit]:hover {
   background: var(--color-alpha);
   color: var(--color)
+}
+
+
+input[type=email]::before {
+  content: 'hey';
+  font: var(--fa-font-solid);
+  font-size: 1rem;
+  display: block;
+  border: 1px solid red;
+  inline-size: 20px;
+  block-size: 20px;
 }
 
 
@@ -1155,7 +1168,7 @@ input[type=submit]:hover {
   white-space: nowrap;
 
   &:hover {
-    background: var(--color-alpha);
+    background: var(--background);
     color: var(--color);
   }
 }

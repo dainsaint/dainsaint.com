@@ -1,11 +1,19 @@
 ---
 title: games
-description: beep boop
+description: digital, role-playing, and otherwise
 tags: showcase
 color: "#292B53"
 ---
-i founded [Cipher Prime Studios](https://www.cipherprime.com) with will stallwood. We made a bunch of games, including Auditorium and Splice.
+
+<!-- tk -->
+
+When you change what it means to win, you change how you play.
 {.lede} 
+
+* some quick thoughts on game design — digital and otherwise
+* gotta have fun
+* great way to learn
+* where the beautiful meets the absurd
 
 ***
 
@@ -16,7 +24,8 @@ i founded [Cipher Prime Studios](https://www.cipherprime.com) with will stallwoo
 {% section %}
 
 # cipher prime studios
-tk tk a few things about cp here, link out to [cipherprime.com]()
+I founded [cipher prime](https://www.cipherprime.com) with [will stallwood](https://willstall.com) in 2009. we made [like a dozen games](https://www.cipherprime.com/games), including Auditorium and Splice.
+
 
 
 {% endsection %}
@@ -24,7 +33,7 @@ tk tk a few things about cp here, link out to [cipherprime.com]()
 
 {% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
 
-basic collab copy TK.
+I bring diverse creative skills and deep perspective to meaningful projects.
 {.align-center}
 
 * [{% include fist-bump.svg %} let's collab](/collab)

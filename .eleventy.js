@@ -12,8 +12,12 @@ const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const yaml = require("js-yaml");
 const pretty = require("pretty");
+const html = require("node-html-parser");
 
 const waveforms = require("./scripts/waveforms");
+
+const images = require("./scripts/images");
+const imageData = require("./src/assets/data/images.json");
 
 const markdownLibrary = markdownIt({
   html: true,
@@ -28,6 +32,7 @@ function lightOrDark(color) {
 }
 
 function addOptions( eleventy ) {
+
   // Merge data instead of overriding
   eleventy.setDataDeepMerge(true);
 
@@ -205,6 +210,7 @@ function addShortcodes( eleventy ) {
 
   eleventy.on("eleventy.before", async () => {
     waveforms();
+    images(eleventy);
     hoisted = {};
   });
 
@@ -233,15 +239,25 @@ function addTransforms( eleventy ) {
 
   eleventy.addTransform("images", function (content) {
     // check for dev vs prod
-    if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+    const isBuild = process.env.ELEVENTY_RUN_MODE === "build";
 
     // check for html
     if (!(this.page.outputPath || "").endsWith(".html")) return content;
 
-    // point images to netlify resizer
     return content.replace(
-      /assets\/uploads\/(.*)\.(jpg|jpeg|png|webp)/gi,
-      "assets/uploads/resized/$1.$2"
+      /"(?<path>\/assets\/uploads\/(?<name>.*)\.(?<ext>jpg|jpeg|png|webp))"/gi, (match, p1, p2, p3, offset, string, groups) => {
+        const { name, ext } = groups;
+        const file = name + "." + ext;
+        const data = imageData.files[file];
+        const svg = data.svg;
+        const resized = isBuild ? "resized/" : "";
+        const bgColor = data?.colors
+          ? `background-image: url(/assets/previews/${svg}); background-position: center center; background-size: cover;`
+          : "";
+        const dimensions = `width="${parseInt(data?.dimensions.width)}" height="${parseInt(data?.dimensions.height)}"`;
+        // 
+        return `"/assets/uploads/${resized}${name}.${ext}" ${dimensions} style="${bgColor}"`;
+      }
     );
   });
 
