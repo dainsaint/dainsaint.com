@@ -26,5 +26,3 @@ if it resonates with you, and you'd like to support us, we also offer a download
 
 ### collaborators
 *co-written with [mike tannenbaum](https://miketannenbaum.com)*
-
----

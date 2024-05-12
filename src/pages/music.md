@@ -6,8 +6,10 @@ tags:
 color: "#0F2434"
 ---
 
-i'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/games/splice). 
+orchestral electronic whatever
 {.lede} 
+
+lead composer for games like [Auditorium]() and [Splice](https://cipherprime.com/games/splice), and a dozen more. 
 
 * Always down to try new things and expand my musical palette. 
 * scoring/storytelling/creating a world
@@ -18,8 +20,7 @@ i'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/
 {% hoist "sections" %}
 
 {% section %}
-  ![](/assets/uploads/DSCF4101XL.JPG)
-  
+
   ## orchestration
   * Orchestration, piano, jazz, electronic bent. 
 
@@ -66,7 +67,6 @@ i'm probably best known for [Auditorium]() and [Splice](https://cipherprime.com/
   ## solo
   i write way more than i release because i’m bad at things sometimes
 
-  I also had a thing of St. Anytime i guess.
 
   ### city don't sing
   {% include youtube, video_id: "GjZa6hSSotM" %}
