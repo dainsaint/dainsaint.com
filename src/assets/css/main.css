@@ -225,16 +225,21 @@ nav ul {
 }
 
 .constrain > * {
-  max-width: calc( min(100% - 2.5rem, 800px)  );
+  --gutter: 1.25rem;
+  max-width: calc( min(100% - 2 * var(--gutter), 800px)  );
   margin-inline: auto;
 }
 
-.align-wide {
-  max-width: calc(min(100%, 1200px) - 2.5rem);
+.extend-wide {
+  max-width: calc(min(100%, 1200px) - 2 * var(--gutter));
 }
 
-.align-full {
+.extend-full {
   max-width: 100%;
+}
+
+.flush {
+  --gutter: 0rem;
 }
 
 .block {
@@ -367,6 +372,11 @@ main > .block-smart:first-of-type {
   --vertical: 3;
 }
 
+.columns {
+  columns: 2 325px;
+}
+
+
 
 .grid {
   --grid-gap: 1.25rem;
@@ -394,6 +404,14 @@ main > .block-smart:first-of-type {
 
 .grid-5 {
   --grid-column-count: 5;
+}
+
+.gap-tight {
+  --grid-gap: .25rem;
+}
+
+.gap-loose {
+  --grid-gap: 2.5rem;
 }
 
 
@@ -707,7 +725,6 @@ h1.title, .quote {
 .video {
   video {
     width: 100%;
-    border-radius: .5rem;
   }
 }
 
@@ -1380,6 +1397,8 @@ input[type=email]::before {
     padding-inline-start: 1rem;
   }
 }
+
+
 
 
 .animate-words {

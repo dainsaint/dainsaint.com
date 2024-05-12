@@ -27,7 +27,6 @@ color: "#343a40"
 
 ### Posts
 
-
 {% assign year = 0 %}
 {% for post in collections.posts %}
 {% assign y = post.data.date | date: "%Y" %}

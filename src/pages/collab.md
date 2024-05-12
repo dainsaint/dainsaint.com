@@ -26,10 +26,10 @@ i can either get it done, or find someone who can. i'm at my best when the work 
 
 </div>
 
-::: group
+
 ### sound like a match?
 fill out the form below, or just <a href="/email?subject=Let's Collab">send me an email</a>.
-:::
+
 
 {% include contact %}
 

@@ -28,6 +28,7 @@ const markdownLibrary = markdownIt({
   typographer: true,
 })
   .use(mdAttrs)
+  .use(mdContainer, "group")
   .use(mdContainer, "dynamic", {
     validate: function() {
       return true;
