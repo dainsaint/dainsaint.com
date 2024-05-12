@@ -1,8 +1,8 @@
 links:
-  - page: now
+  - page: collab
   - page: projects
     tags: projects
-  - page: collab
+  - page: now
   - page: about
   - page: store
     url: https://dainsaint.square.site
