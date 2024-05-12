@@ -26,9 +26,9 @@
     </div>
 
     
-    <nav class="project-nav">
+    <nav>
       <h3>projects</h3>
-      <ul>
+      <ul class="list-inline between-interpunct">
         {% for link in navigation.portfolios %}
         <li><a href="/{{link.page}}">{{ link.page }}</a></li>
         {% endfor %}

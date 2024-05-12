@@ -16,6 +16,10 @@ featured:
   - "/assets/uploads/ampu.png"
 
 ---
+
+
+
+
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 {.lede}
 
@@ -33,15 +37,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 * :fa-pen-ruler: creative direction
 * :fa-object-group: digital design
 * :fa-pen-fancy: contribution
-{.icons}
-
+{.list-icons}
 
 
 ![](/assets/uploads/iconic-bkg.mp4){.extend-wide .flush}
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 
-![](/assets/uploads/title-flag.svg){.colorize-filter}
+![](/assets/uploads/title-flag.svg){.color-match}
 ![modeling the jacket](/assets/uploads/iconic-1.jpg)
 ![](/assets/uploads/dawn-wilson.avif)
 ![](/assets/uploads/mzicar.avif)
@@ -64,7 +67,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 * jessica griffin
 
 ![](/assets/uploads/blueprint-main-title.svg)
-{.colorize-filter .isolate}
+{.color-match .isolate}
 
 ![](/assets/uploads/blueprint-promo.mp4)
 

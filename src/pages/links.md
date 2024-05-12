@@ -1,18 +1,17 @@
 ---
 layout: minimal
 title: links
-color: "#6A4C93"
+color: "#573E79"
 ---
 
 <div class="stack-loose">
 
-<div class="align-center">
-
+::: align-center
 ![dain saint](/assets/uploads/flowers-pic-crop.jpg){.profile}
 # dain saint
 ## storyteller, musician, designer
+:::
 
-</div>
 
 * [Website](https://dainsaint.com)
 * [Let's Collab](https://dainsaint.com/collab)
@@ -23,8 +22,6 @@ color: "#6A4C93"
 {.buttons .align-center}
 
 
-
 {% include subscribe-form %}
-
 
 </div>
