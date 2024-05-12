@@ -49,7 +49,7 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 {{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
 </h1>
 
-I bring diverse creative skills and deep perspective to meaningful projects.
+i bring creative direction and perspective to immersive, meaningful experiences
 
 [{% include fist-bump.svg %} let's collab](/collab){.button}
 :::

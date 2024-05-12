@@ -25,7 +25,7 @@ i've been having a blast working with the crew at [obvious agency](https://www.o
 ::: group
 ### team
 * :fa-comments: [obvious agency](https://www.obvious-agency.com/)
-{.icons}
+{.list-icons}
 :::
 
 ::: group
@@ -33,7 +33,7 @@ i've been having a blast working with the crew at [obvious agency](https://www.o
 * :fa-dice: game designer
 * :fa-object-group: production designer
 * :fa-dice-d20: game master 
-{.icons}
+{.list-icons}
 :::
 
 </div>
