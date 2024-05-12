@@ -6,6 +6,9 @@
   --dark-alpha: #06253520;
   --light: #f7ede2;
   --light-alpha: #f7ede220;
+
+  --gap: 1.25rem;
+  --margin: 1.25rem;
 }
 
 html {
@@ -150,6 +153,16 @@ nav ul {
   color: var(--color);
 }
 
+.light .colorize-filter {
+  filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(133%) hue-rotate(343deg) brightness(104%) contrast(94%);
+}
+
+.dark .colorize-filter {
+  filter: invert(11%) sepia(40%) saturate(1412%) hue-rotate(163deg) brightness(88%) contrast(97%);
+}
+
+
+
 .palette:nth-of-type(5n + 0) {
   --palette-color: var(--palette-1);
   --contrast-color: var(--contrast-1);
@@ -225,21 +238,21 @@ nav ul {
 }
 
 .constrain > * {
-  --gutter: 1.25rem;
-  max-width: calc( min(100% - 2 * var(--gutter), 800px)  );
+  --margin: 1.25rem;
+  max-inline-size: min(100% - 2 * var(--margin), 800px);
   margin-inline: auto;
 }
 
 .extend-wide {
-  max-width: calc(min(100%, 1200px) - 2 * var(--gutter));
+  max-inline-size: min(100% - 2 * var(--margin), 1200px);
 }
 
 .extend-full {
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 .flush {
-  --gutter: 0rem;
+  --margin: 0rem;
 }
 
 .block {
@@ -333,13 +346,52 @@ main > .block-smart:first-of-type {
   }
 }
 
-.masonry {
+
+
+.grid {
+  --grid-column-count: 1;
+  --grid-gap-count: calc(var(--grid-column-count) - 1);
+  --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
+  --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
+  --grid-min-width: 300px;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
+}
+
+.grid-2 {
+  --grid-column-count: 2;
+}
+
+.grid-3 {
+  --grid-column-count: 3;
+}
+
+.grid-4 {
+  --grid-column-count: 4;
+}
+
+.grid-5 {
+  --grid-column-count: 5;
+}
+
+.gap-tight {
+  --gap: .25rem;
+}
+
+.gap-loose {
+  --gap: 2.5rem;
+}
+
+
+.grid-tiles {
+  display: grid;
   grid-auto-flow: dense;
 
   --horizontal: 1;
   --vertical: 1;
 
-  & > * {
+  &>* {
     aspect-ratio: var(--horizontal) / var(--vertical);
     grid-column: span var(--horizontal);
     grid-row: span var(--vertical);
@@ -376,50 +428,55 @@ main > .block-smart:first-of-type {
   columns: 2 325px;
 }
 
-
-
-.grid {
-  --grid-gap: 1.25rem;
-  --grid-column-count: 1;
-  --grid-gap-count: calc(var(--grid-column-count) - 1);
-  --grid-total-gap-width: calc(var(--grid-gap-count) * var(--grid-gap));
-  --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
-  --grid-min-width: 300px;
+.tiles {
   display: grid;
-  gap: var(--grid-gap);
-  grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  grid-gap: var(--gap);
+
+  --horizontal: 1;
+  --vertical: 1;
+
+  & > * {
+    aspect-ratio: var(--horizontal) / var(--vertical);
+    grid-column: span var(--horizontal);
+    grid-row: span var(--vertical);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-position: center center;
+    object-fit: cover;
+  }
+
 }
 
-.grid-2 {
-  --grid-column-count: 2;
-}
-
-.grid-3 {
-  --grid-column-count: 3;
-}
-
-.grid-4 {
-  --grid-column-count: 4;
-}
-
-.grid-5 {
-  --grid-column-count: 5;
-}
-
-.gap-tight {
-  --grid-gap: .25rem;
-}
-
-.gap-loose {
-  --grid-gap: 2.5rem;
-}
-
-
-.flex {
+.bricks {
   display: flex;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: var(--gap);
+
+  & > * {
+    flex: 1 1 auto;
+    inline-size: auto;
+    block-size: 10rem;
+    object-fit: cover;
+  }
 }
 
+
+
+.bricks-tall > * {
+  block-size: 20rem;
+}
+
+.bricks-short > * {
+  block-size: 5rem;
+}
 
 .align-center {
   text-align: center;
@@ -723,9 +780,7 @@ h1.title, .quote {
 }
 
 .video {
-  video {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 
@@ -1202,7 +1257,7 @@ input[type=email]::before {
 }
 
 .albums {
-  --grid-gap: .5rem !important;
+  --gap: .5rem !important;
   --grid-min-width: 5rem;
 }
 
@@ -1219,7 +1274,7 @@ input[type=email]::before {
 
 
 .project-posts.grid {
-  --grid-gap: 0px;
+  --gap: 0px;
   --grid-min-width: 800px;
 }
 

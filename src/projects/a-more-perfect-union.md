@@ -16,8 +16,10 @@ featured:
   - "/assets/uploads/ampu.png"
 
 ---
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+{.lede}
 
-
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 
 ### awards
 * SND44 - Bronze (Line of Coverage Features/Social Issues)
@@ -27,42 +29,51 @@ featured:
 ### team
 * [Pentagram](https://www.pentagram.com/work/a-more-perfect-union): Brand Identity, Editorial Design
 
-***{.isolate}
+### roles
+* :fa-pen-ruler: creative direction
+* :fa-object-group: digital design
+* :fa-pen-fancy: contribution
+{.icons}
 
-# iconic
-* [:fa-newspaper: read this](https://inquirer.com/iconic)
-{.buttons}
 
-::: extend-wide
-{% include video, src: "/assets/uploads/iconic-bkg.mp4" %}
-:::
+
+![](/assets/uploads/iconic-bkg.mp4){.extend-wide .flush}
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 
-![modeling the jacket](/assets/uploads/iconic-1.jpg){.tall-2}
-![](https://picsum.photos/id/1/600/800)
-![](https://picsum.photos/id/54/600/800)
-![](https://picsum.photos/id/25/600/800)
-![](https://picsum.photos/id/75/600/800)
-{.masonry .grid .grid-3 .gap-tight .extend-wide}
+![](/assets/uploads/title-flag.svg){.colorize-filter}
+![modeling the jacket](/assets/uploads/iconic-1.jpg)
+![](/assets/uploads/dawn-wilson.avif)
+![](/assets/uploads/mzicar.avif)
+![](/assets/uploads/elam-vert.jpg)
+{.bricks}
+
+
 
 ### artists
 * kimberly mcglonn
 * mikel elam
 * mz. icar
+* nicole medina
+* dawn wilson
 
-***{.isolate}
 
+### photographers
+* ALEJANDRO A. ALVAREZ
+* tiger williams
+* jessica griffin
 
-{% include video, src: "/assets/uploads/blueprint-promo.mp4" %}
+![](/assets/uploads/blueprint-main-title.svg)
+{.colorize-filter .isolate}
 
-<!-- "#499634" -->
-# the blueprint
-TKTK text about the thing
+![](/assets/uploads/blueprint-promo.mp4)
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+
+![](/assets/uploads/the-blueprint.png)
+{.extend-wide}
+
 
 ### team
 * yannick lowery
 * zoe greenberg
-
-![](/assets/uploads/the-blueprint.png)
-{.extend-wide}
