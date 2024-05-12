@@ -27,8 +27,15 @@ featured:
 ### team
 * [Pentagram](https://www.pentagram.com/work/a-more-perfect-union): Brand Identity, Editorial Design
 
-{% hoist "sections" %}
-{% section %}
+
+::: block block-loose align-wide
+hey now you're a rock star
+:::
+
+
+
+
+::: stack isolate
 <!-- "#F7A728" -->
 # iconic
 * [:fa-newspaper: read this](https://inquirer.com/iconic)
@@ -44,13 +51,11 @@ featured:
 ![](https://picsum.photos/id/43/600/800){.tall-2 .wide-3}
 {.masonry .grid .grid-3}
 
-{% endsection %}
+:::
 
-{% section %}
+
+::: isolate
 <!-- "#499634" -->
 # the blueprint
 ![](/assets/uploads/the-blueprint.png)
-
-{% endsection %}
-
-{% endhoist %}
+:::

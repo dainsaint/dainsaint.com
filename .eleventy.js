@@ -28,7 +28,17 @@ const markdownLibrary = markdownIt({
   typographer: true,
 })
   .use(mdAttrs)
-  .use(mdContainer, "group")
+  .use(mdContainer, "dynamic", {
+    validate: function() {
+      return true;
+    },
+    render: function( tokens, idx ) {
+      const token = tokens[idx];
+      return token.nesting === 1 
+        ? `<div class="${token.info.trim()}">`
+        : "</div>"
+    }
+  })
   .use(mdFA);
 
 function lightOrDark(color) {
