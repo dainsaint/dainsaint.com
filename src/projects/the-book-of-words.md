@@ -6,7 +6,7 @@ tags:
 eleventyExcludeFromCollections: false
 title: the book of words
 description: dissecting meaning for clarity
-status: "### status\nin progress"
+status: "### status\nin development"
 color: "#204752"
 featured: []
 ---

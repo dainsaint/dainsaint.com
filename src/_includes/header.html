@@ -15,17 +15,7 @@
         <button class="header-menu-button"><i class="fa fa-xmark"></i></button>
       </div>
       <ul>
-        {% comment %}
-        <li>
-          <a href="/projects">projects</a>
-          <ul>
-            {% for link in navigation.portfolios %}
-            {% assign pg = link.page | prepend: "/" %}
-            <li><a href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-        {% endcomment %}
+
       {% for link in navigation.links %}
         {% assign active = false %}
 
@@ -69,3 +59,17 @@
   })
 </script>
 {% endhoist %}
+
+
+
+{% comment submenus %}
+<li>
+  <a href="/projects">projects</a>
+  <ul>
+    {% for link in navigation.portfolios %}
+    {% assign pg = link.page | prepend: "/" %}
+    <li><a href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
+    {% endfor %}
+  </ul>
+</li>
+{% endcomment %}

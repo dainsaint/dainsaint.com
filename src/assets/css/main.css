@@ -1,14 +1,6 @@
+@import url("./foundation.css");
 @import url("./layout.css");
-
-:root {
-  --primary: #DFE0DF;
-  --color: red;
-  --color-alpha: #FF000020;
-  --dark: #062535;
-  --dark-alpha: #06253520;
-  --light: #f7ede2;
-  --light-alpha: #f7ede220;
-}
+@import url("./colors.css");
 
 html {
   background: #222;
@@ -29,11 +21,7 @@ body {
 }
 
 
-
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   padding: 0px;
   margin: 0px;
   font-weight: 700;
@@ -124,80 +112,15 @@ nav ul {
   }
 }
 
-
-/*
- * Colorize
- */
-
-
-.light {
-  --color: var(--light);
-  --color-alpha: var(--light-alpha);
-  color: var(--color);
+time {
+  background: var(--color);
+  color: var(--primary);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: bold;
 }
-
-.dark {
-  --color: var(--dark);
-  --color-alpha: var(--dark-alpha);
-  color: var(--color);
-}
-
-.light .post-meta-deco {
-  /* thanks to https://codepen.io/sosuke/pen/Pjoqqp */
-  filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(133%) hue-rotate(343deg) brightness(104%) contrast(94%);
-}
-
-.colorize {
-  background: var(--primary);
-  color: var(--color);
-}
-
-.light .color-match {
-  filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(133%) hue-rotate(343deg) brightness(104%) contrast(94%);
-}
-
-.dark .color-match {
-  filter: invert(11%) sepia(40%) saturate(1412%) hue-rotate(163deg) brightness(88%) contrast(97%);
-}
-
-
-
-.palette:nth-of-type(5n + 0) {
-  --palette-color: var(--palette-1);
-  --contrast-color: var(--contrast-1);
-  --contrast-alpha-color: var(--contrast-alpha-1);
-}
-
-.palette:nth-of-type(5n + 1) {
-  --palette-color: var(--palette-2);
-  --contrast-color: var(--contrast-2);
-  --contrast-alpha-color: var(--contrast-alpha-2);
-}
-
-.palette:nth-of-type(5n + 2) {
-  --palette-color: var(--palette-3);
-  --contrast-color: var(--contrast-3);
-  --contrast-alpha-color: var(--contrast-alpha-3);
-}
-
-.palette:nth-of-type(5n + 3) {
-  --palette-color: var(--palette-4);
-  --contrast-color: var(--contrast-4);
-  --contrast-alpha-color: var(--contrast-alpha-4);
-}
-
-.palette:nth-of-type(5n + 4) {
-  --palette-color: var(--palette-5);
-  --contrast-color: var(--contrast-5);
-  --contrast-alpha-color: var(--contrast-alpha-5);
-}
-
-.palette {
-  --primary: var(--palette-color);
-  --color: var(--contrast-color);
-  --color-alpha: var(--contrast-alpha-color);
-}
-
 
 
 
@@ -218,15 +141,7 @@ nav ul {
 
 
 
-time {
-  background: var(--color);
-  color: var(--primary);
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 5px;
-  font-weight: bold;
-}
+
 
 .hero {
   height: 40vh;

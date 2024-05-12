@@ -1,20 +1,15 @@
-const markdownIt = require("markdown-it");
-const mdFA = require("markdown-it-fontawesome");
-const mdContainer = require("markdown-it-container");
-const mdAttrs = require("markdown-it-attrs");
-const { html5Media: mdMedia } = require("markdown-it-html5-media");
-
 const { DateTime } = require("luxon");
 const Color = require("color");
 
-const rssPlugin = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 // const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 const yaml = require("js-yaml");
 const pretty = require("pretty");
 // const html = require("node-html-parser");
 
+const markdown = require("./scripts/markdown");
 const waveforms = require("./scripts/waveforms");
 
 // const images = require("./scripts/images");
@@ -24,26 +19,8 @@ const waveforms = require("./scripts/waveforms");
 //   images: {}
 // }
 
-const markdownLibrary = markdownIt({
-  html: true,
-  typographer: true,
-})
-  .use(mdContainer, "dynamic", {
-    validate: function () {
-      return true;
-    },
-    render: function (tokens, idx) {
-      const token = tokens[idx];
-      return token.nesting === 1
-        ? `<div class="${token.info.trim()}">`
-        : "</div>";
-    },
-  })
-  .use(mdMedia, {
-    videoAttrs: `class="video" muted autoplay loop`,
-  })
-  .use(mdAttrs)
-  .use(mdFA);
+
+
 
 function lightOrDark(color) {
   return Color(color).isDark() ? "light" : "dark";
@@ -71,8 +48,8 @@ function addOptions( eleventy ) {
   eleventy.addPassthroughCopy("./src/robots.txt");
 
   // Set up markdown
-  eleventy.setLibrary("md", markdownLibrary);
-  eleventy.setTemplateFormats(["md", "html", "njk"]);
+  eleventy.setLibrary("md", markdown);
+  eleventy.setTemplateFormats(["md", "html", "njk", "webc"]);
 
   eleventy.setLiquidOptions({
     dynamicPartials: false,
@@ -82,11 +59,9 @@ function addOptions( eleventy ) {
 }
 
 function addPlugins( eleventy ) {
-  // Syntax Highlighting for Code blocks
-  eleventy.addPlugin(syntaxHighlightPlugin);
-
   // rss plugin
-  eleventy.addPlugin(rssPlugin);
+  eleventy.addPlugin(pluginRss);
+  eleventy.addPlugin(pluginWebc);
 
   //Image transformation
   // eleventy.addPlugin(eleventyImageTransformPlugin, {
@@ -192,11 +167,11 @@ function addFilters( eleventy ) {
   });
 
   eleventy.addFilter("markdown", function (string) {
-    return string ? markdownLibrary.render(string) : string;
+    return string ? markdown.render(string) : string;
   });
 
   eleventy.addFilter("inline", function (string) {
-    return string ? markdownLibrary.renderInline(string) : string;
+    return string ? markdown.renderInline(string) : string;
   });
 
   eleventy.addFilter("getRandom", function (items = [], avoid) {
@@ -221,7 +196,7 @@ function addShortcodes( eleventy ) {
 
     return `<section class="block block-loose stack constrain colorize palette${
       overrides.contrast
-    }"${overrides.style}>${markdownLibrary.render(content)}</section>`;
+    }"${overrides.style}>${markdown.render(content)}</section>`;
   });
 
   let hoisted;
@@ -244,7 +219,7 @@ function addShortcodes( eleventy ) {
 
   eleventy.addShortcode("inject", function (slot) {
     if (hoisted[this.page.outputPath] && hoisted[this.page.outputPath][slot])
-      return markdownLibrary.render(
+      return markdown.render(
         Object.values(hoisted[this.page.outputPath][slot]).join("\r\n")
       );
     return "";
@@ -313,7 +288,7 @@ module.exports = function (eleventy) {
 
   addOptions( eleventy );
   addPlugins( eleventy );
-  addFilters( eleventy );
+  addFilters( eleventy ); //filters.setup(eleventy, markdown)
   addShortcodes( eleventy );
   addTransforms( eleventy );
 

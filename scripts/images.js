@@ -64,12 +64,10 @@ module.exports = async ( eleventyConfig ) => {
   eleventyConfig.watchIgnores.add("src/assets/previews/**")
   eleventyConfig.watchIgnores.add("src/assets/data/**");
 
-  const extensions = ["*.jpg", "*.jpeg", "*.png", "*.webp"];
-  const sources = extensions.flatMap((ext) =>
-    glob.sync(`./src/assets/uploads/${ext}`, {
-      nodir: true,
-    })
-  );
+
+  const sources = glob.sync(`./src/assets/uploads/*.(jpg|jpeg|png|webp)`, {
+    nodir: true,
+  })
   
   const errors = []; 
   const data = {}

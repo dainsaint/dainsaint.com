@@ -5,9 +5,12 @@ date: ""
 status: ""
 eleventyExcludeFromCollections: true
 title: now
-hero: ""
+featured:
+- type: hero
+  url: /assets/uploads/DSCF4101XL.JPG
 tags: []
 ---
+
 
 ### upcoming events
 * <time>june 2, 2024</time> we'll be [playtesting space opera](https://docs.google.com/forms/d/e/1FAIpQLScTWqGIiWkqIjhfG04-0h6yTVrQa_kQ-5YX58lQXMU7E_dx4A/viewform)! come through and help us make the best it can be. learn more about space opera [here](/space-opera).
