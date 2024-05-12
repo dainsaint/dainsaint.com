@@ -33,7 +33,11 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 ***
 
-{% include showcase-list, tags: 'frontpage', feature: true, label: false %}
+::: grid grid-2
+{% include showcase, slug: "space-opera", feature: true %}
+{% include showcase, slug: "freedom-is-non-negotiable", feature: true %}
+:::
+
 
 * [more projects :fa-angle-right:](/projects)
 {.buttons .align-right}

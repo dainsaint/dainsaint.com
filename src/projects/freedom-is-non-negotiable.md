@@ -1,6 +1,6 @@
 ---
 title: freedom is non-negotiable
-description: uplifting blackness under police jurisdiction.
+description: poetry uplifting blackness under police jurisdiction.
 date: 2020-04-01
 status: |-
   * [:fa-book: buy the book](https://dainsaint.square.site/product/freedom-is-non-negotiable/1?cs=true&cst=custom)

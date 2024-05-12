@@ -1,0 +1,9 @@
+{% if projects %}
+{% assign collection = collections.all | fromFiles: projects %}
+{% else %}
+{% assign collection = collections.all | hasTags: tags | reverse %}
+{% endif %}
+
+{%- for project in collection -%}
+  {% include showcase, post: project, feature: feature %}
+{%- endfor -%}

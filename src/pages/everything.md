@@ -10,16 +10,15 @@ color: "#343a40"
 
 ---
 ### Projects
-
-
 {% assign year = 0 %}
 {% for post in collections.projects %}
 {% assign y = post.data.date | date: "%Y" %}
+
 {% if y > year %}
-  {% assign year = y %}
-  
+{% assign year = y %}  
 ### {{ year }}
 {% endif %}
+
 * [{{ post.data.title }}]({{ post.url }})
 {% endfor %}
 

@@ -67,7 +67,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 * jessica griffin
 
 ![](/assets/uploads/blueprint-main-title.svg)
-{.color-match .isolate}
+{.color-match .stack-isolate}
 
 ![](/assets/uploads/blueprint-promo.mp4)
 
