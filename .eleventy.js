@@ -87,6 +87,16 @@ function addFilters( eleventy ) {
     return lightOrDark(color || "#121212");
   });
 
+  eleventy.addFilter("idify", function (string) {
+    return string
+      .toLowerCase()
+      .replace(/^[0-9]*/g, "")
+      .trim()
+      .replace(/[^\w ]+/g, "")
+      .replace(/ +/g, "-");
+      
+  });
+
   eleventy.addFilter("prose", function (pages) {
     const result = pages.reduce((text, page, i, arr) => {
       if (i == arr.length - 1) text += "or ";

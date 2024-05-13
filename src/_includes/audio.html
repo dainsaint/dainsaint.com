@@ -1,4 +1,4 @@
-{% assign slug = audio | split: '/' | last | split: '.' | first | slugify %}
+{% assign slug = audio | split: '/' | last | split: '.' | first | idify %}
 
 <aside class="audio" data-slug="{{ slug }}">
   <div class="audio-controls">
