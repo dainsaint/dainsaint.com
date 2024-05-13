@@ -2,7 +2,7 @@
 layout: index
 title: ""
 description: ""
-social: https://dainsaint.netlify.app/assets/uploads/ds-social.png
+social: https://dainsaint.netlify.app/assets/uploads/ds-social.png 
 # color: "#6A4C93"
 color: "#573E79"
 promo: |
