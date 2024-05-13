@@ -31,37 +31,27 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 :::
 
 ::: group
-
 ### cassiel
-
 {% include audio, audio: "/assets/uploads/cassiel.mp3" %}
 :::
 
 ::: group
-
 ### Exploration One
-
 {% include audio, audio: "/assets/uploads/exploration-1.mp3" %}
 :::
 
 ::: group
-
 ### upside down
-
 {% include audio, audio: "/assets/uploads/07 Upside Down.mp3" %}
 :::
 
-::: group tile-wide-2
-
+::: group
 ### keravnós
-
 {% include audio, audio: "/assets/uploads/keravnos.mp3" %}
 :::
 
 ::: group
-
 ### starstuff
-
 {% include audio, audio: "/assets/uploads/starstuff.mp3" %}
 :::
 
@@ -100,9 +90,9 @@ as a singer-songwriter, my work is heartfelt and eclectic. i've performed everyt
 
 ### collaborations
 
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/558ltuhYDwXj5lHlO6GT4P?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <iframe style="border-radius:12px; background: var(--color-alpha)" src="https://open.spotify.com/embed/track/558ltuhYDwXj5lHlO6GT4P?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7F5xABrHeCQlf1FbKDniIZ?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  <iframe style="border-radius:12px; background: var(--color-alpha)" src="https://open.spotify.com/embed/album/7F5xABrHeCQlf1FbKDniIZ?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   :::
   
   :::
@@ -112,7 +102,7 @@ as a singer-songwriter, my work is heartfelt and eclectic. i've performed everyt
 
 ## press and interviews
 
-- Making the Splice OST, with [Pixelated Audio](https://pixelatedaudio.com/splice)<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1hcn6xpGjb4nSBlDTX6YMs" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+- Making the Splice OST, with [Pixelated Audio](https://pixelatedaudio.com/splice)<iframe style="border-radius:12px; background: var(--color-alpha)" src="https://open.spotify.com/embed/episode/1hcn6xpGjb4nSBlDTX6YMs" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 - "City Don't Sing" featured in [Dosage Magazine](https://www.dosagemagazine.com/dain-saint-makes-a-beautiful-noise-and-vision-with-city-dont-sing/)
 - "One More" featured by [WXPN](https://xpn.org/2017/07/17/items-tagged-philadelphia-back-life-back-reality/)
