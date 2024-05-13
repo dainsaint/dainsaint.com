@@ -27,11 +27,12 @@
 
     
     <nav>
-      <h3>projects</h3>
+      <h3>pages</h3>
       <ul class="list-inline between-interpunct">
         {% for link in navigation.portfolios %}
         <li><a href="/{{link.page}}">{{ link.page }}</a></li>
         {% endfor %}
+        <li><a href="/everything">everything</a></li>
       </ul>
     </nav>
 

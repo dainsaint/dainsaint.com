@@ -61,11 +61,14 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 
 {% section %}
 
-## game soundtracks
-
+## video games
+### soundtracks
 all these soundtracks are available on cipher prime studios' [bandcamp](https://cipherprime.bandcamp.com/).
 
 {% include bandcamp, albums: bandcamp.cipherprime %}
+
+### sound design
+atmospheric, tactile, and engaging.
 
 {% endsection %}
 

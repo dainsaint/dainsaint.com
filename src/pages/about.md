@@ -24,8 +24,6 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 {% section %}
 # about this site
 
-TK shorter copy...
-
 i've never been a huge fan of social media. it is powerful, and an incredible force for good, but _man_ things with infinite scroll aren't great for my brain.
 
 and my art follows my stream of consciousness. sometimes that takes the form of poetry. or song. or spoken word, or rhetoric, the odd book or video.

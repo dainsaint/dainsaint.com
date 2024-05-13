@@ -183,30 +183,6 @@ main > .block-smart:first-of-type {
 }
 
 
-.grid-tiles {
-  display: grid;
-  grid-auto-flow: dense;
-
-  --horizontal: 1;
-  --vertical: 1;
-
-  &>* {
-    /* aspect-ratio: var(--horizontal) / var(--vertical); */
-    grid-column: span var(--horizontal);
-    grid-row: span var(--vertical);
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    object-position: center center;
-    object-fit: cover;
-  }
-
-}
-
 
 /* TILES */
 .tiles {
@@ -338,5 +314,21 @@ main > .block-smart:first-of-type {
 .between-interpunct {
   &>*:not(:last-child)::after {
     content: ' • ';
+  }
+}
+
+.between-pipe {
+  &>*:not(:last-child)::after {
+    content: ' | ';
+  }
+}
+
+.between-divider {
+  &>*:not(:last-child)::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    border-block-start: 1px solid var(--color);
+    margin-block-start: inherit;
   }
 }

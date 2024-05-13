@@ -39,6 +39,8 @@
     "node-fetch-commonjs": "^3.3.2",
     "node-html-parser": "^6.1.13",
     "pretty": "^2.0.0",
+    "rss-to-json": "^2.1.1",
+    "simple-xml-to-json": "^1.2.2",
     "sqip": "^1.0.0-alpha.51",
     "sqip-plugin-primitive": "^1.0.0-alpha.53",
     "sqip-plugin-svgo": "^1.0.0-alpha.54"
