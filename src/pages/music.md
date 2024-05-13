@@ -39,6 +39,11 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 {% include audio, audio: "/assets/uploads/cassiel.mp3" %}
 :::
 
+::: group
+### upside down
+{% include audio, audio: "/assets/uploads/07 Upside Down.mp3" %}
+:::
+
 ::: group tile-wide-2
 ### keravnós
 {% include audio, audio: "/assets/uploads/keravnos.mp3" %}
@@ -60,7 +65,7 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 
 {% section %}
   
-  ## soundtracks
+  ## game soundtracks
   all these soundtracks are available on cipher prime studios' [bandcamp](https://cipherprime.bandcamp.com/).
 
   {% include bandcamp, albums: bandcamp.cipherprime %}
@@ -70,16 +75,25 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 {% section %}
   
   ## solo
-  as a singer-songwriter, my work has been featured by wxpn. i've played stripped-down intimate sets, as well as massive dance parties at venues like world cafe live.
+  as a singer-songwriter, my work is heartfelt and eclectic. i've performed everything from stripped-down acoustic sets, to grimy basement chiptune shows, to massive dance parties at venues like world café live and brooklyn bowl.
+
+  ::: stack-loose
 
   ### city don't sing
   {% include youtube, video_id: "GjZa6hSSotM" %}
 
   ### albums/singles
   {% assign personal = bandcamp.dainsaint | concat: bandcamp.saintanytime %}
-
   {% include bandcamp, albums: personal %}
 
+  ::: group
+  ### collaborations
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/558ltuhYDwXj5lHlO6GT4P?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7F5xABrHeCQlf1FbKDniIZ?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  :::
+  
+  :::
 {% endsection %}
 
 
@@ -87,7 +101,8 @@ My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean dias
 
   ## press and interviews
 
-  * Making the Splice OST, with [Pixelated Audio](https://pixelatedaudio.com/splice)
+  * Making the Splice OST, with [Pixelated Audio](https://pixelatedaudio.com/splice)<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1hcn6xpGjb4nSBlDTX6YMs" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
   * "City Don't Sing" featured in [Dosage Magazine](https://www.dosagemagazine.com/dain-saint-makes-a-beautiful-noise-and-vision-with-city-dont-sing/)
   * "One More" featured by [WXPN](https://xpn.org/2017/07/17/items-tagged-philadelphia-back-life-back-reality/)
 
