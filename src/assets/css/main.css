@@ -570,29 +570,6 @@ footer {
 }
 
 
-.project-nav {
-  ul, li {
-    display: inline-block;
-  }
-
-  li:not(:last-child)::after{
-    content: ' • ';
-  }
-}
-
-.list-inline {
-  ul,
-  li {
-    display: inline-block;
-  }
-}
-
-.between-interpunct {
-  & > *:not(:last-child)::after {
-    content: ' • ';
-  }
-}
-
 .page-section {
   position: relative;
   top: 1.25rem;
@@ -1059,7 +1036,6 @@ input[type=email]::before {
 
 .list-icons {
   list-style-type: none;
-  /* margin-left: var(--fa-li-margin, 2.5em); */
   padding-inline-start: .5em;
 
   i {
@@ -1082,6 +1058,19 @@ input[type=email]::before {
   }
 }
 
+
+blockquote p{
+  font-style: italic;
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+
+  &::before {
+    content: '\f10d';
+    display: block;
+    font: var(--fa-font-solid);
+  }
+}
 
 
 

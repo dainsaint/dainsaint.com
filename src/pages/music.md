@@ -1,62 +1,67 @@
 ---
 title: music
-description: music and sound design for fun and profit
+description: composition and sound design for fun and profit
 tags: 
   - showcase
 color: "#0F2434"
 ---
 
-orchestral electronic whatever
+Classically trained. Juliard schooled. (Absolutely not.)
 {.lede} 
 
-lead composer for games like [Auditorium]() and [Splice](https://cipherprime.com/games/splice), and a dozen more. 
+But I *am* the lead composer and sound designer for games like [Auditorium](https://cipherprime.com/games/auditorium) and [Splice](https://cipherprime.com/games/splice). Over the years, I've cobbled together a musical practice from spare parts of soundtracks, video games, and soul music. 
 
-* Always down to try new things and expand my musical palette. 
-* scoring/storytelling/creating a world
-* Also, sound design.
-* won an award? for shimsham
+As a composer, I write music for games, film, and stage. I've written everything from minimal piano soundscapes to pulsing electronic soundtracks, all with an eye to creating atmosphere and telling a story without words.
+
+My style mixes cinematic orchestral, electronic, jazz, blues, and Caribbean diasporic traditions to ground the listener in immersive experiences.
+
 
 
 {% hoist "sections" %}
 
-{% section %}
+{% section %} 
+## samples
 
-  ## orchestration
-  * Orchestration, piano, jazz, electronic bent. 
+<div class="grid grid-2">
 
-  <div class="grid grid-2">
+::: group
+### Onward
+{% include audio, audio: "/assets/uploads/onward.mp3" %}
+:::
 
-  ::: group
-  ### Onward
-  {% include audio, audio: "/assets/uploads/onward.mp3" %}
-  :::
+::: group
+### Exploration One
+{% include audio, audio: "/assets/uploads/exploration-1.mp3" %}
+:::
 
-  ::: group
-  ### Exploration 1
-  {% include audio, audio: "/assets/uploads/exploration-1.mp3" %}
-  :::
+::: group
+### cassiel
+{% include audio, audio: "/assets/uploads/cassiel.mp3" %}
+:::
 
-  ::: group
-  ### starstuff
-  {% include audio, audio: "/assets/uploads/starstuff.mp3" %}
-  :::
+::: group tile-wide-2
+### keravnós
+{% include audio, audio: "/assets/uploads/keravnos.mp3" %}
+:::
 
-  ::: group
-  ### keravnós
-  {% include audio, audio: "/assets/uploads/keravnos.mp3" %}
-  :::
+::: group
+### starstuff
+{% include audio, audio: "/assets/uploads/starstuff.mp3" %}
+:::
 
-  </div>
+
+
+</div>
+
+
 
 {% endsection %}
 
 
 {% section %}
   
-  ## video game soundtracks
-  most of this is through my company [cipher prime studios](https://cipherprime.com)
-
-  all these soundtracks and more are available on our [bandcamp](https://cipherprime.bandcamp.com/).
+  ## soundtracks
+  all these soundtracks are available on cipher prime studios' [bandcamp](https://cipherprime.bandcamp.com/).
 
   {% include bandcamp, albums: bandcamp.cipherprime %}
 
@@ -65,8 +70,7 @@ lead composer for games like [Auditorium]() and [Splice](https://cipherprime.com
 {% section %}
   
   ## solo
-  i write way more than i release because i’m bad at things sometimes
-
+  as a singer-songwriter, my work has been featured by wxpn. i've played stripped-down intimate sets, as well as massive dance parties at venues like world cafe live.
 
   ### city don't sing
   {% include youtube, video_id: "GjZa6hSSotM" %}
@@ -103,3 +107,10 @@ this means you, taylor moore.
 {% endsection %}
 
 {% endhoist %}
+
+
+{% comment %}
+> Ethereal and driven, this album relentlessly moves forward. The piano trio is brilliantly executed, the essence of beauty in simplicity
+> — Benjamin Burnes
+{.stack-isolate}
+{% endcomment %}

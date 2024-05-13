@@ -1,5 +1,5 @@
 ---
-title: let&rsquo;s collab
+title: let's collab
 color: "#89AF71"
 eleventyExcludeFromCollections: true
 featured: []

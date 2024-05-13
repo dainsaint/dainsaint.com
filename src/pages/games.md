@@ -8,7 +8,6 @@ color: "#292B53"
 <!-- tk -->
 
 When you change what it means to win, you change how you play.
-{.lede} 
 
 * some quick thoughts on game design — digital and otherwise
 * gotta have fun

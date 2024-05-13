@@ -191,7 +191,7 @@ main > .block-smart:first-of-type {
   --vertical: 1;
 
   &>* {
-    aspect-ratio: var(--horizontal) / var(--vertical);
+    /* aspect-ratio: var(--horizontal) / var(--vertical); */
     grid-column: span var(--horizontal);
     grid-row: span var(--vertical);
   }
@@ -325,4 +325,18 @@ main > .block-smart:first-of-type {
 
 .pull-airy {
   margin-block-end: -8rem;
+}
+
+.list-inline {
+
+  ul,
+  li {
+    display: inline-block;
+  }
+}
+
+.between-interpunct {
+  &>*:not(:last-child)::after {
+    content: ' • ';
+  }
 }
