@@ -20,7 +20,8 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^3.0.0",
     "markdown-it-fontawesome": "^0.3.0",
-    "netlify-plugin-cache": "^1.0.3"
+    "netlify-plugin-cache": "^1.0.3",
+    "posthtml": "^0.16.6"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
@@ -33,16 +34,20 @@
     "get-image-colors": "^4.0.1",
     "glob": "^10.3.12",
     "image-size": "^1.1.1",
+    "js-sha512": "^0.9.0",
     "markdown-it-html5-embed": "^1.0.0",
     "markdown-it-html5-media": "^0.7.1",
     "node-audio-peaks": "^4.0.2",
     "node-fetch-commonjs": "^3.3.2",
     "node-html-parser": "^6.1.13",
+    "posthtml-img-autosize": "^0.1.6",
     "pretty": "^2.0.0",
     "rss-to-json": "^2.1.1",
     "simple-xml-to-json": "^1.2.2",
     "sqip": "^1.0.0-alpha.51",
     "sqip-plugin-primitive": "^1.0.0-alpha.53",
-    "sqip-plugin-svgo": "^1.0.0-alpha.54"
+    "sqip-plugin-svgo": "^1.0.0-alpha.54",
+    "str-async-replace": "^1.1.2",
+    "string-replace-async": "^3.0.2"
   }
 }

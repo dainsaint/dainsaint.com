@@ -1,37 +1,45 @@
-const glob = require("glob");
 const fs = require("fs");
+// const { sha512 } = require("js-sha512");
 
+
+const ensureDirectory = (directory) => {
+  if(!fs.existsSync(directory))
+    fs.mkdirSync(directory, {recursive: true});
+}
 const getAssetCache = (destination) => {
-  if (!fs.existsSync(destination))
-    fs.writeFileSync(destination, JSON.stringify({files: {}}), "utf-8");
+  if (!fs.existsSync(destination)) {
+    fs.writeFileSync(destination, JSON.stringify({}), "utf-8");
+  }
 
   const cache = require("." + destination);
   return cache;
 }; 
 
-const getFilenameFromPath = (path) => path.split("/").at(-1);
+const getHash = (file) => {
+  return fs.statSync(file).mtimeMs
+}
+
+const hasChanged = (data, file) => {
+  return data && (data.__hash < getHash(file));
+}
 
 module.exports = class Cache {
-  constructor( name, ...extensions ) {
-    const sources = extensions.flatMap( ext => glob.sync(`./src/assets/uploads/${ext}`, {
-      nodir: true,
-    }));
-
-    this.destination = `./src/assets/data/${name}.json`;
-
-    this.data = getAssetCache(this.destination);
-    this.paths = sources.filter(
-      (source) =>
-        fs.statSync(source).ctimeMs >
-        (this.data.files[getFilenameFromPath(source)]?.lastModified || 0)
-    );
-    this.files = this.paths.map(getFilenameFromPath);
-    this.valid = this.paths.length == 0;
+  constructor( { name, input, output } ) {
+    ensureDirectory(output);
+    this.destination = `${output}/${name}.json`;
+    this.input = `${input}/`;
+    this.data = getAssetCache(this.destination); 
   }
 
-  update (path, delta) {
-    delta.lastModified = fs.statSync(path).ctimeMs;
-    this.data.files[getFilenameFromPath(path)] = delta;
+  isValid( file ) {
+    const cached = this.data[file];
+    return cached && !hasChanged( cached, this.input + file );
+  }
+
+  update (file, update) {
+    update.__hash = getHash(this.input + file);
+    this.data[file] = update;
+    this.save();
   }
 
   save () {

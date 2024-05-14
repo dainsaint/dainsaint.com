@@ -1,6 +1,7 @@
 const loadWaveformData = async() => {
-  const request = await fetch("/assets/data/waveforms.json");
+  const request = await fetch("/data/waveforms.json");
   const waveforms = await request.json();
+console.log( waveforms );
   window.waveforms = waveforms;
 }
 
@@ -8,11 +9,12 @@ const loadAudio = (audio) => {
   let media = audio.querySelector("audio");
 
   const slug = audio.dataset.slug;
-  const file = decodeURI(media.src.split("/").at(-1));
+  const file = decodeURI( media.src.replace( window.location.origin, ''));
 
   let color = getComputedStyle(audio).getPropertyValue("--color");
   let alpha = getComputedStyle(audio).getPropertyValue("--color-alpha");
-  const data = window.waveforms.files[file];
+  const data = window.waveforms[file];
+  console.log( file );
   
   var wavesurfer = WaveSurfer.create({
     container: `#${slug}-audio`,

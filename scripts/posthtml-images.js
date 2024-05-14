@@ -1,0 +1,21 @@
+const { promisify } = require("util");
+const getSizeOf = require("image-size");
+
+module.exports = function () {
+  function processImages(tree) {
+    tree.match({ tag: "img" }, (node) => {
+      const isRemote = node.attrs.src.startsWith("http");
+      if( isRemote )
+        return node;
+
+      const dimensions = getSizeOf('./src/' + node.attrs.src )
+      node.attrs.width = dimensions.width;
+      node.attrs.height = dimensions.height;
+      return node;
+    });
+
+    return tree;
+  }
+
+  return processImages;
+};

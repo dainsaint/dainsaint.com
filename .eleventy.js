@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const Color = require("color");
+const { AssetCache } = require("@11ty/eleventy-fetch");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
@@ -7,18 +8,13 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 const yaml = require("js-yaml");
 const pretty = require("pretty");
-// const html = require("node-html-parser");
 
 const markdown = require("./scripts/markdown");
 const waveforms = require("./scripts/waveforms");
+const images = require("./scripts/images");
+const AsyncReplace = require("str-async-replace");
 
-// const images = require("./scripts/images");
-// const imageData = require("./src/assets/data/images.json");
-
-// const asyncData = {
-//   images: {}
-// }
-
+const posthtml = require("posthtml");
 
 
 
@@ -212,7 +208,8 @@ function addShortcodes( eleventy ) {
   let hoisted;
 
   eleventy.on("eleventy.before", async () => {
-    waveforms();
+    // waveforms();
+    // images(eleventy);
     hoisted = {};
   });
 
@@ -239,43 +236,81 @@ function addShortcodes( eleventy ) {
 
 function addTransforms( eleventy ) {
 
-  eleventy.addTransform("images", async function (content) {
-    if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
-
-    // check for html
+  eleventy.addTransform("waveforms", async function(content) {
     if (!(this.page.outputPath || "").endsWith(".html")) return content;
 
-    // point images to netlify resizer
-    return content.replace(
-      /"(\/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp))"/gi,
-      `"/assets/uploads/resized/$2.$3"`
-    );
+    const result = await posthtml()
+      .use(require("./scripts/posthtml-waveforms")({
+        page: eleventy
+      }))
+      .process(content);
 
-    // check for dev vs prod
-    // const isBuild = process.env.ELEVENTY_RUN_MODE === "build";
+    return result.html;
+  })
 
-    // SVG IMAGES, NOT READY
-    // const svg = data.svg;
-    // ? `background-image: url(/assets/previews/${svg}); background-position: center center; background-size: cover;`
+  eleventy.addTransform("images", async function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
 
-    // return content.replace(
-    //   /"\/(?<path>assets\/uploads\/(?<name>.*)\.(?<ext>jpg|jpeg|png|webp))"/gi,
-    //   (match, p1, p2, p3, offset, string, groups) => {
-    //     const { path, name, ext } = groups;
-    //     const data = asyncData.images[path];
-    //     const resized = isBuild ? "resized/" : "";
-    //     const bgColor = data?.colors
-    //       ? `background-color: ${data.colors[0]}`
-    //       : "";
+    const result = await posthtml([
+      require("./scripts/posthtml-images")(),
+    ]).process(content);
 
-    //     const dimensions = `width="${parseInt(
-    //       data?.dimensions.width
-    //     )}" height="${parseInt(data?.dimensions.height)}"`;
-
-    //     return `"/assets/uploads/${resized}${name}.${ext}" ${dimensions} style="${bgColor}"`;
-    //   }
-    // );
+    return result.html;
   });
+
+  // eleventy.addTransform("images", async function (content) {
+    
+  //   // if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+
+  //   // check for html
+  //   if (!(this.page.outputPath || "").endsWith(".html")) return content;
+
+  //   // // point images to netlify resizer
+  //   // return content.replace(
+  //   //   /"(\/assets\/uploads\/(.*)\.(jpg|jpeg|png|webp))"/gi,
+  //   //   `"/assets/uploads/resized/$2.$3"`
+  //   // );
+
+  //   // return;
+
+  //   // const asset = new AssetCache("images");
+  //   // const imageData = await asset.getCachedValue(); 
+
+  //   // check for dev vs prod
+  //   const isBuild = true;//process.env.ELEVENTY_RUN_MODE === "build";
+
+  //   // SVG IMAGES, NOT READY
+  //   // const svg = data.svg;
+  //   // ? `background-image: url(/assets/previews/${svg}); background-position: center center; background-size: cover;`
+  //   const replacer = new AsyncReplace(content);
+  //   const result = await replacer.replaceAll(
+  //     /"(?<path>\/assets\/uploads\/(?<name>.*)\.(?<ext>jpg|jpeg|png|webp))"/gi,
+  //     async (match, p1, p2, p3, offset, string, groups) => {
+
+  //       const { path, name, ext } = groups;
+  //       const data = await images(path);//imageData[path];
+  //       console.log( data );
+  //       const resized = isBuild ? "resized/" : "";
+  //       const bgColor = data?.colors
+  //         ? `background-color: ${data.colors[0]}`
+  //         : null;
+
+  //       const svg = data?.svg
+  //         ? `background-image: url(${data.svg}); background-position: center center; background-size: cover;`
+  //         : null;
+
+  //       const style = svg || bgColor || "";
+
+  //       const dimensions = `width="${parseInt(
+  //         data?.dimensions.width
+  //       )}" height="${parseInt(data?.dimensions.height)}"`;
+
+  //       return `"/assets/uploads/${resized}${name}.${ext}" ${dimensions} style="${style}"`;
+  //     }
+  //   );
+
+  //   return result.toString();
+  // });
 
   eleventy.addTransform("prettify", function (content) {
     // check for dev vs prod
