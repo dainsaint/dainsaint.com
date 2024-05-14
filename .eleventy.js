@@ -236,17 +236,17 @@ function addShortcodes( eleventy ) {
 
 function addTransforms( eleventy ) {
 
-  eleventy.addTransform("waveforms", async function(content) {
-    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+  // eleventy.addTransform("waveforms", async function(content) {
+  //   if (!(this.page.outputPath || "").endsWith(".html")) return content;
 
-    const result = await posthtml()
-      .use(require("./scripts/posthtml-waveforms")({
-        page: eleventy
-      }))
-      .process(content);
+  //   const result = await posthtml()
+  //     .use(require("./scripts/posthtml-waveforms")({
+  //       page: eleventy
+  //     }))
+  //     .process(content);
 
-    return result.html;
-  })
+  //   return result.html;
+  // })
 
   eleventy.addTransform("images", async function (content) {
     if (!(this.page.outputPath || "").endsWith(".html")) return content;

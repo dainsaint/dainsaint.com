@@ -1,7 +1,7 @@
 const loadWaveformData = async() => {
   const request = await fetch("/data/waveforms.json");
   const waveforms = await request.json();
-console.log( waveforms );
+
   window.waveforms = waveforms;
 }
 

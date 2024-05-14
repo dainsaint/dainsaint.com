@@ -11,10 +11,12 @@ const analyze = (asset, node) => new Promise((resolve, reject) => {
     const file = node.attrs.src;
 
     if (asset.isValid(file)) {
+      console.log(`🔊 Loading ${file} from cache`);
       resolve(node);
       return;
     }
 
+    console.log(`🔊 Analyzing ${file} from cache...`);
     const path = asset.input + file;
     const peaks = await audioPeaks.getAudioPeaks(path, 100).toPromise();
     const duration = await audioDuration.getAudioDurationInSeconds(path);
