@@ -1,4 +1,5 @@
 const fs = require("fs");
+const md5File = require("md5-file");
 
 const ensureDirectory = (directory) => {
   if(!fs.existsSync(directory))
@@ -14,11 +15,11 @@ const getAssetCache = (destination) => {
 }; 
 
 const getHash = (file) => {
-  return fs.statSync(file).mtimeMs
+  return md5File.sync(file);
 }
 
 const hasChanged = (data, file) => {
-  return data && (data.__hash < getHash(file));
+  return data && (data.__hash != getHash(file));
 }
 
 module.exports = class Cache {

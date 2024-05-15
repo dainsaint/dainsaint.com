@@ -7,10 +7,9 @@ tags:
 - series
 - beats
 - listen
-color: "#161616"
 eleventyExcludeFromCollections: true
 
 ---
 get them vids up?
 
----
+![Day 01](/assets/uploads/31-beats/day-01.webm)

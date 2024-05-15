@@ -24,6 +24,7 @@ const colorize = async( asset, node ) => {
   else 
     node.attrs.style += ` background-color: var(--palette-2);`;
 
+
   node.attrs.src = "";
 
   return node;

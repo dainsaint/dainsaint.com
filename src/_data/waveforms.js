@@ -10,7 +10,7 @@ module.exports = async () => {
     name: "waveforms",
     input: `.`,
     output: `./src/assets/data`,
-  }); 
+  });  
 
   const files = glob.sync("./src/assets/uploads/*.mp3", {
     nodir: true

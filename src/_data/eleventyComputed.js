@@ -3,51 +3,60 @@ const Color = require("color");
 
 const lightGradientDestination = lch("#F9F871");
 const darkGradientDestination = lch("#361339");
+const brandingColor = "#573E79";
 
 module.exports = {
+  color: (data) => {
+    if (data.color) return data.color;
+    else if (data.pagination) return data.pagination.items[0].data.color;
+    else return brandingColor;
+  },
+
   design: {
     paginationColor: (data) => {
       if (data.pagination) return data.pagination.items[0].data.color;
-      else return "#121212";
+      else return brandingColor;
     },
 
     palette: (data) => {
-      const color = data.color ? data.color :"#121212";
+      const color = data.color ? data.color : brandingColor;
       const destination = Color(color).isLight()
         ? darkGradientDestination
         : lightGradientDestination;
       const stops = [0.0, 0.2, 0.4, 0.6, 0.8];
 
-      const gradient = interpolate([ lch(color), destination ], "lch");
-      const colors = stops.map( stop => formatHex( gradient(stop)) );
-      const contrast = colors.map ( color => Color(color).isLight() ? "#062535" : "#f7ede2" );
-      const contrastAlpha = colors.map ( color => Color(color).isLight() ? "#06253520" : "#f7ede220" );
+      const gradient = interpolate([lch(color), destination], "lch");
+      const colors = stops.map((stop) => formatHex(gradient(stop)));
+      const contrast = colors.map((color) =>
+        Color(color).isLight() ? "#062535" : "#f7ede2"
+      );
+      const contrastAlpha = colors.map((color) =>
+        Color(color).isLight() ? "#06253520" : "#f7ede220"
+      );
 
-      
       //Force WGA compliance
-      const adjusted = colors.map( (color, i) => {
-        if( wcagContrast(color, contrast[i]) > 7 )
-          return color;
+      const adjusted = colors.map((color, i) => {
+        if (wcagContrast(color, contrast[i]) > 7) return color;
 
         const maximum = Color(color).isLight() ? "#f7ede2" : "#062535";
         const adjust = interpolate([lch(color), lch(maximum)], "lch");
         const adjustment = 0.2;
         let stop = 0.05;
         let jettison = 100;
-        while( wcagContrast(color, contrast[i]) < 7 && jettison > 0) {
-          color = formatHex( adjust(adjustment) );
+        while (wcagContrast(color, contrast[i]) < 7 && jettison > 0) {
+          color = formatHex(adjust(adjustment));
           stop += adjustment;
           jettison--;
         }
 
         return color;
-      })
-      
-      return adjusted.map( (color, i) => ({
+      });
+
+      return adjusted.map((color, i) => ({
         color: color,
         contrast: contrast[i],
-        contrastAlpha: contrastAlpha[i]
-      }))
-    }
-  }
+        contrastAlpha: contrastAlpha[i],
+      }));
+    },
+  },
 };

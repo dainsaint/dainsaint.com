@@ -1142,3 +1142,9 @@ blockquote p{
 
 
 
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity .2s ease;
+}
