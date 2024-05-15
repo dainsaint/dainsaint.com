@@ -179,8 +179,16 @@ main > .block-smart:first-of-type {
   --gap: .25rem;
 }
 
+.gap-compact {
+  --gap: .5rem;
+}
+
 .gap-loose {
   --gap: 2.5rem;
+}
+
+.gap-airy {
+  --gap: 4rem;
 }
 
 
@@ -259,6 +267,14 @@ main > .block-smart:first-of-type {
 .brick-contain {
   object-fit: contain;
 }
+
+/* FLEX */
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+
 
 /* ALIGN */
 

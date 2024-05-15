@@ -20,17 +20,24 @@ When you change what it means to win, you change how you play.
 
 {% hoist "sections" %}
 
-{% section %}
+{% section "#222222" %}
 
 # cipher prime studios
 
-![cipher prime logo](/assets/uploads/cp_logo_black.png){.color-match}
 
-I founded **cipher prime** with [will stallwood](https://willstall.com) in 2009. we made ten games in 10 years, including Auditorium and Splice. more info about our games, including our list of awards and ways to buy, are all available at [cipherprime.com](https://cipherprime.com).
+::: flex
 
-much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and the rest of the CP family <3.
+![cipher prime logo](/assets/uploads/cp_logo_black.png){.color-match .keep-alpha}
 
-::: grid grid-5 gap-tight constrain-wide
+::: group
+I co-founded **cipher prime** with [will stallwood](https://willstall.com) in 2009. We made **ten games in ten years**, including Auditorium and Splice. More info about our games, including our list of awards and ways to buy, are all available at [cipherprime.com](https://cipherprime.com).
+
+Much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and the rest of the CP family <3.
+:::
+
+
+
+::: grid grid-5 gap-compact constrain-wide stack-isolate
 {% for game in games.cipherprime %}
 [![{{game.name}}]({{game.poster}})]({{game.url}})
 {% endfor %}

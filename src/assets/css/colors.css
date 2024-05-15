@@ -81,3 +81,7 @@ body {
   --color: var(--contrast-color);
   --color-alpha: var(--contrast-alpha-color);
 }
+
+.keep-alpha {
+  background: transparent!important;
+}
