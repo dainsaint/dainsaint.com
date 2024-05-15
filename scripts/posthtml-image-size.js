@@ -13,6 +13,9 @@ module.exports = function () {
       if( !node.attrs.alt )
         node.attrs.alt = "";
 
+      if( process.env.ELEVENTY_RUN_MODE === "build" )
+          node.attrs.src = node.attrs.src.replace("assets/uploads", "asset/uploads/resized");
+
       return node;
     });
 
