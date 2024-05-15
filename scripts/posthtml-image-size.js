@@ -13,8 +13,6 @@ module.exports = function () {
       if( !node.attrs.alt )
         node.attrs.alt = "";
 
-      // node.attrs.src = "";
-      // node.attrs.height = dimensions.height;
       return node;
     });
 
