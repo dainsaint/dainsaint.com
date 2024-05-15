@@ -14,29 +14,30 @@ const getAssetCache = (destination) => {
   return cache;
 }; 
 
-const getHash = (file) => {
-  return md5File.sync(file);
-}
-
-const hasChanged = (data, file) => {
-  return data && (data.__hash != getHash(file));
-}
 
 module.exports = class Cache {
   constructor( { name, input, output } ) {
     ensureDirectory(output);
     this.destination = `${output}/${name}.json`;
-    this.input = `${input}/`;
+    this.input = input;
     this.data = getAssetCache(this.destination); 
+  }
+
+  getHash( file ) {
+    return md5File.sync( this.input + "/" + file);
+  }
+
+  hasChanged( entry, file ) {
+    return entry && entry.__hash != this.getHash(file);
   }
 
   isValid( file ) {
     const cached = this.data[file];
-    return cached && !hasChanged( cached, this.input + file );
+    return cached && !this.hasChanged( cached, file );
   }
 
   update (file, update) {
-    update.__hash = getHash(this.input + file);
+    update.__hash = this.getHash(file);
     this.data[file] = update;
     this.save();
   }

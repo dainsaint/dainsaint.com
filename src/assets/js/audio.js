@@ -13,8 +13,7 @@ const loadAudio = (audio) => {
 
   let color = getComputedStyle(audio).getPropertyValue("--color");
   let alpha = getComputedStyle(audio).getPropertyValue("--color-alpha");
-  const data = window.waveforms[file];
-  console.log( file );
+  const data = window.waveforms[file.substring(1)];
   
   var wavesurfer = WaveSurfer.create({
     container: `#${slug}-audio`,

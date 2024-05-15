@@ -8,13 +8,19 @@ module.exports = async () => {
 
   const asset = new Cache({
     name: "waveforms",
-    input: `.`,
+    input: `./src`,
     output: `./src/assets/data`,
   });  
 
-  const files = glob.sync("./src/assets/uploads/*.mp3", {
+  const files = glob.sync("assets/uploads/*.mp3", {
+    cwd: "./src",
     nodir: true
   });
+
+  if (!files.length) {
+    console.log(`🔊 No audio files found, skipping`);
+    return;
+  }
   
   const changedFiles = files.filter( file => !asset.isValid( file ) )
 
@@ -27,8 +33,9 @@ module.exports = async () => {
   console.time(`🔊 Processed waveforms for ${changedFiles.length} files in`);
   const precision = 100;
   for (const file of changedFiles) {
-    const peaks = await audioPeaks.getAudioPeaks(file, 100).toPromise();
-    const duration = await audioDuration.getAudioDurationInSeconds(file);
+    const path = `./src/${file}`;
+    const peaks = await audioPeaks.getAudioPeaks(path, 100).toPromise();
+    const duration = await audioDuration.getAudioDurationInSeconds(path);
 
     const update = {
       peaks: peaks.map((x) => Math.round(x * precision) / precision),
