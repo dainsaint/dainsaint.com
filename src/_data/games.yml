@@ -1,31 +1,31 @@
 cipherprime:
   - name: Auditorium
     url: https://cipherprime.com/games/auditorium
-    poster: /assets/uploads/games/auditorium.webp
+    poster: /assets/uploads/auditorium.webp
   - name: Fractal
     url: https://cipherprime.com/games/fractal
-    poster: /assets/uploads/games/fractal.webp
+    poster: /assets/uploads/fractal.webp
   - name: Pulse
     url: https://cipherprime.com/games/pulse
-    poster: /assets/uploads/games/pulse.webp
+    poster: /assets/uploads/pulse.webp
   - name: Splice
     url: https://cipherprime.com/games/splice
-    poster: /assets/uploads/games/splice.webp
+    poster: /assets/uploads/splice.webp
   - name: Intake
     url: https://cipherprime.com/games/intake
-    poster: /assets/uploads/games/intake.webp
+    poster: /assets/uploads/intake.webp
   - name: Shimsham
     url: https://cipherprime.com/games/shimsham
-    poster: /assets/uploads/games/shimsham.webp
+    poster: /assets/uploads/shimsham.webp
   - name: Monster Want Burger
     url: https://cipherprime.com/games/monster-want-burger
-    poster: /assets/uploads/games/monster-want-burger.webp
+    poster: /assets/uploads/monster-want-burger.webp
   - name: Tailwind
     url: https://cipherprime.com/games/tailwind
-    poster: /assets/uploads/games/tailwind.webp
+    poster: /assets/uploads/tailwind.webp
   - name: Jawns
     url: https://cipherprime.com/games/jawns
-    poster: /assets/uploads/games/jawns.webp
+    poster: /assets/uploads/jawns.webp
   - name: Lineweight
     url: https://cipherprime.com/games/lineweight
-    poster: /assets/uploads/games/lineweight.webp
+    poster: /assets/uploads/lineweight.webp
