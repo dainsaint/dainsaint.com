@@ -1,5 +1,5 @@
 const loadWaveformData = async() => {
-  const request = await fetch("/data/waveforms.json");
+  const request = await fetch("/assets/data/waveforms.json");
   const waveforms = await request.json();
 
   window.waveforms = waveforms;

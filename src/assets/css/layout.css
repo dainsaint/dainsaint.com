@@ -172,6 +172,7 @@ main > .block-smart:first-of-type {
 
 .grid-5 {
   --grid-column-count: 5;
+  --grid-min-width: 19%;
 }
 
 .gap-tight {

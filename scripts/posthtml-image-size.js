@@ -7,9 +7,12 @@ module.exports = function () {
       if( isRemote )
         return node;
 
-      const dimensions = getSizeOf('./src/' + node.attrs.src )
-      node.attrs.width = dimensions.width;
-      node.attrs.style = ` aspect-ratio: ${dimensions.width} / ${dimensions.height};`;
+      try {
+        const dimensions = getSizeOf('./src/' + node.attrs.src )
+        node.attrs.width = dimensions.width;
+        node.attrs.style = ` aspect-ratio: ${dimensions.width} / ${dimensions.height};`;
+      } catch(e) {console.log("⛔️ Couldn't process image", node.attrs.src)}
+
       if( !node.attrs.alt )
         node.attrs.alt = "";
 
