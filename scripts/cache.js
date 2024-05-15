@@ -32,8 +32,7 @@ module.exports = class Cache {
   }
 
   isValid( file ) {
-    console.log( file )
-;    const cached = this.data[file];
+    const cached = this.data[file];
     return cached && !hasChanged( cached, this.input + file );
   }
 

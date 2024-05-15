@@ -1,7 +1,7 @@
 {% assign color = "#161616" %}
 <footer class="block-loose colorize {{ color | contrast }}" style="--primary: {{ color }}">
 
-  <div class="stack-loose constrain">
+  <div class="stack-loose constrain-wide">
       
     {%- unless not pagination.pages.size -%}
     <div class="pagination-block">
@@ -25,21 +25,59 @@
       <a href="{{ random.url }}">{{ random.data.title }}</a>
     </div>
 
-    
-    <nav>
-      <h3>pages</h3>
-      <ul class="list-inline between-interpunct">
-        {% for link in navigation.portfolios %}
-        <li><a href="/{{link.page}}">{{ link.page }}</a></li>
-        {% endfor %}
-        <li><a href="/everything">everything</a></li>
-      </ul>
-    </nav>
 
     {% include subscribe %}
 
-    <div id="copyright">
-      &copy;{{ "now" | date: "%Y" }} dain saint  <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a href="https://pcrf.net">🇵🇸</a>
+    <div class="grid grid-2">
+
+      <div class="stack-loose">
+        <nav>
+          <h3>curated work</h3>
+          <ul>
+            {% for link in navigation.portfolios %}
+            <li><a href="/{{link.page}}">{{ link.page }}</a></li>
+            {% endfor %}
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/everything">everything else</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <h3>the garden</h3>
+          <ul>
+            <li><a href="/projects">all projects</a></li>
+            <li><a href="/everything">everything post</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+        <h3>ways to follow</h3>
+        <ul>
+          <li><i class="fa fa-square-rss"></i> <a href="/feed.xml">rss</a></li>
+          <li><i class="fab fa-square-instagram"></i> <a href="https://instagram.com/dainsaint">instagram</a></li>
+        </ul>
+        </nav>
+
+      </div>
+
+
+      <div class="stack-loose">
+        <nav>
+          <h3>people to watch</h3>
+          <ul>
+            {% for link in navigation.people %}
+            <li><a href="{{link.url}}">{{ link.page }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div>
+        <small>
+          &copy;{{ "now" | date: "%Y" }} dain saint | <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a
+            href="https://pcrf.net">🇵🇸</a> | <a href="/collab">work with me</a>
+        </small>
     </div>
 
   </div>

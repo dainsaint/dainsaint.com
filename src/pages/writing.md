@@ -18,11 +18,8 @@ TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 {% section %}
 
 # journalism
-TKTK articles from the Inquirer, like
 
-* Black and Blue
-* Wildest Dreams essay
-* Horse 95 thing
+TKTK maybe?
 
 {% endsection %}
 

@@ -1,4 +1,3 @@
-const { promisify } = require("util");
 const getSizeOf = require("image-size");
 
 module.exports = function () {
@@ -10,7 +9,12 @@ module.exports = function () {
 
       const dimensions = getSizeOf('./src/' + node.attrs.src )
       node.attrs.width = dimensions.width;
-      node.attrs.height = dimensions.height;
+      node.attrs.style = ` aspect-ratio: ${dimensions.width} / ${dimensions.height};`;
+      if( !node.attrs.alt )
+        node.attrs.alt = "";
+
+      // node.attrs.src = "";
+      // node.attrs.height = dimensions.height;
       return node;
     });
 

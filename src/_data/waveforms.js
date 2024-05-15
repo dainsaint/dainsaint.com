@@ -16,7 +16,7 @@ module.exports = async () => {
     nodir: true
   });
   
-  const changedFiles = files.filter( file => !asset.isValid(  file ) )
+  const changedFiles = files.filter( file => !asset.isValid( file ) )
 
   if (!changedFiles.length) {
     console.log(`🔊 No audio files changed, skipping`);

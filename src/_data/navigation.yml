@@ -13,3 +13,17 @@ portfolios:
   - page: writing
   - page: interactives
   # - page: performance
+
+people:
+  - page: mz. icar
+    url: https://mzicar.com
+  - page: opeola bukola
+    url: https://opeola.com
+  - page: will stallwood
+    url: https://willstall.com
+
+tech: 
+  - page: eleventy
+    url: https://11ty.dev
+  - page: netlify
+    url: https://netlify.com

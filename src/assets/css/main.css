@@ -91,11 +91,15 @@ a {
   }
 }
 
-img {
+img{
   display: block;
   max-width: 100%;
   height: auto;
   content-visibility: auto;
+}
+
+img:not([src*="svg"]) {
+  background: var(--palette-3);
 }
 
 p.lede {

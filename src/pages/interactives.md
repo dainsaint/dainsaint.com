@@ -15,6 +15,24 @@ TKTK tik tak tik tak
 
 {% section %}
 
+# journalism
+
+TKTK more things, including these projects
+
+### Recent articles
+
+{% for article in inquirer %}
+* [{{ article.title }}]({{ article.url }})\
+  _{{article.description}}_
+{% endfor %}
+
+
+
+{% endsection %}
+
+
+{% section %}
+
 {% include quote, quote: "let's make something **memorable :fa-bookmark:** together" %}
 
 basic collab copy TK.
