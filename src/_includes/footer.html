@@ -68,6 +68,15 @@
             {% endfor %}
           </ul>
         </nav>
+
+        <nav>
+          <h3>people i admire</h3>
+          <ul>
+            {% for link in navigation.people %}
+            <li><a href="{{link.url}}">{{ link.page }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
     </div>
 
