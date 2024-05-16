@@ -18,13 +18,13 @@ cipherprime:
     url: https://cipherprime.com/games/shimsham
     poster: /assets/uploads/shimsham.webp
   - name: Monster Want Burger
-    url: https://cipherprime.com/games/monster-want-burger
+    url: https://monsterwantburger.com
     poster: /assets/uploads/monster-want-burger.webp
   - name: Tailwind
     url: https://cipherprime.com/games/tailwind
     poster: /assets/uploads/tailwind.webp
   - name: Jawns
-    url: https://cipherprime.com/games/jawns
+    url: https://playjawns.com
     poster: /assets/uploads/jawns.webp
   - name: Lineweight
     url: https://cipherprime.com/games/lineweight
