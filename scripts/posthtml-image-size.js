@@ -10,7 +10,8 @@ module.exports = function () {
       try {
         const dimensions = getSizeOf('./src/' + node.attrs.src )
         node.attrs.width = dimensions.width;
-        node.attrs.style = ` aspect-ratio: ${dimensions.width} / ${dimensions.height};`;
+        node.attrs.height = dimensions.height;
+        // node.attrs.style = ` aspect-ratio: ${dimensions.width} / ${dimensions.height};`;
       } catch(e) {console.log("⛔️ Couldn't process image", node.attrs.src)}
 
       if( !node.attrs.alt )

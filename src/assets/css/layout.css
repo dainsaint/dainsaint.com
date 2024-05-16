@@ -349,3 +349,7 @@ main > .block-smart:first-of-type {
     margin-block-start: inherit;
   }
 }
+
+.size-full {
+  width: 100%;
+}
