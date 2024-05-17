@@ -2,7 +2,7 @@
 
   {% if f.type == "gallery" %}
   {% assign images = f.images %}
-  {% include gallery, url: url %}
+  {% include gallery, url: url, slug: slug %}
 
   {% elsif f.type == "hero" %}
   {% include hero, url: f.url %}

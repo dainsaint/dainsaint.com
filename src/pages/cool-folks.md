@@ -2,6 +2,7 @@
 title: cool folks
 description: people that are good
 color: "#eeeeee"
+eleventyExcludeFromCollections: true
 ---
 
 A growing list of super cool and awesome people on the internet

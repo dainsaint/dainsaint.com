@@ -15,13 +15,6 @@ TKTK I write poetry, books, thoughts, and other things. Some journalism too.
 
 
 {% hoist "sections" %}
-{% section %}
-
-# journalism
-
-TKTK maybe?
-
-{% endsection %}
 
 {% section %}
 

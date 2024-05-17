@@ -2,6 +2,7 @@
 layout: minimal
 title: links
 color: "#573E79"
+eleventyExcludeFromCollections: true
 ---
 
 <div class="stack-loose">

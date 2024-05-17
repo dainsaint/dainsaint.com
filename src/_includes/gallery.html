@@ -3,10 +3,10 @@
   <div class="gallery-image">
     {%- if url -%}
     <a class="gallery-image-link" href="{{ url }}">
-      <img src="{{ img }}" alt="">
+      <img src="{{ img }}" alt="" style="view-transition-name: feature-{{ slug }};">
     </a>
     {%- else -%}
-    <img src="{{ img }}" alt="">
+    <img src="{{ img }}" alt="" style="view-transition-name: feature-{{ slug }};">
     {%- endif -%}
   </div>
   {%- endfor -%}

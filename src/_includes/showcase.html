@@ -5,7 +5,7 @@
 <div class="showcase">
   <div class="stack-compact">
     {%- if feature -%}
-    {%- include featured, featured: post.data.featured, url: post.url -%}
+    {%- include featured, featured: post.data.featured, url: post.url, slug: post.fileSlug -%}
     {%- endif -%}
     <div class="stack-tight">
       <h4 class="project-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h4>

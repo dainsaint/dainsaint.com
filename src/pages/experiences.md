@@ -2,6 +2,7 @@
 title: experiences
 description: what is it?
 color: "#343a40"
+eleventyExcludeFromCollections: true
 ---
 
 *You **read** a book.*\

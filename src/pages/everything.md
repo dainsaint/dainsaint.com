@@ -2,6 +2,7 @@
 title: everything
 description: every dang post on the site
 color: "#343a40"
+eleventyExcludeFromCollections: true
 ---
 
 
@@ -23,10 +24,11 @@ color: "#343a40"
 
 ### Projects
 {% assign year = 0 %}
-{% for post in collections.projects | reverse %}
+{% assign posts = collections.projects | reverse %}
+{% for post in posts %}
 {% assign y = post.data.date | date: "%Y" %}
 
-{% if y > year %}
+{% if y != year %}
 {% assign year = y %}  
 ### {{ year }}
 {% endif %}
@@ -39,9 +41,10 @@ color: "#343a40"
 ### Posts
 
 {% assign year = 0 %}
-{% for post in collections.posts | reverse %}
+{% assign posts = collections.posts | reverse %}
+{% for post in posts %}
 {% assign y = post.data.date | date: "%Y" %}
-{% if y > year %}
+{% if y != year %}
   {% assign year = y %}
   
 ### {{ year }}

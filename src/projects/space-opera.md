@@ -1,6 +1,7 @@
 ---
 title: space opera
 description: theatrical ttrpg for democratic decision making
+date: 2024-01-22
 color: "#A9B5D6"
 featured:
   - type: gallery

@@ -3,7 +3,7 @@
 <article class="project block block-lede {{ color | contrast }}" style="--primary: {{ color }}">
 
   <section class="stack constrain">
-    {% include featured, featured: featured %}
+    {% include featured, featured: featured, slug: page.fileSlug %}
 
     <div class="project-intro">
       {% include project-info, url: page.url %}

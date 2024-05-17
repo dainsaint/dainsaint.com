@@ -25,7 +25,7 @@ pagination:
 
 # [Hi, I'm Dain Saint](/about) **I turn stories into experiences.** {.title}
 
-I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
+I'm a multidisciplinary creator making stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
 * [learn more :fa-angle-right:](/about)
@@ -53,7 +53,7 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 {{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
 </h1>
 
-i bring creative direction and perspective to immersive, meaningful experiences
+I bring creative direction and perspective to immersive, meaningful experiences
 
 [{% include fist-bump.svg %} let's collab](/collab){.button}
 :::
