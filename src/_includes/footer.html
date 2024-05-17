@@ -27,64 +27,53 @@
 
 
     {% include subscribe %}
+    <div class="grid grid-3">
 
-    <div class="grid grid-2">
-
-      <div class="stack-loose">
-        <nav>
-          <h3>curated work</h3>
-          <ul>
-            {% for link in navigation.portfolios %}
-            <li><a href="/{{link.page}}">{{ link.page }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-
-        <nav>
-          <h3>the garden</h3>
-          <ul>
-            <li><a href="/projects">all projects</a></li>
-            <li><a href="/everything">everything else</a></li>
-          </ul>
-        </nav>
-
-        <nav>
-        <h3>ways to follow</h3>
+      <nav>
+        <h3>curated work</h3>
         <ul>
-          <li><i class="fa fa-square-rss"></i> <a href="/feed.xml">rss</a></li>
-          <li><i class="fab fa-square-instagram"></i> <a href="https://instagram.com/dainsaint">instagram</a></li>
+          {% for link in navigation.portfolios %}
+          <li><a href="/{{link.page}}">{{ link.page }}</a></li>
+          {% endfor %}
         </ul>
-        </nav>
+      </nav>
 
-      </div>
+      <nav>
+        <h3>uncurated pieces</h3>
+        <ul>
+          <li><a href="/projects">all projects</a></li>
+          <li><a href="/everything">everything else</a></li>
+        </ul>
+      </nav>
 
+      <nav>
+        <h3>my faves</h3>
+        <ul>
+          {% for link in navigation.people %}
+          <li><a href="{{link.url}}">{{link.page}}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
 
-      <div class="stack-loose">
-        <nav>
-          <h3>people to watch</h3>
-          <ul>
-            {% for link in navigation.people %}
-            <li><a href="{{link.url}}">{{ link.page }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-
-        <nav>
-          <h3>people i admire</h3>
-          <ul>
-            {% for link in navigation.people %}
-            <li><a href="{{link.url}}">{{ link.page }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-      </div>
     </div>
 
-    <div>
-        <small>
-          &copy;{{ "now" | date: "%Y" }} dain saint | <a href="https://www.equalityjamaica.org">🇯🇲</a> <a href="https://www.waygay.org">🏳️‍🌈</a> <a
-            href="https://pcrf.net">🇵🇸</a> | <a href="/collab">work with me</a>
-        </small>
+    <div class="copyright distribute inline between-pipe">
+      <span>&copy;{{ "now" | date: "%Y" }} dain saint</span>
+      <a href="/collab">work with me</a>
+
+      <ul class="distribute-tight inline">
+        {% for link in navigation.follow %}
+          <li><a href="{{link.url}}"><i class="{{link.page}}"></i></a></li>
+        {% endfor %}
+      </ul>
+
+      <ul class="distribute-tight inline">
+        {% for link in navigation.causes %}
+        <li><a class="link-plain" href="{{link.url}}">{{link.page}}</a></li>
+        {% endfor %}
+      </ul>
+
+
     </div>
 
   </div>

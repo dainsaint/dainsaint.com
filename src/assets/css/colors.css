@@ -86,3 +86,7 @@ body {
 .keep-alpha {
   background: transparent!important;
 }
+
+.link-plain {
+  text-decoration: none;
+}

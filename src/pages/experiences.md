@@ -11,4 +11,4 @@ color: "#343a40"
 {.align-center}
 
 # talk on experience design
-{% include youtube, video_id: zNcbzCnP7T0 %}
+https://www.youtube.com/watch?v=zNcbzCnP7T0

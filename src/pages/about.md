@@ -22,17 +22,26 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 {% hoist "sections" %}
 
 {% section %}
-# about this site
+# press
 
-i've never been a huge fan of social media. it is powerful, and an incredible force for good, but _man_ things with infinite scroll aren't great for my brain.
 
-and my art follows my stream of consciousness. sometimes that takes the form of poetry. or song. or spoken word, or rhetoric, the odd book or video.
+::: stack-loose
+{% assign articles = press | where_exp: "item", "item.tags not contains 'podcast'" | sort: "date" | reverse %}
 
-the way we're taught to market runs against the way i create. i often have no idea where particular pieces are leading me until i've arrived; and if i wait until i know where i've gotten to start giving you directions, i'll never release anything (which has been my curse for years).
+{% assign podcasts = press | where_exp: "item", "item.tags contains 'podcast'" | sort: "date" | reverse %}
 
-so instead, this website is my garden. as i create new pieces, they'll be published here immediately. once i figure out where it's going, i create a [project](/projects) to start harvesting the work. once it's ready to release, it's released — no muss, no fuss.
+### articles
+{% include press, articles: articles %}
+
+### podcast interviews
+{% include press, articles: podcasts %}
+
+:::
+
+
 
 {% endsection %}
+
 
 {% section %}
 
@@ -48,3 +57,20 @@ basic collab copy TK.
 
 {% endsection %}
 {% endhoist %}
+
+
+
+
+
+{% comment %}
+# about this site
+
+i've never been a huge fan of social media. it is powerful, and an incredible force for good, but _man_ things with infinite scroll aren't great for my brain.
+
+and my art follows my stream of consciousness. sometimes that takes the form of poetry. or song. or spoken word, or rhetoric, the odd book or video.
+
+the way we're taught to market runs against the way i create. i often have no idea where particular pieces are leading me until i've arrived; and if i wait until i know where i've gotten to start giving you directions, i'll never release anything (which has been my curse for years).
+
+so instead, this website is my garden. as i create new pieces, they'll be published here immediately. once i figure out where it's going, i create a [project](/projects) to start harvesting the work. once it's ready to release, it's released — no muss, no fuss.
+
+{% endcomment %}

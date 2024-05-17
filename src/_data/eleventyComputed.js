@@ -3,25 +3,25 @@ const Color = require("color");
 
 const lightGradientDestination = lch("#F9F871");
 const darkGradientDestination = lch("#361339");
-const brandingColor = "#573E79";
+const brandColor = "#573E79";
 
 module.exports = {
   color: (data) => {
     if (data.color) return data.color;
     else if (data.pagination) return data.pagination.items[0].data.color;
-    else return brandingColor;
+    else return brandColor;
   },
 
   design: {
-    brandColor: () => brandingColor,
+    brandColor: () => brandColor,
 
     paginationColor: (data) => {
       if (data.pagination) return data.pagination.items[0].data.color;
-      else return brandingColor;
+      else return brandColor;
     },
 
     palette: (data) => {
-      const color = data.color ? data.color : brandingColor;
+      const color = data.color ? data.color : brandColor;
       const destination = Color(color).isLight()
         ? darkGradientDestination
         : lightGradientDestination;

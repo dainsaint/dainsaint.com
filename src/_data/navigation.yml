@@ -1,9 +1,9 @@
 links:
-  - page: collab
+  - page: now
   - page: projects
     tags: projects
-  - page: now
   - page: about
+  - page: collab
   - page: store
     url: https://dainsaint.square.site
 
@@ -27,3 +27,18 @@ tech:
     url: https://11ty.dev
   - page: netlify
     url: https://netlify.com
+
+
+follow:
+  - page: 'fa fa-square-rss'
+    url: /feed.xml
+  - page: 'fab fa-square-instagram'
+    url: https://instagram.com/dainsaint
+
+causes:
+  - page: 🇯🇲
+    url: https://www.equalityjamaica.org
+  - page: 🏳️‍🌈
+    url: https://www.waygay.org
+  - page: 🇵🇸
+    url: https://pcrf.net

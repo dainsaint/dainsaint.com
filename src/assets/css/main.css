@@ -71,10 +71,10 @@ ul {
   margin: 0;
   box-sizing: border-box;
 
-  li {
+  /* li {
     margin-inline-start: -.5rem;
     margin-block-start: .5em;
-  }
+  } */
 }
 
 a {
@@ -1146,4 +1146,8 @@ blockquote p{
 .fade-in {
   opacity: 0;
   transition: opacity .2s ease;
+}
+
+.copyright {
+  font-size: .75rem; 
 }

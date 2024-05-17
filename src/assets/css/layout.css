@@ -320,6 +320,26 @@ main > .block-smart:first-of-type {
   margin-block-end: -8rem;
 }
 
+.push {
+  margin-block-start: 1.25rem;
+}
+
+.push-tight {
+  margin-block-start: .2rem;
+}
+
+.push-compact {
+  margin-block-start: .75rem;
+}
+
+.push-loose {
+  margin-block-start: 2.5rem;
+}
+
+.push-airy {
+  margin-block-start: 8rem;
+}
+
 .list-inline {
 
   ul,
@@ -328,20 +348,55 @@ main > .block-smart:first-of-type {
   }
 }
 
+.inline > * {
+  display: inline-block;
+}
+
+ul.inline {
+  padding: inherit;
+}
+
+
+.distribute > * + *{
+  
+  margin-inline-start: 0.5rem;
+  &::before {
+    margin-inline-end: 0.5rem;
+  }
+}
+
+.distribute-tight > * + * {
+  margin-inline-start: 0.25rem;
+  &::before {
+    margin-inline-end: 0.25rem;
+  }
+}
+
+.distribute-loose > * + * {
+  margin-inline-start: 1rem;
+  &::before {
+    margin-inline-end: 1rem;
+  }
+}
+
+
+
 .between-interpunct {
-  &>*:not(:last-child)::after {
+  & > * + *::before {
     content: ' • ';
+    display: inline-block;
   }
 }
 
 .between-pipe {
-  &>*:not(:last-child)::after {
+  & > * + *::before {
     content: ' | ';
+    display: inline-block;
   }
 }
 
 .between-divider {
-  &>*:not(:last-child)::after {
+  & > * + *::before {
     content: '';
     display: block;
     inline-size: 100%;
@@ -352,4 +407,65 @@ main > .block-smart:first-of-type {
 
 .size-full {
   width: 100%;
+}
+
+
+
+
+.table {
+  padding: 0;
+  li {
+    display: block;
+    position: relative;
+    
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 0%;
+      background: var(--color);
+      transition: height .1s ease;
+      pointer-events: none;
+    }
+  }
+
+  li:hover {
+    a {
+      color: var(--primary);
+    }
+    
+    &::before {
+      height: 100%;
+    }
+  }
+
+  li a {
+    display: grid;
+    position: relative;
+    grid-template-columns: 100px 200px 1fr;
+    border-bottom: 1px solid var(--color);
+    text-decoration: none;
+    
+
+    > * {
+      padding: .25rem;
+    }
+
+    time {
+      background: transparent;
+      color: currentColor;
+    }
+
+  }
+}
+
+.list-plain {
+  padding: 0;
+
+  li {
+    display: block;
+  }
 }

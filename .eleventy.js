@@ -241,9 +241,27 @@ function addTransforms( eleventy ) {
     return result.html;
   });
 
-  eleventy.addTransform("prettify", function (content) {
+
+  eleventy.addTransform("media", async function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+
+    const result = await posthtml([
+      require("./scripts/posthtml-youtube")(),
+      require("./scripts/posthtml-audio")(),
+    ]).process(content);
+
+    return result.html;
+  });
+
+  eleventy.addTransform("prettify", async function (content) {
     // check for dev vs prod
-    if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
+    const result = await posthtml([
+      require("./scripts/posthtml-cleanup")(),
+    ]).process(content);
+
+    content = result.html;
+
+    // if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
 
     // check for html
     if (!(this.page.outputPath || "").endsWith(".html")) return content;
