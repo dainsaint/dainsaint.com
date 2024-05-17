@@ -41,8 +41,8 @@ module.exports = class Cache {
     this.data[file] = update;
     this.save();
   }
-
+  
   save () {
-    fs.writeFileSync(this.destination, JSON.stringify(this.data, null, 2));
+    fs.writeFileSync(this.destination, JSON.stringify(this.data));
   }
 }
