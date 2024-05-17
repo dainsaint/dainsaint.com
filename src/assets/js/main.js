@@ -105,6 +105,7 @@ const loadTransitionData = async () => {
         contrast: "light"
       };
       
+      document.querySelector(".header-main")?.classList.remove("is-open");
       
       document.body.classList.remove("transition-fade-in");
       document.body.classList.add("transition-fade-out");
