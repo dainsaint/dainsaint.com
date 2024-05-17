@@ -417,6 +417,7 @@ ul.inline {
   li {
     display: block;
     position: relative;
+    border-bottom: 1px solid var(--color);
     
     &::before {
       content: '';
@@ -433,9 +434,7 @@ ul.inline {
   }
 
   li:hover {
-    a {
-      color: var(--primary);
-    }
+    
     
     &::before {
       height: 100%;
@@ -444,10 +443,15 @@ ul.inline {
 
   li a {
     display: grid;
+    grid-template-columns: .25fr .5fr 1fr;
     position: relative;
-    grid-template-columns: 100px 200px 1fr;
-    border-bottom: 1px solid var(--color);
     text-decoration: none;
+    z-index: 1;
+    align-items: center;
+
+    &:hover {
+      color: var(--primary);
+    }
     
 
     > * {
@@ -456,6 +460,7 @@ ul.inline {
 
     time {
       background: transparent;
+      white-space: normal;
       color: currentColor;
     }
 

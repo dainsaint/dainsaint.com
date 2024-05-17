@@ -71,7 +71,6 @@ as a singer-songwriter, my work is heartfelt and eclectic. i've performed everyt
 https://youtu.be/GjZa6hSSotM
 
 ### albums/singles
-
 {% assign personal = bandcamp.dainsaint | concat: bandcamp.saintanytime %}
 {% include bandcamp, albums: personal %}
 
@@ -82,7 +81,7 @@ https://youtu.be/GjZa6hSSotM
   <iframe style="border-radius:12px; background: var(--color-alpha)" src="https://open.spotify.com/embed/track/558ltuhYDwXj5lHlO6GT4P?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
   <iframe style="border-radius:12px; background: var(--color-alpha)" src="https://open.spotify.com/embed/album/7F5xABrHeCQlf1FbKDniIZ?theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  :::
+:::
   
 :::
 
