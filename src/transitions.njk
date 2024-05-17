@@ -1,0 +1,13 @@
+---
+permalink: /assets/data/transitions.json
+---
+{
+  {% for page in collections.all %}
+    "/{{page.fileSlug}}": {
+      "primary": "{{page.data.color}}",
+      "color": "{{page.data.design.contrast.color}}",
+      "colorAlpha": "{{page.data.design.contrast.colorAlpha}}",
+      "contrast": "{{page.data.design.contrast.contrast}}"
+    }{{ ',' if not loop.last }}
+  {% endfor %}
+}

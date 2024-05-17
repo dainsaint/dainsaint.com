@@ -1,7 +1,6 @@
 ---
 title: let's collab
 color: "#89AF71"
-eleventyExcludeFromCollections: true
 featured: []
 ---
 <div class="grid grid-3">

@@ -15,6 +15,15 @@ module.exports = {
   design: {
     brandColor: () => brandColor,
 
+    contrast: (data) => {
+      const color = data.color ? data.color : brandColor;
+      return {
+        color: Color(color).isLight() ? "#062535" : "#f7ede2",
+        colorAlpha: Color(color).isLight() ? "#06253520" : "#f7ede220",
+        contrast: Color(color).isLight() ? "dark" : "light"
+      }
+    },
+
     paginationColor: (data) => {
       if (data.pagination) return data.pagination.items[0].data.color;
       else return brandColor;

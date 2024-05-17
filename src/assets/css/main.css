@@ -2,13 +2,13 @@
 @import url("./layout.css");
 @import url("./colors.css");
 
-@view-transition {
+/* @view-transition {
   navigation: auto;
 }
 
 ::view-transition-group(:root) {
   animation-duration: .5s;
-}
+} */
 
 html {
   background: #222;
@@ -1158,4 +1158,83 @@ blockquote p{
 
 .copyright {
   font-size: .75rem; 
+}
+
+
+
+body.transition-fade-out {
+  transition: background-color .5s ease;
+  transition-delay: 0.2s;
+
+  /* header, */
+  main {
+    animation: fade-out .2s both;
+  }
+
+  footer {
+    animation: slide-out .4s both;
+  }
+}
+
+
+body.transition-fade-in {
+  /* header, */
+  main  {
+    animation: fade-in .5s both;
+  }
+/* 
+  main *:nth-child(5n + 1) {
+    animation-delay: 0s;
+  }
+
+  main *:nth-child(5n + 2) {
+    animation-delay: .1s;
+  }
+
+  main *:nth-child(5n + 3) {
+    animation-delay: .2s;
+  }
+
+  main *:nth-child(5n + 4) {
+    animation-delay: .3s;
+  }
+
+  main *:nth-child(5n + 5) {
+    animation-delay: .4s;
+  } */
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    translate: 0rem -2rem;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0rem 0rem;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    translate: 0rem 0rem;
+  }
+
+  to {
+    opacity: 0;
+    translate: 0rem 2rem;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    translate: 0rem 0rem;
+  }
+
+  to {
+    translate: 0rem 100%;
+  }
 }

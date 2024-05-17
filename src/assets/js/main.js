@@ -84,3 +84,49 @@ quotes.forEach((quote) => {
     strong.innerHTML = content.at( Math.floor( Math.random() * content.length - 1 ) )
   }
 )
+
+
+const loadTransitionData = async () => {
+  const request = await fetch("/assets/data/transitions.json");
+  const transitions = await request.json();
+
+  window.transitions = transitions;
+
+  const anchors = Array.from(document.getElementsByTagName("a"));
+
+  anchors.forEach((anchor) => {
+    if (!anchor.getAttribute("href")?.startsWith("/")) return;
+
+    anchor.addEventListener("click", (e) => {
+      e.preventDefault();
+      let destination = anchor.getAttribute("href")?.replace(/\/*$/, '');
+      const style = window.transitions[destination] || {
+        primary: "#573E79",
+        contrast: "light"
+      };
+      
+      
+      document.body.classList.remove("transition-fade-in");
+      document.body.classList.add("transition-fade-out");
+      document.body.style.setProperty("--primary", style.primary );
+      document.querySelector("header")?.classList.remove("light", "dark");
+      document.querySelector("header")?.classList.add( style.contrast );
+
+      setTimeout(() => {
+        document.location = anchor.href;
+      }, 500)
+    });
+  });
+
+};
+
+document.addEventListener("load", (e) => {
+  
+  if( document.referrer.startsWith( window.location.origin ) ) {
+    document.body.classList.add("transition-fade-in");
+  }
+});
+
+
+loadTransitionData();
+
