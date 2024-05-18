@@ -100,7 +100,7 @@ https://youtu.be/GjZa6hSSotM
 
 {% include quote, quote: "let's make something **musical :fa-music:** together" %}
 
-this means you, taylor moore.
+I bring creative direction and perspective to immersive, meaningful experiences
 {.align-center}
 
 - [{% include fist-bump.svg %} let's collab](/collab)
