@@ -212,7 +212,7 @@ function addShortcodes( eleventy ) {
       style: color ? ` style="--primary: ${color || "transparent"}"` : "",
     };
 
-    return `<section class="block block-loose stack constrain colorize palette${
+    return `<section class="block-loose stack constrain colorize palette${
       overrides.contrast
     }"${overrides.style}>${markdown.render(content)}</section>`;
   });

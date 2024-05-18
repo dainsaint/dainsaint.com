@@ -7,7 +7,8 @@ color: "#292B53"
 
 <!-- tk -->
 
-When you change what it means to win, you change how you play.
+When you change what it means to win, you change how you play the game.
+{.lede}
 
 * some quick thoughts on game design — digital and otherwise
 * gotta have fun
@@ -48,7 +49,7 @@ Much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and
 
 {% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
 
-I bring diverse creative skills and deep perspective to meaningful projects.
+Whether digital or physical, mechanical or narrative — let's make an incredible experience.
 {.align-center}
 
 * [{% include fist-bump.svg %} let's collab](/collab)

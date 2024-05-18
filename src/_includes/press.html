@@ -5,7 +5,7 @@
     <a href="{{article.url}}">
       <time>{{article.date | date: "%b %Y"}}</time>
       <span>{{article.publication}}</span>
-      <span>{{article.title}}</span>
+      <span>{{article.title}}{% if article.authors %} <small><em>w/ {{ article.authors }}</em></small>{% endif %}</span>
     </a>
   </li>
   {% endfor %}

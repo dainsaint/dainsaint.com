@@ -122,51 +122,47 @@ const prepareExit = () => {
   setTimeout( () => document.body.classList.add("transition-fade-out"), 1 );
 }
 
-
-
-
 const loadTransitionData = async () => {
   const request = await fetch("/assets/data/transitions.json");
   const transitions = await request.json();
 
   window.transitions = transitions;
-
-  const anchors = Array.from(document.getElementsByTagName("a"));
-
-  anchors.forEach((anchor) => {
-    if (!anchor.getAttribute("href")?.startsWith("/")) return;
-
-    anchor.addEventListener("click", (e) => {
-      e.preventDefault();
-    
-      prepareExit();
-
-      setTimeout( () => applyTransition(anchor.getAttribute("href")), 5 );
-
-      setTimeout(() => {
-        document.location = anchor.href;
-      }, 500)
-    });
-  });
-
-
-  const random = document.getElementById("random-post");
-  const slugs = Object.keys(transitions)
-  const slug = slugs[ Math.floor( Math.random() * slugs.length ) ];
-  const post = transitions[ slug ];
-  
-  random?.setAttribute("href", slug);
-  random.innerHTML = post.title;
-
 };
 
+const initializeLinks = () => {
+  const anchors = Array.from(document.getElementsByTagName("a"))
+    .filter( anchor => anchor.getAttribute("href")?.startsWith("/") );
 
-const styleOverscroll = () => {
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
+      e.preventDefault();
+      prepareExit();
+      setTimeout(() => applyTransition(anchor.getAttribute("href")), 5);
+      setTimeout(() => document.location = anchor.href, 500);
+    });
+  });
+}
+
+const updateRandomPost = () => {
+  const random = document.getElementById("random-post");
+  if(!random || !window.transitions)
+    return;
+
+  const slugs = Object.keys(window.transitions);
+  const slug = slugs[Math.floor(Math.random() * slugs.length)];
+  const post = window.transitions[slug];
+
+  random?.setAttribute("href", slug);
+  random.innerHTML = post.title;
+}
+
+
+const monitorThemeColor = () => {
   const originalColor = getThemeColor();
 
   let onscreen = [];
  
-  const updateOverscroll = (entries) => {
+  const updateThemeColor = (entries) => {
     entries.forEach( entry => {
       if( entry.isIntersecting ) {
         const  color = getComputedStyle(entry.target).backgroundColor;
@@ -181,7 +177,7 @@ const styleOverscroll = () => {
     })
   }
 
-  let observer = new IntersectionObserver(updateOverscroll, {
+  let observer = new IntersectionObserver(updateThemeColor, {
     rootMargin: "0px 0px -100% 0px"
   });
 
@@ -191,22 +187,18 @@ const styleOverscroll = () => {
 }
 
 
-
-
 document.addEventListener("DOMContentLoaded", (e) => {
-  loadTransitionData();
-  styleOverscroll();
-})
+  loadTransitionData()
+    .then(()=>{
+      initializeLinks();
+      updateRandomPost();
+    });
 
-window.addEventListener("load", (e) => {
-  if (document.referrer.startsWith(window.location.origin)) {
-    document.body.classList.add("transition-fade-in");
-  }
-});
+  monitorThemeColor();
+})
 
 window.addEventListener("pageshow", (e) => {
   if (e.persisted) {
-    console.log("LOADING FROM CACHE");
     document.body.classList.remove("transition-fade-out");
     applyTransition( window.location.pathname );
   }

@@ -72,7 +72,7 @@ I bring creative direction and perspective to immersive, meaningful experiences
     display: none;  
   }
 
-  .page .block:first-child {
+  .page > *:first-child {
     padding-block-end: 1.25rem;
   }
 
