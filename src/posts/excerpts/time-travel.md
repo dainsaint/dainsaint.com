@@ -14,7 +14,7 @@ Perry shakes his head. "You're still using the wrong adverbs, chap. You are not 
 
 "I thought it would be obvious. You've time travelled."
 
-"Yes, you said that eariler, and I maintain that the thought is just as ridiculous as when I first heard it. I am not a scientist --"
+"Yes, you said that eariler, and I minimum that the thought is just as ridiculous as when I first heard it. I am not a scientist --"
 
 "Well that much is apparent," interrupts Percy.
 

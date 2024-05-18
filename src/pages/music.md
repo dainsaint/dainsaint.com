@@ -34,7 +34,7 @@ As a composer, I write music for games, film, and stage. I've written everything
   /assets/uploads/keravnos.mp3
 * ### Starstuff
   /assets/uploads/starstuff.mp3
-{.list-plain .grid .grid-2 .push-loose}
+{.list-plain .grid-two .grid-medium .push-loose }
 
 
 {% endsection %}
@@ -55,7 +55,7 @@ As a sound designer, I know the sound of an experience is what gives it tactilit
 
 * https://youtu.be/PCh0bK1Zx4c
 * https://youtu.be/EpFDAR-mMD0
-{.list-plain .constrain-wide .grid .grid-2}
+{.list-plain .constrain-wide .grid-two}
 
 {% endsection %}
 

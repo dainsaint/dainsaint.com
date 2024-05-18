@@ -3,6 +3,11 @@ title: Dain Saint
 ---
 {% capture pageTitle %}{% unless title == "" %}{{ title }} - {% endunless %}dain saint{% endcapture %}
 {% capture pageSocialImg %}{% if social and social != '' %}{{ social }}{% else %}https://dainsaint.com/previews/{{ title | slug }}.png{% endif %}{% endcapture %}
+
+{%- if pagination.pageNumber > 0 -%}
+{% assign color = design.paginationColor %}
+{%- endif %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -40,11 +45,11 @@ title: Dain Saint
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
      -->
 
-    <link rel="mask-icon" href="/assets/img/favicon/favicon-mask.svg" color="{{ design.brandColor }}">
+    <link rel="mask-icon" href="/assets/img/favicon/favicon-mask.svg" color="{{ color }}">
     <link rel="icon" href="/assets/img/favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-    <meta name="theme-color" content="{{ design.brandColor }}">
+    <meta name="theme-color" content="{{ color }}">
     <meta name="view-transition" content="same-origin">
     
 
@@ -70,9 +75,7 @@ title: Dain Saint
     <meta name="generator" content="Eleventy">
   </head>
 
-  {%- if pagination.pageNumber > 0 -%}
-  {% assign color = design.paginationColor %}
-  {%- endif %}
+
 
   <body class="transition-fade-in" style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
 

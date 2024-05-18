@@ -51,7 +51,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ![](/assets/uploads/dawn-wilson.avif)
 ![](/assets/uploads/flag-jacket.avif)
-{.grid .grid-2 .gap-tight .constrain-wide .stack-isolate}
+{.grid-two .grid-medium .gap-tight .constrain-wide .stack-isolate}
 
 ### artists
 * kimberly mcglonn

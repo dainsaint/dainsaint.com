@@ -135,15 +135,48 @@ const loadTransitionData = async () => {
   const post = transitions[ slug ];
   
   random?.setAttribute("href", slug);
-  random.innerText = post.title;
+  random.innerHTML = post.title;
 
 };
+
+
+const styleOverscroll = () => {
+  const themeColorTag = document.querySelector('meta[name="theme-color"]');
+  const originalColor = themeColorTag?.getAttribute("content") || "#573E79";
+
+  let onscreen = [];
+ 
+  const updateOverscroll = (entries) => {
+    entries.forEach( entry => {
+      if( entry.isIntersecting ) {
+        const  color = getComputedStyle(entry.target).backgroundColor;
+        themeColorTag?.setAttribute("content", color);
+        onscreen.push( entry.target );
+
+      } else {
+        const i = onscreen.find( x => x == entry.target );
+        onscreen.splice(i, 1);
+        if( !onscreen.length )
+          themeColorTag?.setAttribute("content", originalColor);
+      }
+    })
+  }
+
+  let observer = new IntersectionObserver(updateOverscroll, {
+    rootMargin: "0px 0px -100% 0px"
+  });
+
+  document.querySelectorAll(".colorize").forEach( block => {
+    observer.observe(block);
+  })
+}
 
 
 
 
 document.addEventListener("DOMContentLoaded", (e) => {
   loadTransitionData();
+  styleOverscroll();
 })
 
 window.addEventListener("load", (e) => {
@@ -159,3 +192,5 @@ window.addEventListener("pageshow", (e) => {
     applyTransition( window.location.pathname );
   }
 });
+
+

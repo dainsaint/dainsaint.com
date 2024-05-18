@@ -1,6 +1,7 @@
 :root {
   --gap: 1.25rem;
   --margin: 1.25rem;
+  --measure: 800px;
 }
 
 /* STACK */
@@ -55,16 +56,19 @@
 /* CONSTRAIN */
 
 .constrain > * {
-  max-inline-size: min(100% - 2 * var(--margin), 800px);
+  --measure: 800px;
+  max-inline-size: min(100% - 2 * var(--margin), var(--measure));
   margin-inline: auto;
 }
 
 .constrain-wide {
-  max-inline-size: min(100% - 2 * var(--margin), 1200px);
+  --measure: 1200px;
+  max-inline-size: min(100% - 2 * var(--margin), var(--measure));
   margin-inline: auto;
 }
 
 .constrain-full {
+  --measure: 100%;
   max-inline-size: calc(100% - 2 * var(--margin));
   margin-inline: auto;
 }
@@ -153,7 +157,8 @@ main > .block-smart:first-of-type {
   --grid-gap-count: calc(var(--grid-column-count) - 1);
   --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
   --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
-  --grid-min-width: 300px;
+  --grid-min-width: 0px;
+
   display: grid;
   gap: var(--gap);
   grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
@@ -176,23 +181,27 @@ main > .block-smart:first-of-type {
 }
 
 
-.maintain {
-  --grid-min-width: 300px;
+
+.grid-small {
+  --grid-min-width: 5rem;
 }
 
-.maintain-thin {
-  --grid-min-width: 200px;
+.grid-medium {
+  --grid-min-width: 15rem;
 }
 
-.maintain-wide {
-  --grid-min-width: 400px;
+.grid-large {
+  --grid-min-width: 20rem;
 }
 
-.maintain-free {
-  --grid-min-width: 0px;
+.grid-xlarge {
+  --grid-min-width: 40rem;
 }
 
 
+.gap-flush {
+  --gap: 0rem;
+}
 
 .gap-tight {
   --gap: .25rem;
@@ -236,20 +245,24 @@ main > .block-smart:first-of-type {
   }
 }
 
-.tile-wide-2 {
+.two-columns {
   --horizontal: 2;
+  grid-column: span var(--horizontal);
 }
 
-.tile-wide-3 {
+.three-columns {
   --horizontal: 3;
+  grid-column: span var(--horizontal);
 }
 
-.tile-tall-2 {
+.two-rows {
   --vertical: 2;
+  grid-row: span var(--vertical);
 }
 
-.tile-tall-3 {
+.three-rows {
   --vertical: 3;
+  grid-row: span var(--vertical);
 }
 
 /* COLUMNS (TEXT) */
