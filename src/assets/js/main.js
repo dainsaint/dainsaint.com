@@ -128,7 +128,18 @@ const loadTransitionData = async () => {
     });
   });
 
+
+  const random = document.getElementById("random-post");
+  const slugs = Object.keys(transitions)
+  const slug = slugs[ Math.floor( Math.random() * slugs.length ) ];
+  const post = transitions[ slug ];
+  
+  random?.setAttribute("href", slug);
+  random.innerText = post.title;
+
 };
+
+
 
 
 document.addEventListener("DOMContentLoaded", (e) => {

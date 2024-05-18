@@ -22,7 +22,7 @@
     <div>
       <h3>enjoy a random piece</h3>
       {% assign random = collections.posts | getRandom: page %}
-      <a href="{{ random.url }}">{{ random.data.title }}</a>
+      <a id="random-post" href="{{ random.url }}">{{ random.data.title }}</a>
     </div>
 
 

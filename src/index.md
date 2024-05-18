@@ -1,9 +1,7 @@
 ---
 layout: index
 title: ""
-description: ""
-social: /assets/uploads/ds-social.webp 
-# color: "#6A4C93"
+description: "storyteller, musician, designer"
 color: "#573E79"
 promo: |
   ::: group
@@ -18,7 +16,7 @@ promo: |
 permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
 pagination:
   data: collections.posts
-  size: 10
+  size: 5
   reverse: true
   alias: posts
 ---
@@ -28,7 +26,7 @@ pagination:
 I'm a multidisciplinary creator making stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
-* [learn more :fa-angle-right:](/about)
+* [about me :fa-angle-right:](/about)
 {.buttons .align-right}
 
 ***
@@ -68,7 +66,12 @@ I bring creative direction and perspective to immersive, meaningful experiences
 
 {% endhoist %}
 
+{% hoist "head" %}
 <style>
+  .project-info {
+    display: none;  
+  }
+
   .page .block:first-child {
     padding-block-end: 1.25rem;
   }
@@ -89,3 +92,4 @@ I bring creative direction and perspective to immersive, meaningful experiences
   }
 
 </style>
+{% endhoist %}
