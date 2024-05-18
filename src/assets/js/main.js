@@ -86,6 +86,25 @@ quotes.forEach((quote) => {
 )
 
 
+const applyTransition = (destination) => {
+  destination = destination.replace(/\/*$/, "");
+  const style = window.transitions[destination] || {
+    primary: "#573E79",
+    contrast: "light",
+  };
+
+  document.body.style.setProperty("--primary", style.primary);
+  document.querySelector("header")?.classList.remove("light", "dark");
+  document.querySelector("header")?.classList.add(style.contrast);
+}
+
+const prepareExit = () => {
+  document.querySelector(".header-main")?.classList.remove("is-open");
+  document.body.classList.remove("transition-fade-in");
+  document.body.classList.add("transition-fade-out");
+}
+
+
 const loadTransitionData = async () => {
   const request = await fetch("/assets/data/transitions.json");
   const transitions = await request.json();
@@ -99,19 +118,9 @@ const loadTransitionData = async () => {
 
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      let destination = anchor.getAttribute("href")?.replace(/\/*$/, '');
-      const style = window.transitions[destination] || {
-        primary: "#573E79",
-        contrast: "light"
-      };
-      
-      document.querySelector(".header-main")?.classList.remove("is-open");
-      
-      document.body.classList.remove("transition-fade-in");
-      document.body.classList.add("transition-fade-out");
-      document.body.style.setProperty("--primary", style.primary );
-      document.querySelector("header")?.classList.remove("light", "dark");
-      document.querySelector("header")?.classList.add( style.contrast );
+    
+      prepareExit();
+      applyTransition(anchor.getAttribute("href"));
 
       setTimeout(() => {
         document.location = anchor.href;
@@ -121,19 +130,21 @@ const loadTransitionData = async () => {
 
 };
 
-document.addEventListener("load", (e) => {
-  
-  if( document.referrer.startsWith( window.location.origin ) ) {
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  loadTransitionData();
+})
+
+window.addEventListener("load", (e) => {
+  if (document.referrer.startsWith(window.location.origin)) {
     document.body.classList.add("transition-fade-in");
   }
 });
 
-window.addEventListener("onpageshow", (e) => {
-  if( e.persisted ) {
-    document.body.classList.remove("transition-fade-in", "transition-fade-out");
+window.addEventListener("pageshow", (e) => {
+  if (e.persisted) {
+    console.log("LOADING FROM CACHE");
+    document.body.classList.remove("transition-fade-out");
+    applyTransition( window.location.pathname );
   }
-}
-
-
-loadTransitionData();
-
+});

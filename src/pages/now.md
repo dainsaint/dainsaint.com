@@ -3,7 +3,7 @@ description: what am i doing with my life?
 color: "#F5BC67"
 date: ""
 status: ""
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 title: now
 tags: []
 ---
