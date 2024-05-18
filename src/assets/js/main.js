@@ -123,15 +123,14 @@ const loadTransitionData = async () => {
 
 document.addEventListener("load", (e) => {
   
-  if( document.referrer.startsWith( window.location.origin ) && !window.noTransition) {
+  if( document.referrer.startsWith( window.location.origin ) ) {
     document.body.classList.add("transition-fade-in");
   }
 });
 
 window.addEventListener("onpageshow", (e) => {
   if( e.persisted ) {
-    document.body.classList.remove("transition-fade-in". "transition-fade-out");
-    window.noTransition = true;
+    document.body.classList.remove("transition-fade-in", "transition-fade-out");
   }
 }
 
