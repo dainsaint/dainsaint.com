@@ -129,6 +129,23 @@ function addFilters( eleventy ) {
   });
 
 
+  eleventy.addFilter("tagged", (array, tags = "") => {
+    const tagArray = tags.split(" ");
+    const include = tagArray.filter((tag) => tag[0] !== "-");
+    const exclude = tagArray
+      .filter((tag) => tag[0] === "-")
+      .map((x) => x.substring(1));
+    const positiveTags = tagArray.filter((tag) => tag[0] !== "-");
+
+    return array.filter((item) => {
+      const excluded = exclude.some((tag) => item.tags?.includes(tag));
+      if (excluded) return false;
+
+      const included = include.filter((tag) => item.tags?.includes(tag));
+      return positiveTags.length === included.length;
+    });
+  });
+
   eleventy.addFilter("inFolder", function (array, inputPath) {
     let path = inputPath.split("/");
     let search = path.splice(0, path.length - 1).join("/");
