@@ -16,6 +16,10 @@ body.transition-fade-in {
   main {
     animation: fade-in .5s both;
   }
+
+  footer {
+    animation: slide-in .4s both;
+  }
 }
 
 
@@ -50,5 +54,17 @@ body.transition-fade-in {
 
   to {
     translate: 0rem 100%;
+  }
+}
+
+
+
+@keyframes slide-in {
+  from {
+    translate: 0rem 100%;
+  }
+
+  to {
+    translate: 0rem 0rem;
   }
 }

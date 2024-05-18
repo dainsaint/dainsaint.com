@@ -101,7 +101,14 @@ const applyTransition = (destination) => {
 const prepareExit = () => {
   document.querySelector(".header-main")?.classList.remove("is-open");
   document.body.classList.remove("transition-fade-in");
-  document.body.classList.add("transition-fade-out");
+
+  const themeColorTag = document.querySelector('meta[name="theme-color"]');
+  document.body.style.setProperty(
+    "--primary",
+    themeColorTag?.getAttribute("content")
+  );
+
+  setTimeout( () => document.body.classList.add("transition-fade-out"), 1 );
 }
 
 
@@ -120,7 +127,8 @@ const loadTransitionData = async () => {
       e.preventDefault();
     
       prepareExit();
-      applyTransition(anchor.getAttribute("href"));
+
+      setTimeout( () => applyTransition(anchor.getAttribute("href")), 5 );
 
       setTimeout(() => {
         document.location = anchor.href;
