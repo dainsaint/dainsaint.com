@@ -40,7 +40,7 @@ I use this site as a way to work and publish discreet thoughts that may or may n
 
 {% include quote, quote: "let's make something **mythical :fa-book-open:** together" %}
 
-basic copy TK.
+I bring creative direction and perspective to immersive, meaningful experiences.
 {.align-center}
 
 * [{% include fist-bump.svg %} let's collab](/collab)
