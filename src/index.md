@@ -23,7 +23,7 @@ pagination:
 
 # [Hi, I'm Dain Saint](/about) **I turn stories into experiences.** {.title}
 
-I'm a multidisciplinary creator making stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
+I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
 {.lede}
 
 * [about me :fa-angle-right:](/about)
