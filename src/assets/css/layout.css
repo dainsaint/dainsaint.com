@@ -182,19 +182,19 @@ main > .block-smart:first-of-type {
 
 
 
-.grid-small {
+.wrap-small {
   --grid-min-width: 5rem;
 }
 
-.grid-medium {
+.wrap {
   --grid-min-width: 15rem;
 }
 
-.grid-large {
+.wrap-large {
   --grid-min-width: 20rem;
 }
 
-.grid-xlarge {
+.wrap-xlarge {
   --grid-min-width: 40rem;
 }
 

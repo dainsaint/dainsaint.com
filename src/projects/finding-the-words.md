@@ -23,7 +23,7 @@ tktk description
 * SND45 Award of Excellence (Elements: Video Design)
 * SND45 Judges' Special Recognition (Best Delightful Integration with Advertisements)
 
-<div class="grid-two grid-medium">
+<div class="grid-two wrap">
 
 ::: group
 ### featured

@@ -34,7 +34,7 @@ As a composer, I write music for games, film, and stage. I've written everything
   /assets/uploads/keravnos.mp3
 * ### Starstuff
   /assets/uploads/starstuff.mp3
-{.list-plain .grid-two .grid-medium .push-loose }
+{.list-plain .grid-two .wrap .push-loose }
 
 
 {% endsection %}

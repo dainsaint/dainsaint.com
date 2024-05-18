@@ -3,7 +3,7 @@ title: let's collab
 color: "#89AF71"
 featured: []
 ---
-<div class="grid-two grid-medium">
+<div class="grid-two wrap">
 
 ::: group
 ### you are...

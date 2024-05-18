@@ -31,7 +31,7 @@ I'm a multidisciplinary creator making stories you can touch, and stories that t
 
 ***
 
-::: grid-two grid-medium
+::: grid-two wrap
 {% include showcase, slug: "space-opera", feature: true %}
 {% include showcase, slug: "freedom-is-non-negotiable", feature: true %}
 :::
