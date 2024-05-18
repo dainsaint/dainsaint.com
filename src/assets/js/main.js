@@ -86,6 +86,21 @@ quotes.forEach((quote) => {
 )
 
 
+
+//transitioning
+
+const setThemeColor = (color) => {
+  const themeColorTag = document.querySelector('meta[name="theme-color"]');
+  themeColorTag?.setAttribute("content", color);
+};
+
+const getThemeColor = () => {
+  const themeColorTag = document.querySelector('meta[name="theme-color"]');
+  return themeColorTag?.getAttribute("content") || "#573E79";
+}
+
+
+
 const applyTransition = (destination) => {
   destination = destination.replace(/\/*$/, "");
   const style = window.transitions[destination] || {
@@ -96,20 +111,18 @@ const applyTransition = (destination) => {
   document.body.style.setProperty("--primary", style.primary);
   document.querySelector("header")?.classList.remove("light", "dark");
   document.querySelector("header")?.classList.add(style.contrast);
+  setThemeColor(style.primary);
 }
 
 const prepareExit = () => {
   document.querySelector(".header-main")?.classList.remove("is-open");
   document.body.classList.remove("transition-fade-in");
-
-  const themeColorTag = document.querySelector('meta[name="theme-color"]');
-  document.body.style.setProperty(
-    "--primary",
-    themeColorTag?.getAttribute("content")
-  );
+  document.body.style.setProperty("--primary", getThemeColor() );
 
   setTimeout( () => document.body.classList.add("transition-fade-out"), 1 );
 }
+
+
 
 
 const loadTransitionData = async () => {
@@ -149,8 +162,7 @@ const loadTransitionData = async () => {
 
 
 const styleOverscroll = () => {
-  const themeColorTag = document.querySelector('meta[name="theme-color"]');
-  const originalColor = themeColorTag?.getAttribute("content") || "#573E79";
+  const originalColor = getThemeColor();
 
   let onscreen = [];
  
@@ -158,14 +170,13 @@ const styleOverscroll = () => {
     entries.forEach( entry => {
       if( entry.isIntersecting ) {
         const  color = getComputedStyle(entry.target).backgroundColor;
-        themeColorTag?.setAttribute("content", color);
+        setThemeColor( color );
         onscreen.push( entry.target );
 
       } else {
         const i = onscreen.find( x => x == entry.target );
         onscreen.splice(i, 1);
-        if( !onscreen.length )
-          themeColorTag?.setAttribute("content", originalColor);
+        if( !onscreen.length ) setThemeColor( originalColor );
       }
     })
   }
