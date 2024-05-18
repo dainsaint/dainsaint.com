@@ -130,7 +130,7 @@ document.addEventListener("load", (e) => {
 
 document.addEventListener("onpageshow", (e) => {
   if( e.persisted ) {
-    document.body.classList.add("transition-fade-in");
+    document.body.classList.remove("transition-fade-in". "transition-fade-out");
   }
 }
 
