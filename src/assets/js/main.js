@@ -123,7 +123,7 @@ const loadTransitionData = async () => {
 
 document.addEventListener("load", (e) => {
   
-  if( document.referrer.startsWith( window.location.origin ) ) {
+  if( document.referrer.startsWith( window.location.origin ) && !window.noTransition) {
     document.body.classList.add("transition-fade-in");
   }
 });
@@ -131,6 +131,7 @@ document.addEventListener("load", (e) => {
 document.addEventListener("onpageshow", (e) => {
   if( e.persisted ) {
     document.body.classList.remove("transition-fade-in". "transition-fade-out");
+    window.noTransition = true;
   }
 }
 
