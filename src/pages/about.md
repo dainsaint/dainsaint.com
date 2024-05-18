@@ -24,8 +24,6 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 {% section %}
 # press
 
-
-
 {% assign articles = press | where_exp: "item", "item.tags not contains 'podcast'" | sort: "date" | reverse %}
 
 {% assign podcasts = press | where_exp: "item", "item.tags contains 'podcast'" | sort: "date" | reverse %}
@@ -35,8 +33,6 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 
 ### podcast interviews{.push-loose}
 {% include press, articles: podcasts %}
-
-
 
 
 {% endsection %}

@@ -147,7 +147,8 @@ main > .block-smart:first-of-type {
 
 /* GRID */
 
-.grid {
+ 
+[class*=grid] {
   --grid-column-count: 1;
   --grid-gap-count: calc(var(--grid-column-count) - 1);
   --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
@@ -158,22 +159,40 @@ main > .block-smart:first-of-type {
   grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
 }
 
-.grid-2 {
+.grid-two {
   --grid-column-count: 2;
 }
 
-.grid-3 {
+.grid-three {
   --grid-column-count: 3;
 }
 
-.grid-4 {
+.grid-four {
   --grid-column-count: 4;
 }
 
-.grid-5 {
+.grid-five {
   --grid-column-count: 5;
-  --grid-min-width: 19%;
 }
+
+
+.maintain {
+  --grid-min-width: 300px;
+}
+
+.maintain-thin {
+  --grid-min-width: 200px;
+}
+
+.maintain-wide {
+  --grid-min-width: 400px;
+}
+
+.maintain-free {
+  --grid-min-width: 0px;
+}
+
+
 
 .gap-tight {
   --gap: .25rem;
@@ -358,7 +377,6 @@ ul.inline {
 
 
 .distribute > * + *{
-  
   margin-inline-start: 0.5rem;
   &::before {
     margin-inline-end: 0.5rem;
@@ -378,7 +396,6 @@ ul.inline {
     margin-inline-end: 1rem;
   }
 }
-
 
 
 .between-interpunct {

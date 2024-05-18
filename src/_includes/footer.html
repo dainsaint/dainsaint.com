@@ -27,7 +27,7 @@
 
 
     {% include subscribe %}
-    <div class="grid grid-3">
+    <div class="grid-three">
 
       <nav>
         <h3>curated work</h3>
@@ -61,13 +61,13 @@
       <span>&copy;{{ "now" | date: "%Y" }} dain saint</span>
       <a href="/collab">work with me</a>
 
-      <ul class="distribute-tight inline">
+      <ul class="distribute inline">
         {% for link in navigation.follow %}
           <li><a href="{{link.url}}"><i class="{{link.page}}"></i></a></li>
         {% endfor %}
       </ul>
 
-      <ul class="distribute-tight inline">
+      <ul class="distribute inline">
         {% for link in navigation.causes %}
         <li><a class="link-plain" href="{{link.url}}">{{link.page}}</a></li>
         {% endfor %}
