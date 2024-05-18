@@ -91,7 +91,7 @@ https://youtu.be/GjZa6hSSotM
 
 ## press and interviews
 
-{% assign articles = press | where_exp: "item", "item.tags contains 'music'" | sort: "date" | reverse %}
+{% assign articles = press | tagged: "music" | sort: "date" | reverse %}
 {% include press, articles: articles %}
 
 {% endsection %}
