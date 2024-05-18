@@ -44,7 +44,7 @@ He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?s
 {{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
 </h1>
 
-basic collab copy TK.
+I bring creative direction and perspective to immersive, meaningful experiences
 {.align-center}
 
 * [{% include fist-bump.svg %} let's collab](/collab)
