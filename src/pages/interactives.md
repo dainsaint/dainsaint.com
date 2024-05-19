@@ -35,7 +35,7 @@ TKTK more things, including these projects
 
 {% include quote, quote: "let's make something **memorable :fa-bookmark:** together" %}
 
-basic collab copy TK.
+I bring creative direction and perspective to immersive, meaningful experiences.
 {.align-center}
 
 * [{% include fist-bump.svg %} let's collab](/collab)
