@@ -5,9 +5,6 @@ tags: showcase
 color: "#eeeeee"
 ---
 
-TKTK tik tak tik tak
-{.lede} 
-
 {% include showcase-list, tags: 'journalism', feature: true, label: false %}
 
 
