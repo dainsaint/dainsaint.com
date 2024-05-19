@@ -20,7 +20,7 @@ a multi-disciplinary media artist. i primarily work with words, music, and inter
 
 i'm creatively promiscious that way.
 
-i can either get it done, or find someone who can. i'm at my best when the work is meaningful.
+i can either get it done, or find someone who can. i'm at my best when the work is meaningful and aligned with liberation.
 :::
 
 </div>
