@@ -31,7 +31,7 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 ***
 
-::: grid-two wrap
+::: grid-medium
 {% include showcase, slug: "space-opera", feature: true %}
 {% include showcase, slug: "freedom-is-non-negotiable", feature: true %}
 :::

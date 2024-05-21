@@ -22,13 +22,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 
-### recognition
-* SND44 - Bronze (Line of Coverage Features/Social Issues)
-* SND44 - Bronze (Design Social Issues) (The Blueprint)
-* [TDC 2023 – Winner](https://www.oneclub.org/awards/tdcawards/-award/46363/a-more-perfect-union) (Publication - series)
 
 ### team
 * [Pentagram](https://www.pentagram.com/work/a-more-perfect-union): Brand Identity, Editorial Design
+
 
 ### roles
 * :fa-pen-ruler: creative direction
@@ -37,8 +34,18 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 {.list-icons}
 
 
+### recognition
+* SND44 - Bronze (Line of Coverage Features/Social Issues)
+* SND44 - Bronze (Design Social Issues) (The Blueprint)
+* [TDC 2023 – Winner](https://www.oneclub.org/awards/tdcawards/-award/46363/a-more-perfect-union) (Publication - series)
+
+
+{% hoist "sections" %}
+
+{% section "#161010" %}
 
 {% include hero, url: "/assets/uploads/iconic-1.jpg", fixed: true %}
+
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 {.stack-isolate}
@@ -51,21 +58,33 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ![](/assets/uploads/dawn-wilson.avif)
 ![](/assets/uploads/flag-jacket.avif)
-{.grid-two .wrap .gap-tight .constrain-wide .stack-isolate}
+{.grid-medium .gap-compact .constrain-wide .stack-isolate}
 
+
+<div class="grid-medium">
+
+::: group
 ### artists
 * kimberly mcglonn
 * mikel elam
 * mz. icar
 * nicole medina
 * dawn wilson
+:::
 
-
+::: group
 ### photographers
 * ALEJANDRO A. ALVAREZ
 * tiger williams
 * jessica griffin
+:::
 
+</div>
+
+{% endsection %}
+
+
+{% section "#161010" %}
 
 ![](/assets/uploads/blueprint-main-title.svg){.size-full}
 {.color-match .stack-isolate .constrain-wide}
@@ -82,3 +101,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ### team
 * yannick lowery
 * zoe greenberg
+{% endsection %}
+
+{% endhoist %}

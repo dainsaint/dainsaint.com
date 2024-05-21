@@ -36,7 +36,7 @@
   }
 }
 
-[class~=stack] h3:not(.stack-isolate) + * {
+[class*=stack] h3:not(.stack-isolate) + * {
   margin-block-start: .25rem;
 }
 
@@ -130,7 +130,7 @@ main > .block-smart:first-of-type {
   padding-bottom: 10rem;
 }
 
-.block:has( > .hero:first-child ) {
+[class*=block]:has( > .hero:first-child ) {
   padding-block-start: 0;
 }
 
@@ -153,16 +153,25 @@ main > .block-smart:first-of-type {
 
  
 [class*=grid] {
-  --grid-column-count: 1;
+  --grid-column-count: 100;
   --grid-gap-count: calc(var(--grid-column-count) - 1);
   --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
   --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
   --grid-min-width: 0px;
+  --grid-basis: clamp( var(--grid-min-width), 100%, var(--grid-max-width) );
 
   display: grid;
   gap: var(--gap);
-  grid-template-columns: repeat(auto-fit, minmax(max(var(--grid-max-width), min( var(--grid-min-width), 100%)), 1fr));
-}
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-basis), 1fr));
+  grid-auto-flow: dense;
+
+  & > * {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+} 
+
+/* GRIDS BY COLUMNS */
 
 .grid-two {
   --grid-column-count: 2;
@@ -181,22 +190,31 @@ main > .block-smart:first-of-type {
 }
 
 
+/* GRIDS BY SIZE */
 
-.wrap-small {
+.grid-tiny {
   --grid-min-width: 5rem;
 }
 
-.wrap {
+.grid-small {
+  --grid-min-width: 5rem;
+}
+
+.grid-medium {
   --grid-min-width: 15rem;
 }
 
-.wrap-large {
+.grid-large {
   --grid-min-width: 20rem;
 }
 
-.wrap-xlarge {
+.grid-huge {
   --grid-min-width: 40rem;
 }
+
+
+
+
 
 
 .gap-flush {
@@ -220,57 +238,41 @@ main > .block-smart:first-of-type {
 }
 
 
-
-/* TILES */
-.tiles {
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: var(--gap);
-
-  --horizontal: 1;
-  --vertical: 1;
-
-  &>* {
-    aspect-ratio: var(--horizontal) / var(--vertical);
-    grid-column: span var(--horizontal);
-    grid-row: span var(--vertical);
+.grid-square {
+  & > * {
+    --columns: 1;
+    --rows: 1;
+    aspect-ratio: var(--columns) / var(--rows);
+    grid-column: span var(--columns);
+    grid-row: span var(--rows);
 
     display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
     object-position: center center;
     object-fit: cover;
   }
 }
 
+
 .two-columns {
-  --horizontal: 2;
-  grid-column: span var(--horizontal);
+  --columns: 2;
+  grid-column: span var(--columns);
 }
 
 .three-columns {
-  --horizontal: 3;
-  grid-column: span var(--horizontal);
+  --columns: 3;
+  grid-column: span var(--columns);
 }
 
 .two-rows {
-  --vertical: 2;
-  grid-row: span var(--vertical);
+  --rows: 2;
+  grid-row: span var(--rows);
 }
 
 .three-rows {
-  --vertical: 3;
-  grid-row: span var(--vertical);
+  --rows: 3;
+  grid-row: span var(--rows);
 }
 
-/* COLUMNS (TEXT) */
-
-
-.columns {
-  columns: 2 325px;
-}
 
 /* BRICKS */
 
@@ -328,6 +330,18 @@ main > .block-smart:first-of-type {
 .align-top {
   object-position: top center;
 }
+
+
+
+
+/* COLUMNS (TEXT) */
+
+
+.columns {
+  columns: 2 325px;
+}
+
+
 
 
 /* ?????? */
