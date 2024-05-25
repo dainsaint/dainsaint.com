@@ -40,9 +40,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 * [TDC 2023 – Winner](https://www.oneclub.org/awards/tdcawards/-award/46363/a-more-perfect-union) (Publication - series)
 
 
-{% hoist "sections" %}
-
-{% section "#161010" %}
 
 {% include hero, url: "/assets/uploads/iconic-1.jpg", fixed: true %}
 
@@ -58,7 +55,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ![](/assets/uploads/dawn-wilson.avif)
 ![](/assets/uploads/flag-jacket.avif)
-{.grid-medium .gap-compact .constrain-wide .stack-isolate}
+{.grid-medium .gap-tight .constrain-wide .stack-isolate}
 
 
 <div class="grid-medium">
@@ -81,10 +78,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 </div>
 
-{% endsection %}
 
-
-{% section "#161010" %}
 
 ![](/assets/uploads/blueprint-main-title.svg){.size-full}
 {.color-match .stack-isolate .constrain-wide}
@@ -101,6 +95,3 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 ### team
 * yannick lowery
 * zoe greenberg
-{% endsection %}
-
-{% endhoist %}

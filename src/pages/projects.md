@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: false
 featured: []
 description: games, writing, songs, videos, and the rest.
 ---
-<div class="stack-airy">
+<div class="stack-sparse">
 {% include showcase-list, tags: "featured", feature: true %}
 
 {% include showcase-list, tags: "play" %}

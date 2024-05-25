@@ -208,11 +208,11 @@ function addShortcodes( eleventy ) {
 
   eleventy.addPairedShortcode("section", (content, color) => {
     const overrides = {
-      contrast: color ? ` ${lightOrDark(color)}` : "",
+      contrast: color ? ` ${lightOrDark(color)}` : "palette",
       style: color ? ` style="--primary: ${color || "transparent"}"` : "",
     };
 
-    return `<section class="block-loose stack constrain colorize palette${
+    return `<section class="block-loose stack constrain colorize ${
       overrides.contrast
     }"${overrides.style}>${markdown.render(content)}</section>`;
   });

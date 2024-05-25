@@ -37,7 +37,7 @@ Much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and
 :::
 
 
-::: grid-five gap-compact constrain-wide stack-isolate
+::: grid-five gap-tight constrain-wide stack-isolate
 {% for game in games.cipherprime %}
 [![{{game.name}}]({{game.poster}})]({{game.url}})
 {% endfor %}

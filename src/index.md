@@ -46,7 +46,7 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 <section id="cta" class="block stack constrain colorize light" style="--primary: #362154;">
 
-::: align-center stack-compact
+::: align-center stack-tight
 <h1 class="title js-quote" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
 {{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
 </h1>

@@ -3,11 +3,11 @@
 {%- endif -%}
 
 <div class="showcase">
-  <div class="stack-compact">
+  <div class="stack-tight">
     {%- if feature -%}
     {%- include featured, featured: post.data.featured, url: post.url, slug: post.fileSlug -%}
     {%- endif -%}
-    <div class="stack-tight">
+    <div class="stack-dense">
       <h4 class="project-title"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h4>
       <p class="project-description">{{ post.data.description }}</p>
     </div>

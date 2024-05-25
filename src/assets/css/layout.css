@@ -6,29 +6,35 @@
 
 /* STACK */
 
-.stack > * + * {
-  margin-block-start: 1.25rem;
+/* .25, .75, 1.25, 2.5, 5, (8?) 10 */
+
+/* 1, 3, 5, 10, 20, (30), 40 */
+
+
+.stack-dense > * + * {
+  margin-block-start: .25rem;  /* 1/5 */
 }
 
 .stack-tight > * + * {
-  margin-block-start: .2rem;
+  margin-block-start: .75rem; /* 1/3 */
 }
 
-.stack-compact > * + * {
-  margin-block-start: .75rem;
+.stack > * + * {
+  margin-block-start: 1.25rem; /* 1 */
 }
+
 
 .stack-loose > * + * {
-  margin-block-start: 2.5rem;
+  margin-block-start: 2.5rem; /* x2 */
 }
 
-.stack-airy > * + * {
-  margin-block-start: 8rem;
+.stack-sparse > * + * {
+  margin-block-start: 7.5rem; /* x6 */
 }
 
 .stack-isolate {
   & + * {
-    margin-block-start: 5rem;
+    margin-block-start: 5rem; /* x4 */
   }
 
   * + & {
@@ -150,15 +156,13 @@ main > .block-smart:first-of-type {
 
 
 /* GRID */
-
- 
 [class*=grid] {
   --grid-column-count: 100;
   --grid-gap-count: calc(var(--grid-column-count) - 1);
   --grid-total-gap-width: calc(var(--grid-gap-count) * var(--gap));
   --grid-max-width: calc((100% - var(--grid-total-gap-width)) / var(--grid-column-count));
   --grid-min-width: 0px;
-  --grid-basis: clamp( var(--grid-min-width), 100%, var(--grid-max-width) );
+  --grid-basis: clamp( min(var(--grid-min-width), 100%), 100%, var(--grid-max-width) );
 
   display: grid;
   gap: var(--gap);
@@ -166,8 +170,10 @@ main > .block-smart:first-of-type {
   grid-auto-flow: dense;
 
   & > * {
-    grid-column: span 1;
-    grid-row: span 1;
+    --columns: 1;
+    --rows: 1;
+    grid-column: span var(--columns);
+    grid-row: span var(--rows);
   }
 } 
 
@@ -189,6 +195,9 @@ main > .block-smart:first-of-type {
   --grid-column-count: 5;
 }
 
+.grid-six {
+  --grid-column-count: 6;
+}
 
 /* GRIDS BY SIZE */
 
@@ -197,7 +206,7 @@ main > .block-smart:first-of-type {
 }
 
 .grid-small {
-  --grid-min-width: 5rem;
+  --grid-min-width: 10rem;
 }
 
 .grid-medium {
@@ -221,31 +230,27 @@ main > .block-smart:first-of-type {
   --gap: 0rem;
 }
 
-.gap-tight {
+.gap-dense {
   --gap: .25rem;
 }
 
-.gap-compact {
-  --gap: .5rem;
+.gap-tight {
+  --gap: .75rem;
 }
 
 .gap-loose {
   --gap: 2.5rem;
 }
 
-.gap-airy {
-  --gap: 4rem;
+.gap-sparse {
+  --gap: 7.5rem;
 }
 
 
-.grid-square {
+.grid-uniform {
   & > * {
-    --columns: 1;
-    --rows: 1;
     aspect-ratio: var(--columns) / var(--rows);
-    grid-column: span var(--columns);
-    grid-row: span var(--rows);
-
+    
     display: block;
     object-position: center center;
     object-fit: cover;
@@ -350,11 +355,11 @@ main > .block-smart:first-of-type {
   margin-block-end: -1.25rem;
 }
 
-.pull-tight {
-  margin-block-end: -.2rem;
+.pull-dense {
+  margin-block-end: -.25rem;
 }
 
-.pull-compact {
+.pull-tight {
   margin-block-end: -.75rem;
 }
 
@@ -362,19 +367,22 @@ main > .block-smart:first-of-type {
   margin-block-end: -2.5rem;
 }
 
-.pull-airy {
-  margin-block-end: -8rem;
+.pull-sparse {
+  margin-block-end: -7.5rem;
 }
+
+
+
 
 .push {
   margin-block-start: 1.25rem;
 }
 
-.push-tight {
-  margin-block-start: .2rem;
+.push-dense {
+  margin-block-start: .25rem;
 }
 
-.push-compact {
+.push-tight {
   margin-block-start: .75rem;
 }
 
@@ -382,12 +390,14 @@ main > .block-smart:first-of-type {
   margin-block-start: 2.5rem;
 }
 
-.push-airy {
-  margin-block-start: 8rem;
+.push-sparse {
+  margin-block-start: 7.5rem;
 }
 
-.list-inline {
 
+
+
+.list-inline {
   ul,
   li {
     display: inline-block;
@@ -410,7 +420,7 @@ ul.inline {
   }
 }
 
-.distribute-tight > * + * {
+.distribute-dense > * + * {
   margin-inline-start: 0.25rem;
   &::before {
     margin-inline-end: 0.25rem;

@@ -8,13 +8,15 @@ title: now
 tags: []
 ---
 
+_last updated: May 21, 2024_
+
 ### upcoming events
 * <time>june 2, 2024</time> we'll be [playtesting space opera](https://docs.google.com/forms/d/e/1FAIpQLScTWqGIiWkqIjhfG04-0h6yTVrQa_kQ-5YX58lQXMU7E_dx4A/viewform)! come through and help us make the best it can be. learn more about space opera [here](/space-opera).
 * <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
 * <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
-* <time>apr 27, 2024</time> talk on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
+* <time>apr 27, 2024</time> talk for high-school students on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 
 ### long-term projects
 * working with [obvious agency](https://obvious-agency.com) on a dope theatrical ttrpg called [space opera](/space-opera)
