@@ -4,7 +4,6 @@ description: a weekly musical meditation to help you unlock your stream of consc
 date: 2009-04-01
 eleventyExcludeFromCollections: false
 color: "#880044"
-featured: []
 tags: play
 ---
 
@@ -21,6 +20,7 @@ tags: play
   }
 </style>
 {% endhoist %}
+
 
 
 ::: align-center
@@ -46,7 +46,6 @@ tags: play
 {.buttons .align-center}
 :::
 
-*** 
 
 ### How to use this site
 

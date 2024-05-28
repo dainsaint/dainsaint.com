@@ -16,6 +16,9 @@
   {% elsif f.type == "quote" %}
   {% include quote, quote: f.content %}
 
+  {% elsif f.type == "slot" %}
+  {% include slot %}
+
   {% else %}
 
   {% endif %}
