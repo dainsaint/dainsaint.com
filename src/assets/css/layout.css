@@ -222,10 +222,21 @@ main > .block-smart:first-of-type {
 }
 
 
+/* GRID ASPECT */
+
+.grid-uniform {
+  &>* {
+    aspect-ratio: var(--columns) / var(--rows);
+
+    display: block;
+    object-position: center center;
+    object-fit: cover;
+  }
+}
 
 
 
-
+/* GAP SIZING */
 .gap-flush {
   --gap: 0rem;
 }
@@ -247,15 +258,8 @@ main > .block-smart:first-of-type {
 }
 
 
-.grid-uniform {
-  & > * {
-    aspect-ratio: var(--columns) / var(--rows);
-    
-    display: block;
-    object-position: center center;
-    object-fit: cover;
-  }
-}
+
+/* GRID CELL OVERRIDES */
 
 
 .two-columns {
