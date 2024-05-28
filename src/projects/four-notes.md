@@ -3,10 +3,24 @@ title: four notes
 description: a weekly musical meditation to help you unlock your stream of consciousness
 date: 2009-04-01
 eleventyExcludeFromCollections: false
-color: "#082534"
+color: "#880044"
 featured: []
+tags: play
 ---
 
+{% hoist "head" %}
+<style>
+  #notes {
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    font-size: 4rem;
+
+    sup {
+      font-size: .5em;
+    }
+  }
+</style>
+{% endhoist %}
 
 
 ::: align-center
@@ -14,15 +28,15 @@ featured: []
 <div id="week-number">
 </div>
 
-<div id="notes">
+<div id="notes" class="distribute align-center between-interpunct">
 </div>
 :::
 
 ::: group
-* [:fa-arrow-left: previous](#){onclick="prevWeek()" .disabled}
-* [:fa-refresh: reset](#){onclick="reset()"}
-* [:fa-dice: random](#){onclick="randomize()"}
-* [:fa-arrow-right: next](#){onclick="nextWeek()"}
+* [:fa-arrow-left:](#){onclick="prevWeek()" .disabled}
+* [:fa-refresh:](#){onclick="reset()"}
+* [:fa-dice:](#){onclick="randomize()"}
+* [:fa-arrow-right:](#){onclick="nextWeek()"}
 {.buttons .align-center}
 :::
 
@@ -47,15 +61,9 @@ This project was inspired by Kenny Werner's book <a href="https://kennywerner.co
   </div>
 
 
-  <script type="text/javascript" src="/assets/js/seedrandom.min.js"></script>
-  <script type="text/javascript" src="/assets/js/sugar.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script type="text/javascript" src="/assets/js/fournotes.js"></script>
-
-
-
-</body>
-
-
-</html>
+{% hoist "scripts" %}
+<script type="text/javascript" src="/assets/js/fournotes/seedrandom.min.js"></script>
+<script type="text/javascript" src="/assets/js/fournotes/sugar.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/fournotes/fournotes.js"></script>
+{% endhoist %}

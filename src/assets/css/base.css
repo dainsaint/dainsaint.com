@@ -2,6 +2,9 @@ html {
   background: #222;
   font-size: clamp(16px, 4vw, 21px);
   scroll-behavior: smooth;
+
+  --font-body: "Spectral", serif;
+  --font-secondary: "Raleway", sans-serif;
 }
 
 body {
@@ -10,7 +13,7 @@ body {
 
   background: var(--primary);
   color: var(--color);
-  font-family: "Spectral", serif;
+  font-family: var(--font-body);
   padding: 0px;
   margin: 0px;
   font-size: 1rem;
@@ -34,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: .75rem;
   letter-spacing: .1rem;
@@ -115,7 +118,7 @@ nav ul {
 time {
   background: var(--color);
   color: var(--primary);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   text-transform: uppercase;
   padding: 5px;
@@ -475,7 +478,7 @@ h1.title, .quote {
 
 .post-permalink {
   display: none;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 14px;
 }
@@ -508,7 +511,7 @@ h1.title, .quote {
 }
 
 .project-tag {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: .6rem;
   font-weight: bold;
@@ -553,7 +556,7 @@ h1.title, .quote {
 .pagination-block nav {
   display: flex;
   justify-content: space-between;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-secondary);
 
 }
 
@@ -746,7 +749,7 @@ input[type=email]::before {
 
 .message {
   display: none;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
