@@ -12,7 +12,7 @@ tags: play
   #notes {
     font-family: var(--font-secondary);
     font-weight: bold;
-    font-size: 4rem;
+    font-size: min( 15vw, 5rem );
 
     sup {
       font-size: .5em;
@@ -33,15 +33,15 @@ tags: play
 :::
 
 ::: group
-* [:fa-arrow-left:](#){onclick="prevWeek()" .disabled}
-* [:fa-refresh:](#){onclick="reset()"}
-* [:fa-dice:](#){onclick="randomize()"}
-* [:fa-arrow-right:](#){onclick="nextWeek()"}
+* [:fa-arrow-left:](#){onclick="prevWeek()" .disabled #prev-button}
+* [:fa-refresh:](#){onclick="reset()" #refresh-button}
+* [:fa-dice:](#){onclick="randomize()" #random-button} 
+* [:fa-arrow-right:](#){onclick="nextWeek()" #next-button}
 {.buttons .align-center}
 :::
 
 ::: group
-* [:fa-youtube: watch on youtube](#) {#most-recent}
+* [:fab-youtube: watch on youtube](#){#most-recent}
 * [:fa-arrow-up: submit your own!](https://forms.gle/qhcr58PLgYVnqmv19)
 {.buttons .align-center}
 :::

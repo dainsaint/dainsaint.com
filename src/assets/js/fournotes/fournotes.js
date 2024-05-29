@@ -3,21 +3,21 @@ Sugar.extend();
 var offset = 0;
 var startDate = Date.create("June 3, 2019");
 
-function prevWeek()
+function prevWeek(event)
 {
   offset--;
   generate( offset, false );
   event.preventDefault();
 }
 
-function reset()
+function reset(event)
 {
   offset = 0;
   generate( offset, false );
   event.preventDefault();
 }
 
-function randomize()
+function randomize(event)
 {
   offset = -startDate.weeksAgo() + Math.floor(Math.random() * 11880);
   generate( offset, false );
@@ -25,7 +25,7 @@ function randomize()
 }
 
 
-function nextWeek()
+function nextWeek(event)
 {
   offset++;
   generate( offset, false );
@@ -57,12 +57,12 @@ function generate( weekOffset, random )
   var disabled = offset == -startDate.weeksAgo();
   document.getElementById( "prev-button" ).classList.toggle( "disabled", disabled );
 
-  var colors = ["purple", "pink", "green", "orange"];
-  var lastColor = document.body.classList.item(0);
-  document.body.classList.remove( lastColor );
-  var color = colors.exclude(lastColor).sample();
-  console.log( color );
-  document.body.classList.add( color );
+  // var colors = ["purple", "pink", "green", "orange"];
+  // var lastColor = document.body.classList.item(0);
+  // document.body.classList.remove( lastColor );
+  // var color = colors.exclude(lastColor).sample();
+  // console.log( color );
+  // document.body.classList.add( color );
 
 }
 
