@@ -86,6 +86,18 @@ quotes.forEach((quote) => {
 )
 
 
+//sizing
+
+const updatePageMetrics = () => {
+   const bounds = document
+     .querySelector(".header-main")
+     ?.getBoundingClientRect();
+   document.body.style.setProperty("--header-height", bounds.height + "px");
+}
+
+const observer = new ResizeObserver( updatePageMetrics )
+observer.observe(document.querySelector(".header-main"));
+
 
 //transitioning
 
@@ -195,6 +207,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     });
 
   monitorThemeColor();
+  updatePageMetrics();
 })
 
 window.addEventListener("pageshow", (e) => {

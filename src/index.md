@@ -42,7 +42,9 @@ I make stories you can touch, and stories that touch you. Whether&nbsp;it's thro
 
 
 
+
 {% hoist "sections" %}
+
 
 <section id="cta" class="block stack constrain colorize light" style="--primary: #362154;">
 
@@ -76,20 +78,53 @@ I bring creative direction and perspective to immersive, meaningful experiences
     padding-block-end: 1.25rem;
   }
 
-  #cta {
+  #cta, #projects {
     padding-block: 3rem;
   }
 
-@media( min-width: 650px ) {
-  h1.title strong {
-    display: inline-block;
-    padding-inline-end: .25rem;
+  section:has( + #cta ) {
+    padding-bottom: 3rem;
   }
-}
+
+  @media( min-width: 650px ) {
+    h1.title strong {
+      display: inline-block;
+      padding-inline-end: .25rem;
+    }
+  }
 
   h3.align-center {
     color: var(--color-alpha)
   }
+/*
+  article.page {
+    display: grid;
+    min-height: calc(100vh - var(--header-height));
+    grid-template-areas: 
+      "lede"
+      "projects"
+      "cta";
+    
+
+    @media( min-width: 800px ) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+        "lede projects"
+        "lede cta";
+      }
+  }
+
+  #projects {
+    grid-area: projects;
+  }
+
+  #cta {
+    grid-area: cta;
+  }
+
+  #main {
+    grid-area: lede;
+  }*/
 
 </style>
 {% endhoist %}

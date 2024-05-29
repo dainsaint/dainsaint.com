@@ -1,5 +1,5 @@
 <article id="{{ title | slug }}" class="page {{ color | contrast }}" style="--primary: {{ color }}">
-  <section class="block-lede stack constrain">
+  <section id="main" class="block-lede stack constrain">
     {% include featured, slug: page.fileSlug %}
     {% include project-info %}
     {{ content | safe }}

@@ -1,8 +1,8 @@
 {% assign posts = collections.posts | inProject: page.inputPath | map: 'data' %}
 
-<article class="project block-lede {{ color | contrast }}" style="--primary: {{ color }}">
+<article class="project {{ color | contrast }}" style="--primary: {{ color }}">
 
-  <section class="stack constrain">
+  <section class="stack block-lede constrain">
     {% include featured, featured: featured, slug: page.fileSlug %}
 
     <div class="project-intro">

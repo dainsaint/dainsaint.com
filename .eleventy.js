@@ -206,13 +206,13 @@ function addFilters( eleventy ) {
 
 function addShortcodes( eleventy ) {
 
-  eleventy.addPairedShortcode("section", (content, color) => {
+  eleventy.addPairedShortcode("section", (content, color, id) => {
     const overrides = {
       contrast: color ? ` ${lightOrDark(color)}` : "palette",
       style: color ? ` style="--primary: ${color || "transparent"}"` : "",
     };
 
-    return `<section class="block-loose stack constrain colorize ${
+    return `<section ${id ? `id="${id}" `: ""}class="block-loose stack constrain colorize ${
       overrides.contrast
     }"${overrides.style}>${markdown.render(content)}</section>`;
   });
