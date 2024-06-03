@@ -7,6 +7,9 @@ featured:
   - type: gallery
     images:
       - /assets/uploads/space-opera-cover.webp
+status: |
+  * [:fa-dice: Sign up for the next playtest!]()
+  {.buttons}
 tags:
   - game
   - featured
