@@ -14,7 +14,7 @@ _last updated: June 3, 2024_
 * <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
-* <time>june 2, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here]()
+* <time>june 2, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
 * <time>apr 27, 2024</time> talk for high-school students on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 * <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
 
