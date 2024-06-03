@@ -7,9 +7,6 @@ featured:
   - type: gallery
     images:
       - /assets/uploads/space-opera-cover.webp
-status: |
-  * [:fa-dice: Sign up to playtest june 2!](https://docs.google.com/forms/d/e/1FAIpQLScTWqGIiWkqIjhfG04-0h6yTVrQa_kQ-5YX58lQXMU7E_dx4A/viewform?usp=sf_link)
-  {.buttons}
 tags:
   - game
   - featured
