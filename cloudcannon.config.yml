@@ -6,5 +6,40 @@ paths:
   data: _data
   layouts: _includes
   includes: _includes
+collections_config:
+  posts:
+    path: posts
+    output: true
+    url:
+    filter:
+    parse_branch_index:
+    name: Posts
+    description: ''
+    icon: notes
+    documentation:
+    preview:
+      text:
+      subtext:
+      icon:
+      icon_color:
+      image:
+      metadata:
+      gallery:
+    sort:
+    sort_options:
+    singular_name:
+    singular_key:
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 data_config: {}
 timezone: Etc/UTC
