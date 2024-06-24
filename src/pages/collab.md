@@ -3,138 +3,31 @@ title: let's collab
 color: "#89AF71"
 featured: []
 ---
+<div class="grid-medium">
 
+::: group
+### you are...
+a game designer. or an author. or a performer. maybe you're a musician, maybe you're a journalist. maybe you wear so many hats that picking a label is pointless. 
 
-What the hell does turning stories into experiences mean?
-{.lede}
+what matters is this: **you have a vision**.
 
-Well, the natural world is made of matter and energy. But the social world is made of stories, and our internal worlds — our memories — are made of our experiences.
-
-So turning a story into an experience, at its heart, means turning a simple narrative into something worth remembering.
-
-Sometimes that means finding the emotional core. Sometimes that means making sure your design reinforces your central message in a thousand subtle ways. 
-
-Sometimes it's making sure this is the story you want to tell in the first place. 
-
-It _usually_ means making your audience a part of the story. It means turning your story into a place people want to spend time — physical, virtual, or otherwise. It _definitely_ means making it something they carry with them long after they've gone home.
-
-Okay, that's a bunch of philosophical blathering. How can I help you?
-
----
-
-::: grid-2
-
-* ## make it fun
-  blah blah blah
-
-![some image]()
-
+you want to put something beautiful in the world, and you want nothing more in life than to make dope shit with dope people aligned with liberation and abundance.
 :::
 
+::: group
+### i am...
+a multi-disciplinary media artist. i primarily work with words, music, and interactivity — something i refer to as **stories, sounds, and systems**. but yeah, i've done videos and games and talks and live events, too.
 
+i'm creatively promiscious that way.
 
-::: grid-2
-
-![some image]()
-
-* ## make it sing
-  blah blah blah
-
+i can either get it done, or find someone who can. i'm at my best when the work is meaningful and geared for impact.
 :::
 
+</div>
 
 
-::: grid-2
-
-* ## make it meaningful
-  blah blah blah
-
-![some image]()
-
-:::
+### sound like a match?
+fill out the form below, or just <a href="/email?subject=Let's Collab">send me an email</a>.
 
 
----
-
-
-## top six reasons people have reached out to me
-AKA "What you came here to find out in the first place."
-
-1. Can you help us design an interactive story?
-2. Can you develop our game systems?
-3. Can you design our live immersive event?
-4. Can you compose music for our story?
-5. Can you help me tell my story in a unique way?
-6. **Will you come perform or speak at our event?**  
-  I'd love to! My [performances](/performance) are a blend of music, poetry, and storytelling, and we can take it from quiet and intimate to loud and obnoxious.  
-  I've also given talks on everything from why the [universe is a video game](/the-universe) to why [music is a fundamental part of being human](/humansong). Either way, people usually have a good time, and I murder the ones that don't. (Gotta keep that rating up somehow.)
-{.stack}
-
-
-
-{% hoist "sections" %}
-{% section "#032331" %}
-::: align-center stack
-## sound like a match? shoot me an email!
-
-[](/email){.button}
-:::
-{% endsection %}
-{% endhoist %}
-
-
-
-
-{% comment %}
-![performance](/assets/uploads/gming.jpg)
-{.bricks .push-sparse}
-### Storytelling Systems
-  Whether you're crafting tabletop role-playing games (TTRPGs) or other narrative-driven experiences, I can help you design and implement systems that empower people to tell specific kinds of stories. From game writing to creating tools that make sharing your stories easier, I'll work with you to bring your vision to life.
-
-
-![performance](/assets/uploads/synaesthetic_symphony.jpg)
-{.bricks .push-sparse}
-### Immersive Storytelling
-  I specialize in developing interactive storytelling experiences that captivate your audience, making your message more memorable and engaging through dynamic, interactive elements. Or take your storytelling to the next level with immersive live events. I offer services that combine digital and analog interactivity, enhanced with projection mapping, music, programming, and more. Whether it's a live performance or an interactive installation, I'll help you craft experiences that leave a lasting impression on your audience.
-
-![iconic](/assets/uploads/iconic-bkg.webp)
-{.bricks .push-sparse}
-
-### Storytelling Creative Direction
-I provide creative direction, vision clarification, and value alignment. My Emmy award-winning work ensures that your storytelling series is not only compelling but also communicates your message. This service can also include scoring for actual play series, adding a unique auditory dimension to your narratives.
-
-![performance](/assets/uploads/DSCF4101XL.JPG)
-{.bricks .push-sparse}
-
-### Live Storytelling Performance
-  Invite me to personally tell a story to your audience. Whether it's a live storytelling session, game mastering for actual play, or giving a talk, I'll engage your audience with compelling narratives and insightful discussions. 
-
-_Once upon a time, there was a (you) looking for a (blank). You needed a (thing) and set upon a quest to (find it). You (struggled some), and felt lost. All of a sudden, you found (me)..._
-{.lede}
-
-
-### clients and collaborators
-![Dream Syndicate](/assets/uploads/collaborators/dreamsyndicate.svg)
-![Game Developers Conference](/assets/uploads/collaborators/gdc.svg)
-![The Philadelphia Inquirer](/assets/uploads/collaborators/inquirer.svg)
-![Glbl Vllg](/assets/uploads/collaborators/glblvllg.png)
-![Indiecade](/assets/uploads/collaborators/indiecade.webp)
-![Indy Hall](/assets/uploads/collaborators/indyhall.png)
-![Bearded Ladies Cabaret](/assets/uploads/collaborators/beardedladies.png)
-![Klip Collective](/assets/uploads/collaborators/klip.png)
-![Bluecadet](/assets/uploads/collaborators/bluecadet.svg)
-![Obvious Agency](/assets/uploads/collaborators/obviousagency.webp)
-![Opera Philadelphia](/assets/uploads/collaborators/operaphiladelphia.png)
-![REC Philly](/assets/uploads/collaborators/recphilly.svg)
-![Ultraleap](/assets/uploads/collaborators/ultraleap.svg)
-![World Cafe Live](/assets/uploads/collaborators/worldcafelive.png)
-{.bricks-tiny .gap-tight .fit-contain .constrain-wide .color-match}
-
-
-
-{% endcomment %}
-
-
-
-
-
+{% include contact %}
