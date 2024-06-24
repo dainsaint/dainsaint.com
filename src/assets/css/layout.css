@@ -285,7 +285,7 @@ main > .block-smart:first-of-type {
 
 /* BRICKS */
 
-.bricks {
+[class*=bricks] {
   display: flex;
   flex-wrap: wrap;
   align-items: start;
@@ -294,21 +294,34 @@ main > .block-smart:first-of-type {
   & > * {
     flex: 1 1 auto;
     inline-size: auto;
-    block-size: 10rem;
+    max-block-size: 10rem;
     object-fit: cover;
+    padding: .625rem;
   }
 }
 
-.bricks-tall > * {
-  block-size: 20rem;
+.bricks-large > * {
+  max-block-size: 20rem;
 }
 
-.bricks-short > * {
-  block-size: 5rem;
+.bricks-small > * {
+  max-block-size: 5rem;
+}
+
+.bricks-tiny > * {
+  max-block-size: 2rem;
 }
 
 .brick-contain {
   object-fit: contain;
+}
+
+.fit-contain > * {
+  object-fit: contain;
+}
+
+.fit-cover > * {
+  object-fit: cover;
 }
 
 /* FLEX */
@@ -531,4 +544,10 @@ ul.inline {
   li {
     display: block;
   }
+}
+
+
+
+.rhythm {
+  max-width: 20rem;
 }

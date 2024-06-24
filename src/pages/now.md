@@ -1,5 +1,5 @@
 ---
-description: what am i doing with my life?
+description: "what am i doing with my life? (as of June 3, 2024)"
 color: "#F5BC67"
 date: ""
 status: ""
@@ -8,7 +8,6 @@ title: now
 tags: []
 ---
 
-_last updated: June 3, 2024_
 
 ### upcoming events
 * <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
