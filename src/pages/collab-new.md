@@ -127,20 +127,20 @@ I provide creative direction, vision clarification, and value alignment. My Emmy
 I'm not sold on including this — I feel like I usually see these for like agencies more so than individuals, but I cant tell if this is helpful or crass.
 
 
-![Dream Syndicate](/assets/uploads/collaborators/dreamsyndicate.svg)
-![Game Developers Conference](/assets/uploads/collaborators/gdc.svg)
-![The Philadelphia Inquirer](/assets/uploads/collaborators/inquirer.svg)
-![Glbl Vllg](/assets/uploads/collaborators/glblvllg.png)
-![Indiecade](/assets/uploads/collaborators/indiecade.webp)
-![Indy Hall](/assets/uploads/collaborators/indyhall.png)
-![Bearded Ladies Cabaret](/assets/uploads/collaborators/beardedladies.png)
-![Klip Collective](/assets/uploads/collaborators/klip.png)
-![Bluecadet](/assets/uploads/collaborators/bluecadet.svg)
-![Obvious Agency](/assets/uploads/collaborators/obviousagency.webp)
-![Opera Philadelphia](/assets/uploads/collaborators/operaphiladelphia.png)
-![REC Philly](/assets/uploads/collaborators/recphilly.svg)
-![Ultraleap](/assets/uploads/collaborators/ultraleap.svg)
-![World Cafe Live](/assets/uploads/collaborators/worldcafelive.png)
+![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
+![Game Developers Conference](/assets/uploads/gdc.svg)
+![The Philadelphia Inquirer](/assets/uploads/inquirer.svg)
+![Glbl Vllg](/assets/uploads/glblvllg.png)
+![Indiecade](/assets/uploads/indiecade.webp)
+![Indy Hall](/assets/uploads/indyhall.png)
+![Bearded Ladies Cabaret](/assets/uploads/beardedladies.png)
+![Klip Collective](/assets/uploads/klip.png)
+![Bluecadet](/assets/uploads/bluecadet.svg)
+![Obvious Agency](/assets/uploads/obviousagency.webp)
+![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
+![REC Philly](/assets/uploads/recphilly.svg)
+![Ultraleap](/assets/uploads/ultraleap.svg)
+![World Cafe Live](/assets/uploads/worldcafelive.png)
 {.bricks-tiny .gap-tight .fit-contain .constrain-wide .color-match .light}
 
 
