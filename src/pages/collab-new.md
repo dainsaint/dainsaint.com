@@ -87,7 +87,7 @@ AKA "What you came here to find out in the first place."
 {% endsection %}
 
 
-{% hoist "sections" %}
+
 {% section  %}
 
 # A different way of talking about my services offered
@@ -141,6 +141,6 @@ I'm not sold on including this — I feel like I usually see these for like age
 {.bricks-tiny .gap-tight .fit-contain .constrain-wide .color-match}
 
 
-
+{% endsection %}
 
 {% endhoist %}
