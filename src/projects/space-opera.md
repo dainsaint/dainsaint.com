@@ -8,7 +8,7 @@ featured:
     images:
       - /assets/uploads/space-opera-cover.webp
 status: |
-  * [:fa-dice: project website](https://www.obvious-agency.com/space-opera)
+  * [:fa-dice: sign up to playtest july 28th](https://docs.google.com/forms/d/e/1FAIpQLSdGYvt3L_s3a4SDYe1ikyMzbpr45ErAExfh1Ve9yxm6GlvIxA/viewform?usp=sf_link)
   {.buttons}
 tags:
   - game

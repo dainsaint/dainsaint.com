@@ -1,5 +1,5 @@
 ---
-description: "what am i doing with my life? (as of June 3, 2024)"
+description: "what am i doing with my life? (as of July 3, 2024)"
 color: "#F5BC67"
 date: ""
 status: ""
@@ -10,6 +10,7 @@ tags: []
 
 
 ### upcoming events
+* <time>july 26, 2024</time> sign up for our next [space opera playtest](https://docs.google.com/forms/d/e/1FAIpQLSdGYvt3L_s3a4SDYe1ikyMzbpr45ErAExfh1Ve9yxm6GlvIxA/viewform?usp=sf_link) is coming up! learn more about the project [here](https://www.obvious-agency.com/space-opera)
 * <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events

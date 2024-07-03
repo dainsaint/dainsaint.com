@@ -6,7 +6,7 @@ color: "#573E79"
 promo: |
   ::: group
   ### space opera
-  [more playtests soon](https://www.obvious-agency.com/space-opera)
+  [playtest july 28th!](https://docs.google.com/forms/d/e/1FAIpQLSdGYvt3L_s3a4SDYe1ikyMzbpr45ErAExfh1Ve9yxm6GlvIxA/viewform?usp=sf_link)
   :::
 
   ::: group
