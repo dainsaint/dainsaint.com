@@ -40,50 +40,51 @@ links.forEach( link => {
 
 
 // fancy quotes;
-const quotes = document.querySelectorAll(".js-quote");
-
-// quotes.forEach((quote) => {
-//   const strong = quote.querySelector("strong");
-//   const content = quote.dataset.quotes
-//     .split(", ")
-//     .map((pair) => pair.split("|"))
-//     .map(([text, icon]) =>
-//       text
-//         .split("")
-//         .map((letter) => `<b style="animation-delay: #s">${letter}</b>`)
-//         .concat(`<i class="fa ${icon}" style="animation-delay: #s"></i>`)
-//     )
-//     .map( (text) => text.map( (el, i) => el.replace("#", (i * .05).toFixed(2))));
-
-//   strong.classList.add("animate-words");
-//   strong.innerHTML = content
-//     .map((word) => `<span class="word">${word.join('')}</span>`)
-//     .join("\r\n");
-
-//   const cycle = () => {
-//     const last = strong.querySelector(".is-dial-in") || strong.firstChild;
-//     const next = last.nextElementSibling || strong.firstChild;
-//     last.classList.remove("is-dial-in");
-//     last.classList.add("is-dial-out");
-
-//     next.classList.remove("is-dial-out");
-//     next.classList.add("is-dial-in");
-//   };
-
-//   setInterval(cycle, 2000);
-// });
-
+const quotes = document.querySelectorAll(".js-quote-animated");
 
 quotes.forEach((quote) => {
   const strong = quote.querySelector("strong");
   const content = quote.dataset.quotes
     .split(", ")
     .map((pair) => pair.split("|"))
-    .map(([text, icon]) => `${text} <i class="fa ${icon}"></i>`)
-  
-    strong.innerHTML = content.at( Math.floor( Math.random() * content.length - 1 ) )
-  }
-)
+    .map(([text, icon]) =>
+      text
+        .split("")
+        .map((letter) => `<b style="animation-delay: #s">${letter}</b>`)
+        .concat(`<i class="fa ${icon}" style="animation-delay: #s"></i>`)
+    )
+    .map( (text) => text.map( (el, i) => el.replace("#", (i * .05).toFixed(2))));
+
+  strong.classList.add("animate-words");
+  strong.innerHTML = content
+    .map((word) => `<span class="word">${word.join('')}</span>`)
+    .join("\r\n");
+
+  const cycle = () => {
+    const last = strong.querySelector(".is-dial-in") || strong.firstChild;
+    const next = last.nextElementSibling || strong.firstChild;
+    last.classList.remove("is-dial-in");
+    last.classList.add("is-dial-out");
+
+    next.classList.remove("is-dial-out");
+    next.classList.add("is-dial-in");
+  };
+
+  setInterval(cycle, 2000);
+});
+
+
+const static = document.querySelectorAll(".js-quote");
+
+static.forEach((quote) => {
+  const strong = quote.querySelector("strong");
+  const content = quote.dataset.quotes
+    .split(", ")
+    .map((pair) => pair.split("|"))
+    .map(([text, icon]) => `${text} <i class="fa ${icon}"></i>`);
+
+  strong.innerHTML = content.at(Math.floor(Math.random() * content.length - 1));
+});
 
 
 //sizing

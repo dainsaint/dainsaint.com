@@ -42,7 +42,7 @@
   }
 }
 
-[class*=stack] h3:not(.stack-isolate) + * {
+[class*=stack] h3:not(.stack-isolate):not(.stack-default) + * {
   margin-block-start: .25rem;
 }
 
@@ -331,6 +331,19 @@ main > .block-smart:first-of-type {
   gap: var(--gap);
 }
 
+/* SWITCH */
+.switch {
+  --threshold: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.switch > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
 
 /* ALIGN */
 
@@ -352,6 +365,8 @@ main > .block-smart:first-of-type {
 .align-top {
   object-position: top center;
 }
+
+
 
 
 
