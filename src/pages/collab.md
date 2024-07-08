@@ -13,7 +13,7 @@ _You're developing a music-driven project, but you're not a musician — or you'
 
 _You're creating a museum installation. There's such a long list of information that needs to be given to an audience, but there has to be a better way than endless menus no one wants to spend time with. How do you make information interactive, compelling, and exciting?_
 
-_You're planning an ambitious series. You have a sense of the mission, but you're struggling with the sheer scale of what you are trying to accomplish. You need a visual identity, a clear way to talk about your project, and just so many collaborators to pull this off. How do you tie a loose collection of stories into a coherent vision?_
+_You're planning an ambitious editorial series. You have a sense of the mission, but you're struggling with the sheer scale of what you are trying to accomplish. You need a visual identity, a clear way to talk about your project, and just so many collaborators to pull this off. How do you tie a loose collection of stories into a coherent vision?_
 :::
 
 
