@@ -88,7 +88,6 @@ static.forEach((quote) => {
 
 
 //sizing
-
 const updatePageMetrics = () => {
    const bounds = document
      .querySelector(".header-main")
@@ -101,7 +100,6 @@ observer.observe(document.querySelector(".header-main"));
 
 
 //transitioning
-
 const setThemeColor = (color) => {
   const themeColorTag = document.querySelector('meta[name="theme-color"]');
   themeColorTag?.setAttribute("content", color);
