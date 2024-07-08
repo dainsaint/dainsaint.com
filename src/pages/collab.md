@@ -4,9 +4,8 @@ color: "#89AF71"
 featured: []
 ---
 
-<div class="stack-loose constrain-wide">
 
-::: constrain stack
+::: stack
 _You're making a game: virtual, tabletop, or otherwise. You want your players to have a certain emotional experience, or tell a specific kind of story — and you're feeling lost in a million charts and mechanics. How do you bridge the gap between systems and stories?_
 
 _You're developing a music-driven project, but you're not a musician — or you're unsure of how to best use music and sound effects to generate the emotional response you're going for. Maybe it needs to react to your audience in real-time, or work as more than a soundtrack in the background. How do you use sound to make your project sing?_ 
@@ -17,7 +16,7 @@ _You're planning an ambitious editorial series. You have a sense of the mission,
 :::
 
 
-::: lede align-center constrain stack
+::: lede align-center stack-isolate
 It looks like you're designing an experience.  
 Would you like help?  
 
@@ -36,17 +35,16 @@ I specialize in game design, audio production, and creative direction for storyt
 
 * ### :fa-hands-clapping: make it meaningful! 
   On big projects it's easy to miss the forest for the trees — don't get lost on the way to grandma's cottage. Let's make your values shine through the design in every aspect of your experience.
-{.list-plain .constrain-wide .switch}
+{.list-plain .constrain-wide .switch .stack-isolate}
 
 
 
-::: constrain stack
+:::
 I've been designing [games](/games) and other [interactive experiences](/interactives) for twenty years.
 
 _(And as a storyteller myself, I'm also available for [live performances](/performance) if that's more your speed.)_
 :::
 
-</div>
 
 {% hoist "sections" %}
 
