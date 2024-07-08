@@ -1,5 +1,5 @@
 ---
-title: let's collab
+title: let's collab!
 color: "#89AF71"
 featured: []
 ---
