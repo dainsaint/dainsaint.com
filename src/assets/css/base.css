@@ -857,6 +857,11 @@ input[type=email]::before {
   }
 }
 
+.highlight {
+  --color: var(--highlight);
+  --primary: currentColor;
+}
+
 
 .album,
 .gallery-image-link {
