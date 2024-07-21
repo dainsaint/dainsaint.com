@@ -1,5 +1,5 @@
 ---
-description: "what am i doing with my life? (as of July 3, 2024)"
+description: "what am i doing with my life? (as of July 21, 2024)"
 color: "#F5BC67"
 date: ""
 status: ""
@@ -11,7 +11,6 @@ tags: []
 
 ### upcoming events
 * <time>july 26, 2024</time> sign up for our next [space opera playtest](https://docs.google.com/forms/d/e/1FAIpQLSdGYvt3L_s3a4SDYe1ikyMzbpr45ErAExfh1Ve9yxm6GlvIxA/viewform?usp=sf_link)! learn more about the project [here](https://www.obvious-agency.com/space-opera)
-* <time>aug 1-4, 2024</time> i'll be at [gencon](https://gencon.com) this year, [let me know](/collab) if you'll be there and want to chat
 
 ### recent events
 * <time>june 2, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
@@ -23,6 +22,7 @@ tags: []
 * actively looking to dm or play in actual play — [hit me up!](/email)
 
 ### recent inquirer adventures
+* Learn about the history of SEPTA and [why it's so hard to fund](https://www.inquirer.com/transportation/inq2/septa-funding-fiances-history-timeline-shapiro-20240626.html)
 * I made a [game about the I-95 horse](https://www.inquirer.com/news/philadelphia/inq2/horse-i-95-highway-game-20240222.html), and later [got to ride him](https://www.inquirer.com/life/inq2/i-95-horse-freeway-fletcher-st-urban-riding-club-20240412.html).
 
 ### media i'm in love with
