@@ -8,12 +8,8 @@ title: now
 tags: []
 ---
 
-
-### upcoming events
-* <time>july 26, 2024</time> sign up for our next [space opera playtest](https://docs.google.com/forms/d/e/1FAIpQLSdGYvt3L_s3a4SDYe1ikyMzbpr45ErAExfh1Ve9yxm6GlvIxA/viewform?usp=sf_link)! learn more about the project [here](https://www.obvious-agency.com/space-opera)
-
 ### recent events
-* <time>june 2, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
+* <time>july 26, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
 * <time>apr 27, 2024</time> talk for high-school students on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 * <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
 
