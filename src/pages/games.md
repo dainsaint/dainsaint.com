@@ -5,15 +5,10 @@ tags: showcase
 color: "#292B53"
 ---
 
-<!-- tk -->
-
-When you change what it means to win, you change how you play the game.
+I make pretty, engaging, absurd little games.
 {.lede}
 
-* some quick thoughts on game design — digital and otherwise
-* gotta have fun
-* great way to learn
-* where the beautiful meets the absurd
+Games are how we learn—about ourselves, each other, and the world. Also, they're just *fun*. I love creating beautiful experiences that let people engage with the absurdity of the world around them with a light touch and an open heart. Whether digital or analog, there's a trillion ways to play, and I'd love to find just a few.
 
 ***
 

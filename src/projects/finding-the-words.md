@@ -20,8 +20,9 @@ featured:
 tktk description
 
 ### awards
-* SND45 Award of Excellence (Elements: Video Design)
-* SND45 Judges' Special Recognition (Best Delightful Integration with Advertisements)
+* :fa-award: SND45 Award of Excellence (Elements: Video Design)
+* :fa-award: SND45 Judges' Special Recognition (Best Delightful Integration with Advertisements)
+{.list-icons}
 
 <div class="grid-medium">
 

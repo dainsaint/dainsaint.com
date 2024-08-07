@@ -14,7 +14,6 @@ color: "#eeeeee"
 
 # journalism
 
-TKTK more things, including these projects
 
 ### Recent articles
 

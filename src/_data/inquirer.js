@@ -1,7 +1,10 @@
 const fetch = require('@11ty/eleventy-fetch');
 const parser = require("node-html-parser");
+const apify = require("../../scripts/apify");
 
 // TODO: Rewrite this to use arc credentials, and cache everything so if the format changes/lose access i still have the archive
+
+
 
 
 module.exports = async () => {
@@ -10,12 +13,17 @@ module.exports = async () => {
     type: "text"
   });
 
+  // await content.get(`search?`)
+  
   const html = parser.parse(page);
   const articles = html.querySelector("#fusion-metadata");
-  const split = articles?.innerText.split("Fusion");
+  const split = articles?.innerText.split("Fusion.");
+
+  
+
   let text = split
-    ?.find( text => text.startsWith(".globalContent"))
-    ?.replace(".globalContent=", "")
+    ?.find( text => text.startsWith("globalContent"))
+    ?.replace("globalContent=", "")
 
   text = text?.substring(0, text.length - 1);
 
@@ -32,7 +40,7 @@ module.exports = async () => {
 
     return data;
   } catch(e) {
-    console.log(e); 
+    // console.log(e); 
   }
   
   return {};
