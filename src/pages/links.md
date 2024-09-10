@@ -11,10 +11,17 @@ eleventyExcludeFromCollections: true
 ![dain saint](/assets/uploads/flowers-pic-crop.jpg){.profile}
 # dain saint
 ## storyteller, musician, designer
+
+* [:fab-instagram:](https://instagram.com/dainsaint) 
+* [:fab-youtube:](https://youtube.com/u/dainsaint)
+* [:fab-spotify:](https://open.spotify.com/album/7rI2txbcBUNoWtF6S2bwsJ?si=0k-KMYpDSASecGR0gsGlkg)
+* [:fa-gamepad:](https://cipherprime.com)
+{.distribute .inline .lede .align-center}
+
 :::
 
-
-* [Playtest Space Opera!](https://docs.google.com/forms/d/e/1FAIpQLSeETO8DTP7QGg1YyDxjbUWaGDWU9wIZeeb8O3nwuU1qN2pOeA/viewform?usp=sf_link){.highlight}
+* [:fa-dice-d20: Actual Play | Role D5 Brindlewood Bay Sept. 11](https://twitch.tv/role_d5){.highlight}
+* [:fa-dice: Playtest Space Opera | Sept. 15](https://docs.google.com/forms/d/e/1FAIpQLSeETO8DTP7QGg1YyDxjbUWaGDWU9wIZeeb8O3nwuU1qN2pOeA/viewform?usp=sf_link){.highlight}
 * [Website](https://dainsaint.com)
 * [Let's Collab](https://dainsaint.com/collab)
 * [Freedom Is Non-Negotiable: Poetry Book](https://dainsaint.com/freedom-is-non-negotiable)
