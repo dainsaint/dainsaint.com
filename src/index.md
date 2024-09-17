@@ -6,7 +6,7 @@ color: "#573E79"
 promo: |
   ::: group
   ### space opera
-  [playtest sept. 15!](https://docs.google.com/forms/d/e/1FAIpQLSeETO8DTP7QGg1YyDxjbUWaGDWU9wIZeeb8O3nwuU1qN2pOeA/viewform?usp=sf_link)
+  [playtest oct. 6!](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link)
   :::
 
   ::: group

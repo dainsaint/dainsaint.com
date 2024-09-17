@@ -20,8 +20,7 @@ eleventyExcludeFromCollections: true
 
 :::
 
-* [:fa-dice-d20: Actual Play | Role D5 Brindlewood Bay Sept. 11](https://twitch.tv/role_d5){.highlight}
-* [:fa-dice: Playtest Space Opera | Sept. 15](https://docs.google.com/forms/d/e/1FAIpQLSeETO8DTP7QGg1YyDxjbUWaGDWU9wIZeeb8O3nwuU1qN2pOeA/viewform?usp=sf_link){.highlight}
+* [:fa-dice: Playtest Space Opera | Oct. 6](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link){.highlight}
 * [Website](https://dainsaint.com)
 * [Let's Collab](https://dainsaint.com/collab)
 * [Freedom Is Non-Negotiable: Poetry Book](https://dainsaint.com/freedom-is-non-negotiable)

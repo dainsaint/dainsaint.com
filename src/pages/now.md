@@ -9,11 +9,11 @@ tags: []
 ---
 
 ### upcoming events
-* <time>september 15, 2024</time> come out and playtest [space opera](https://docs.google.com/forms/d/e/1FAIpQLSeETO8DTP7QGg1YyDxjbUWaGDWU9wIZeeb8O3nwuU1qN2pOeA/viewform?usp=sf_link)!
-* <time>october 15, 2024</time> come out and playtest [space opera](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link)!
+
+* <time>october 6, 2024</time> come out and playtest [space opera](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link)!
 
 ### recent events
-* <time>july 26, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
+* <time>september 15, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)
 * <time>apr 27, 2024</time> talk for high-school students on making music for games at [famcon](https://www.famfrequencyproductions.org/upcoming-events/famcon) 
 * <time>apr 18, 2024</time> live storytelling performance at [camp cookie](https://www.theatreexile.org/camp-cookie) 
 
