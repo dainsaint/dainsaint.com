@@ -11,6 +11,8 @@ tags: []
 ### upcoming events
 
 * <time>october 6, 2024</time> come out and playtest [space opera](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link)!
+* <time>october 6, 2024</time> i'll also be performing alongside opera philadelphia, details to follow soon!
+* <time>october 21, 2024</time> showcasing a new piece at obvious agency's [let's play](https://www.eventbrite.com/e/obvious-agency-presents-lets-play-interactive-works-in-progress-tickets-982565057537?aff=oddtdtcreator) event
 
 ### recent events
 * <time>september 15, 2024</time> had a great time playtesting [space opera](/space-opera)! find out about the next playtest [here](https://www.obvious-agency.com/space-opera)

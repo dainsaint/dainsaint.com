@@ -21,6 +21,7 @@ eleventyExcludeFromCollections: true
 :::
 
 * [:fa-dice: Playtest Space Opera | Oct. 6](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link){.highlight}
+* [:fa-hand-fist: No Ceasefire No Vote PA](https://noceasefirenovotepa.com)
 * [Website](https://dainsaint.com)
 * [Let's Collab](https://dainsaint.com/collab)
 * [Freedom Is Non-Negotiable: Poetry Book](https://dainsaint.com/freedom-is-non-negotiable)
