@@ -9,13 +9,13 @@ status: ''
 
 ![dain saint](/assets/uploads/wisteria-pic.jpg)
 
-**dain saint** is a Philly-based storyteller, musician, and designer who makes beautiful immersive experiences. He's produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
+**dain saint** (he/they) is a Philly-based storyteller, musician, and designer who makes beautiful immersive experiences. He's produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
-He's also created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and is always looking for meaningful ways to connect people with the world around them.
+They've also created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and they're always looking for meaningful ways to connect people with the world around them.
 
 As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing). 
 
-He is a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
+They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
 
 
 
