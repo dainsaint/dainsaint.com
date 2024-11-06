@@ -9,7 +9,7 @@ color: "#B2AA8E"
 featured: []
 ---
 today is a day to throw out  
-that piece of moldy fruit in you fridge  
+that piece of moldy fruit in your fridge  
 that has sat for months because  
 something else was more urgent  
 
