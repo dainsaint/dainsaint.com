@@ -5,11 +5,6 @@ description: "storyteller, musician, designer"
 color: "#573E79"
 promo: |
   ::: group
-  ### space opera
-  [playtest oct. 6!](https://docs.google.com/forms/d/e/1FAIpQLSe0-GqB1tA0IZKpsoLecFyS07HTzYnUpw8Qi8DLdVvlP2HIDQ/viewform?usp=sf_link)
-  :::
-
-  ::: group
   ### free palestine
   [donate to pcrf](https://www.pcrf.net)
   :::
