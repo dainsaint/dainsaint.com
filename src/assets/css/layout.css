@@ -62,10 +62,9 @@
 /* CONSTRAIN */
 
 .constrain > * {
-  --measure: 1200px;
+  --measure: 800px;
   max-inline-size: min(100% - 2 * var(--margin), var(--measure));
-  /* margin-inline: auto; */
-  margin-inline-start: var(--margin);
+  margin-inline: auto;
 }
 
 .constrain-wide {
