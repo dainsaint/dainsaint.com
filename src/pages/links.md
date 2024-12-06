@@ -20,7 +20,8 @@ eleventyExcludeFromCollections: true
 
 :::
 
-* [Website](https://dainsaint.com)
+* [Website](https://dainsaint.com){.colorize}
+* [Space Opera](https://www.obvious-agency.com/space-opera)
 * [Cipher Prime Studios](https://cipherprime.com)
 * [Let's Collab](https://dainsaint.com/collab)
 * [Freedom Is Non-Negotiable: Poetry Book](https://dainsaint.com/freedom-is-non-negotiable)
