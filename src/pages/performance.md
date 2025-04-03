@@ -9,6 +9,8 @@ color: "#272838"
 
 TKTK Storyteller, musician, talks
 {.lede} 
+https://www.youtube.com/watch?v=VLtn09kbxQs
+
 
 {% hoist "sections" %}
 
@@ -16,6 +18,8 @@ TKTK Storyteller, musician, talks
 ## talks
 
 TKTK sometimes people ask me to blather about things. i can blather for you too.
+
+
 
 {% include showcase, slug: "the-universe", feature: true %}
 
