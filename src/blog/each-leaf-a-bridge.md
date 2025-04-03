@@ -5,7 +5,6 @@ paywall: false
 title: each leaf, a bridge
 date: 2025-04-03T04:00:00Z
 color: "#D1EAAE"
-social: https://dainsaint.netlify.app/assets/uploads/stephen-andrews-wdh2ukjb0lu-unsplash.jpg
 featured: []
 
 ---
