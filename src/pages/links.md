@@ -21,8 +21,8 @@ eleventyExcludeFromCollections: true
 
 :::
 
-* [:fa-house: Website](https://dainsaint.com){.highlight}
-* [:fa-earth-africa: Space Opera](https://www.obvious-agency.com/space-opera)
+* [:fa-earth-africa: Space Opera - The Final Playtest 4/13!](https://www.obvious-agency.com/event-details/space-opera-final-playtest-2){.highlight}
+* [:fa-house: Website](https://dainsaint.com)
 * [:fa-gamepad: Cipher Prime Studios](https://cipherprime.com)
 * [:fa-store: Merch](https://dainsaint.square.site)
 * [:fa-book-open: Freedom Is Non-Negotiable: Poetry Book](https://dainsaint.com/freedom-is-non-negotiable)
