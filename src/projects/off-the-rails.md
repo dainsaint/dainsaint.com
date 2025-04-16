@@ -19,6 +19,9 @@ featured:
 
 SEPTA is vital to the livelihood of the entire region. So why is it so hard to fund? We did a comprehensive retrospective looking at the structure of SEPTA over time, its various funding sources, and the bureaucractic missteps that keep this agency hamstrung.
 
+### awards
+* :fa-award: SND46 Bronze Medal (Regional/Local)
+{.list-icons}
 
 <div class="grid-medium">
 
