@@ -25,5 +25,9 @@ social: ''
 * then my followup piece
 
 
+### awards
+* :fa-award: SND46 Bronze Medal (Regional/Local)
+{.list-icons}
+
 ### Press
 * https://www.escapistmagazine.com/a-horse-ran-down-i-95-and-now-its-the-most-philadelphia-video-game-ever/
