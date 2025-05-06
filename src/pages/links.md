@@ -17,7 +17,7 @@ eleventyExcludeFromCollections: true
 * [:fab-youtube:](https://youtube.com/u/dainsaint)
 * [:fab-spotify:](https://open.spotify.com/album/7rI2txbcBUNoWtF6S2bwsJ?si=0k-KMYpDSASecGR0gsGlkg)
 * [:fa-gamepad:](https://cipherprime.com)
-{.distribute .inline .lede .align-center}
+{.distribute .inline .text-lede .align-center}
 
 :::
 

@@ -4,15 +4,23 @@ date: "2024-05-01"
 description: composition and sound design for fun and profit
 tags:
   - showcase
+  - listen
 color: "#0F2434"
 ---
 
 Classically trained. Juliard schooled. (Absolutely not.)
-{.lede}
+{.text-lede}
 
 But I _am_ the lead composer and sound designer for indie games like [Auditorium](https://cipherprime.com/games/auditorium) and [Splice](https://cipherprime.com/games/splice). Over the years, I've cobbled together a musical practice from spare parts of soundtracks, video games, and free improvisation.
 
 My style mixes cinematic, orchestral, electronic, jazz, blues, and Caribbean diasporic traditions to ground the listener in immersive experiences.
+
+{% include testimonial, 
+   body: "Ethereal and driven, this album relentlessly moves forward. The piano trio is brilliantly executed, the essence of beauty in simplicity", 
+   author: "Benjamin Burnes" 
+   title: "Splice OST"
+%}
+
 
 {% hoist "sections" %}
 
@@ -96,23 +104,9 @@ https://youtu.be/GjZa6hSSotM
 
 {% endsection %}
 
-{% section %}
-
-{% include quote, quote: "let's make something **musical :fa-music:** together" %}
-
-I bring creative direction and perspective to immersive, meaningful experiences
-{.align-center}
-
-- [{% include fist-bump.svg %} let's collab](/collab)
-  {.buttons .align-center}
-
-{% endsection %}
 
 {% endhoist %}
 
-{% comment %}
 
-> Ethereal and driven, this album relentlessly moves forward. The piano trio is brilliantly executed, the essence of beauty in simplicity
-> — Benjamin Burnes
-> {.stack-isolate}
-> {% endcomment %}
+
+

@@ -113,7 +113,7 @@ const getThemeColor = () => {
 
 
 const applyTransition = (destination) => {
-  destination = destination.replace(/\/*$/, "");
+  destination = destination.replace(/\/*$/, "").split("#")[0];
   const style = window.transitions[destination] || {
     primary: "#573E79",
     contrast: "light",

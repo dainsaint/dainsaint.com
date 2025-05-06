@@ -1,0 +1,34 @@
+
+- name: SND46 Bronze Medal (Breaking News)
+  for: Horse 95
+  when: April 2025
+  urls:
+    project: https://www.inquirer.com/news/philadelphia/inq2/horse-i-95-highway-game-20240222.html
+    portfolio: https://dainsaint.com/horse-95 
+    award: https://snd.org/snd46-results/
+  notes: |
+    The judges appreciated the piece’s creative and unexpected approach, highlighting its gamification of information and engaging, interactive design. They noted it was simple to navigate, had a fun and familiar video game feel, and featured cool typography. The fast turnaround and touch of sass added to its charm, making it enjoyable and memorable.
+
+
+- name: SND46 Bronze Medal (Regional/Local)
+  for: Horse 95
+  when: April 2025
+  urls:
+    project: https://www.inquirer.com/transportation/inq2/septa-funding-fiances-history-timeline-shapiro-20240626.html
+    portfolio: https://dainsaint.com/off-the-rails
+    award: https://snd.org/snd46-results/
+  notes: |
+    The judges described the piece as “outstanding.” They found the integration of the timeline engaging, especially its resemblance to a traditional transit map. The smart use of color, as well as its seamlessness on mobile further enhanced the experience.
+
+- name: SND46 Bronze Medal (Portfolio)
+  for: The Philadelphia Inquirer’s Interactive Desk
+  when: April 2025
+  urls:
+    project: https://www.inquirer.com/news/inq2/year-in-interactives-best-visual-stories-20241219.html
+    portfolio: 
+    award: https://snd.org/snd46-results/
+  notes: |
+    It’s really impressive to see the excellence despite the range: the body of work included a game, a restaurant list and map, 3-D modeling and more. Judges were even more impressed given it’s a regional paper. They specifically praised the map implementation in the restaurants piece and the range of information featured.
+
+
+    

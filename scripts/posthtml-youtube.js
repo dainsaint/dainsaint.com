@@ -1,8 +1,8 @@
 const { parser } = require("posthtml-parser");
 
-const getTemplate = (id) => {
+const getTemplate = (id, attrs) => {
   return parser(
-  `<aside class="youtube js-youtube" data-video="${id}" style="background-image: url(https://img.youtube.com/vi/${id}/sddefault.jpg)">
+  `<aside class="youtube js-youtube ${ attrs?.class || "" }" data-video="${id}" style="background-image: url(https://img.youtube.com/vi/${id}/sddefault.jpg)">
     <div class="youtube-play"></div>
   </aside>`);
 };
@@ -16,6 +16,7 @@ module.exports = function () {
       if (!node.content?.length) return node;
 
       for (let i = 0; i < node.content.length; i++) {
+        
         const text = node.content[i];
         if (typeof text !== "string") continue;
 
@@ -23,7 +24,7 @@ module.exports = function () {
         if (!match) continue;
 
         const id = match[1];
-        node.content[i] = getTemplate(id);
+        node.content[i] = getTemplate(id, node.attrs);
       }
 
       return node;

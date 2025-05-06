@@ -5,19 +5,50 @@ eleventyExcludeFromCollections: false
 date: ''
 tags: []
 status: ''
+settings:
+  constrain: wide
+  info: false
 ---
 
-![dain saint](/assets/uploads/wisteria-pic.jpg)
+{% render hero,
+  url: "/assets/uploads/flowers-pic.jpg"
+  class: "content-wide"
+  focus: "0% 40%"
+%}
 
-**dain saint** (he/they) is a Philly-based storyteller, musician, and designer who makes beautiful immersive experiences. He's produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) for the Philadelphia Inquirer. 
 
-They've also created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and they're always looking for meaningful ways to connect people with the world around them.
+<div class="stack text-lede">
 
-As a writer, he has released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing). 
+**dain saint** (he/they) is a Philly-based storyteller, designer, and creative director making beautiful immersive experiences. They run [Reckless Magic](/reckless-magic), an interactive storytelling label, and curate [Futurefull](https://futurefull.org), an interfuturist storytelling collective.
+{.content-default}
+
+In the past, they have produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) as journalist at the Philadelphia Inquirer. 
+{.content-default}
+
+They've created [art exhibitions](https://wevetraveledsofar.com) and [museum installations](https://www.phillyseaport.org/exhibits/river-alive/), and they're always looking for meaningful ways to connect people with the world around them.
+{.content-default}
+
+
+As a writer, they released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing). 
+{.content-default}
 
 They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
+{.content-default}
 
 
+![emmy](/assets/uploads/IMG_8373.jpg){.columns-three .rows-two}
+![gming space opera](/assets/uploads/6210c93a0861519ea1b72a42b807.JPG){.columns-two .rows-two}
+![weve traveled premier](/assets/uploads/will_and_dain.png){.columns-two}
+![space opera playtest](/assets/uploads/gming.jpg){.columns-four .rows-two}
+![light selfie booth](/assets/uploads/light_selfie_booth-2.jpg){.columns-one}
+![game forge five year](/assets/uploads/showcase.jpg){.columns-two}
+![worldtown shirt](/assets/uploads/0F1CE2AA-22F3-4DCC-B61D-53F30A076E74.JPG)
+![time philadelphia](/assets/uploads/DSCF1338LG.jpg){.columns-three .rows-two}
+![late night snacks](/assets/uploads/211001_Beardmobile_039.jpg){.columns-three .rows-two}
+{.tiles .all-rounded .gap-tight .stack-isolate}
+
+
+</div>
 
 {% hoist "sections" %}
 
@@ -28,29 +59,27 @@ They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY
 
 {% assign podcasts = press | tagged: "podcast" | sort: "date" | reverse %}
 
+<div class="stack-loose">
+
+<div>
+
 ### articles
 {% include press, articles: articles %}
+
+</div>
+
+<div>
 
 ### podcast interviews{.push-loose}
 {% include press, articles: podcasts %}
 
+</div>
 
+
+</div>
 {% endsection %}
 
 
-{% section %}
-
-<h1 class="quote js-quote" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
-{{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
-</h1>
-
-I bring creative direction and perspective to immersive, meaningful experiences
-{.align-center}
-
-* [{% include fist-bump.svg %} let's collab](/collab)
-{.buttons .align-center}
-
-{% endsection %}
 {% endhoist %}
 
 

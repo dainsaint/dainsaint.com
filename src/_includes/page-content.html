@@ -1,9 +1,10 @@
 <article id="{{ title | slug }}" class="page {{ color | contrast }}" style="--primary: {{ color }}">
-  <section id="main" class="block-lede stack constrain">
+  <section id="main" class="block-lede stack constrain-{{ settings.constrain }}">
     {% include featured, slug: page.fileSlug %}
+    {% if settings.info %}
     {% include project-info %}
+    {% endif %}
     {{ content | safe }}
-
   </section>
 
   {% inject "sections" %}

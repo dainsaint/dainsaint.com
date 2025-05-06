@@ -9,8 +9,8 @@ status: |
   * [:fa-play-circle: apple music](https://music.apple.com/us/album/city-dont-sing-single/1544686673)
   {.buttons}
 tags: 
-- song
-- featured
+- listen
+
 color: "#161616"
 eleventyExcludeFromCollections: false
 featured:

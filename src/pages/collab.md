@@ -1,7 +1,12 @@
 ---
-title: let's collab!
+title: let’s collab!
 color: "#89AF71"
 featured: []
+settings:
+  constrain: default
+
+tags:
+  - services
 ---
 
 
@@ -35,7 +40,7 @@ I specialize in game design, audio production, and creative direction for storyt
 
 * ### :fa-hands-clapping: make it meaningful! 
   On big projects it's easy to miss the forest for the trees — don't get lost on the way to grandma's cottage. Let's make your values shine through the design in every aspect of your experience.
-{.list-plain .constrain-wide .switch .stack-isolate}
+{.list-plain .content-wide .switch .stack-isolate}
 
 
 
@@ -44,53 +49,3 @@ I've been designing [games](/games) and other [interactive experiences](/interac
 
 _(And as a storyteller myself, I'm also available for [live performances](/performance) if that's more your speed.)_
 :::
-
-
-{% hoist "sections" %}
-
-
-
-
-{% section "#4E6F55" %}
-
-<div class="stack-loose constrain-wide">
-
-### clients and collaborators{.align-center .stack-default}
-
-![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
-![Game Developers Conference](/assets/uploads/gdc.svg)
-![The Philadelphia Inquirer](/assets/uploads/inquirer.svg)
-![Glbl Vllg](/assets/uploads/glblvllg.png)
-![Indiecade](/assets/uploads/indiecade.webp)
-![Indy Hall](/assets/uploads/indyhall.png)
-![Bearded Ladies Cabaret](/assets/uploads/beardedladies.png)
-![Klip Collective](/assets/uploads/klip.png)
-![Bluecadet](/assets/uploads/bluecadet.svg)
-![Obvious Agency](/assets/uploads/obviousagency.webp)
-![REC Philly](/assets/uploads/recphilly.svg)
-![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
-![Ultraleap](/assets/uploads/ultraleap.svg)
-![World Cafe Live](/assets/uploads/worldcafelive.png)
-{.bricks-tiny .gap-tight .fit-contain .constrain-wide .color-match .light}
-
-</div>
-
-{% endsection %}
-
-
-{% section "#032331" %}
-::: align-center stack
-
-<div class="quote js-quote-animated" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
-
-let's make something **magical :fa-wand-magic-sparkles:** together
-
-</div>
-
-Send me an email!
-
-[](/email){.button}
-:::
-
-{% endsection %}
-{% endhoist %}

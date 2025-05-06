@@ -1,0 +1,10 @@
+<div class="card stack {{block.class}}">
+  <h3 class="text-big">{{ block.title | markdown}}</h3>
+  <p class="text-eyebrow">{{- block.time -}}</p>
+
+  {{ block.content | markdown }}
+  
+  <footer class="card-footer">
+    <a class="button" href="{{ block.url }}">{{ block.cta | markdown }}</a>
+  </footer>
+</div>

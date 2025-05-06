@@ -1,0 +1,8 @@
+---
+layout: base
+title: Dain Saint
+---
+{% assign post = collections.all | where: "fileSlug", page.fileSlug | first %}
+<main>
+  {% include content %}
+</main>

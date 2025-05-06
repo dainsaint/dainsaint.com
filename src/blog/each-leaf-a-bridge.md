@@ -11,6 +11,8 @@ featured: []
 
 You asked, "How am I meant to enjoy spring?" 
 
+>
+
 At a time like this? With so much pain and strife, when the bombs are still falling, and the ground still shaking, and the pain of a hundred generations still cutting through my bones? How are we meant to enjoy spring when those with power collect more power still and our pleas for civility and decency cannot be heard over the din of cash registers and weapon contracts paid in full; over the cacophony of ancestor and kin alike torn apart by tax dollars, and no end peeking golden on any horizon?
 
 How do I feel joy when there is so much pain?

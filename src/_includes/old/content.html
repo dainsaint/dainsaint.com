@@ -1,0 +1,88 @@
+{% if post.data.style == "project" %}
+{% assign posts = collections.posts | inProject: post.inputPath %}
+{% endif %}
+
+{% assign project = collections.projects | fromFile: post.data.project %}
+
+<article id="{{ post.data.title | slug }}" class="{{ post.data.style }} block-smart colorize {{ post.data.color | contrast }}" style="--primary: {{ post.data.color }}">
+  
+  <section class="stack constrain-{{ post.data.settings.constrain }}">
+    
+    {% include featured, featured: post.data.featured %}
+
+    {% if post.data.style == "page" or post.data.style == "project" %}
+
+      {% if post.data.settings.info %}
+      <div class="project-intro">
+        {% include project-info, url: page.url %}
+      
+        {% if post.data.status %}
+        <div class="project-status">
+          {{ post.data.status | markdown }}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+    
+      {{ post.templateContent | safe }}
+
+      {% if posts %}
+        {% assign data = posts | map: "data" %}
+        {% include toc, posts: data %}
+      {% endif %}
+
+    {% else %}
+      <div class="post-body">
+
+        {% if post.data.deco %}
+        <div class="post-meta">
+          <div class="post-meta-deco color-match" style="background-image: url('/assets/img/deco/{{ post.data.deco }}.webp')">
+          </div>
+        </div>
+        {% endif %}
+
+
+        <div class="post-content stack">
+          <header>
+            <h2 class="post-title">
+              <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </h2>
+
+            {% if project %}
+            <p class="post-project">part of <a href="{{ project.url | url}}">{{ project.data.title }}</a></p>
+            {% endif %}
+
+            {% if post.data.settings.date %}
+            <p class="post-project">{{ post.data.date | date: "%B %e, %Y" }} </p>
+            {% endif %}
+
+          </header>
+
+          <div class="post-content-text stack">
+            {{ post.templateContent | safe }}
+          </div>
+        </div>
+      </div>
+
+    {% endif %}
+  </section>
+
+</article>
+
+{% if post.filePathStem == page.filePathStem %}
+{% inject "sections" %}
+{% endif %}
+
+
+
+
+{% if post.data.style == "project" %}
+
+<div class="project-posts {{ arrange }}">
+  
+  {% for post in posts %}
+  {% include content %}
+  {% endfor %}
+  
+</div>
+{% endif %}

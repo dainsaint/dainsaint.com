@@ -1,0 +1,5 @@
+{% for block in blocks %}
+{% if block.type %}
+  {%- render blocks/{{block.type}} with block as block -%}
+{% endif %}
+{% endfor %}

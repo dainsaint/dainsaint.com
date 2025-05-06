@@ -4,7 +4,6 @@ tags:
 - game
 - play
 - interactive
-- featured
 title: horse 95
 description: breaking news horse mayhem game
 status: |
@@ -26,7 +25,7 @@ social: ''
 
 
 ### awards
-* :fa-award: SND46 Bronze Medal (Regional/Local)
+* :fa-award: SND46 Bronze Medal (Breaking News)
 {.list-icons}
 
 ### Press

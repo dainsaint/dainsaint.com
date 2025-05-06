@@ -1,7 +1,12 @@
 {
-  "layout" : "project",
+  "layout" : "page",
+  "style" : "project",
   "permalink": "{{ page.fileSlug }}/",
   "tags": [
     "projects"
-  ]
+  ],
+  "constrain": "default",
+  "settings": {
+    "info": true
+  }
 }

@@ -212,6 +212,8 @@ function addShortcodes( eleventy ) {
       style: color ? ` style="--primary: ${color || "transparent"}"` : "",
     };
 
+    
+
     return `<section ${id ? `id="${id}" `: ""}class="block-loose stack constrain colorize ${
       overrides.contrast
     }"${overrides.style}>${markdown.render(content)}</section>`;
@@ -242,6 +244,24 @@ function addShortcodes( eleventy ) {
     return "";
   });
 
+
+
+  eleventy.addShortcode("unpack", (obj) => {
+    if (typeof obj !== "object" || obj === null) return "";
+    // const result = Object.entries(obj)
+    //   .map(([key, value]) => `{% assign ${key} = "${value}" %}`)
+    //   .join("\n");
+    // console.log( this.global );
+
+    Object.entries(obj).forEach(([key, value]) => {
+      // Create a context for each key in the data object
+      this[key] = value;
+    });
+
+      // console.log( result )
+    // return result;
+  })
+
 }
 
 function addTransforms( eleventy ) {
@@ -252,7 +272,7 @@ function addTransforms( eleventy ) {
 
     const result = await posthtml([
       require("./scripts/posthtml-image-size")(),
-      // require("./scripts/posthtml-image-color")({page: eleventy}),
+      // require("./scripts/posthtml-image-svg")(),
     ]).process(content);
 
     return result.html;
@@ -265,6 +285,7 @@ function addTransforms( eleventy ) {
     const result = await posthtml([
       require("./scripts/posthtml-youtube")(),
       require("./scripts/posthtml-audio")(),
+      require("./scripts/posthtml-calendly")(),
     ]).process(content);
 
     return result.html;

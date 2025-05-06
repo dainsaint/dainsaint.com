@@ -18,6 +18,13 @@ featured:
       - /assets/uploads/lineweight-splash.jpg
 social: ''
 
+showcase:
+  - /assets/uploads/lineweight.webp
+  - /assets/uploads/lineweight1.jpg
+
+client: Cipher Prime Studios
+year: 2020
+
 ---
 
 lineweight is a brand new experience from cipher prime. each of its five chapters showcases a story with a specific emotional focus, illuminated with the studio's signature stylings of color, light, and music. every moment, word, and image is controlled by your swipe, marrying storytelling and graphic design in a unique union we can't wait to share with you.

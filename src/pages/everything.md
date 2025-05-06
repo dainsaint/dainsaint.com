@@ -1,4 +1,5 @@
 ---
+layout: index
 title: everything
 description: every dang post on the site
 color: "#343a40"

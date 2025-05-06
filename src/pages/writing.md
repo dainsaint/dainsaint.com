@@ -7,7 +7,7 @@ color: "#3A3C48"
 ---
 
 I write poetry, short stories, essays, and articles.
-{.lede} 
+{.text-lede} 
 
 I have a few small books, and generally overthink everything.
 

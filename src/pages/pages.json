@@ -1,9 +1,15 @@
 {
-  "layout": "index",
+  "layout": "page",
   "style" : "page",
   "permalink": "{{ page.fileSlug }}/",
   "eleventyExcludeFromCollections": false,
   "tags": [
     "pages"
-  ]
+  ],
+  
+  "settings": {
+    "info": true,
+    "constrain": "wide",
+    "cta": true
+  }
 }

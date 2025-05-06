@@ -11,8 +11,8 @@ featured:
 tags:
   - listen
 ---
-*“The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”*
--- Carl Sagan
+> “The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.”
+> — Carl Sagan
 
 inspired by jerry goldsmith's TNG theme, with a bit of bruce broughton's theme for The Orville, i wrote this main theme for [space opera](/space-opera), to be played at the start and/or end of sessions.
 

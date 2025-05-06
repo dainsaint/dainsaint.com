@@ -2,6 +2,8 @@
 {% include blog-content %}
 {% elsif post.data.style == "page" %}
 {% include page-content %}
+{% elsif post.data.style == "project" %}
+{% include project-content %}
 {% else %}
 {% include post-content %}
 {% endif %}

@@ -14,11 +14,41 @@ featured:
 - type: gallery
   images:
   - "/assets/uploads/ampu.png"
+roles:
+  - ":fa-pen-ruler: creative direction"
+  - ":fa-newspaper: editorial design"
+  - ":fa-desktop: website production"
+  - ":fa-object-group: multimedia production"
 
+showcase: 
+  - type: video
+    src: /assets/uploads/iconic-bkg.webm
+    class: columns-four rows-two
+  - type: image
+    src: /assets/uploads/elam-vert.jpg
+    class: columns-two rows-three
+  - type: image
+    src: /assets/uploads/ampu.png
+    class: columns-two
+  - type: image
+    src: /assets/uploads/the-blueprint.png
+    class: columns-two
+
+
+awards:
+  - "SND44 - Bronze (Line of Coverage Features/Social Issues)"
+  - "SND44 - Bronze (Design Social Issues) (The Blueprint)"
+  - "TDC 2023 – Winner (Publication - series)"
+
+client: The Philadelphia Inquirer
+year: 2022
+notes: |
+  :fa-medal: SND44 - 2x Bronze Medalist  
+  :fa-medal: TDC 2023 – Winner
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-{.lede}
+{.text-lede}
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
 
@@ -55,7 +85,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ![](/assets/uploads/dawn-wilson.avif)
 ![](/assets/uploads/flag-jacket.avif)
-{.grid-medium .gap-tight .constrain-wide .stack-isolate}
+{.grid-medium .gap-tight .content-wide .stack-isolate}
 
 
 <div class="grid-medium">

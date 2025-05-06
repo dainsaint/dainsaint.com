@@ -1,0 +1,37 @@
+{%- if slug -%}
+{% assign post = collections.all | fromFile: slug %}
+{%- endif -%}
+
+<div class="showcase">
+  <div class="stack-tight">
+    <div class="stack-dense">    
+      <h3 class="project-title text-display">{{ post.data.title }}</h3>
+      <div class="project-description">
+        {{ post.data.description}}
+      </div>
+    </div>
+
+
+    {% include tags, tags: post.data.roles %}
+
+
+    <div>
+
+    </div>
+
+    <div class="tiles content-flush gap-tight all-rounded">
+      {% include blocks, blocks: post.data.showcase %}
+    </div>
+
+    
+    <div class="text-overline align-right">
+      <strong>{{ post.data.client }} // {{ post.data.year }}</strong>
+      {% if post.data.notes %}
+        {{ post.data.notes }}
+      {% endif %}
+    </div>
+    
+
+
+  </div>
+</div>

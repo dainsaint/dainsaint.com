@@ -3,12 +3,12 @@ title: performance
 description: hop skip and a jump
 tags: showcase
 color: "#272838"
-# hero: /assets/uploads/DSCF4101XL.JPG
+hero: /assets/uploads/DSCF4101XL.JPG
 ---
 
 
 TKTK Storyteller, musician, talks
-{.lede} 
+{.text-lede} 
 https://www.youtube.com/watch?v=VLtn09kbxQs
 
 

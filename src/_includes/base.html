@@ -1,5 +1,8 @@
 ---
 title: Dain Saint
+settings:
+  info: true
+  constrain: default
 ---
 {% capture pageTitle %}{% unless title == "" %}{{ title }} | {% endunless %}dain saint{% endcapture %}
 {% capture pageSocialImg %}{% if social and social != '' %}{{ social }}{% else %}https://dainsaint.com/previews/{{ title | slug }}.png{% endif %}{% endcapture %}
@@ -87,8 +90,9 @@ title: Dain Saint
   <body class="transition-fade-in" style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
 
     {% include header, color: color, promo: promo %}
-    
     {{ content | safe }}
+
+    {% include footer %}
 
     <script src="{{ '/assets/js/main.js' | url }}"></script>
     <script src="{{ '/assets/js/youtube.js' | url }}"></script>

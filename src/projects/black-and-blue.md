@@ -19,6 +19,13 @@ social: ''
 status: |
   * [:far-newspaper: read the full story](//inquirer.com/blackandblue)
   {.buttons}
+
+showcase:
+ - /assets/uploads/screen-shot-2020-07-11-at-12-36-26-pm.png
+ - /assets/uploads/screen-shot-2020-07-11-at-12-37-03-pm.png
+
+client: The Philadelphia Inquirer
+year: 2020
 ---
 
 

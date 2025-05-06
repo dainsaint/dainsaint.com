@@ -1,0 +1,17 @@
+{% assign body = post.templateContent | split: "<blockquote></blockquote>" | first %}
+
+<a href="{{ post.url }}" class="preview">
+
+  {% assign more = false %}
+
+  {% if post.data.style == "blog" %}
+
+  {% include previews/preview-blog %}
+
+  {% else %}
+
+  {% include previews/preview-poem %}
+
+  {% endif %}
+
+</a>

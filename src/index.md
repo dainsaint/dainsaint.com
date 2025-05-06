@@ -1,125 +1,100 @@
 ---
+eleventyExcludeFromCollections: true
 layout: index
-title: ""
-description: "storyteller, musician, designer"
+style: page
+description: "storyteller, interactive designer, creative director"
+
 color: "#573E79"
-promo: |
-  ::: group
-  ### free palestine
-  [donate to pcrf](https://www.pcrf.net)
-  :::
+settings:
+  info: false
+  constrain: wide
+  cta: true
+
 permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
-pagination:
-  data: collections.posts
-  size: 5
-  reverse: true
-  alias: posts
+
 ---
 
-# [Hi, I'm Dain Saint](/about) **I turn stories into experiences.** {.title}
 
-I make stories you can touch, and stories that touch you. Whether&nbsp;it's through {{ navigation.portfolios | prose }}, I create artistic experiences about better futures and the roads we take to get there.
-{.lede}
+{% render hero,
+  url: "/assets/uploads/wisteria-pic.jpg"
+  class: "content-wide"
+  focus: "50% 25%"
+%}
 
-* [about me :fa-angle-right:](/about)
-{.buttons .align-right}
+
+### Hi, I'm Dain Saint
+{.text-overline}
+# I turn stories into experiences. {.text-display}
+
+<div class="switch gap-loose">
+
+<div class="stack text-lede" style="flex-grow: 2">
+
+I'm a storyteller creating interactive worlds, immersive events, and collaborative stories. Whether it's through [games](/games), [music](/music), [writing](/writing), or [design](/reckless-magic), I create artistic experiences about better futures and the roads we take to get there.
+
+I run 
+[Reckless Magic](/reckless-magic), 
+an interactive storytelling label, and I'm cultivating 
+[Futurefull](/futurefull), 
+an interfuturist storytelling community.
+
+
+</div>
+
+::: stack
+### Wanna make something cool? {.text-overline}
+* [let's work together :fa-angle-right:](/services)
+{.buttons .highlight}
+:::
+
+</div>
 
 ***
 
-::: grid-medium
-{% include showcase, slug: "space-opera", feature: true %}
-{% include showcase, slug: "freedom-is-non-negotiable", feature: true %}
-:::
+## upcoming events {.text-overline}
 
+<div class="switch gap-tight">
 
-* [more projects :fa-angle-right:](/projects)
-{.buttons .align-right}
+{% for event in events %}
+{% render blocks/event, block: event %}
+{% endfor %}
 
+</div>
 
-
+***
 
 {% hoist "sections" %}
 
+{% assign content = collections.content | reverse | slice: 0, 3 %}
 
-<section id="cta" class="block stack constrain colorize light" style="--primary: #362154;">
+{% section "#222" %}
 
-::: align-center stack-tight
-<h1 class="title js-quote" data-quotes="magical |fa-wand-magic-sparkles, musical |fa-music, mythical |fa-book-open, memorable |fa-bookmark, meaningful |fa-hands-clapping">
-{{ "Let's make something **magical :fa-wand-magic-sparkles:** together" | markdown }}
-</h1>
+<div class="content-wide stack">
 
-I bring creative direction and perspective to immersive, meaningful experiences
+## Most Recent Posts{.text-display}
 
-[{% include fist-bump.svg %} let's collab](/collab){.button}
-:::
+<div class="all-rounded switch gap-tight">
+
+{% for recent in content %}
+{% render previews/preview-split, post: recent %}
+{% endfor %}
+
+</div>
 
 
+</div>
 
-***
-
-### :fa-angle-down: keep scrolling, there's cool stuff down here :fa-angle-down:{.align-center}
-
-</section>
+{% endsection %}
 
 {% endhoist %}
 
+
 {% hoist "head" %}
-<style>
-  .project-info {
-    display: none;  
-  }
 
-  .page > *:first-child {
-    padding-block-end: 1.25rem;
-  }
-
-  #cta, #projects {
-    padding-block: 3rem;
-  }
-
-  section:has( + #cta ) {
-    padding-bottom: 3rem;
-  }
-
-  @media( min-width: 650px ) {
-    h1.title strong {
-      display: inline-block;
-      padding-inline-end: .25rem;
-    }
-  }
-
-  h3.align-center {
-    color: var(--color-alpha)
-  }
-/*
-  article.page {
-    display: grid;
-    min-height: calc(100vh - var(--header-height));
-    grid-template-areas: 
-      "lede"
-      "projects"
-      "cta";
-    
-
-    @media( min-width: 800px ) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 
-        "lede projects"
-        "lede cta";
-      }
-  }
-
-  #projects {
-    grid-area: projects;
-  }
-
-  #cta {
-    grid-area: cta;
-  }
-
+<style type="text/css">
   #main {
-    grid-area: lede;
-  }*/
-
+    padding-block-end: 2rem;
+  }
 </style>
+
 {% endhoist %}

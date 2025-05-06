@@ -11,6 +11,8 @@ featured: []
 ---
 I know things are scary right now, and I wanted to offer a framework for thinking about the moment we’re moving through, and how to manage that on a day-by-day-basis.
 
+>
+
 Over the next weeks, months, and years, we are going to be seeing a lot of scary, angering news. And trying to metabolize all that at once is going to be overwhelming. And this is not a moment where we can afford to be overwhelmed.
 
 So consider this: Consider that there is a volcano that has erupted.

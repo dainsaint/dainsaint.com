@@ -4,6 +4,8 @@
   --primary: #DFE0DF;
   --color: red;
   --color-alpha: #FF000020;
+  --color-invert: red;
+  --color-invert-alpha: #FF000020;
   --dark: #062535;
   --dark-alpha: #06253520;
   --light: #f7ede2;
@@ -14,6 +16,9 @@ body {
   --color: var(--dark);
   --color-alpha: var(--dark-alpha);
 
+  --color-invert: var(--light);
+  --color-invert-alpha: var(--light-alpha);
+
   background: var(--primary);
   color: var(--color);
 }
@@ -23,6 +28,8 @@ body {
 .light {
   --color: var(--light);
   --color-alpha: var(--light-alpha);
+  --color-invert: var(--dark);
+  --color-invert-alpha: var(--dark-alpha);
   --image-filter: brightness(0) saturate(100%) invert(89%) sepia(21%) saturate(133%) hue-rotate(343deg) brightness(104%) contrast(94%);
   color: var(--color);
 }
@@ -30,6 +37,8 @@ body {
 .dark {
   --color: var(--dark);
   --color-alpha: var(--dark-alpha);
+  --color-invert: var(--light);
+  --color-invert-alpha: var(--light-alpha);
   --image-filter: brightness(0) saturate(100%) invert(11%) sepia(40%) saturate(1412%) hue-rotate(163deg) brightness(88%) contrast(97%);
   color: var(--color);
 }
@@ -40,8 +49,12 @@ body {
 }
 
 /* thanks to https://codepen.io/sosuke/pen/Pjoqqp */
-.color-match {
+.color-match:not(svg) {
   filter: var(--image-filter);
+}
+
+svg.color-match {
+  fill: var(--color) !important;
 }
 
 

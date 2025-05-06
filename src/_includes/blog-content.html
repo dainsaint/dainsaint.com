@@ -1,6 +1,6 @@
 <article id="{{ post.data.title | slug }}" class="post block-smart colorize {{ post.data.color | contrast }}" style="--primary: {{ post.data.color }}">
 
-  <div class="stack constrain">
+  <div class="stack content">
     
     {% include featured, featured: post.data.featured %}
 
@@ -15,9 +15,6 @@
           {{ post.templateContent | safe }}
         </div>
 
-        <div class="post-social-block">
-          {% include social %}
-        </div>
       </div>
     </div>
 

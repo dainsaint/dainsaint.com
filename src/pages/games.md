@@ -1,14 +1,24 @@
 ---
 title: games
 description: digital, role-playing, and otherwise
-tags: showcase
+tags: 
+  - showcase
+  - play
 color: "#292B53"
 ---
 
 I make pretty, engaging, absurd little games.
-{.lede}
+{.text-lede}
 
 Games are how we learn—about ourselves, each other, and the world. Also, they're just *fun*. I love creating beautiful experiences that let people engage with the absurdity of the world around them with a light touch and an open heart. Whether digital or analog, there's a trillion ways to play, and I'd love to find just a few.
+
+{% include testimonial, 
+   body: "For me, what was most enjoyable about Intake was seeing just how lean and small a game can be while still being exciting. It's a master class in audio-visual feedback.", 
+   author: "Andrew Groen" 
+   title: "Game Reviewer"
+%}
+
+
 
 ***
 
@@ -32,7 +42,7 @@ Much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and
 :::
 
 
-::: grid-five gap-tight constrain-wide stack-isolate
+::: grid-five gap-tight content-wide stack-isolate
 {% for game in games.cipherprime %}
 [![{{game.name}}]({{game.poster}})]({{game.url}})
 {% endfor %}
@@ -40,15 +50,6 @@ Much love to aaron chapin, andrei marks, nikkolai davenport, jackie grubner, and
 
 
 {% endsection %}
-{% section %}
 
-{% include quote, quote: "let's make something **magical :fa-wand-sparkles:** together" %}
-
-Whether digital or physical, mechanical or narrative — let's make an incredible experience.
-{.align-center}
-
-* [{% include fist-bump.svg %} let's collab](/collab)
-{.buttons .align-center}
-{% endsection %}
 
 {% endhoist %}

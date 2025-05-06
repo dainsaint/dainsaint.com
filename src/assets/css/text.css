@@ -1,0 +1,52 @@
+.text-lede {
+  font-size: 1.3rem;
+  text-wrap: pretty;
+}
+
+.text-title {
+  text-transform: none;
+  font-family: var(--font-accent);
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.text-big {
+  font-size: 1.1rem;
+}
+
+.text-aside {
+  font-size: .8rem;
+}
+
+.text-display {
+  font-size: 2.5rem;
+  font-family: var(--font-accent);
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: lowercase;
+  line-height: 1;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.text-eyebrow {
+  font-family: var(--font-secondary);
+  font-size: .6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+.text-overline {
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .1rem;
+  line-height: 1.5;
+}

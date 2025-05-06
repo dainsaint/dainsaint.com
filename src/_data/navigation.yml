@@ -1,4 +1,28 @@
 links:
+  - page: the garden
+    url: /garden
+    tags:
+      - garden
+      - content
+  - page: projects
+  - page: work with me
+    url: /services
+    tags:
+      - services
+  - page: reckless magic
+    url: /reckless-magic
+    tags: 
+      - reckless-magic
+      - optional
+  - page: futurefull
+    tags:
+      - optional
+
+  - page: about
+
+
+
+oldlinks:
   - page: now
   - page: projects
     tags: projects
@@ -6,6 +30,8 @@ links:
   - page: collab
   - page: store
     url: https://dainsaint.square.site
+
+
 
 portfolios:
   - page: games
@@ -26,6 +52,16 @@ people:
   - page: will stallwood
     url: https://willstall.com
 
+
+initiatives:
+  - page: reckless magic
+    url: /reckless-magic
+  - page: futurefull
+    url: https://futurefull.org
+  - page: work with me
+    url: /services
+
+
 tech: 
   - page: eleventy
     url: https://11ty.dev
@@ -38,6 +74,8 @@ follow:
     url: /feed.xml
   - page: 'fab fa-square-instagram'
     url: https://instagram.com/dainsaint
+  - page: 'fab fa-square-bluesky'
+    url: https://bsky.com/@dainsaint.com
 
 causes:
   - page: 🇯🇲

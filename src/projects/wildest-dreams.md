@@ -9,15 +9,55 @@ tags:
 - series
 - read
 - journalism
+- featured
 color: "#6C2326"
 featured:
 - type: gallery
   images:
   - "/assets/uploads/wildestdreams.png"
 
+roles:
+  - ":fa-pen-ruler: creative direction"
+  - ":fa-newspaper: editorial design"
+  - ":fa-fingerprint: visual identity"
+  - ":fa-desktop: website production"
+  - ":fa-pen-fancy: writing"
+
+showcase: 
+
+  - type: video
+    src: /assets/uploads/wildest.webm
+    class: columns-three rows-two
+
+  - type: image
+    src: /assets/uploads/wildestdreams.png
+    class: columns-three
+
+  - type: image
+    src: /assets/uploads/wildest-quote-1.jpg
+    class: columns-three rows-two
+
+  - type: image
+    src: /assets/uploads/time-travelers.png
+    class: columns-three rows-two
+
+  - type: image
+    src: "/assets/uploads/wildest-quote-2.jpg"
+    class: columns-three
+
+
+
+
+awards:
+  - "2022 Mid-Atlantic Emmy (News Feature, Multiple Reports)"
+
+client: The Philadelphia Inquirer
+year: 2021
+notes: |
+  :icon-emmy: 2022 Mid-Atlantic Emmy
 ---
 
-# The Black imagination is vast.
+## The Black imagination is vast.
 
 Our customs are complex. And so many of our traditions build upon the creativity and brilliance of our ancestors.
 
@@ -26,6 +66,11 @@ For too long, Black writers and creators in mainstream media have had to explain
 The Wildest Dreams series is a collaborative mini-anthology of storytelling about Black cultural inheritance, legacy, and joy. Presented by a team of Black journalists at The Inquirer, the project celebrates the vastness of Black imagination and honors the gifts imparted to us by our ancestors — many of whom couldn’t live out their fullest dreams.
 
 In this limited series, we are inviting Black folks in Philadelphia to share our stories on our own terms through poetry, essays, music, and film — expressions that honor our ancestors’ dreams and our own.
+
+<div class="tiles content-flush content-wide gap-tight all-rounded">
+{% render blocks, blocks: showcase %}
+</div>
+
 
 ### awards
 :fa-award: 2022 Mid-Atlantic Emmy (News Feature, Multiple Reports)
@@ -46,8 +91,8 @@ In this limited series, we are inviting Black folks in Philadelphia to share our
 
 ::: group
 ### roles
-* :fa-object-group: creative direction
-* :fa-mouse: digital production
-* :fa-fingerprint: visual identity
+{% for role in roles %}
+* {{ role }}
+{% endfor %}
 {.list-icons}
 :::

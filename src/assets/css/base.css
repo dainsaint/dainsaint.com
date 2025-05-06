@@ -5,6 +5,7 @@ html {
 
   --font-body: "Spectral", serif;
   --font-secondary: "Raleway", sans-serif;
+  --font-accent: "Elgraine Black Italic", serif;
 }
 
 body {
@@ -104,10 +105,7 @@ img{
   background: var(--palette-3);
 } */
 
-.lede {
-  font-size: 1.3rem;
-  text-wrap: pretty;
-}
+
 
 nav ul {
   padding: 0;
@@ -151,8 +149,16 @@ time {
 
 .hero {
   height: 40vh;
-  background: center center no-repeat;
+  background: no-repeat;
   background-size: cover;
+  border-radius: 0px;
+  transition: border-radius .3s;
+}
+
+@media (min-width: 1200px){
+  .hero {
+    border-radius: .5rem;
+  }
 }
 
 .header-menu-button {
@@ -223,8 +229,11 @@ time {
   }
 }
 
+body:not(:has(.hero)) .header-main{
+  /* border-bottom: 1px solid var(--color-alpha); */
+}
+
 .header-main {
-  border-bottom: 1px solid var(--color-alpha);
 
   hr {
     margin-block: 1rem;
@@ -513,14 +522,6 @@ h1.title, .quote {
   flex: 1 1 300px;
 }
 
-.project-tag {
-  font-family: var(--font-secondary);
-  text-transform: uppercase;
-  font-size: .6rem;
-  font-weight: bold;
-  display: block;
-}
-
 
 .project-description {
   font-style: italic;
@@ -570,7 +571,7 @@ h1.title, .quote {
 }
 
 
-footer {
+#footer {
   padding: 10rem 0px;
   position: relative;
 }
@@ -822,18 +823,11 @@ input[type=email]::before {
   flex-wrap: wrap;
   width: 100%;
   gap: .5rem;
+  align-content: flex-start;
 }
 
-.buttons li {
-  display: block;
-  margin: 0;
-}
-
-.buttons li a, a.button {
+.buttons, a.button {
   text-decoration: none;
-  background: var(--color);
-  border: 1px solid var(--color);
-  color: var(--primary);
 
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -841,11 +835,29 @@ input[type=email]::before {
   font-size: .67rem;
   font-style: normal;
   line-height: 1;
+}
+
+.buttons li {
+  display: block;
+  margin: 0;
+}
+
+.buttons li a {
+  font: inherit;
+  text-transform: inherit;
+  line-height: inherit;
+  text-decoration: inherit;
+}
+
+.buttons li a, a.button {
+  background: var(--color);
+  color: var(--primary);
+  border: 1px solid var(--color);
   
   box-sizing: border-box;
   cursor: pointer;
   letter-spacing: .1rem;
-  padding: .5rem;
+  padding: .75em;
   display: inline-block;
 
   margin: 0;
@@ -855,12 +867,54 @@ input[type=email]::before {
     background: var(--background);
     color: var(--color);
   }
+
+  &.button-disabled {
+    opacity: .2;
+    pointer-events: none;
+  }
 }
 
 .highlight {
   --color: var(--highlight);
   --primary: currentColor;
 }
+
+
+
+.list-tags {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: .5rem;
+  align-content: flex-start;
+}
+
+.list-tags li {
+  text-decoration: none;
+  border: 1px solid var(--color);
+  color: var(--color);
+  border-radius: 5px;
+
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .5rem;
+  font-style: normal;
+  line-height: 1;
+
+  box-sizing: border-box;
+  letter-spacing: .1rem;
+  padding: .5rem;
+  display: inline-block;
+
+  margin: 0;
+  white-space: nowrap;
+}
+
+
+
+
 
 
 .album,
@@ -1038,9 +1092,9 @@ input[type=email]::before {
 
 .icon {
   fill: currentColor;
-  width: 2em;
-  height: 2em;
-  margin-block: -.5em;
+  width: 1.5em;
+  height: 1.5em;
+  margin-block: -.25em;
   vertical-align: -0.125em;
   display: inline-block;
 }
@@ -1081,6 +1135,112 @@ blockquote p{
     display: block;
     font: var(--fa-font-solid);
   }
+}
+
+.testimonial {
+  background-color: var(--color);
+  color: var(--primary);
+  padding: .5rem;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.card {
+  --card-background: var(--color-invert-alpha);
+  --card-text: var(--color);
+  background-color: var(--card-background);
+  color: var(--card-text);
+  padding: .5rem;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.card.palette {
+  --card-background: var(--primary);
+  --card-text: var(--color);
+}
+
+.card-invert {
+  --card-background: var(--color);
+  --card-text: var(--primary);
+}
+
+.card-footer {
+  height: 100%;
+  align-content: end;
+}
+
+
+
+.preview {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  aspect-ratio: 5 / 4 ;
+  text-decoration: none;
+  
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  .block-full {
+    padding: 0;
+    min-height: inherit;
+
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .post-title {
+    font-size: .9rem;
+  }
+
+  .post-body {
+    font-size: .9rem;
+    /* line-height: .75em; */
+    /* position: relative; */
+  } 
+
+
+  .post-handle {
+    /* font-size: 24px; */
+  }
+
+  .poem .post-handle {
+    position: absolute;
+    top: 120%;
+  }
+
+  .post-quote .post-handle {
+    position: relative;
+    top: 50px;
+  }
+
+  .post-quote {
+    text-align: center;
+  }
+
+  .post-quote .buttons {
+    margin: 0px auto;
+  }
+
+  .post-meta {
+    width: 40px;
+  }
+}
+
+.buttons {
+  width: auto;
 }
 
 
@@ -1161,3 +1321,17 @@ blockquote p{
 .copyright {
   font-size: .75rem; 
 }
+
+
+.page .project-info .text-eyebrow {
+  display: none;
+}
+
+    .page+.block-smart:not(:has(.hero))::before {
+      min-height: 1rem;
+    }
+  
+    .constrain-default>*,
+    .content {
+      margin-inline: max(calc(50% - 600px), var(--margin)) auto;
+    }
