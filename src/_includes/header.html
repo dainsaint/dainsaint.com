@@ -32,7 +32,7 @@
         {% endfor %}
 
         {% assign pg = link.page | prepend: "/" %}
-        <li><a {% if active %}class="active" {% endif %}href="{{ link.url | default: pg }}">{{ link.page }}</a></li>
+        <li><a {% if active %}class="active" {% endif %}href="{{ link.url | default: pg }}" data-tags="{{ link.tags | join: ', ' }}">{{ link.page }}</a></li>
       {% endfor %}
 
       </ul>

@@ -71,7 +71,7 @@ an interfuturist storytelling community.
 
 <div class="content-wide stack">
 
-## Most Recent Posts{.text-display}
+## Recent Posts{.text-display}
 
 <div class="all-rounded switch gap-tight">
 

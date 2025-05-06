@@ -222,12 +222,14 @@ time {
       text-decoration-thickness: 4px;
       text-decoration-color: currentColor;
     }
+
   }
 
   .header-nav-close {
     display: none;
   }
 }
+
 
 body:not(:has(.hero)) .header-main{
   /* border-bottom: 1px solid var(--color-alpha); */
@@ -950,6 +952,12 @@ input[type=email]::before {
 }
 
 
+@media (min-width: 451px) and (max-width: 800px) {
+  .header-nav li:has([data-tags~="optional"]) {
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
 
   .header-main {
@@ -964,6 +972,10 @@ input[type=email]::before {
     display: block;
   }
 
+  .header-nav li {
+    display: block !important;
+  }
+
   .header-nav {
     max-width: unset;
     position: fixed;
@@ -975,6 +987,7 @@ input[type=email]::before {
     overflow: hidden;
     max-height: 0px;
     transition: max-height .2s;
+    margin: 0px;
 
     ul {
       flex-direction: column;
