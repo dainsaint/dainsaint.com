@@ -14,7 +14,7 @@ settings:
 ## telling stories about the future. together.{.text-display .push-loose}
 
 
-<div class="stack content-default content-flush">
+<div class="stack content-default">
 
 **Futurefull** is a collective of interfuturist artists dreaming through games, performance, and story. We gather to make bold, experimental work centered in collaborative storytelling to imagine liberatory futures—and build the pathways to get there.
 {.text-lede}
