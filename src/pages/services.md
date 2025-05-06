@@ -15,9 +15,10 @@ There are three ways to work with me:
 
 <div class="card stack light" style="--card-background:rgb(97, 5, 51); --primary: rgb(97, 5, 51)">
 
+*For museums, cultural institutions, and creative studios:*
+
 [![Reckless Magic](/assets/uploads/reckless-magic.svg){.color-match}](/reckless-magic)
 
-*For museums, cultural institutions, and creative studios*
 
 Need immersive installation design or narrative experience architecture? [**Reckless Magic**](/reckless-magic) is my professional practice, designing interactive storytelling experiences for URL and IRL.  
 * [See More :fa-angle-right:](/reckless-magic)
@@ -26,9 +27,11 @@ Need immersive installation design or narrative experience architecture? [**Reck
 
 <div class="card stack dark" style="--card-background: #F3CC49; --primary: #F3CC49">
 
+*For marginalized interfuturist artists, storytellers, and creators:*
+
 [![Futurefull](/assets/uploads/futurefull.svg){.color-match}](/futurefull)
 
-*For marginalized interfuturist artists, storytellers, and creators*
+
 
 Want to join a collective exploring speculative futures through games, live performance, and experimentation? [**Futurefull**](/futurefull) is where we come together to tell tomorrow's stories, today.
 * [Say Less :fa-angle-right:](/futurefull)
@@ -37,9 +40,11 @@ Want to join a collective exploring speculative futures through games, live perf
 
 <div class="card stack dark" style="--card-background: var(--light); --primary: var(--light)">
 
+*For creative teams looking for a multidisciplinary collaborator:*
+
 [![Join Forces](/assets/uploads/join-forces.svg){.color-match}](#join-forces)
 
-*For creative teams looking for a multidisciplinary collaborator*
+
 
 Want to team up on a story-driven project? I'll come on board as a performer, GM, composer, or creative partner to help bring interactive worlds to life.
 * [Let's go :fa-angle-down:](#join-forces)
