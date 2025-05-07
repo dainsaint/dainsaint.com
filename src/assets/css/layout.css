@@ -194,6 +194,20 @@ main > .block-smart:first-of-type {
   }
 }
 
+/* SWITCH */
+.switch {
+  --threshold: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  --switch-gap: clamp(var(--gap), calc((var(--threshold) - 100%) * 1000), 5 * var(--gap));
+  gap: var(--gap);
+}
+
+.switch > * {
+  --columns: 1;
+  flex-grow: var(--columns);
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
 
 
 
@@ -349,7 +363,6 @@ main > .block-smart:first-of-type {
 
 
 /* BRICKS */
-
 [class~=bricks],
 [class~=bricks-tiny],
 [class~=bricks-small],
@@ -399,19 +412,7 @@ main > .block-smart:first-of-type {
   gap: var(--gap);
 }
 
-/* SWITCH */
-.switch {
-  --threshold: 30rem;
-  display: flex;
-  flex-wrap: wrap;
-  --switch-gap: clamp( var(--gap), calc((var(--threshold) - 100%) * 1000), 5 * var(--gap));
-  gap: var(--gap);  
-}
 
-.switch > * {
-  flex-grow: 1;
-  flex-basis: calc((var(--threshold) - 100%) * 999);
-}
 
 
 
