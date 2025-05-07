@@ -53,7 +53,7 @@ showcase:
 
   
 
-social: /assets/uploads/space-opera-cover.webp
+social: https://dainsaint.netlify.app/assets/uploads/space-opera-cover.webp
 
 client: Obvious Agency
 year: 2025
