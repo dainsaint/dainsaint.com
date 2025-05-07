@@ -4,12 +4,10 @@ title: reckless magic
 description: storytelling for museums, culture spaces, and the curious
 
 color: "rgb(97, 5, 51)"
-social: ''
+social: https://dainsaint.netlify.app/assets/resized/uploads/rm-social.png
 settings:
   info: false
   class: stack-sparse
-
-social: https://dainsaint.netlify.app/assets/resized/uploads/rm-social.png
 
 tags:
   - reckless-magic
