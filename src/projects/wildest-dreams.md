@@ -54,7 +54,8 @@ awards:
 client: The Philadelphia Inquirer
 year: 2021
 notes: |
-  :icon-emmy: 2022 Mid-Atlantic Emmy
+  :icon-emmy: 2022 Mid-Atlantic Emmy Winner  
+  :fa-medal: 2022 NABJ Salute to Excellence Nominee
 ---
 
 ## The Black imagination is vast.

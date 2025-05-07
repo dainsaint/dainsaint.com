@@ -49,7 +49,7 @@ You're a museum, cultural space, or creative studio with a message that matters.
 * Programs that attract interest, but don’t spark return visits or conversation
 * Complex stories flattened into dry panels or dense reports
 * Narratives that fall short on cultural nuance, authenticity, or community resonance
-* Creative projects that look good but feel hollow, with no energy or emotional buy-in
+* Projects that look good but feel hollow, with no energy or emotional buy-in
 
 You don't just need design — you need magic.
 
