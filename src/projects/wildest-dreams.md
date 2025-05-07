@@ -68,7 +68,7 @@ The Wildest Dreams series is a collaborative mini-anthology of storytelling abou
 
 In this limited series, we are inviting Black folks in Philadelphia to share our stories on our own terms through poetry, essays, music, and film — expressions that honor our ancestors’ dreams and our own.
 
-<div class="tiles content-flush content-wide gap-tight all-rounded">
+<div class="tiles stack-isolate content-wide gap-tight all-rounded">
 {% render blocks, blocks: showcase %}
 </div>
 

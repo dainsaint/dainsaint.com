@@ -7,12 +7,13 @@ color: "rgb(97, 5, 51)"
 social: https://dainsaint.netlify.app/assets/resized/uploads/rm-social.png
 settings:
   info: false
+  constrain: none
   class: stack-sparse
 
 tags:
   - reckless-magic
 ---
-::::: stack
+::::: stack constrain-default
 ![Reckless Magic](/assets/uploads/reckless-magic.svg){.color-match} 
 {.content-wide}
 
@@ -34,7 +35,7 @@ Yo! This is my corporate offering — if you're tryna cook outside of capitalism
 
 
 
-::::: block stack
+::::: block stack constrain-default
 ## you’ve got a message... but no one's feeling it.{.text-title}
 
 You're a museum, cultural space, or creative studio with a message that matters. But you keep getting stuck with:
@@ -114,7 +115,7 @@ Whether you’ve got a half-formed idea or a full team looking for direction, [l
 
 
 
-::::: block stack 
+::::: block stack constrain-default
 ## get you a wizard: {.text-title}
 
 :::: content-wide switch
@@ -169,7 +170,7 @@ Ready to start, or unsure of what you need? [Email me](/email), or [book a free 
 
 
 
-::::: block stack-sparse
+::::: block stack-sparse constrain-wide
 ### Selected Work
 
 {% include work, slug: "space-opera" %}
@@ -180,7 +181,7 @@ Ready to start, or unsure of what you need? [Email me](/email), or [book a free 
 
 
 
-::::: block stack
+::::: block stack constrain-wide
 ### clients and collaborators{.align-center .stack-default}
 
 ![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
@@ -197,5 +198,5 @@ Ready to start, or unsure of what you need? [Email me](/email), or [book a free 
 ![National Air And Space Museum](/assets/uploads/nasm.svg)
 ![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
 ![Ultraleap](/assets/uploads/ultraleap.svg)
-![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .gap-tight .fit-contain .constrain-wide .color-match .light}
+![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .gap-tight .fit-contain .color-match .light}
 :::::

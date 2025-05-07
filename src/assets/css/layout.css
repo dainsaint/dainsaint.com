@@ -64,20 +64,15 @@
 [class~=constrain] > *, 
 [class~=constrain-default]>*,
 [class~=constrain-wide]>*,
-[class~=constrain-full]>*
+[class~=constrain-full]>*,
+[class~=content],
+[class~=content-default],
+[class~=content-wide],
+[class~=content-full]
 {
   --measure: 800px;
   max-inline-size: min(100% - 2 * var(--margin), var(--measure));
   margin-inline: max(calc(50% - 600px), var(--margin)) auto;  
-}
-
-[class~=content],
-[class~=content-default],
-[class~=content-wide],
-[class~=content-full] {
-  --measure: 800px;
-  max-inline-size: min(100%, var(--measure));
-  margin-inline: max(calc(50% - 600px), 0) auto;
 }
 
 .constrain-wide > * {
