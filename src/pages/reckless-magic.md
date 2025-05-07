@@ -12,7 +12,7 @@ settings:
 tags:
   - reckless-magic
 ---
-::::: stack constrain-default content-flush
+::::: stack
 ![Reckless Magic](/assets/uploads/reckless-magic.svg){.color-match} 
 {.content-wide}
 
@@ -34,7 +34,7 @@ Yo! This is my corporate offering — if you're tryna cook outside of capitalism
 
 
 
-::::: block stack constrain-default content-flush
+::::: block stack
 ## you’ve got a message... but no one's feeling it.{.text-title}
 
 You're a museum, cultural space, or creative studio with a message that matters. But you keep getting stuck with:
@@ -49,7 +49,7 @@ You don't just need design — you need magic.
 
 **You need interactive storytelling.**
 
-<details class="card stack content-wide constrain-default">
+<details class="card stack content-wide">
 <summary class="text-overline">
   <strong>what is interactive storytelling?</strong>
 </summary>
@@ -114,10 +114,10 @@ Whether you’ve got a half-formed idea or a full team looking for direction, [l
 
 
 
-::::: block stack constrain-default content-flush
+::::: block stack 
 ## get you a wizard: {.text-title}
 
-:::: content-wide content-flush switch
+:::: content-wide switch
 
 ::: card palette stack-tight
 ### :fa-hand-sparkles: Seer {.text-big}

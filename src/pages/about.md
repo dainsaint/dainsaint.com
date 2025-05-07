@@ -16,7 +16,7 @@ settings:
   focus: "0% 40%"
 %}
 
-::: stack text-lede constrain-default
+::: stack text-lede content-default
 **dain saint** (he/they) is a Philly-based storyteller, designer, and creative director making beautiful immersive experiences. They run [Reckless Magic](/reckless-magic), an interactive storytelling label, and curate [Futurefull](https://futurefull.org), an interfuturist storytelling collective.
 
 In the past, they have produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) as journalist at the Philadelphia Inquirer. 
@@ -26,6 +26,7 @@ They've created [art exhibitions](https://wevetraveledsofar.com) and [museum ins
 As a writer, they released a book of poetry called “[Freedom Is Non-Negotiable”](/freedom-is-non-negotiable), and performed and released music as a [solo artist](/city-dont-sing). 
 
 They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY4?si=qeF6CsxpRI-jK2EaLv851Q).
+:::
 
 ![emmy](/assets/uploads/IMG_8373.jpg){.columns-three .rows-two}
 ![gming space opera](/assets/uploads/6210c93a0861519ea1b72a42b807.JPG){.columns-two .rows-two}
@@ -35,8 +36,7 @@ They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY
 ![game forge five year](/assets/uploads/showcase.jpg){.columns-two}
 ![worldtown shirt](/assets/uploads/0F1CE2AA-22F3-4DCC-B61D-53F30A076E74.JPG)
 ![time philadelphia](/assets/uploads/DSCF1338LG.jpg){.columns-three .rows-two}
-![late night snacks](/assets/uploads/211001_Beardmobile_039.jpg){.columns-three .rows-two} {.tiles .all-rounded .gap-tight .stack-isolate .content-wide .content-flush}
-:::
+![late night snacks](/assets/uploads/211001_Beardmobile_039.jpg){.columns-three .rows-two} {.tiles .all-rounded .gap-tight .stack-isolate .content-wide}
 
 {% hoist "sections" %}
 
