@@ -9,7 +9,7 @@ settings:
   info: false
   class: stack-sparse
 
-social: https://dainsaint.netlify.app/assets/uploads/assets/uploads/rm-social.jpg
+social: https://dainsaint.netlify.app/assets/resized/uploads/rm-social.png
 
 tags:
   - reckless-magic
