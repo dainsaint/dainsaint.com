@@ -23,7 +23,7 @@ tags:
 **Reckless Magic** delivers custom interactive experiences for museums, cultural spaces, and creative studios. 
 {.text-lede}
 
-From immersive installations to event storytelling, together we'll bring together worldbuilding, spatial design, game systems, and sound to create stories people step into — experiences that don’t just inform, but transform.
+From immersive installations to event storytelling, we'll bring together worldbuilding, spatial design, game systems, and sound to create stories people step into — experiences that don’t just inform, but transform.
 
 I’ve spent over fifteen years crafting interactive experiences through games, journalism, exhibitions, and live performance. **Reckless Magic** is the next evolution — a service focused on building narrative-rich installations for cultural spaces ready to dream big.
 
