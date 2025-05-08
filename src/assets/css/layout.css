@@ -372,7 +372,7 @@ main > .block-smart:first-of-type {
   gap: var(--gap);
 
   & > * {
-    flex: 1 1 auto;
+    flex: 1 1;
     inline-size: auto;
     max-block-size: 10rem;
     object-fit: cover;

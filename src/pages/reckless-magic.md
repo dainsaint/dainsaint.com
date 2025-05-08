@@ -198,5 +198,6 @@ Ready to start, or unsure of what you need? [Email me](/email), or [book a free 
 ![National Air And Space Museum](/assets/uploads/nasm.svg)
 ![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
 ![Ultraleap](/assets/uploads/ultraleap.svg)
-![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .gap-tight .fit-contain .color-match .light}
+![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .list-plain .gap-tight .fit-contain .color-match .light}
+
 :::::
