@@ -34,7 +34,7 @@
   <body style="--primary: {{ color }}; {% for chip in design.palette %}--palette-{{forloop.index}}: {{chip.color}}; --contrast-{{forloop.index}}: {{chip.contrast}}; --contrast-alpha-{{forloop.index}}: {{chip.contrastAlpha}};{% endfor %}">
     
     <main>
-      <article class="minimal colorize constrain {{ color | contrast }}">
+      <article class="minimal colorize constrain-wide {{ color | contrast }}">
       {{ content | safe }}
       </article>
     </main>
