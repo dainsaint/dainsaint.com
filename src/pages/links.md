@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
 ::: align-center
 ![dain saint](/assets/uploads/flowers-pic-crop.jpg){.profile}
 # dain saint
-## storyteller, game maker, creator
+## storyteller. creator. accomplice.
 
 * [:fab-bluesky:](https://bsky.app/profile/dainsaint.com) 
 * [:fab-instagram:](https://instagram.com/dainsaint) 
