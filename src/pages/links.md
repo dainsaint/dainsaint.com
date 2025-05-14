@@ -24,7 +24,7 @@ settings:
 
 :::
 
-* [:icon-planet: Space Opera: Get tickets now! *Theatrical TTRPG Premieres June 14!*](https://www.obvious-agency.com/space-opera-details){.highlight}
+* [:icon-planet: Space Opera: Get tickets now! *Theatrical TTRPG Premieres in Philly June 14!*](https://www.obvious-agency.com/space-opera-details){.highlight}
 * [:fa-hand-sparkles: Reckless Magic *Interactives for hire* ](https://recklessmagic.com)
 * [:fa-sprout: Futurefull *Interfuturist Storytelling Collective*](https://dainsaint.com/futurefull)
 * [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable)
