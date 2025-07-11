@@ -41,6 +41,9 @@ an interfuturist storytelling community.
 :::
 ::::
 
+
+{% comment %}
+
 ***
 
 ## upcoming events {.text-overline}
@@ -50,6 +53,8 @@ an interfuturist storytelling community.
 {% render blocks/event, block: event %}
 {% endfor %}
 :::
+
+{% endcomment %}
 
 {% hoist "sections" %}
 
