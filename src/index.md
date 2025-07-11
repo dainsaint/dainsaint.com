@@ -29,7 +29,7 @@ I'm a storyteller creating interactive worlds, immersive events, and collaborati
 
 I run 
 [Reckless Magic](/reckless-magic), 
-an interactive storytelling label, and I'm cultivating 
+an interactive storytelling service, and I'm cultivating 
 [Futurefull](/futurefull), 
 an interfuturist storytelling community.
 :::
