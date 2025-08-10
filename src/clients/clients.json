@@ -1,0 +1,12 @@
+{
+  "layout": "page",
+  "style" : "page",
+  "permalink": "{{ page.filePathStem }}/",
+  "eleventyExcludeFromCollections": true,
+  
+  "settings": {
+    "info": true,
+    "constrain": "wide",
+    "cta": false
+  }
+}
