@@ -12,3 +12,4 @@ package-lock.json
 .netlify
 
 node_modules
+.astro
