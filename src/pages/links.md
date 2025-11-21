@@ -23,9 +23,9 @@ settings:
 {.distribute .inline .text-lede .align-center}
 
 :::
-
-* [:fa-hand-sparkles: Reckless Magic *Interactives for hire* ](https://recklessmagic.com){.highlight}
-* [:fa-sprout: Futurefull *Interfuturist Storytelling Collective*](https://dainsaint.com/futurefull)
+* [:fa-dice-20: Live Event Sat Nov 22nd 6–9PM!](https://www.eventbrite.com/e/an-evening-celebrating-bipoc-queer-voices-in-ttrpg-tickets-1968649143583?aff=oddtdtcreator){.highlight}
+* [:fa-sprout: Futurefull *Interfuturist Storytelling Collective*](https://futurefullstories.com)
+* [:fa-hand-sparkles: Reckless Magic *Interactives for hire* ](https://recklessmagic.com)
 * [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable)
 * [:fa-music: City Don't Sing *Music Video*](https://www.youtube.com/watch?v=GjZa6hSSotM)
 * [:fa-gamepad: Cipher Prime Studios *Ten years of indie games*](https://cipherprime.com)
