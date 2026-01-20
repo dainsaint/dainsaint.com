@@ -1,6 +1,6 @@
 links:
-  - page: the garden
-    url: /garden
+  - page: blog
+    url: /blog
     tags:
       - garden
       - content

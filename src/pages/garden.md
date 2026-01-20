@@ -2,9 +2,9 @@
 layout: index
 style: page
 eleventyExcludeFromCollections: true
-title: "the garden"
+title: "blog"
 description: "my creative feed"
-permalink: "garden/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
+permalink: "blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
 pagination:
   data: collections.content
   size: 5
