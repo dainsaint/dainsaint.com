@@ -16,7 +16,7 @@ I have a few small books, and generally overthink everything.
 {% include showcase-list, projects: "freedom-is-non-negotiable, just-stop", feature: true, label: false %}
 
 ### works in progress{.push-loose}
-I use this site as a way to work and publish discreet thoughts that may or may not end up being compiled into a book.
+I use this site as a way to work and publish discrete thoughts that may or may not end up being compiled into a book.
 
 {% include showcase-list, tags: "read wip", label: false %}
 

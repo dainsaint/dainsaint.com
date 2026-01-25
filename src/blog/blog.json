@@ -1,6 +1,7 @@
 {
   "layout": "page",
   "style": "blog",
+  "color": "#DFE0DF",
   "permalink": "{{ page.fileSlug }}/index.html",
   "tags": [
     "blogs",

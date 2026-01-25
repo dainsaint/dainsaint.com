@@ -3,9 +3,12 @@
 
   <div class="stack-loose constrain-wide">
 
+    {% comment %}
     {% if settings.cta %}
     {% include cta %}
     {% endif %}
+
+    {% endcomment %}
 
     {%- unless not pagination.pages.size -%}
     <div class="pagination-block">
@@ -23,14 +26,17 @@
     {%- endunless -%}
 
 
-    <div>
-      <h3>enjoy a random page</h3>
-      {% assign random = collections.posts | getRandom: page %}
-      <a id="random-post" href="{{ random.url }}">{{ random.data.title }}</a>
-    </div>
-
 
     {% include subscribe %}
+
+<div>
+  <h3>enjoy a random page</h3>
+  {% assign random = collections.posts | getRandom: page %}
+  <a id="random-post" href="{{ random.url }}">{{ random.data.title }}</a>
+</div>
+
+
+
     <div class="grid-medium">
 
       <nav>
@@ -45,9 +51,9 @@
       <nav>
         <h3>my art</h3>
         <ul>
-          <li><a href="/blog">blog</a></li>
-          <li><a href="/projects">projects</a></li>
-          <li><a href="/everything">everything else</a></li>
+          {% for link in navigation.art %}
+          <li><a href="{{link.url}}">{{ link.page }}</a></li>
+          {% endfor %}
         </ul>
       </nav>
 

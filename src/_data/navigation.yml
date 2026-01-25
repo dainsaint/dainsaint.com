@@ -1,24 +1,14 @@
 links:
   - page: blog
-    url: /blog
+    url: https://blog.dainsaint.com
     tags:
       - garden
       - content
   - page: projects
   - page: work with me
-    url: /services
-    tags:
-      - services
-  - page: reckless magic
     url: /reckless-magic
-    tags: 
-      - reckless-magic
-      - optional
-  - page: futurefull
     tags:
-      - optional
-
-  - page: press
+      - reckless-magic
   - page: about
 
 
@@ -32,7 +22,14 @@ oldlinks:
   - page: collab
   - page: store
     url: https://dainsaint.square.site
-
+  # - page: reckless magic
+  #   url: /reckless-magic
+  #   tags: 
+  #     - reckless-magic
+  #     - optional
+  # - page: futurefull
+  #   tags:
+  #     - optional
 
 
 portfolios:
@@ -56,15 +53,25 @@ people:
 
 
 initiatives:
-  - page: reckless magic
-    url: /reckless-magic
   - page: futurefull
-    url: https://futurefull.org
+    url: https://futurefullstories.com
   - page: work with me
     url: /services
   - page: links
     url: /links
+  - page: press
 
+
+art:
+  - page: blog
+    url: https://blog.dainsaint.com
+  - page: projects
+    url: /projects
+  
+  - page: shop
+    url: https://dainsaint.square.site
+  - page: everything else
+    url: /everything
 
 tech: 
   - page: eleventy

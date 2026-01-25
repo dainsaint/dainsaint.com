@@ -14,6 +14,8 @@
       {% assign query = collections.projects | fromFile: post.data.project %}
 
       <div class="post-content stack">
+        
+        
         <header>
           <h1 class="post-title">
             <a href="{{ post.url | url }}">{{ post.data.title }}</a>
@@ -22,6 +24,7 @@
           {% if query %}
           <p class="post-project">part of <a href="{{ query.url | url}}">{{ query.data.title }}</a></p>
           {% endif %}
+
         </header>
 
         <div class="post-content-text stack">
@@ -36,3 +39,5 @@
   </section>
 
 </article>
+
+

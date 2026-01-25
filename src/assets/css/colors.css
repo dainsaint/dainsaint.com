@@ -94,6 +94,19 @@ svg.color-match {
   --color-alpha: var(--contrast-alpha-color);
 }
 
+.palette-2 {
+  --primary: var(--palette-2);
+  --color: var(--contrast-2);
+  --color-alpha: var(--contrast-alpha-2);
+}
+
+a.button.palette {
+  background: var(--primary);
+  color: var(--color);
+  border: 1px solid var(--primary);
+}
+
+
 .keep-alpha {
   background: transparent!important;
 }

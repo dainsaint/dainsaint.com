@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 const Color = require("color");
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginRSS = require("@11ty/eleventy-plugin-rss");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 const yaml = require("js-yaml");
@@ -10,7 +10,6 @@ const pretty = require("pretty");
 const markdown = require("./scripts/markdown");
 
 const posthtml = require("posthtml");
-
 
 
 function lightOrDark(color) {
@@ -51,7 +50,25 @@ function addOptions( eleventy ) {
 
 function addPlugins( eleventy ) {
   // rss plugin
-  eleventy.addPlugin(pluginRss);
+  eleventy.addPlugin(pluginRSS, {
+    type: "rss",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "content",
+      limit: 10,
+    },   
+    metadata: {
+      title: "dain saint",
+      subtitle: "dain has thoughts",
+      language: "en",
+      url: "https://dainsaint.com/",
+      author: {
+        name: "Dain Saint",
+        email: "hello@dainsaint.com"
+      }
+    }
+  });
+
   eleventy.addPlugin(pluginWebc);
 
   //Image transformation
