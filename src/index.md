@@ -22,7 +22,7 @@ feature:
 {.text-overline}
 # I turn stories into experiences. {.text-display}
 
-:::: switch gap-loose
+:::: switch gap
 ::: stack columns-two text-lede
 
 {% include hero, 
