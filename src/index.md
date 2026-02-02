@@ -94,10 +94,11 @@ I'm building [Futurefull](/futurefull), a multicultural hub for experimental int
 ## work with me{.text-display}
 
 
-{% include hero, 
-  url: "/assets/uploads/empty_space.jpg"
-  class: "content-wide"
-  focus: "50% 50%"
+{% include video,
+  src: "/assets/uploads/sizzle-reel.mov"
+  poster: "/assets/uploads/sizzle-poster.jpg"
+  class: "all-rounded hero"
+  alt: "Sizzle Reel"
 %}
 
 {% include showcase, feature: feature %}
@@ -121,11 +122,18 @@ I help mission-driven cultural organizations tell their stories.  In practice, t
 
 
 ::: grid-medium stack-isolate
-{% render testimonial,
+<!-- {% render testimonial,
    body: "Dain helped me get clarity on an important decision I would have struggled back and forth with for weeks... in 15 minutes.", 
    author: "Nicole Forrester"
    title: "Developer/Entrepreneur"
+%} -->
+
+{% render testimonial,
+   body: "Dain is the rare combination of ideas machine, foot soldier, and project manager. Having worked with Dain for over two years to bring our largest project ever to life, I knew that I could always count on Dain to ask the right questions, bring in new and exciting possibilities, and ultimately make sure the work actually got done. I'd work with him again in a heartbeat. ", 
+   author: "Daniel Park"
+   title: "Worker-Owner, Obvious Agency"
 %}
+
 
 {% render testimonial, 
    body: "Dain helped me remember why I was doing all this in the first place, creating a mission statement that I couldn't have said better myself.", 

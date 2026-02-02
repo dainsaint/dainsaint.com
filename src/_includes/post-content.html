@@ -6,15 +6,14 @@
     {% include featured, featured: post.data.featured %}
 
     <div class="post-body">
-      <div class="post-meta">
+      <aside class="post-meta">
         <div class="post-meta-deco color-match" style="background-image: url('/assets/img/deco/{{ post.data.deco }}.webp')">
         </div>
-      </div>
+      </aside>
 
       {% assign query = collections.projects | fromFile: post.data.project %}
 
       <div class="post-content stack">
-        
         
         <header>
           <h1 class="post-title">
@@ -32,10 +31,8 @@
         </div>
 
       </div>
-
-
-
     </div>
+    
   </section>
 
 </article>

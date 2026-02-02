@@ -419,6 +419,14 @@ h1.title, .quote {
 }
 
 
+.video.hero {
+  overflow: hidden;
+  border-radius: .5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 /*
