@@ -14,6 +14,7 @@ settings:
 # dain saint
 ## storyteller. creator. accomplice.
 
+
 * [:icon-browser:](https://dainsaint.com)
 * [:fab-bluesky:](https://bsky.app/profile/dainsaint.com) 
 * [:fab-instagram:](https://instagram.com/dainsaint) 
@@ -23,9 +24,9 @@ settings:
 {.distribute .inline .text-lede .align-center}
 
 :::
-* [:fa-dice-20: Live Event Sat Nov 22nd 6–9PM!](https://www.eventbrite.com/e/an-evening-celebrating-bipoc-queer-voices-in-ttrpg-tickets-1968649143583?aff=oddtdtcreator){.highlight}
+* [:fa-ticket: Let's Play – 24 Hour Interactive Jam! *Sat Mar 28, free to attend!*](https://www.obvious-agency.com/event-details/lets-play-24-hour-interactive-jam){.highlight}
 * [:fa-sprout: Futurefull *Interfuturist Storytelling Collective*](https://futurefullstories.com)
-* [:fa-hand-sparkles: Reckless Magic *Interactives for hire* ](https://recklessmagic.com)
+* [:fa-hand-sparkles: Work with me *Interactives for hire* ](https://dainsaint.com/services)
 * [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable)
 * [:fa-music: City Don't Sing *Music Video*](https://www.youtube.com/watch?v=GjZa6hSSotM)
 * [:fa-gamepad: Cipher Prime Studios *Ten years of indie games*](https://cipherprime.com)
