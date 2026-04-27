@@ -5,8 +5,7 @@ tags:
 - see
 text: ''
 title: we've traveled so far
-description: an interactive exhibition that chronicles the effort of two men working
-  to keep a promise.
+description: immersive exhibit playing with the real, the virtual, and the light in between
 status: |
   [View the full collection](https://wevetraveledsofar.com)
 color: "#333333"
@@ -21,7 +20,6 @@ roles:
   - ":fa-object-group: multimedia production"
   - ":fa-code: creative coding"
   - ":fa-screwdriver-wrench: exhibit fabrication"
-  - ":fa-ticket: event planning"
 
 
 showcase:
@@ -37,7 +35,7 @@ showcase:
 
   - type: image
     src: /assets/uploads/selfie_demo-2.gif
-    class: columns-two rows-three
+    class: columns-two rows-two
 
 
   - type: image
@@ -45,11 +43,8 @@ showcase:
 
   - type: image
     src: /assets/uploads/empty_space.jpg
-    class: columns-three rows-two
+    class: columns-three
 
-
-  - type: image
-    src: /assets/uploads/wtsf-attendee.png
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: space opera
-description: theatrical ttrpg for democratic decision making
+description: massive theatrical role-playing game
 date: 2024-01-22
 color: "#293F6D"
 featured:
@@ -22,6 +22,7 @@ roles:
   - ":fa-pen-fancy: narrative design"
   - ":fa-music: music composition"
   - ":fa-dice-d20: gamemaster"
+
 
 showcase: 
   - type: image
@@ -52,6 +53,9 @@ showcase:
     src: /assets/uploads/space-opera-cover.webp
 
   
+success:
+  - type: image
+    src: /assets/uploads/spop-wizard.jpg
 
 social: https://dainsaint.netlify.app/assets/resized/uploads/space-opera-cover.webp
 
@@ -60,6 +64,11 @@ year: 2025
 bleh: |
   A theatrical TTRPG for democratic decision making for 60+ people.
 
+
+testimonial:
+  body: "Dain is the rare combination of ideas machine, foot soldier, and project manager. Having worked with Dain for over two years to bring our largest project ever to life, I knew that I could always count on Dain to ask the right questions, bring in new and exciting possibilities, and ultimately make sure the work actually got done. I'd work with him again in a heartbeat. " 
+  author: "Daniel Park"
+  title: "Worker-Owner, Obvious Agency"
 
 ---
 

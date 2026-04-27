@@ -35,15 +35,8 @@ showcase:
 
   - type: image
     src: /assets/uploads/wildest-quote-1.jpg
-    class: columns-three rows-two
+    class: columns-three 
 
-  - type: image
-    src: /assets/uploads/time-travelers.png
-    class: columns-three rows-two
-
-  - type: image
-    src: "/assets/uploads/wildest-quote-2.jpg"
-    class: columns-three
 
 
 
@@ -54,6 +47,11 @@ awards:
 client: The Philadelphia Inquirer
 year: 2021
 notes: |
+  :icon-emmy: Mid-Atlantic Emmy Winner  
+  :fa-medal: NABJ Salute to Excellence Nominee
+
+
+saved: |
   :icon-emmy: 2022 Mid-Atlantic Emmy Winner  
   :fa-medal: 2022 NABJ Salute to Excellence Nominee
 ---

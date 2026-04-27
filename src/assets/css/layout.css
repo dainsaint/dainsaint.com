@@ -97,6 +97,7 @@
 
 .content-flush {
   --margin: 0rem;
+  margin-inline: var(--margin);
 }
 
 
@@ -675,4 +676,65 @@ ul.inline {
 
 .all-rounded > * {
   border-radius: .5rem;
+}
+
+.carousel {
+  --gap: 10rem;
+  --gutter: max(calc(50% - 600px), var(--margin));  
+
+  position: relative;
+  
+  .carousel__content {
+    
+    margin-inline-start: max( var(--gutter), 1.25rem );
+
+    overflow-x: scroll;
+    
+    display: flex;
+    position: relative;
+    scroll-snap-type: x;
+    padding-bottom: 1rem;
+
+
+    & > * {
+      flex: 1 0 900px;
+      scroll-snap-align: start;
+      padding-inline-end: var(--gap);
+      width: 900px;
+    }
+
+    .success {
+      width: 900px;
+      height: 300px;
+      max-width: calc( 100vw -  2rem );
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  
+}
+
+
+.ruled {
+  border-top: 2px solid var(--color);
+  border-bottom: 2px solid var(--color);
+}
+
+
+.marquee {
+  margin: 1rem 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  --position: 0;
+  translate: var(--position) 0px;
+  /* animation: marqueeAnimation 1ms linear; */
+  /* animation-timeline: view(); */
+  text-wrap: nowrap;
+}
+
+.marquee-right {
+  translate: calc(-100% + -1 * var(--position)) 0px;
 }

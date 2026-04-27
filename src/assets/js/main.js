@@ -217,3 +217,10 @@ window.addEventListener("pageshow", (e) => {
 });
 
 
+window.addEventListener("scroll", (e) => {
+  const marqueeEls = document.querySelectorAll(".marquee");
+  marqueeEls.forEach(marqueeEl => {
+    marqueeEl.style.setProperty("--position", `-${(window.scrollY / document.body.scrollHeight) * 100}%` );
+  })
+});
+

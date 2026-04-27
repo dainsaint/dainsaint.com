@@ -10,89 +10,78 @@ settings:
   constrain: wide
   cta: true
 
-permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
+permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index-new.html"
 
-
-feature:
-  type: video
-  src: /assets/uploads/wildest.webm
 
 ---
+
+::::: switch gap
+
+
+
+<div class="switch">
+
+<figure class="all-rounded">
+  <img src="assets/uploads/wisteria-pic.jpg" style="height: 100%; object-fit: cover; object-position: 40% 75%"/>
+</figure>
+
+
+
+
+<div class="stack">
+
 ### Hi, I'm Dain Saint
-{.text-overline}
 # I turn stories into experiences. {.text-display}
 
-:::: switch gap
-::: stack columns-two text-lede
+::: text-lede stack
+From co-founding [Cipher Prime Studios](https://cipherprime.com) to directing [Emmy-winning journalism](https://inquirer.com/wildestdreams), I’ve spent nearly twenty years building worlds and sharing truths.
 
-{% include hero, 
-  url: "assets/uploads/wisteria-pic.jpg"
-  class: "content-wide"
-  focus: "50% 25%"
-%}
-
-
-
-I'm a storyteller creating interactive worlds, immersive events, and collaborative stories. Whether it's through [games](/games), [music](/music), [writing](/writing), or [design](/reckless-magic), I create artistic experiences about better futures and the roads we take to get there.
-
-I'm building [Futurefull](/futurefull), a multicultural hub for experimental interactive storytelling.
-
-
+Now, I’m channeling that into [Futurefull](https://futurefull.org), while helping mission-driven orgs bring their wildest ideas to life.
 :::
 
-::: stack
-
+::: card
 {% include subscribe %}
-
 :::
 
-::::
+</div>
+
+</div>
 
 
 {% hoist "sections" %}
 
+{% section "#f7ede2"%}
 
-{% section "#FFF" %}
 
 
-{% assign latest = ghost | first %}
 
-:::: content-wide switch gap-tight
+:::: stack
 
-[![]({{latest.feature_image}})]({{ latest.url }})
+## the best stories are the ones we tell together {.text-display}
 
-<div class="stack" style="display: flex; flex-direction: column; justify-content: center">
+Futurefull is a multicultural hub for artists dreaming through games, performance, and story. 
 
-## [Latest Post]({{ latest.url }}){.text-overline .link-plain}
-### [{{ latest.title }}]({{ latest.url }}){.text-display  .link-plain}
+[Join the community](https://futurefullstories.com){.button}
 
-[{{latest.excerpt}}]({{latest.url}}){ .link-plain }
 
-{{ latest.published_at | date: "%B %e, %Y" }}{.post-project}
-
-[Keep reading :fa-arrow-right:]({{ latest.url }}){.button}
-
-</div>
 
 ::::
 
-{% endsection %}
 
 
 
+<div class="content-full content-flush ruled stack-isolate" style="overflow:hidden">
+  <div class="marquee text-overline">
+    INTERACTIVE SYSTEMS •  NARRATIVE ARCHITECTURE • GAME DESIGN • CREATIVE DIRECTION • THAT WEIRD SHIT • RAPID PROTOTYPING • POETRY • MUSIC • PERFORMANCE • ACTUAL PLAY • INTERACTIVE SYSTEMS •  NARRATIVE ARCHITECTURE • GAME DESIGN • CREATIVE DIRECTION • THAT WEIRD SHIT • RAPID PROTOTYPING • POETRY • MUSIC • PERFORMANCE • ACTUAL PLAY
+  </div>
+</div>
 
 
-{% section "rgb(97, 5, 51)" %}
-
-
+### your creative accomplice 
+## work with me {.text-display}
 
 
 ::::: content-wide stack
-
-
-
-## work with me{.text-display}
-
 
 {% include video,
   src: "/assets/uploads/sizzle-reel.mov"
@@ -101,51 +90,65 @@ I'm building [Futurefull](/futurefull), a multicultural hub for experimental int
   alt: "Sizzle Reel"
 %}
 
-{% include showcase, feature: feature %}
+:::: content content-flush stack
 
-:::: switch gap-loose
-
-::: stack columns-two text-lede
-I help mission-driven cultural organizations tell their stories.  In practice, that often looks like brand identity, interactive design, and immersive experiences.
+I produce one-of-a-kind interactive experiences both on and offline. In practice, that often looks like interactive design, visual identity, and immersive performances.
 {.text-lede}
+
+I work primarily with mission-driven orgs and the studios that serve them. I don't do mindless corporate marketing. I do occasionally take projects just because they seem like fun, because joy is a human right.
+
+Whether you need a quick clarity sprint, a rapid prototype, or a full creative partnership, I'm ready to roll up my sleeves.
+
+
+
+
+
+:::: 
+
+
+:::: content-wide content-flush switch gap-tight
+
+
+
+::: card palette stack-tight text-center
+
+### :fa-gamepad: Over 40 Game Industry Awards {.text-big}
 :::
 
-::: stack
-[See My Work :fa-arrow-right: ](/reckless-magic){.button .size-full .highlight}
+::: card palette stack-tight
+### :fa-newspaper: Over a dozen News Design Awards {.text-big}
 :::
 
+::: card palette stack-tight
+### :fa-cat: one gray cat{.text-big}
+:::
 ::::
 
 
 
+:::::
+
+<div class="push-sparse"></div>
+
+### Selected Projects
+::::: content-full content-flush carousel
+
+<div class="carousel__content">
+{% include work, slug: "space-opera" %}
+{% include work, slug: "the-philly-download" %}
+{% include work, slug: "wildest-dreams" %}
+{% include work, slug: "weve-traveled-so-far" %}
+</div>
+:::::
 
 
 
-::: grid-medium stack-isolate
-<!-- {% render testimonial,
-   body: "Dain helped me get clarity on an important decision I would have struggled back and forth with for weeks... in 15 minutes.", 
-   author: "Nicole Forrester"
-   title: "Developer/Entrepreneur"
-%} -->
-
-{% render testimonial,
-   body: "Dain is the rare combination of ideas machine, foot soldier, and project manager. Having worked with Dain for over two years to bring our largest project ever to life, I knew that I could always count on Dain to ask the right questions, bring in new and exciting possibilities, and ultimately make sure the work actually got done. I'd work with him again in a heartbeat. ", 
-   author: "Daniel Park"
-   title: "Worker-Owner, Obvious Agency"
-%}
-
-
-{% render testimonial, 
-   body: "Dain helped me remember why I was doing all this in the first place, creating a mission statement that I couldn't have said better myself.", 
-   author: "Kevin Seidman" 
-   title: "Comic Creator"
-%}
-:::
-
-::: block stack constrain-wide stack-isolate
-### clients and collaborators{.align-center .stack-default}
+<div class="content-full content-flush ruled stack-isolate" style="overflow:hidden">
 
 ![The Philly Download](/assets/uploads/thephillydownload.svg)
+![Klip Collective](/assets/uploads/klip.png)
+![Bluecadet](/assets/uploads/bluecadet.svg) 
+![National Air And Space Museum](/assets/uploads/nasm.svg)
 ![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
 ![Game Developers Conference](/assets/uploads/gdc.svg)
 ![The Philadelphia Inquirer](/assets/uploads/inquirer.svg)
@@ -153,36 +156,79 @@ I help mission-driven cultural organizations tell their stories.  In practice, t
 ![Indiecade](/assets/uploads/indiecade.webp)
 ![Indy Hall](/assets/uploads/indyhall.png)
 ![Bearded Ladies Cabaret](/assets/uploads/beardedladies.png)
-![Klip Collective](/assets/uploads/klip.png)
-![Bluecadet](/assets/uploads/bluecadet.svg)
 ![Obvious Agency](/assets/uploads/obviousagency.webp)
 ![REC Philly](/assets/uploads/recphilly.svg)
-![National Air And Space Museum](/assets/uploads/nasm.svg)
 ![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
 ![Ultraleap](/assets/uploads/ultraleap.svg)
-![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .list-plain .gap-tight .fit-contain .color-match .light}
+![World Cafe Live](/assets/uploads/worldcafelive.png) 
+![The Philly Download](/assets/uploads/thephillydownload.svg)
+![Klip Collective](/assets/uploads/klip.png)
+![Bluecadet](/assets/uploads/bluecadet.svg) 
+![National Air And Space Museum](/assets/uploads/nasm.svg)
+![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
+![Game Developers Conference](/assets/uploads/gdc.svg)
+![The Philadelphia Inquirer](/assets/uploads/inquirer.svg)
+![Glbl Vllg](/assets/uploads/glblvllg.png)
+![Indiecade](/assets/uploads/indiecade.webp)
+![Indy Hall](/assets/uploads/indyhall.png)
+![Bearded Ladies Cabaret](/assets/uploads/beardedladies.png)
+![Obvious Agency](/assets/uploads/obviousagency.webp)
+![REC Philly](/assets/uploads/recphilly.svg)
+![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
+![Ultraleap](/assets/uploads/ultraleap.svg)
+![World Cafe Live](/assets/uploads/worldcafelive.png) {.bricks-tiny .list-plain .gap-loose .fit-contain .color-match .marquee .marquee-right}
 
-:::
+</div>
 
 
+
+
+## What people say {.text-display}
+::::: content-full content-flush carousel
+
+<div class="carousel__content">
+ 
+{% render testimonial,
+   body: "Dain is the rare combination of ideas machine, foot soldier, and project manager. Having worked with Dain for over two years to bring our largest project ever to life, I knew that I could always count on Dain to ask the right questions, bring in new and exciting possibilities, and ultimately make sure the work actually got done. I'd work with him again in a heartbeat. ", 
+   author: "Daniel Park"
+   title: "Worker-Owner, Obvious Agency"
+%}
+
+{% render testimonial,
+   body: "Dain reset our servers and rebuilt our site. Black Philadelphians couldn’t have higher standards for what looks good, and every platform changes and calls for its own level of care. But we have only received glowing feedback on our design aesthetic. That Dain made the dream possible doesn’t just speak to the months of work he poured into this, it speaks to polymathic skill.", 
+   author: "Cassie Owens"
+   title: "Editor-In-Chief & Executive Director, The Philly Download"
+%}
+
+{% render testimonial, 
+   body: "Working with Dain was a phenomenal experience. Dain helped me remember why I was doing all this in the first place, creating a mission statement that I couldn't have said better myself. His help and guidance provided me with almost immediate results.", 
+   author: "Kevin Seidman" 
+   title: "Independent Comic Creator"
+%}
+
+
+</div>
 :::::
-
 
 {% endsection %}
 
 
+{% section "#111" %}
+
+<h2 class="text-display  js-quote-animated" data-quotes="magical|fa-hand-sparkles, musical|fa-music, memorable|fa-bookmark, meaningful|fa-hands-clapping, mythical|fa-hat-wizard">
+  Let's make something <strong></strong> together
+</h2>
+
+### Currently booking for Summer 2026
+
+
+If you don't have a big budget, and we're mission-aligned, I still wanna hear about it! I’m open to barter, skill swaps, mutual aid, co-creation—anything rooted in trust and care. Let’s figure out what feels fair for both of us.
+
+[let's collab :icon-fist-bump:](){.button}
 
 
 
-
-
-
-
-
-
-
-
-
+{% endsection %}
 
 
 
@@ -197,24 +243,19 @@ I help mission-driven cultural organizations tell their stories.  In practice, t
 <style type="text/css">
   #main {
     padding-block-end: 2rem;
+    /* background: url("assets/uploads/wisteria-pic.jpg") top center no-repeat;
+    background-size: cover;
+    padding-block-start: calc( 30dvh + 6rem );
+    margin-block-start: -6rem;
+    z-index: 0; */
   }
+
+  /* header {
+    z-index: 4;
+    position: relative;
+  } */
 </style>
 
 {% endhoist %}
 
 
-
-
-{% comment %}
-
-***
-
-## upcoming events {.text-overline}
-
-::: switch gap-tight
-{% for event in events %}
-{% render blocks/event, block: event %}
-{% endfor %}
-:::
-
-{% endcomment %}

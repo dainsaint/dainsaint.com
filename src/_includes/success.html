@@ -1,0 +1,39 @@
+{%- if slug -%}
+{% assign post = collections.all | fromFile: slug %}
+{%- endif -%}
+
+<div class="showcase">
+  <div class="stack-tight">
+    <div class="stack-dense">    
+      <h3 class="project-title text-display">{{ post.data.title }}</h3>
+      <div class="project-description">
+        {{ post.data.description}}
+      </div>
+    </div>
+
+
+    {% include tags, tags: post.data.roles %}
+
+
+    <div>
+
+    </div>
+
+    <figure class="success all-rounded">
+      <img src="{{ post.data.success[0].src }}"/>
+    </figure>
+
+    
+    <div class="text-overline">
+      <strong>{{ post.data.client }}</strong>
+      {% if post.data.notes %}
+        {{ post.data.notes }}
+      {% endif %}
+    </div>
+    
+
+
+  </div>
+
+</div>
+

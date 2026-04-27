@@ -30,6 +30,7 @@ h1, h2, h3, h4 {
   margin: 0px;
   font-weight: 700;
   line-height: 1;
+  text-wrap: pretty;
 }
 
 h1 {
@@ -1147,7 +1148,7 @@ input[type=email]::before {
 
 
 blockquote p{
-  font-style: italic;
+  /* font-style: italic; */
   display: flex;
   align-items: baseline;
   gap: .5rem;
@@ -1270,14 +1271,20 @@ blockquote p{
 .animate-words {
   position: relative;
   height: 2.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-width: 350px;
+  display: block;
 
   .word {
     position: absolute;
     -webkit-font-smoothing: antialiased;
     width: 100%;
     left: 0px;
+    
+
+    b {
+      font-weight: normal
+    }
 
     i {
       margin-inline-start: 1rem;
@@ -1288,20 +1295,22 @@ blockquote p{
       translate: 0 2.6rem;
       animation: none;
       z-index: 1;
+      opacity: 0;
     }
 
     &:first-child > * {
       translate: 0 0rem;
+      opacity: 1;
     }
 
     &.is-dial-in > * {
       translate: 0 2.6rem;
-      animation: dial-in .3s forwards;
+      animation: dial-in .3s both;
     }
 
     &.is-dial-out > * {
       translate: 0 0rem;
-      animation: dial-out .3s forwards;
+      animation: dial-out .3s both;
     }
 
   }

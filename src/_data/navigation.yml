@@ -1,15 +1,8 @@
 links:
   - page: blog
     url: https://blog.dainsaint.com
-    tags:
-      - garden
-      - content
-  - page: projects
-  - page: work with me
-    url: /reckless-magic
-    tags:
-      - reckless-magic
   - page: about
+  - page: contact
 
 
 

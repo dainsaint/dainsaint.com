@@ -1,4 +1,15 @@
 
+- name: "SND47 Award of Excellence (Digital: Single URL)"
+  for: Out of Step
+  when: April 2026
+  urls:
+    project: https://www.inquirer.com/crime/inq2/juvenile-detention-philly-data-comparison-20250114.html
+    portfolio: https://dainsaint.com/out-of-step
+    award: https://snd.org/results/
+  notes: |
+   
+
+
 - name: SND46 Bronze Medal (Breaking News)
   for: Horse 95
   when: April 2025

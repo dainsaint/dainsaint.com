@@ -20,6 +20,8 @@ roles:
   - ":fa-desktop: website production"
   - ":fa-object-group: multimedia production"
 
+size: ":icon-forest: forest"
+
 showcase: 
   - type: video
     src: /assets/uploads/iconic-bkg.webm
