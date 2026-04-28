@@ -692,20 +692,39 @@ ul.inline {
     
     display: flex;
     position: relative;
-    scroll-snap-type: x;
-    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2rem;
 
 
     & > * {
-      flex: 1 0 900px;
+      flex: 1 0 min(100vw, 900px);
       scroll-snap-align: start;
-      padding-inline-end: var(--gap);
-      width: 900px;
+      margin-inline-end: var(--gap);
     }
 
     .tiles {
       width: 900px;
       max-width: calc( 100vw -  2rem );
+    }
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #FFFFFF;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--branding);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: var(--highlight);
     }
   }
   

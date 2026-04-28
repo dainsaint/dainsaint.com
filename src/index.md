@@ -39,7 +39,7 @@ make your most vital stories<br/><span style="font-size: 4rem">impossible to ign
 I'm an interactive experience designer and creative consultant who remembers when "storytelling" didn't mean "advertising."
 :::
 
-From co-founding [Cipher Prime Studios](https://cipherprime.com) to directing [Emmy-winning journalism](https://inquirer.com/wildestdreams), I’ve spent nearly twenty years building worlds and sharing truths.
+From co-founding [Cipher Prime Studios](https://cipherprime.com) to producing [Emmy-winning journalism](https://inquirer.com/wildestdreams), I’ve spent nearly twenty years building worlds and sharing truths.
 
 Now, I’m channeling that into [Futurefull](https://futurefullstories.com), and helping mission-driven orgs bring their wildest ideas to life.
 
