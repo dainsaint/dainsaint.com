@@ -17,7 +17,9 @@ settings:
 %}
 
 ::: stack text-lede content-default
-**dain saint** (they/he) is a Philly-based storyteller, designer, and creative director making beautiful immersive experiences. They run [Reckless Magic](/reckless-magic), an interactive storytelling label, and curate [Futurefull](https://futurefull.org), an interfuturist storytelling collective.
+# your creative accomplice {.text-display}
+
+**dain saint** (they/he) is a Philly-based storyteller, designer, and creative director making beautiful immersive experiences. They are currently building [Futurefull](https://futurefullstories.com), an interfuturist storytelling collective.
 
 In the past, they have produced over a dozen commercially-released games as co-founder of [Cipher Prime Studios](https://cipherprime.com), written [soundtracks](/composing) for the same, and directed [Emmy-award winning editorial series](https://inquirer.com/wildestdreams) as journalist at the Philadelphia Inquirer. 
 
@@ -39,9 +41,25 @@ They are a [massive nerd](https://open.spotify.com/episode/6hQ97u9zBcIeSTl6EOGuY
 ![late night snacks](/assets/uploads/211001_Beardmobile_039.jpg){.columns-three .rows-two} {.tiles .all-rounded .gap-tight .stack-isolate .content-wide}
 
 {% hoist "sections" %}
+<!-- {% section %}
+
+## performer {.text-display}
+I'm a performing poet, musician, and game master.
+
+{% endsection %}
 
 {% section %}
-# press
+
+## speaker {.text-display}
+
+I have spoken at GDC, NYU Game Lab, and Narrascope. I frequently give talks on game system design, humanism, and how they intersect. [Reach out](/email) to book me for speaking engagements.
+
+
+
+{% endsection %} -->
+
+{% section %}
+## press {.text-display}
 
 {% assign articles = press | tagged: "-podcast" | sort: "date" | reverse %}
 {% assign podcasts = press | tagged: "podcast" | sort: "date" | reverse %}

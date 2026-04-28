@@ -703,15 +703,9 @@ ul.inline {
       width: 900px;
     }
 
-    .success {
+    .tiles {
       width: 900px;
-      height: 300px;
       max-width: calc( 100vw -  2rem );
-      overflow: hidden;
-
-      img {
-        object-fit: cover;
-      }
     }
   }
   

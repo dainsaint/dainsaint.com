@@ -3,7 +3,7 @@
   font-family: var(--font-accent);
   font-weight: normal;
   letter-spacing: normal;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   line-height: 1;
 
   a {
@@ -18,6 +18,10 @@
 .text-lede {
   font-size: 1.3rem;
   text-wrap: pretty;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
 }
 
 .text-title {

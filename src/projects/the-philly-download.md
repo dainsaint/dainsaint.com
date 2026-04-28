@@ -1,6 +1,6 @@
 ---
 title: the philly download
-description: hyperlocal news organization serving Black philadelphians.
+description: brand relaunch for a hyperlocal news organization serving Black philadelphians
 date: 2025-08-26
 color: "#293F6D"
 featured:
@@ -21,23 +21,21 @@ roles:
 
 
 showcase: 
+  - type: video
+    src: /assets/uploads/tpd-branding.mp4
+    class: columns-three rows-two
+    
   - type: image
     src: /assets/uploads/tpd-lockup.png
     class: columns-three
 
-
   - type: image
     src: /assets/uploads/the-download-postcard.jpg
-    class: columns-two rows-two
         
   - type: video
-    src: /assets/uploads/download-end-card.webm
-    class: columns-one
-
-
-  - type: image
-    src: /assets/uploads/spop-willpower.jpg 
+    src: /assets/uploads/the-download-end-card.mp4
     class: columns-two
+
 
 
   

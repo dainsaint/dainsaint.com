@@ -1,6 +1,6 @@
 ---
 title: space opera
-description: massive theatrical role-playing game
+description: theatrical role-playing game for more than forty players
 date: 2024-01-22
 color: "#293F6D"
 featured:
@@ -30,9 +30,6 @@ showcase:
     class: columns-two rows-two
 
 
-  - type: image
-    src: /assets/uploads/6210c93a0861519ea1b72a42b807.jpg 
-    class: rows-two
 
   # - type: testimonial
   #   body: "Dain has a big coat and says a lot of words."
@@ -40,17 +37,25 @@ showcase:
   #   title: "Director"
   #   class: columns-two
 
-  - type: image
-    src: /assets/uploads/spop-willpower.jpg 
-    class: columns-two
+  # - type: image
+  #   src: /assets/uploads/spop-willpower.jpg 
+  #   class: columns-two
 
   - type: image
-    src: /assets/uploads/spop-table.png
-    class: columns-three
+    src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-79 Medium.jpeg
+    class: columns-two 
+
+  - type: image
+    src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-62 Medium.jpeg
+    class: columns-two rows-two
+
+  - type: image
+    src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-80 Medium.jpeg 
+    class: columns-two 
 
   
-  - type: image
-    src: /assets/uploads/space-opera-cover.webp
+  # - type: image
+  #   src: /assets/uploads/space-opera-cover.webp
 
   
 success:

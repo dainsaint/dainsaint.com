@@ -10,10 +10,14 @@ settings:
   constrain: wide
   cta: true
 
-permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index-new.html"
+permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
 
 
 ---
+
+<h1 class="text-display" style="text-wrap: balance; font-size: 2.5rem">
+make your most vital stories<br/><span style="font-size: 4rem">impossible to ignore</span>
+</h1>
 
 ::::: switch gap
 
@@ -30,14 +34,15 @@ permalink: "/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/
 
 <div class="stack">
 
-### Hi, I'm Dain Saint
-# I turn stories into experiences. {.text-display}
 
 ::: text-lede stack
+I'm an interactive experience designer and creative consultant who remembers when "storytelling" didn't mean "advertising."
+:::
+
 From co-founding [Cipher Prime Studios](https://cipherprime.com) to directing [Emmy-winning journalism](https://inquirer.com/wildestdreams), I’ve spent nearly twenty years building worlds and sharing truths.
 
-Now, I’m channeling that into [Futurefull](https://futurefull.org), while helping mission-driven orgs bring their wildest ideas to life.
-:::
+Now, I’m channeling that into [Futurefull](https://futurefullstories.com), and helping mission-driven orgs bring their wildest ideas to life.
+
 
 ::: card
 {% include subscribe %}
@@ -53,19 +58,23 @@ Now, I’m channeling that into [Futurefull](https://futurefull.org), while help
 {% section "#f7ede2"%}
 
 
+<div class="switch content-wide">
 
+  
+  <a class="all-rounded" href="https://futurefullstories.com"><img src="/assets/uploads/futurefull-icon.jpg"/></a>
+  
 
-:::: stack
+  <div class="stack columns-two" style="align-self: center">
 
-## the best stories are the ones we tell together {.text-display}
+  ## the very best stories are the ones we tell together {.text-display}
 
-Futurefull is a multicultural hub for artists dreaming through games, performance, and story. 
+  [Futurefull](https://futurefullstories.com) is a multicultural hub for artists dreaming through games, performance, and story. {.text-lede}
 
-[Join the community](https://futurefullstories.com){.button}
+  [Join the community :fa-users:](https://futurefullstories.com){.button}
 
+  </div>
 
-
-::::
+</div>
 
 
 
@@ -95,9 +104,9 @@ Futurefull is a multicultural hub for artists dreaming through games, performanc
 I produce one-of-a-kind interactive experiences both on and offline. In practice, that often looks like interactive design, visual identity, and immersive performances.
 {.text-lede}
 
-I work primarily with mission-driven orgs and the studios that serve them. I don't do mindless corporate marketing. I do occasionally take projects just because they seem like fun, because joy is a human right.
+I work primarily with mission-driven orgs and the studios that serve them. I don't do unethical corporate marketing. I do occasionally take projects just because they seem like fun, because joy is a human right.
 
-Whether you need a quick clarity sprint, a rapid prototype, or a full creative partnership, I'm ready to roll up my sleeves.
+Prototyping something quick? Designing an exhibition? Need a full-stack creative director? I'm game if you are.
 
 
 
@@ -145,22 +154,23 @@ Whether you need a quick clarity sprint, a rapid prototype, or a full creative p
 
 <div class="content-full content-flush ruled stack-isolate" style="overflow:hidden">
 
+
+![Glbl Vllg](/assets/uploads/glblvllg.png)
+![Ultraleap](/assets/uploads/ultraleap.svg)
+![World Cafe Live](/assets/uploads/worldcafelive.png) 
 ![The Philly Download](/assets/uploads/thephillydownload.svg)
 ![Klip Collective](/assets/uploads/klip.png)
 ![Bluecadet](/assets/uploads/bluecadet.svg) 
-![National Air And Space Museum](/assets/uploads/nasm.svg)
-![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
 ![Game Developers Conference](/assets/uploads/gdc.svg)
+![Dream Syndicate](/assets/uploads/dreamsyndicate.svg)
+![National Air And Space Museum](/assets/uploads/nasm.svg)
 ![The Philadelphia Inquirer](/assets/uploads/inquirer.svg)
-![Glbl Vllg](/assets/uploads/glblvllg.png)
+![REC Philly](/assets/uploads/recphilly.svg)
 ![Indiecade](/assets/uploads/indiecade.webp)
+![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
 ![Indy Hall](/assets/uploads/indyhall.png)
 ![Bearded Ladies Cabaret](/assets/uploads/beardedladies.png)
 ![Obvious Agency](/assets/uploads/obviousagency.webp)
-![REC Philly](/assets/uploads/recphilly.svg)
-![Opera Philadelphia](/assets/uploads/operaphiladelphia.png)
-![Ultraleap](/assets/uploads/ultraleap.svg)
-![World Cafe Live](/assets/uploads/worldcafelive.png) 
 ![The Philly Download](/assets/uploads/thephillydownload.svg)
 ![Klip Collective](/assets/uploads/klip.png)
 ![Bluecadet](/assets/uploads/bluecadet.svg) 
@@ -183,7 +193,7 @@ Whether you need a quick clarity sprint, a rapid prototype, or a full creative p
 
 
 
-## What people say {.text-display}
+## what people say {.text-display}
 ::::: content-full content-flush carousel
 
 <div class="carousel__content">
@@ -213,10 +223,10 @@ Whether you need a quick clarity sprint, a rapid prototype, or a full creative p
 {% endsection %}
 
 
-{% section "#111" %}
+{% section "rgb(97, 5, 51)" %}
 
-<h2 class="text-display  js-quote-animated" data-quotes="magical|fa-hand-sparkles, musical|fa-music, memorable|fa-bookmark, meaningful|fa-hands-clapping, mythical|fa-hat-wizard">
-  Let's make something <strong></strong> together
+<h2 class="text-display  js-quote-animated" data-quotes="magical|fa-hand-sparkles, musical|fa-music, memorable|fa-book-bookmark, meaningful|fa-hands-clapping, mythical|fa-hat-wizard">
+  let's make something <strong></strong> together
 </h2>
 
 ### Currently booking for Summer 2026
@@ -224,7 +234,7 @@ Whether you need a quick clarity sprint, a rapid prototype, or a full creative p
 
 If you don't have a big budget, and we're mission-aligned, I still wanna hear about it! I’m open to barter, skill swaps, mutual aid, co-creation—anything rooted in trust and care. Let’s figure out what feels fair for both of us.
 
-[let's collab :icon-fist-bump:](){.button}
+[let's collab :icon-fist-bump:](/contact){.button}
 
 
 
