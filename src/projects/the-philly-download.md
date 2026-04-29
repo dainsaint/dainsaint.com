@@ -18,6 +18,7 @@ tags:
 roles:
   - ":fa-fingerprint: visual identity"
   - ":icon-browser: web design"
+  - ":fa-mobile: social media design"
 
 
 showcase: 

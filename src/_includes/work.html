@@ -5,18 +5,10 @@
 <div class="showcase">
   <div class="stack-tight">
     <div class="stack-dense">    
-      <h3 class="project-title text-display text-lowercase">{{ post.data.title }}</h3>
-      <div class="project-description">
+      <h3 class="project-title text-display text-lowercase" style="font-size: 1.75rem">{{ post.data.title }}</h3>
+      <div class="project-description" style="text-wrap: pretty">
         {{ post.data.description}}
       </div>
-    </div>
-
-
-    {% include tags, tags: post.data.roles %}
-
-
-    <div>
-
     </div>
 
     <div class="tiles gap-tight all-rounded">
@@ -31,7 +23,7 @@
       {% endif %}
     </div>
     
-
+    {% include tags, tags: post.data.roles %}
 
   </div>
 </div>

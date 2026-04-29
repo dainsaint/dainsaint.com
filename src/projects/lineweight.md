@@ -18,9 +18,34 @@ featured:
       - /assets/uploads/lineweight-splash.jpg
 social: ''
 
-showcase:
-  - /assets/uploads/lineweight.webp
-  - /assets/uploads/lineweight1.jpg
+
+roles:
+  - ":fa-layer-group: game design"
+  - ":fa-code: game programming"
+  - ":fa-pen-fancy: writing"
+  - ":fa-music: music composition"
+  
+  
+
+showcase: 
+
+
+
+  - type: image
+    src: /assets/uploads/lineweight1.jpg
+    class: columns-two rows-two
+
+  - type: image
+    src: /assets/uploads/lineweight2.jpg
+    class: columns-two rows-two
+
+  - type: image
+    src: /assets/uploads/lineweight.gif
+    class: columns-two
+  
+  - type: image
+    src: /assets/uploads/lineweight4.jpg
+    class: columns-two
 
 client: Cipher Prime Studios
 year: 2020

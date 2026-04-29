@@ -1,6 +1,6 @@
 ---
 title: wildest dreams
-description: an anthology of black inheritance
+description: an anthology of Black inheritance
 date: 2021-09-15T04:00:00.000+00:00
 status: |
   * [:fa-newspaper: read the series](https://inquirer.com/wildestdreams)

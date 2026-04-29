@@ -1,6 +1,6 @@
 ---
 title: space opera
-description: theatrical role-playing game for more than forty players
+description: futuristic theatrical tabletop role-playing game for ensemble play
 date: 2024-01-22
 color: "#293F6D"
 featured:

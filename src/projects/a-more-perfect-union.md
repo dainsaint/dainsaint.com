@@ -27,9 +27,6 @@ showcase:
     src: /assets/uploads/iconic-bkg.webm
     class: columns-four rows-two
   - type: image
-    src: /assets/uploads/elam-vert.jpg
-    class: columns-two rows-three
-  - type: image
     src: /assets/uploads/ampu.png
     class: columns-two
   - type: image

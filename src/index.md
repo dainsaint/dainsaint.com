@@ -146,6 +146,8 @@ Prototyping something quick? Designing an exhibition? Need a full-stack creative
 {% include work, slug: "space-opera" %}
 {% include work, slug: "the-philly-download" %}
 {% include work, slug: "wildest-dreams" %}
+{% include work, slug: "a-more-perfect-union" %}
+{% include work, slug: "lineweight" %}
 {% include work, slug: "weve-traveled-so-far" %}
 </div>
 :::::
