@@ -16,7 +16,7 @@ settings:
 </figure>
 
 <div class="stack">
-<h2 class="text-display  js-quote-animated" data-quotes="magical|fa-hand-sparkles, musical|fa-music, memorable|fa-book-bookmark, meaningful|fa-hands-clapping, mythical|fa-hat-wizard">
+<h2 class="text-display  js-quote-animated" data-quotes="magical|fa-hand-sparkles, musical|fa-music, memorable|fa-fire, meaningful|fa-hands-clapping, mythical|fa-hat-wizard">
   let's make something <strong></strong> together
 </h2>
 
