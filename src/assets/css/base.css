@@ -1149,15 +1149,23 @@ input[type=email]::before {
 
 blockquote p{
   /* font-style: italic; */
-  display: flex;
-  align-items: baseline;
+  /* display: flex; */
+  /* align-items: baseline; */
   gap: .5rem;
+  padding-left: 1.5rem;
+  position: relative;
 
-  &::before {
+  &:first-of-type::before {
     content: '\f10d';
     display: block;
     font: var(--fa-font-solid);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
   }
+
+
 }
 
 .testimonial {
