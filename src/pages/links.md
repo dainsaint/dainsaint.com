@@ -1,7 +1,7 @@
 ---
 layout: minimal
 title: links
-color: "#573E79"
+color: "#161616"
 eleventyExcludeFromCollections: true
 settings:
   constrain: wide
@@ -15,22 +15,18 @@ settings:
 ## storyteller. creator. accomplice.
 
 
-* [:icon-browser:](https://dainsaint.com)
-* [:fab-bluesky:](https://bsky.app/profile/dainsaint.com) 
-* [:fab-instagram:](https://instagram.com/dainsaint) 
-* [:fab-youtube:](https://youtube.com/u/dainsaint)
-* [:fab-spotify:](https://open.spotify.com/album/7rI2txbcBUNoWtF6S2bwsJ?si=0k-KMYpDSASecGR0gsGlkg)
+* [:fab-instagram-square:](https://instagram.com/dainsaint) 
+* [:fab-threads:](https://threads.com/dainsaint.com) 
 * [:fa-store:](https://dainsaint.square.site)
 {.distribute .inline .text-lede .align-center}
 
 :::
-* [:fa-ticket: Let's Play – 24 Hour Interactive Jam! *Sat Mar 28, free to attend!*](https://www.obvious-agency.com/event-details/lets-play-24-hour-interactive-jam){.highlight}
-* [:fa-sprout: Futurefull *Interfuturist Storytelling Collective*](https://futurefullstories.com)
-* [:fa-hand-sparkles: Work with me *Interactives for hire* ](https://dainsaint.com/services)
-* [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable)
-* [:fa-music: City Don't Sing *Music Video*](https://www.youtube.com/watch?v=GjZa6hSSotM)
-* [:fa-gamepad: Cipher Prime Studios *Ten years of indie games*](https://cipherprime.com)
-{.buttons .align-left}
+* [:fa-hand-sparkles: Work with me *creative clarity for cultural orgs* ](https://dainsaint.com){.dain}
+* [:fa-sprout: Futurefull *Empowering interfuturist storytellers*](https://futurefullstories.com){.futurefull}
+* [:fa-gamepad: Cipher Prime Studios *award-winning arthouse indie games*](https://cipherprime.com){.cipherprime}
+* [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable){.freedom}
+* [:fa-music: City Don't Sing *Music Video*](https://www.youtube.com/watch?v=GjZa6hSSotM){.city}
+{.buttons .align-left .palette}
 
 ### Newsletter
 {% include subscribe-form %}
@@ -41,11 +37,53 @@ settings:
 <style>
   .buttons li {
     line-height: 1.5;
+    font-size: 1rem;
   }
+  
+  .buttons li a{
+    font-weight: normal;
+    font-family: "Elgraine Black Italic";
+    text-transform: lowercase;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+
   .buttons em {
+    font-family: "Raleway";
+    font-size: 1rem;
     display: block;
-    font-weight: 100;
+    font-weight: 500;
     font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
   }
+  
+  .dain {
+    --primary: #573E79;
+  }
+
+  .futurefull {
+    --primary: #F3CC49;
+    --color: #062535;
+  }
+
+  .cipherprime {
+    --primary: var(--highlight)
+  }
+
+  .freedom {
+    --primary: #C9334A;
+  }
+  
+  .city {
+    --primary: #062535;
+  }
+
+  .buttons li a:hover  {
+    background: #f7ede2;
+    color: #062535;
+  }
+
+  
 </style>
 {% endhoist %}

@@ -100,7 +100,7 @@ svg.color-match {
   --color-alpha: var(--contrast-alpha-2);
 }
 
-a.button.palette {
+a.button.palette, .buttons.palette a, .buttons a.palette {
   background: var(--primary);
   color: var(--color);
   border: 1px solid var(--primary);
