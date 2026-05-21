@@ -14,14 +14,14 @@ settings:
 # dain saint
 ## storyteller. creator. accomplice.
 
-
-* [:fab-instagram-square:](https://instagram.com/dainsaint) 
+* [:fa-link:](https://dainsaint.com)  
+* [:fab-instagram:](https://instagram.com/dainsaint) 
 * [:fab-threads:](https://threads.com/dainsaint.com) 
 * [:fa-store:](https://dainsaint.square.site)
-{.distribute .inline .text-lede .align-center}
+{.distribute .inline .text-big .align-center}
 
 :::
-* [:fa-hand-sparkles: Work with me *creative clarity for cultural orgs* ](https://dainsaint.com){.dain}
+* [:fa-hand-sparkles: book a call *creative clarity for cultural orgs* ](/book){.dain}
 * [:fa-sprout: Futurefull *Empowering interfuturist storytellers*](https://futurefullstories.com){.futurefull}
 * [:fa-gamepad: Cipher Prime Studios *award-winning arthouse indie games*](https://cipherprime.com){.cipherprime}
 * [:fa-book-open: Freedom Is Non-Negotiable *Poetry Book*](https://dainsaint.com/freedom-is-non-negotiable){.freedom}
