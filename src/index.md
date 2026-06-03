@@ -231,7 +231,7 @@ Prototyping something quick? Designing an exhibition? Need a full-stack creative
   let's make something <strong></strong> together
 </h2>
 
-### Currently booking for Summer 2026
+### Currently booking for Fall 2026
 
 
 If you don't have a big budget, and we're mission-aligned, I still wanna hear about it! I’m open to barter, skill swaps, mutual aid, co-creation—anything rooted in trust and care. Let’s figure out what feels fair for both of us.
