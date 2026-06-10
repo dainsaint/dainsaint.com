@@ -21,6 +21,7 @@ settings:
 {.distribute .inline .text-big .align-center}
 
 :::
+* [:fa-ticket: olamina *come play with us june 20th*](https://crowdwork.com/e/olamina)
 * [:fa-hand-sparkles: book a call *creative clarity for cultural orgs* ](/book){.dain}
 * [:fa-sprout: Futurefull *Empowering interfuturist storytellers*](https://futurefullstories.com){.futurefull}
 * [:fa-gamepad: Cipher Prime Studios *award-winning arthouse indie games*](https://cipherprime.com){.cipherprime}
