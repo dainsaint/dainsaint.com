@@ -2,7 +2,8 @@
 eleventyExcludeFromCollections: true
 layout: index
 style: page
-description: "storyteller. creator. accomplice."
+description: "Interactive experience designer & creative accomplice, based in Philadelphia. I help mission-driven orgs and the studios that serve them bring their wildest ideas to life."
+fullTitle: "Dain Saint — Interactive Storyteller & Creative Accomplice | Philadelphia"
 
 color: "#573E79"
 settings:

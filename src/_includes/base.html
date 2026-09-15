@@ -4,7 +4,7 @@ settings:
   info: true
   constrain: default
 ---
-{% capture pageTitle %}{% unless title == "" %}{{ title }} | {% endunless %}dain saint{% endcapture %}
+{% capture pageTitle %}{% if fullTitle %}{{ fullTitle }}{% else %}{% unless title == "" %}{{ title }} | {% endunless %}dain saint{% endif %}{% endcapture %}
 {% capture pageSocialImg %}{% if social and social != '' %}{{ social }}{% else %}https://dainsaint.com/previews/{{ title | slug }}.png{% endif %}{% endcapture %}
 
 {%- if pagination.pageNumber > 0 -%}
