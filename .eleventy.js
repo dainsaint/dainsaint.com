@@ -279,6 +279,27 @@ function addShortcodes( eleventy ) {
     // return result;
   })
 
+  eleventy.addShortcode("season", () => {
+    const seasons = ["Spring", "Summer", "Fall", "Winter"];
+    // const months = {
+    //   "Spring": ["March", "April", "May"],
+    //   "Summer": ["June", "July", "August"],
+    //   "Fall": ["September", "October", "November"],
+    //   "Winter": ["December", "January", "February"]
+    // }
+
+    // 0, 1, 2,   3, 4, 5,   6, 7, 8,   9, 10, 11
+
+    // 2, 3, 4,   5, 6, 7,   8, 9, 10,   11, 12, 13
+
+    const today = new Date();
+    const thisMonth = today.getMonth() 
+    const horizonMonth = thisMonth + 2; 
+    const horizonSeasonIndex = Math.floor( (horizonMonth % 12 + 3) / 3 - 1);
+    const horizonYear = today.getFullYear() + (horizonMonth >= 11 ? 1 : 0);
+    return `${seasons[horizonSeasonIndex]} ${horizonYear}`;
+  })
+
 }
 
 function addTransforms( eleventy ) {

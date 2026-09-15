@@ -39,7 +39,7 @@ Unsure of where to start? [Book a free discovery call](/book) and let's talk abo
   </div>
 </div>
 
-### Currently booking for Summer 2026
+### Currently booking for {% season %}
 I only take on one to two projects at a time to ensure deep collaboration.  {.text-lede}
 
 If you don't have a big budget, I still wanna hear about it! I’m open to barter, skill swaps, mutual aid, co-creation—anything rooted in trust and care. Let’s figure out what feels fair for both of us.
