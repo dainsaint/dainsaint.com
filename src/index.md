@@ -2,8 +2,8 @@
 eleventyExcludeFromCollections: true
 layout: index
 style: page
-description: "Interactive experience designer & creative accomplice, based in Philadelphia. I help mission-driven orgs and the studios that serve them bring their wildest ideas to life."
-fullTitle: "Dain Saint — Interactive Storyteller & Creative Accomplice | Philadelphia"
+description: "Interactive storyteller/creative designer, based in Philadelphia. I help mission-driven orgs and the studios that serve them bring their wildest ideas to life."
+fullTitle: "Dain Saint — Interactive Storyteller & Designer | Philly"
 
 color: "#573E79"
 settings:
@@ -27,7 +27,7 @@ make your most vital stories<br/><span style="font-size: 4rem">impossible to ign
 <div class="switch">
 
 <figure class="all-rounded">
-  <img src="assets/uploads/wisteria-pic.jpg" style="height: 100%; object-fit: cover; object-position: 40% 75%"/>
+  <img src="assets/uploads/wisteria-pic.jpg" style="height: 100%; object-fit: cover; object-position: 40% 75%" alt="A photo of Dain Saint standing in a wisteria garden"/>
 </figure>
 
 
@@ -62,7 +62,7 @@ Now, I’m channeling that into [Futurefull](https://futurefullstories.com), and
 <div class="switch content-wide">
 
   
-  <a class="all-rounded" href="https://futurefullstories.com"><img src="/assets/uploads/futurefull-icon.jpg"/></a>
+  <a class="all-rounded" href="https://futurefullstories.com"><img src="/assets/uploads/futurefull-icon.jpg" alt="Futurefull Logo"/></a>
   
 
   <div class="stack columns-two" style="align-self: center">

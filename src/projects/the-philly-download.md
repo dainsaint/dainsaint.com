@@ -29,9 +29,11 @@ showcase:
   - type: image
     src: /assets/uploads/tpd-lockup.png
     class: columns-three
+    alt: The Philly Download logo lockup
 
   - type: image
     src: /assets/uploads/the-download-postcard.jpg
+    alt: A postcard for The Philly Download
         
   - type: video
     src: /assets/uploads/the-download-end-card.mp4

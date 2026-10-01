@@ -32,10 +32,12 @@ showcase:
   - type: image
     src: /assets/uploads/wildestdreams.png
     class: columns-three
+    alt: Wildest Dreams logo lockup
 
   - type: image
     src: /assets/uploads/wildest-quote-1.jpg
     class: columns-three 
+    alt: An excerpt from 2021's Wildest Dreams
 
 
 

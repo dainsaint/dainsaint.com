@@ -79,6 +79,9 @@ function addPlugins( eleventy ) {
 }
 
 function addFilters( eleventy ) {
+  // absoluteUrl, available to Liquid too (the RSS plugin only registers it for Nunjucks)
+  eleventy.addFilter("absoluteUrl", pluginRSS.absoluteUrl);
+
   // human readable date
   eleventy.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
@@ -319,6 +322,8 @@ function addTransforms( eleventy ) {
 
   eleventy.addTransform("prettify", async function (content) {
     // check for dev vs prod
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    
     const result = await posthtml([
       require("./scripts/posthtml-cleanup")(),
     ]).process(content);
@@ -328,7 +333,7 @@ function addTransforms( eleventy ) {
     // if (process.env.ELEVENTY_RUN_MODE !== "build") return content;
 
     // check for html
-    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    
 
     return pretty(content, { ocd: true });
   });

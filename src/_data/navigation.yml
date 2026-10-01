@@ -46,10 +46,10 @@ people:
 
 
 initiatives:
+  - page: contact
+    url: /contact
   - page: futurefull
     url: https://futurefullstories.com
-  - page: work with me
-    url: /services
   - page: links
     url: /links
   - page: press

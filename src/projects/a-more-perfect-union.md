@@ -29,9 +29,11 @@ showcase:
   - type: image
     src: /assets/uploads/ampu.png
     class: columns-two
+    alt: Logo treatment for A More Perfect Union
   - type: image
     src: /assets/uploads/the-blueprint.png
     class: columns-two
+    alt: An interactive essay from 2023's A More Perfect Union editorial
 
 
 awards:

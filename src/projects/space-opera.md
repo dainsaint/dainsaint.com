@@ -28,6 +28,7 @@ showcase:
   - type: image
     src: /assets/uploads/spop-2025.jpg
     class: columns-two rows-two
+    alt: Space Opera Title Treatment
 
 
 
@@ -44,14 +45,17 @@ showcase:
   - type: image
     src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-79 Medium.jpeg
     class: columns-two 
+    alt: A facilitor uses the datapad during 2025's Space Opera
 
   - type: image
     src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-62 Medium.jpeg
     class: columns-two rows-two
+    alt: An attendee in a wizard hat announces an action during 2025's Space Opera
 
   - type: image
     src: /assets/uploads/Wide_Eyed_Studios_Obvious_Agency_Space_Opera_2025_Early_High-80 Medium.jpeg 
     class: columns-two 
+    alt: A facilitator helps a society plan their next action during 2025's Space Opera
 
   
   # - type: image

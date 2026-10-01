@@ -34,18 +34,22 @@ showcase:
   - type: image
     src: /assets/uploads/lineweight1.jpg
     class: columns-two rows-two
+    alt: Screenshot from Lineweight saying "Never afraid of the ground."
 
   - type: image
     src: /assets/uploads/lineweight2.jpg
     class: columns-two rows-two
+    alt: Screenshot from Lineweight depicting a woman's face with the text "Too many hands"
 
   - type: image
     src: /assets/uploads/lineweight.gif
     class: columns-two
+    alt: A motion preview of our game Lineweight, showing various scenes
   
   - type: image
     src: /assets/uploads/lineweight4.jpg
     class: columns-two
+    alt: Screenshot from Lineweight showing stylized rain reflecting off the silhouette of a woman's face
 
 client: Cipher Prime Studios
 year: 2020

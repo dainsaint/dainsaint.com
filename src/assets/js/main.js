@@ -197,6 +197,22 @@ const monitorThemeColor = () => {
   })
 }
 
+const autoplayVideosOnScroll = () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach( entry => {
+      if( entry.isIntersecting ) entry.target.play();
+      else entry.target.pause();
+    })
+  }, {
+    threshold: 0.25
+  })
+
+  document.querySelectorAll("video[autoplay]").forEach( video => {
+    video.removeAttribute("autoplay");
+    observer.observe(video);
+  })
+}
+
 
 document.addEventListener("DOMContentLoaded", (e) => {
   loadTransitionData()
@@ -207,6 +223,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   monitorThemeColor();
   updatePageMetrics();
+  autoplayVideosOnScroll();
 })
 
 window.addEventListener("pageshow", (e) => {

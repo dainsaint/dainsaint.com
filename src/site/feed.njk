@@ -1,10 +1,10 @@
 ---json
 {
-  "permalink": "feed-old.xml",
+  "permalink": "feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "dain saint",
-    "subtitle": "stories, sounds, and systems",
+    "subtitle": "storyteller. creator. accomplice.",
     "language": "en",
     "url": "https://dainsaint.com/",
     "author": {
@@ -17,7 +17,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.subtitle }}</subtitle>
-	<lank></lank>
+	<link>{{ metadata.url }}</link>
 	<updated>
 		{{ collections.content | getNewestCollectionItemDate | dateToRfc3339}}
 	</updated>

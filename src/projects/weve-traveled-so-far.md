@@ -26,24 +26,29 @@ showcase:
   - type: image
     src: /assets/uploads/wtsf-kid.png
     class: columns-two
+    alt: Children look at a screen during an art exhibition
 
 
   - type: image
     src: /assets/uploads/wtsf-demo.png
     class: columns-two
+    alt: Attendees play with an interactive demo during the art exhibition
 
 
   - type: image
     src: /assets/uploads/selfie_demo-2.gif
     class: columns-two rows-two
+    alt: A motion demo of the particle-driven selfie booth at We've Traveled So Far
 
 
   - type: image
     src: /assets/uploads/selfie_booth_button-2.jpg
+    alt: A glowing button in a museum plinth labelled "Pick up the thingy and press the glowing doohicky"
 
   - type: image
     src: /assets/uploads/empty_space.jpg
     class: columns-three
+    alt: A photo of the exhibition space showing paintings for We've Traveld So Far
 
 
 
