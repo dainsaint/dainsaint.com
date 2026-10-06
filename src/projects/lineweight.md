@@ -34,12 +34,12 @@ showcase:
   - type: image
     src: /assets/uploads/lineweight1.jpg
     class: columns-two rows-two
-    alt: Screenshot from Lineweight saying "Never afraid of the ground."
+    alt: Screenshot from Lineweight saying &ldquo;Never afraid of the ground.&rdquo;
 
   - type: image
     src: /assets/uploads/lineweight2.jpg
     class: columns-two rows-two
-    alt: Screenshot from Lineweight depicting a woman's face with the text "Too many hands"
+    alt: Screenshot from Lineweight depicting a woman&rsquo;s face with the text &ldquo;Too many hands&rdquo;
 
   - type: image
     src: /assets/uploads/lineweight.gif
@@ -49,7 +49,7 @@ showcase:
   - type: image
     src: /assets/uploads/lineweight4.jpg
     class: columns-two
-    alt: Screenshot from Lineweight showing stylized rain reflecting off the silhouette of a woman's face
+    alt: Screenshot from Lineweight showing stylized rain reflecting off the silhouette of a woman&rsquo;s face
 
 client: Cipher Prime Studios
 year: 2020

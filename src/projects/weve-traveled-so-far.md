@@ -43,7 +43,7 @@ showcase:
 
   - type: image
     src: /assets/uploads/selfie_booth_button-2.jpg
-    alt: A glowing button in a museum plinth labelled "Pick up the thingy and press the glowing doohicky"
+    alt: A glowing button in a museum plinth labelled &ldquo;Pick up the thingy and press the glowing doohicky&rdquo;
 
   - type: image
     src: /assets/uploads/empty_space.jpg
