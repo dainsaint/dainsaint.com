@@ -5,8 +5,10 @@ description: an interactive wall
 color: "#020D2D"
 
 showcase:
- - /assets/uploads/screen-shot-2020-07-11-at-12-36-26-pm.png
- - /assets/uploads/screen-shot-2020-07-11-at-12-37-03-pm.png
+  - type: image
+    src: /assets/uploads/screen-shot-2020-07-11-at-12-36-26-pm.png
+  - type: image
+    src: /assets/uploads/screen-shot-2020-07-11-at-12-37-03-pm.png
 
 
 roles:

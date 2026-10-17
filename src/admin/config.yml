@@ -1,0 +1,329 @@
+backend:
+  name: github
+  repo: dainsaint/dainsaint.com
+  branch: main
+  # Auth goes through Netlify's OAuth client (Site configuration > Access &
+  # security > OAuth). Leave base_url unset for that to keep working.
+
+media_folder: src/assets/uploads
+public_folder: /assets/uploads
+
+publish_mode: simple
+
+# Sveltia ignores local_backend: for local editing, run `npm start` and open
+# http://localhost:8080/admin/ in a Chromium browser, then
+# "Work with Local Repository".
+
+collections:
+  - label: Posts
+    label_singular: Post
+    name: posts
+    folder: src/posts
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - &date
+        label: Publish Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DDTHH:mm:ss[Z]
+        picker_utc: true
+        required: false
+      - &color { label: Color, name: color, widget: color, default: "#FFFFFF", required: false }
+      - label: Deco
+        name: deco
+        widget: select
+        required: false
+        options:
+          - almond
+          - birds
+          - camellia
+          - cannabis
+          - cotton
+          - elevation
+          - fountain
+          - gerbera
+          - lighthouse
+          - nightsky
+          - oleander
+          - prunus-sinensis
+          - skyline
+          - thistle
+          - tree-of-life
+      - label: Project
+        name: project
+        widget: relation
+        required: false
+        collection: projects
+        value_field: "{{slug}}"
+        search_fields: ["{{slug}}", title]
+        display_fields: [title]
+      - &featured
+        label: Featured
+        name: featured
+        widget: list
+        required: false
+        types:
+          - label: Gallery
+            name: gallery
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - { label: Quote, name: content, widget: markdown }
+          - label: Prompt
+            name: prompt
+            widget: object
+            fields:
+              - { label: Header, name: header, widget: string, required: false }
+              - { label: Prompt, name: content, widget: markdown }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Image, name: url, widget: image }
+          - label: Audio
+            name: audio
+            widget: object
+            fields:
+              - { label: Audio, name: audio, widget: file }
+          - label: Youtube
+            name: youtube
+            widget: object
+            fields:
+              - { label: Video ID, name: video_id, widget: string }
+          - label: Slot
+            name: slot
+            widget: object
+            fields:
+              - { label: Note, name: note, widget: hidden, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+      - &tags { label: Tags, name: tags, widget: list, required: false }
+      - &social { label: Social, name: social, widget: image, required: false }
+      - &paywall { label: Paywall, name: paywall, widget: boolean, default: false, required: false }
+      - &hidden { label: Hidden, name: hidden, widget: boolean, default: false, required: false }
+      - &exclude
+        label: Exclude from collections
+        name: eleventyExcludeFromCollections
+        widget: boolean
+        default: false
+        required: false
+
+  - label: Blog
+    label_singular: Blog post
+    name: blog
+    folder: src/blog
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - *date
+      - *color
+      - *featured
+      - { label: Body, name: body, widget: markdown, required: false }
+      - *tags
+      - *social
+      - *paywall
+      - *hidden
+      - *exclude
+
+  - label: Projects
+    label_singular: Project
+    name: projects
+    folder: src/projects
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - *date
+      - *color
+      - { label: Client, name: client, widget: string, required: false }
+      - { label: Year, name: year, widget: number, value_type: int, required: false }
+      - { label: Size, name: size, widget: string, required: false }
+      - label: Roles
+        name: roles
+        widget: list
+        required: false
+        field: { label: Role, name: role, widget: string }
+      - label: Awards
+        name: awards
+        widget: list
+        required: false
+        field: { label: Award, name: award, widget: string }
+      - { label: Status, name: status, widget: markdown, required: false }
+      - { label: Notes, name: notes, widget: markdown, required: false }
+      - *featured
+      - label: Showcase
+        name: showcase
+        widget: list
+        required: false
+        types:
+          - label: Image
+            name: image
+            widget: object
+            fields:
+              - { label: Image, name: src, widget: image }
+              - { label: Alt text, name: alt, widget: string, required: false }
+              - &blockclass { label: Class, name: class, widget: string, required: false }
+          - label: Video
+            name: video
+            widget: object
+            fields:
+              - { label: Video, name: src, widget: file }
+              - { label: Poster, name: poster, widget: image, required: false }
+              - { label: Alt text, name: alt, widget: string, required: false }
+              - *blockclass
+          - label: Gallery
+            name: gallery
+            widget: object
+            fields:
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+              - *blockclass
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - { label: Quote, name: quote, widget: markdown }
+              - *blockclass
+          - label: Testimonial
+            name: testimonial
+            widget: object
+            fields:
+              - { label: Body, name: body, widget: markdown }
+              - { label: Author, name: author, widget: string, required: false }
+              - { label: Title, name: title, widget: string, required: false }
+              - { label: Style, name: style, widget: string, required: false }
+              - *blockclass
+          - label: Event
+            name: event
+            widget: object
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Time, name: time, widget: string, required: false }
+              - { label: Body, name: content, widget: markdown, required: false }
+              - { label: Link, name: url, widget: string, required: false }
+              - { label: Call to action, name: cta, widget: string, required: false }
+              - *blockclass
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Image, name: url, widget: image }
+              - *blockclass
+          - label: Youtube
+            name: youtube
+            widget: object
+            fields:
+              - { label: Video ID, name: video_id, widget: string }
+          - label: Slot
+            name: slot
+            widget: object
+            fields:
+              - { label: Note, name: note, widget: hidden, required: false }
+      - { label: Body, name: body, widget: markdown, required: false }
+      - *tags
+      - *social
+      - *exclude
+
+  - label: Pages
+    label_singular: Page
+    name: pages
+    folder: src/pages
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Description, name: description, widget: string, required: false }
+      - *date
+      - *color
+      - { label: Hero, name: hero, widget: image, required: false }
+      - &settings
+        label: Settings
+        name: settings
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Show info, name: info, widget: boolean, default: true, required: false }
+          - label: Constrain
+            name: constrain
+            widget: select
+            required: false
+            options: [default, wide, none]
+          - { label: Show CTA, name: cta, widget: boolean, default: true, required: false }
+          - { label: Class, name: class, widget: string, required: false }
+      - { label: Status, name: status, widget: markdown, required: false }
+      - *featured
+      - { label: Body, name: body, widget: markdown, required: false }
+      - *tags
+      - *social
+      - *exclude
+      # Kept so hand-written Eleventy frontmatter isn't dropped on save
+      - { label: Layout, name: layout, widget: hidden }
+      - { label: Style, name: style, widget: hidden }
+      - { label: Permalink, name: permalink, widget: hidden }
+      - { label: Pagination, name: pagination, widget: hidden }
+
+  - label: Settings
+    name: settings
+    editor:
+      preview: false
+    files:
+      - label: Homepage
+        name: homepage
+        file: src/index.md
+        fields:
+          - { label: Full title, name: fullTitle, widget: string, required: false }
+          - { label: Description, name: description, widget: text, required: false }
+          - { label: Promo, name: promo, widget: text, required: false }
+          - *color
+          - *social
+          - *settings
+          - *featured
+          - { label: Body, name: body, widget: markdown, required: false }
+          - { label: Layout, name: layout, widget: hidden, default: index }
+          - { label: Style, name: style, widget: hidden, default: page }
+          - { label: Permalink, name: permalink, widget: hidden }
+          - { label: Exclude from collections, name: eleventyExcludeFromCollections, widget: hidden, default: true }
+
+      - label: Navigation
+        name: navigation
+        file: src/_data/navigation.yml
+        fields:
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: Page
+                name: page
+                widget: relation
+                collection: pages
+                value_field: "{{slug}}"
+                search_fields: ["{{slug}}", title]
+                display_fields: [title]
+              - { label: URL, name: url, widget: string, required: false }
+              - { label: Tags, name: tags, widget: list, required: false }
+          # Unused in the nav today, but they live in the same file
+          - { label: Old links, name: oldlinks, widget: hidden, required: false }
+          - { label: Portfolios, name: portfolios, widget: hidden, required: false }

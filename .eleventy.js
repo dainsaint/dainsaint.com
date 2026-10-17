@@ -28,10 +28,7 @@ function addOptions( eleventy ) {
   );
 
   // Copy Static Files to /_Site
-  eleventy.addPassthroughCopy({
-    "./src/admin/config.yml": "./admin/config.yml",
-    "./src/admin/preview.css": "./admin/preview.css",
-  });
+  eleventy.addPassthroughCopy("./src/admin");
 
   // Copy Image Folder to /_site
   eleventy.addPassthroughCopy("./src/assets");
